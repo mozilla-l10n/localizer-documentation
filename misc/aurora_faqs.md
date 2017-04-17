@@ -2,7 +2,7 @@
 
 With this set of Frequently Asked Questions we aim to clarify the most common doubts about the removal of Aurora and its impact on localization. This document will evolve over the next days, adding clarifications and new answers based on the discussion within the Community.
 
-This is a document aimed at our localization Community, please refer to the official announcements and FAQs for reference.
+This is a document aimed at our localization Community, please refer to the [official announcement](https://hacks.mozilla.org/2017/04/simplifying-firefox-release-channels/) and [FAQs](http://release.mozilla.org/firefox/release/2017/04/17/Dawn-Project-FAQ.html) for reference.
 
 ## Q: What is happening to Aurora?
 
