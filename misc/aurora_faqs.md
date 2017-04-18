@@ -1,4 +1,4 @@
-# FAQ: Removal of Aurora and Localization
+# FAQ: Removal of Aurora and impact on localization
 
 With this set of Frequently Asked Questions we aim to clarify the most common doubts about the removal of Aurora and its impact on localization. This document will evolve over the next days, adding clarifications and new answers based on the discussion within the Community.
 
