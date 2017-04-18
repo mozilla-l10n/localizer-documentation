@@ -20,26 +20,26 @@ If you notice any errors, they need to be fixed very quickly. This is extremely 
 
 ### Checking for warnings
 
-You should also be checking your locale’s [Firefox for Android dashboard](https://l10n.mozilla.org/shipping/dashboard?tree=fennec_aurora&tree=fennec_beta) for any possible **warnings**. They would appear under the "Warnings" column. If you see you have a warning, then click on the "Status" column on that same line. It will explain where the warning is so you can go in and fix it.
+You should also be checking your locale’s [Firefox for Android dashboard](https://l10n.mozilla.org/shipping/dashboard?tree=fennec_central&tree=fennec_central) for any possible **warnings**. They would appear under the "Warnings" column. If you see you have a warning, then click on the "Status" column on that same line. It will explain where the warning is so you can go in and fix it.
 
 Checking your team page and dashboard regularly should be something you do from the very beginning when you start localizing a project, so that it becomes a habit. This helps reduce the chance of breaking the builds in the future, once your locale is actually shipping, and generally helps catch errors earlier on. It also gives you an overview of your locale’s health and status, and overall ensures you’re shipping a good quality localization.
 
 ## Localize the Firefox for Android folder
 
-* [Pontoon](https://pontoon.mozilla.org/firefox-for-android-aurora/): choose your locale code from there.
-* [Pootle](https://mozilla.locamotion.org/projects/mobile/ ): choose your locale code from there.
+* [Pontoon](https://pontoon.mozilla.org/firefox-for-android/): choose your locale code from there.
+* [Pootle](https://mozilla.locamotion.org/projects/mobile/): choose your locale code from there.
 
 Once you’ve finished covering this folder, please note you still have strings to translate. See below for more instructions.
 
 ## Localize the shared Firefox strings
 
-In order to reach 100% completion on the Firefox for Android l10n project, you will have to localize the shared Firefox files (so, the ones common to Firefox Desktop and Android) as well. These are found in the Firefox Aurora folder:
-* [Pontoon](https://pontoon.mozilla.org/projects/firefox-aurora/): choose your locale code from there. Localize all file paths that start with dom, netwerk, security, services and toolkit.
+In order to reach 100% completion on the Firefox for Android l10n project, you will have to localize the shared Firefox files (so, the ones common to Firefox Desktop and Android) as well. These are found in the Firefox folder:
+* [Pontoon](https://pontoon.mozilla.org/projects/firefox/): choose your locale code from there. Localize all file paths that start with dom, netwerk, security, services and toolkit.
 * [Pootle](https://mozilla.locamotion.org/projects/firefox/): choose your locale code from there. In the list you now see, localize the files found in "androidshared" folder.
 
 Once you’ve reached 100% completion for the shared strings: let the Fennec project manager know (currently **delphine** at **mozilla** dot **com**). A bug will be filed to add your locale to the single-locale builds.
 
-These builds are available here: https://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-aurora-android-api-15-l10n/.
+These builds are available here: https://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-central-android-api-15-l10n/.
 This means that you will be able to download a build on your Android device to test your locale. Please note that at this point, your locale still isn’t shipping on official Firefox for Android builds. That will come later.
 
 ## Considerations for brand new locales that have no Desktop version yet
