@@ -2,11 +2,11 @@
 
 ## Which build should I test?
 
-As a localizer you work against Aurora, which means you should be testing a localized build of Firefox Developer Edition provided directly by Mozilla.
+As a localizer you will work against Nightly, which means you should be testing a localized build of Firefox Nightly provided directly by Mozilla.
 
-You can download the build from the [Pre-release download page](https://www.mozilla.org/firefox/channel/#developer) or directly [via FTP](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-aurora-l10n/) (search for your locale code and operative system).
+You can download the build from the [pre-release download page](https://www.mozilla.org/firefox/channel/#nightly), the [download page](https://www.mozilla.org/firefox/nightly/all/) for all systems and locales, or directly [via FTP](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/) (search for your locale code and operative system).
 
-Why Developer Edition? Because it’s updated every day, which means that you can fix an error and verify if the correction was effective the day after. It’s definitely a good approach to use this version as your main browser.
+Why Nightly? Because it’s updated every day, which means that you can fix an error and verify if the correction was effective the day after. It’s definitely a good approach to use this version as your main browser.
 
 At the same time, you, or someone in your team, should be testing also Beta and Release, to make sure updates don’t introduce issues.
 
@@ -54,7 +54,7 @@ For shortcuts, you should test at least the [most common ones](https://support.m
 
 ### Test the installer on windows
 
-Download the installer version and make sure that everything is working correctly. In the [FTP folder](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-aurora-l10n/) you have both the Full Installer and the Stub Installer (downloading the package from Internet). You should test both at least once.,
+Download the installer version and make sure that everything is working correctly. In the [FTP folder](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/) you have both the Full Installer and the Stub Installer (downloading the package from Internet). You should test both at least once.,
 
 ## Firefox Health Report
 
