@@ -5,14 +5,14 @@ This repository includes several documents describing topics of interest for loc
 ## Products
 
 How to localize and test Mozilla products:
-* [Firefox for desktop](products/firefox_desktop/)
-* [Firefox for Android](products/firefox_android/)
-* [Firefox for iOS](products/firefox_ios/)
-* [mozilla.org](products/mozilla_org/)
+* [Firefox for desktop](products/firefox_desktop/README.md)
+* [Firefox for Android](products/firefox_android/README.md)
+* [Firefox for iOS](products/firefox_ios/README.md)
+* [mozilla.org](products/mozilla_org/README.md)
 
 ## Tools
 
-* [Mercurial tips](tools/mercurial/)
+* [Mercurial tips](tools/mercurial/README.md)
 
 ## Updating the documentation
 
