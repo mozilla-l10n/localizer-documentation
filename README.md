@@ -20,9 +20,15 @@ Simply open a pull request adding the new file or updating an existing document.
 
 ## Update GitBook
 
-Follow [these instructions](https://toolchain.gitbook.com/setup.html) to install GitBook locally (NodeJS is a prerequisite). Then run the following command from the root of the repository.
+Follow [these instructions](https://toolchain.gitbook.com/setup.html) to install GitBook locally (NodeJS is a prerequisite). If it’s the first time you use `gitbook`, run this command to install all required plugins:
 
+```BASH
+gitbook install
 ```
+
+Then run the following command from the root of the repository.
+
+```BASH
 gitbook build . docs
 ```
 
