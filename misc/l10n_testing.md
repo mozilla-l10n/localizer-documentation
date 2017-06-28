@@ -7,7 +7,7 @@ Mozilla encourages a three-stage review process:
 
 Other docs will cover how the Mozilla approach to the first two stages of the review process. This doc covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
 
-# L10n testing process
+## L10n testing process
 
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
 1. You submit a translation through Pontoon.
@@ -16,42 +16,42 @@ Each Mozilla project has its own process for taking your translations and making
 4. Depending on the project, you'll need to wait anywhere from 30 minutes to 24 hours to look for your translation in the Mozilla project.
 5. Once you've found your translation, if you find a bug with it in the project, you return to Pontoon to make any necessary corrections.
 
-Pontoon simplifies these steps for some Web projects by enabling the in-context editor (aka WYSIWYG editor). This allows you to see your translations in-context the moment you create them in Pontoon, cutting out the 30 minute to 24 hour waiting period to test.
+Pontoon simplifies these steps for some Web projects by enabling the in-context editor (aka WYSIWYG editor). This allows you to see your translations in-context the moment you create them in Pontoon, cutting out the 30 minutes to 24 hour waiting period to test.
 
 You might be wondering, "what types of bugs am I supposed to be looking for when I test?" Good question :-) Here's a list of common l10n bugs with screenshots that illustrate the problems in context.
 
-# Common l10n bugs
+## Common l10n bugs
 
-## Encoding and fonts
+### Encoding and fonts
 
-## Truncation
+### Truncation
 
-## String concatenation and empty strings
+### String concatenation and empty strings
 
-## UI layout
+### UI layout
 
-## Mistranslation
+### Mistranslation
 
-## Untranslated strings
+### Untranslated strings
 
-## Style bugs
+### Style bugs
 
-## Number, date, currency
+### Number, date, currency
 
-## XML parsing errors
+### XML parsing errors
 
-## Exposed variables and placeholders
+### Exposed variables and placeholders
 
-## Broken access keys
+### Broken access keys
 
-## Broken language preferences
+### Broken language preferences
 
-## Broken search plugins
+### Broken search plugins
 
 Website unreachable message.
 
-## Broken hyperlinks
+### Broken hyperlinks
 
-# What to do when you find an error while testing
+## What to do when you find an error while testing
 
 Congratulations! You've found a bug! No software is perfect and you're very likely to find bugs while you test your localization.
