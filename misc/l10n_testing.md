@@ -1,4 +1,5 @@
 # Intro
+
 Mozilla encourages a three-stage review process:
 1. Linguistic review in Pontoon by community
 2. Technical review by l10n-drivers
@@ -7,6 +8,7 @@ Mozilla encourages a three-stage review process:
 Other docs will cover how the Mozilla approach to the first two stages of the review process. This doc covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
 
 # L10n testing process
+
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
 1. You submit a translation through Pontoon.
 2. The translation goes through a linguistic review and a technical review.
@@ -51,4 +53,5 @@ Website unreachable message.
 ## Broken hyperlinks
 
 # What to do when you find an error while testing
+
 Congratulations! You've found a bug! No software is perfect and you're very likely to find bugs while you test your localization.
