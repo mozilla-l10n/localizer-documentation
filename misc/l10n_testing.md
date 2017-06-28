@@ -1,3 +1,4 @@
+# Intro
 Mozilla encourages a three-stage review process:
 1. Linguistic review in Pontoon by community
 2. Technical review by l10n-drivers
@@ -5,7 +6,7 @@ Mozilla encourages a three-stage review process:
 
 Other docs will cover how the Mozilla approach to the first two stages of the review process. This doc covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
 
-#L10n testing process
+# L10n testing process
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
 1. You submit a translation through Pontoon.
 2. The translation goes through a linguistic review and a technical review.
@@ -18,19 +19,35 @@ Pontoon simplifies these steps for some Web projects by enabling the in-context 
 You might be wondering, "what types of bugs am I supposed to be looking for when I test?" Good question :-) Here's a list of common l10n bugs with screenshots that illustrate the problems in context.
 
 # Common l10n bugs
+
 ## Encoding and fonts
+
 ## Truncation
+
 ## String concatenation and empty strings
+
 ## UI layout
+
 ## Mistranslation
+
 ## Untranslated strings
+
 ## Style bugs
+
 ## Number, date, currency
+
 ## XML parsing errors
+
 ## Exposed variables and placeholders
+
 ## Broken access keys
+
 ## Broken language preferences
+
 ## Broken search plugins
+
+Website unreachable message.
+
 ## Broken hyperlinks
 
 # What to do when you find an error while testing
