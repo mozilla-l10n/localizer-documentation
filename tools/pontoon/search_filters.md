@@ -4,7 +4,7 @@ A string in Pontoon can be in one of these states:
 * *Missing*: string is not available in the localized file.
 * *Suggested*: at least one translation has been suggested for this string. Note that, in this case, the translation only exists within Pontoon database, it’s not exported to external repositories.
 * *Translated*: string has an approved translation.
-* *Fuzzy*: string is marked as fuzzy in the localized file. This state is possible only if the source is a [Gettext](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) (.po) file. Translation is in the file, marked as fuzzy and therefore not used by the website or application.
+* *Fuzzy*: string is marked as fuzzy in the localized file. See the [glossary page](/misc/glossary.md#fuzzy) for more information about fuzzy strings.
 
 There are some extra conditions that can be used to filter strings:
 * *Has suggestions*: this will display strings that have at least one unapproved suggestion. If the string is *suggested*, it will be included in this filter. If the string is *translated* but has other translations in its history, it will be included as well. This behavior should be improved by [bug 1288956](https://bugzilla.mozilla.org/show_bug.cgi?id=1288956), differentianting unapproved suggestions from previous translations.
