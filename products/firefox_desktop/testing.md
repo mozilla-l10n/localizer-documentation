@@ -48,13 +48,20 @@ Create a new profile and open `about:config` in your browser:
 You can test accesskeys only on Windows and Linux, since they’re not available in OS X.
 If your locale uses a non Latin alphabet and opted to keep the English accesskeys, you don’t have anything to check. If you’re localizing accesskeys, you should check that:
 * Accesskeys use letters available in the associated label, and are not displayed between parenthesis at the end of the label itself.
-* There are no conflicts, which means there are no items in the same menu or preference panel using the same letter.
+* There are no conflicts, which means there are no items in the same menu or preference panel using the same letter. Starting from Firefox 56, it’s not possible to avoid conflicts in preferences: the guideline in that case is to reduce to a minimum the number of times the same letter is used within a panel.
 
 For shortcuts, you should test at least the [most common ones](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly). You should never change a shortcut, unless that combination of keys is not available in the keyboard layout commonly used for your locale. For example, in the Italian keyboard the character `[` is available pressing `Alt` and `è`. A shortcut based on `Shift + [` would never work, because it would be read as `Alt + Shift + è`.
 
 ### Test the installer on windows
 
 Download the installer version and make sure that everything is working correctly. In the [FTP folder](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/) you have both the Full Installer and the Stub Installer (downloading the package from Internet). You should test both at least once.,
+
+## Photon
+
+Photon is the redesigned UI that will ship in Firefox 57:
+* The hamburger menu will be replaced by a static dropdown menu. If you’re on Nightly and still see the old menu, make sure that `browser.photon.structure.enabled` is set to `true` in about:config (that's the default value in Nightly 56 and later).
+* Test the *Overflow menu*: the `>>` symbol will appear automatically in the main toolbar when resizing the window to a small width. You can then pin an element to it, or add/remove items from the toolbar directly from their context menu.
+* Test the onboarding tour by clicking the small fox displayed in the left corner on the New tab. There are also onboarding notifications, displayed at the bottom of the page: you can cycle through them by opening multiple new tabs in a row. Note that the onboarding is currently not compatible with Activity Stream.
 
 ## Firefox Health Report
 
