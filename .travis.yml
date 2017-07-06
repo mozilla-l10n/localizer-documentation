@@ -1,8 +1,14 @@
 language: node_js
 node_js:
-  - "6"
+  - stable
+env:
+  global:
+  - ENCRYPTION_LABEL: "2fa9aa91d8a5"
+before_install:
+  - npm install -g gitbook-cli
 install:
-  - git clone https://github.com/flodolo/l10ndocs-linter linter
-  - npm --prefix ./linter install ./linter
+  - git clone https://github.com/flodolo/l10ndocs-linter
+  - npm --prefix ./l10ndocs-linter install ./l10ndocs-linter
 script:
-  - node linter/linter/markdownlint.js
+  - node l10ndocs-linter/linter/markdownlint.js
+  - bash ./scripts/deploy.sh

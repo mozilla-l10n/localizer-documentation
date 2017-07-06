@@ -1,8 +1,0 @@
-language: node_js
-node_js:
-  - "6"
-install:
-  - git clone https://github.com/flodolo/l10ndocs-linter linter
-  - npm --prefix ./linter install ./linter
-script:
-  - node linter/linter/markdownlint.js
