@@ -42,9 +42,6 @@ git checkout -b gh-pages
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 cd $root_directory/gitbook
-echo "Current folder:"
-echo $(pwd)
-git status
 git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
