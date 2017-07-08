@@ -1,7 +1,7 @@
-# Managing users and profile settings
+# User accounts and settings
 
 * [Creating an account](#creating-an-account).
-* [Profile settings](#profile-settings).
+* [User settings](#user-settings).
 * [User roles](#user-roles).
 * [Managing permissions](#managing-permissions).
 
@@ -13,7 +13,7 @@ To create an account on [Pontoon](https://pontoon.mozilla.org/), simply click on
 
 ![Pontoon login](/assets/images/pontoon/users/menu_login.png)
 
-## Profile settings
+## User settings
 
 [User settings](https://pontoon.mozilla.org/settings/) can be accessed by clicking the user avatar in the top right corner, and selecting *Settings*.
 
@@ -27,11 +27,11 @@ Both *Quality checks* and *Make suggestions* are checkboxes. In the picture abov
 * *Quality checks* (check for number of sentences, placeholders, HTML tags, punctuation, etc.) are performed when saving a translation.
 * *Make suggestions* allows a translator or a manager to submit suggestions instead of translations.
 
-Both settings can also be changed directly from the gear menu (highlighted in orange) when translating strings. Profile page is also accessible from this menu by selecting *Change all settings*.
+Both settings can also be changed directly from the gear menu (highlighted in orange) when translating strings. User settings are also accessible from this menu by selecting *Change all settings*.
 
 ![Pontoon login](/assets/images/pontoon/users/translation_gear.png)
 
-*Preferred locales* can be used to display a specific group of locales before others in the *LOCALES* tab when translating strings (highlighted in red). In this case, the user chose to display fr and es-ES before other translations, since they’re both available the tab displays 2+72, meaning 2 preferred locales plus all others.
+*Preferred locales* can be used to display a specific group of locales before others in the *LOCALES* tab when translating strings (highlighted in red). In this case, the user chose to display *fr* and *es-ES* before other translations. Since they’re both available the tab displays 2+72, meaning 2 preferred locales plus all others.
 
 ![Pontoon login](/assets/images/pontoon/users/translation_locales.png)
 
@@ -52,7 +52,7 @@ By default there’s only a **General** section: permissions defined here will a
 
 ![Pontoon login](/assets/images/pontoon/users/permissions_general.png)
 
-To move a user to a different column simply hover the username: arrows will appear to move the email address on the left or right. Note that a user need to log in at least once in Pontoon in order to upgrade their permission.
+To move a user to a different column simply hover the username: arrows will appear to move the username on the left or right. Note that a user need to log in at least once in Pontoon in order to upgrade their permission.
 
 Use the *SAVE* button to store the configuration before leaving this window.
 

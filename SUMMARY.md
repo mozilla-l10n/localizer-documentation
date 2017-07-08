@@ -18,5 +18,5 @@
 ## Tools
 
 * [Pontoon](tools/pontoon/README.md)
-    * [Managing users](tools/pontoon/users.md)
+    * [User accounts and settings](tools/pontoon/users.md)
 * [Mercurial tips](tools/mercurial/README.md)
