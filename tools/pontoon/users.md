@@ -52,7 +52,7 @@ By default there’s only a **General** section: permissions defined here will a
 
 ![Pontoon login](/assets/images/pontoon/users/permissions_general.png)
 
-To move a user to a different column simply hover the username: arrows will appear to move the username on the left or right. Note that a user needs to log in at least once in Pontoon in order to upgrade their permission – simply having a Firefox Account is not sufficient.
+To move a user to a different column simply hover the email address: arrows will appear to move the element to the left or right. Note that a user needs to log in at least once in Pontoon in order to upgrade their permission – simply having a Firefox Account is not sufficient.
 
 Use the *SAVE* button to store the configuration before leaving this window.
 
