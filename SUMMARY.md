@@ -12,11 +12,13 @@
 * [Firefox for iOS](products/firefox_ios/README.md)
     * [Adding a new locale](products/firefox_ios/adding_new_ios_locale.md)
     * [How to test](products/firefox_ios/testing.md)
-* [mozilla.org](products/mozilla_org/README.md)
+* [Mozilla.org](products/mozilla_org/README.md)
     * [How to test](products/mozilla_org/testing.md)
 
 ## Tools
 
 * [Pontoon](tools/pontoon/README.md)
     * [User accounts and settings](tools/pontoon/users.md)
+    * [Team and project pages](tools/pontoon/team_project.md).
+    * [Search and filters](tools/pontoon/search_filters.md).
 * [Mercurial tips](tools/mercurial/README.md)
