@@ -19,6 +19,6 @@
 
 * [Pontoon](tools/pontoon/README.md)
     * [User accounts and settings](tools/pontoon/users.md)
-    * [Teams and projects](tools/pontoon/teams_projects.md).
-    * [Search and filters](tools/pontoon/search_filters.md).
+    * [Teams and projects](tools/pontoon/teams_projects.md)
+    * [Search and filters](tools/pontoon/search_filters.md)
 * [Mercurial tips](tools/mercurial/README.md)
