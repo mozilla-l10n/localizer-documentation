@@ -26,3 +26,4 @@
 ## Misc
 
 * [Glossary](misc/glossary.md)
+* [How to contribute](README.md#how-to-contribute)
