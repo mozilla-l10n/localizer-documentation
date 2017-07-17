@@ -22,3 +22,7 @@
     * [Teams and projects](tools/pontoon/teams_projects.md)
     * [Search and filters](tools/pontoon/search_filters.md)
 * [Mercurial tips](tools/mercurial/README.md)
+
+## Misc
+
+* [Glossary](misc/glossary.md)
