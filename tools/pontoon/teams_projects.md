@@ -56,7 +56,14 @@ This is a screenshot of the [Mozilla.org project page](https://pontoon.mozilla.o
 
 ![Project page for Mozilla.org](/assets/images/pontoon/teams_projects/project_page.png)
 
-The page header contains information about the current project (same as the [Localization page](#localization-page)), plus an indication of the overall status of completion and statistics across all enabled languages.
+The page header contains useful information about the current project:
+* **Priority**: it goes from 5 stars (highest priority) to 1 star (lowest priority).
+* **Deadline**: set only for some projects, it indicates when the translation is due.
+* **Repository**: link to the repository storing translations for this project.
+* **Resources**: links to useful external resources. Custom links can be defined for each project.
+* **Contact person**: localization driver in charge of this project.
+
+It also includes an indication of the overall status of completion and statistics across all enabled languages.
 
 ![Header of project page for Mozilla.org](/assets/images/pontoon/teams_projects/project_page_header.png)
 
@@ -72,14 +79,9 @@ You can access a project’s *Localization page* in two ways:
 * By selecting it from the [Team page](#team-page).
 * By selecting it from the [Project page](#project-page).
 
-![Header of localization page](/assets/images/pontoon/teams_projects/localization_page_header.png)
+The page header contains useful information about the current project (same as the [Project page](#project-page)).
 
-The page header contains useful information about this project:
-* **Priority**: it goes from 5 stars (highest priority) to 1 star (lowest priority).
-* **Deadline**: set only for some projects, it indicates when the translation is due.
-* **Repository**: link to the repository storing translations for this project.
-* **Resources**: links to useful external resources. Custom links can be defined for each project.
-* **Contact person**: localization driver in charge of this project.
+![Header of localization page](/assets/images/pontoon/teams_projects/localization_page_header.png)
 
 There are 4 tabs available (highlighted in red):
 * **Resources**: files available in the project.
