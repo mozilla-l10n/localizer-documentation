@@ -21,7 +21,7 @@ We’ve created this [set of documents](https://mozilla-l10n.github.io/localizer
 
 ## Q: What will happen to my user profiles translation stats on Pootle?
 
-We have performed a database dump of all Pootle data. We’re working sort out how to migrate actions like submitted or approved translation attribution over to Pontoon.
+We have performed a database dump of all Pootle data. We’re working to sort out how to migrate actions like submitted or approved translation attribution over to Pontoon.
 
 ## Q: How are user rights distributed in Pontoon?
 
@@ -30,7 +30,7 @@ Pontoon has three user types with specific rights:
 * **Translator** - authorized to review translation suggestions and submit translations.
 * **Manager** - authorized to review translation suggestions, submit translations, and adjust the user rights of people within the community
 
-Unlike Pootle, there’s no differentiation between the ability to review suggestions and submit translations. [This document](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/users.html#user-roles) describes user roles in Pontoon with more details.
+Unlike Pootle, there’s no difference between the ability to review suggestions and submit translations. [This document](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/users.html#user-roles) describes user roles in Pontoon with more details.
 
 ## Q: What happens to unreviewed suggestions on Pootle?
 
