@@ -9,7 +9,8 @@
 ## Translating Strings
 
 Three string actions can be performed: submit a suggestion, review a suggestion, and submit a translation directly. The level to which a user can translate a string is dependent upon their user role (Read about user roles [here](user.md)).
-[comment:]: <> (This documentation is simplified to demonstrate translation modes in Pontoon. Click [here](ui.md) to learn how to use the Pontoon interface and [here](resources.md) to learn about Pontoon's translation resources.)
+
+*This documentation is simplified to demonstrate translation modes in Pontoon. Click [here](ui.md) to learn how to use the Pontoon interface and [here](resources.md) to learn about Pontoon's translation resources.*
 
 ### Submit a Suggestion
 
