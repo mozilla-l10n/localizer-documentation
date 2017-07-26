@@ -9,8 +9,7 @@
 ## Translating Strings
 
 Three string actions can be performed: submit a suggestion, review a suggestion, and submit a translation directly. The level to which a user can translate a string is dependent upon their user role (Read about user roles [here](user.md)).
-
-This documentation is simplified to demonstrate translation modes in Pontoon. Click [here](ui.md) to learn how to use the Pontoon interface and [here](resources.md) to learn about Pontoon's translation resources.
+[comment:]: <> (This documentation is simplified to demonstrate translation modes in Pontoon. Click [here](ui.md) to learn how to use the Pontoon interface and [here](resources.md) to learn about Pontoon's translation resources.)
 
 ### Submit a Suggestion
 
@@ -55,10 +54,28 @@ If the suggested string is **not** an acceptable translation, turn on `Make Sugg
 
 ### Submit a Translation Directly
 
-*It is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.*
+*Note that it is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.*
 
 To submit a translation directly, search for and click on any string in the sidebar.
 
 Ensure that the `Make Suggestions` option in `Settings` is disabled. Then input the translation to the editing space and click `Save`. This will save your translation directly, without review, to the localized file.
 
 ## Translating in the In-context Editor
+
+*Note that only websites that have been enabled for in-context editing will display in context in Pontoon*
+
+To translate in context, find the string you want to translate in the in-context view and double click it or click on the pencil icon on the top-left of the string. Hovering over the string that you want to translate will highlight that string in the sidebar and in the in-context view.
+
+![Hovering over the string will highlight in sidebar](/assets/images/pontoon/translate/hover_incontext.png)
+
+Once you double click a string, the sidebar will display the editing space.
+
+![Translate in-context projects in the sidebar](/assets/images/pontoon/translate/translate_in_sidebar.png)
+
+Input your translation or review the suggestion and click `Save` or `Suggest`. Once your translation has saved, the editing space will refresh with the next string, and that string will be highlighted in the in-context view.
+
+To return to the list of strings in the sidebar, click `Back To List` at the top-left of the sidebar.
+
+Interactive website features will work in the in-context view. Some strings that you can see in the sidebar will not be visible in the in-context view until you activate the website feature. In the picture below, the translator has clicked on the hamburger to reveal a drop-down menu.
+
+![Interactive Hamburger menu](/assets/images/pontoon/translate/interactive_features.png)
