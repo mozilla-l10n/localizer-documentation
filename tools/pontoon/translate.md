@@ -18,7 +18,7 @@ When a translator is in Suggest Mode, the blue 'Suggest' button will be located 
 
 ![Blue button for suggestions](/assets/images/pontoon/translate/suggest_button.png)
 
-To suggest a translation, the translator should simply input the translation to the editing space and click `Suggest`. Once the translator has suggested the translation, the string's status will be updated from "missing" to suggested. This is indicated in the sidebar by the color of the checkbox next to the string.
+To suggest a translation, the translator should simply input the translation to the editing space and click `Suggest`. Once the translator has suggested the translation, the string's status will be updated from **missing** to **suggested**. This is indicated in the sidebar by the color of the checkbox next to the string.
 
 ![Checkbox before suggestion](/assets/images/pontoon/translate/sidebar_presuggest.png) ![Checkbox after suggestion](/assets/images/pontoon/translate/sidebar_postsuggest.png)
 
