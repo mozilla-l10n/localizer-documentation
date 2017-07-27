@@ -44,7 +44,7 @@ To review a suggestion, search for suggested strings or click on a suggested str
 
 If the suggested string is an acceptable translation, click on the `SAVE` button to the lower-right side of the editing space. This will set the suggested string to approved translation status and save the string to the database and to the localized file on the next sync.
 
-If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. [Learn about the history tab and other resources](resources.md)
+If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, click [here](resources.md)
 
 ![History Tab](/assets/images/pontoon/translate/history_tab.png)
 

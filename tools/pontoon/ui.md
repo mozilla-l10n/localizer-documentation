@@ -38,7 +38,7 @@ The sidebar displays the list of strings in the current project resource. Each s
 
 ![Sidebar](/assets/images/pontoon/ui/sidebar.png)
 
-At the top of the sidebar, the translator can access Pontoon's string filters and search. Learn how to use [search and filters](search_filters.md).
+At the top of the sidebar, the translator can access Pontoon's [search and string filters](search_filters.md).
 
 Note that the sidebar toggles between the strings and the editing space when in the in-context editor
 
@@ -74,7 +74,7 @@ Built-in translation resources are located below the editing space. The three in
 
 ![Translation Resources](/assets/images/pontoon/ui/resources.png)
 
-To learn how to use Pontoon's translation resources, click [here](resources.md)
+Learn how to use Pontoon's [translation resources](resources.md).
 
 ## Pontoon in-context editor
 
