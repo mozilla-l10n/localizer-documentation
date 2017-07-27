@@ -1,18 +1,18 @@
-## Translating in Pontoon
+# Translating in Pontoon
 
 * [Translating Strings](#translating-strings)
   * [Submit a Suggestion](#submit-a-suggestion)
   * [Review a Suggestion](#review-a-suggestion)
   * [Submit a Translation](#submit-a-translation-directly)
-* [Translating using the the In-context Editor](#translating-using-the-In-context-editor)
+* [Translating using the In-context Editor](#translating-using-the-in-context-editor)
 
-### Translating Strings
+## Translating Strings
 
-Three string actions can be performed: submit a suggestion, review a suggestion, and submit a translation directly. The level to which a user can translate a string depends on their user role (Read about [user roles](users.md)).
+Three string actions can be performed: submit a suggestion, review a suggestion, and submit a translation directly. The level to which a user can translate a string depends on their [user role](users.md).
 
 This documentation is simplified to demonstrate translation modes in Pontoon. Click [here](ui.md) to learn how to use the Pontoon interface and [here](resources.md) to learn about Pontoon's translation resources.
 
-#### Submit a Suggestion
+### Submit a Suggestion
 
 When a translator is in Suggest Mode or doesn't have permissions to submit translations directly, the blue `SUGGEST` button will be located to the lower-right side of the editing space.
 
@@ -20,7 +20,7 @@ When a translator is in Suggest Mode or doesn't have permissions to submit trans
 
 To suggest a translation, the translator should simply input the translation to the editing space and click `SUGGEST`. Once the translator has suggested the translation, the string's status will be updated from **missing** to **suggested**. This is indicated in the sidebar by the color of the checkbox next to the string.
 
-![Checkbox before suggestion](/assets/images/pontoon/translate/sidebar_presuggest.png) ![Checkbox after suggestion](/assets/images/pontoon/translate/sidebar_postsuggest.png)
+![Sidebar after suggestion](/assets/images/pontoon/translate/sidebar_suggest.png)
 
 A notification will appear at the top of the window, indicating that your translation has been saved.
 
@@ -28,12 +28,11 @@ A notification will appear at the top of the window, indicating that your transl
 
 Note that a suggested translation exists only in the Pontoon database and not in the localized file or translation memories.
 
-##### Manually Switch to Suggestion Mode
+#### Manually Switch to Suggestion Mode
 
 Even if a translator has permissions to add translations directly, submitting suggestions to be reviewed helps ensure quality. To manually switch to Suggestion Mode, click the Settings gear to the lower-left side of the editing space and click the icon to the left of `Make Suggestions` so that it becomes a green circle. The `SUGGEST` button should then appear to the lower-right side of the editing space.
 
-![Editing space settings](/assets/images/pontoon/translate/suggest_settings.png) ![Activate make suggestions](/assets/images/pontoon/translate/activate_suggest.png)
-![Make suggestions activated](/assets/images/pontoon/translate/activated_suggest.png)
+![Activate make suggestions](/assets/images/pontoon/translate/activate_suggest.png)
 
 A notification will appear at the top of the window, indicating that `Make Suggestions` has been enabled.
 
@@ -43,7 +42,7 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 
 ![The green save button](/assets/images/pontoon/translate/save_button.png)
 
-#### Review a Suggestion
+### Review a Suggestion
 
 To review a suggestion, search for suggested strings or click on a suggested string in the sidebar.
 
@@ -53,7 +52,7 @@ If the suggested string is **not** an acceptable translation, turn on `Make Sugg
 
 ![History Tab](/assets/images/pontoon/translate/history_tab.png)
 
-#### Submit a Translation Directly
+### Submit a Translation Directly
 
 Note that it is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.
 
@@ -61,7 +60,7 @@ To submit a translation directly, search for and click on any string in the side
 
 Ensure that the `Make Suggestions` option in settings is disabled. Then input the translation to the editing space and click `SAVE`. This will save your translation directly, without review, to the localized file.
 
-### Translating using the the In-context Editor
+## Translating using the the In-context Editor
 
 Note that only websites that have been enabled for in-context editing will display in context in Pontoon
 
