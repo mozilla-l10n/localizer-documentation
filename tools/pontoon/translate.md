@@ -24,8 +24,6 @@ To suggest a translation, the translator should simply input the translation to 
 
 A notification will appear at the top of the window, indicating that your translation has been saved.
 
-![Translation saved notification](/assets/images/pontoon/translate/translation_saved_notif.png)
-
 Note that a suggested translation exists only in the Pontoon database and not in the localized file or translation memories.
 
 #### Manually Switch to Suggestion Mode
@@ -35,8 +33,6 @@ Even if a translator has permissions to add translations directly, submitting su
 ![Activate make suggestions](/assets/images/pontoon/translate/activate_suggest.png)
 
 A notification will appear at the top of the window, indicating that `Make Suggestions` has been enabled.
-
-![Translation saved notification](/assets/images/pontoon/translate/translation_saved_notif.png)
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
