@@ -21,6 +21,9 @@
     * [User accounts and settings](tools/pontoon/users.md)
     * [Teams and projects](tools/pontoon/teams_projects.md)
     * [Search and filters](tools/pontoon/search_filters.md)
+    * [The Translation User Interface](ui.md)
+    * [Translating in Pontoon](translate.md)
+    * [Translation Resources in Pontoon](resources.md)
 * [Mercurial tips](tools/mercurial/README.md)
 
 ## Misc
