@@ -38,7 +38,7 @@ At the top of the sidebar, the translator can access Pontoon's string filters an
 
 The workspace is where strings are translated.
 
-![Translation Workspace](/assets/images/pontoon/ui/workspace.png)
+![Translation Workspace](/assets/images/pontoon/ui/work_space.png)
 
 A translator can navigate sequentially by clicking the `Previous` or `Next` buttons located at the top of the workspace.
 
