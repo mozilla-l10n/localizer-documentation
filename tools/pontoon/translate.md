@@ -4,13 +4,13 @@
   * [Submit a suggestion](#submit-a-suggestion)
   * [Review a suggestion](#review-a-suggestion)
   * [Submit a translation](#submit-a-translation-directly)
-* [Translating using the In-context Editor](#translating-using-the-in-context-editor)
+* [Translating using the in-context Editor](#translating-using-the-in-context-editor)
 
 ## Translating strings
 
 Three actions can be performed on strings: submit a suggestion, review a suggestion, and submit a translation directly. Availability of these actions to users depends on their [role](users.md#user-roles).
 
-This document is simplified to demonstrate translation modes in Pontoon. Documentation includes specific pages to learn how to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
+This document is simplified to demonstrate translation modes in Pontoon. Documentation includes specific pages for learning to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
 
 ### Submit a suggestion
 
@@ -56,7 +56,7 @@ To submit a translation directly, search for and click on any string in the side
 
 Ensure that the `Make Suggestions` option in settings is disabled. Then input the translation to the editing space and click `SAVE`. This will save your translation directly, without review, to the localized file.
 
-## Translating using the In-context editor
+## Translating using the in-context editor
 
 Note that only websites that have been enabled for in-context editing will display in context in Pontoon.
 
