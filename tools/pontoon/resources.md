@@ -1,3 +1,3 @@
-# Resources for Translating in Pontoon
+# Resources for translating in Pontoon
 
 Coming soon
