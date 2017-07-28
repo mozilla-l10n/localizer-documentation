@@ -31,6 +31,7 @@ For a community new or well established, it is always exciting to reach the mile
 ## Graphic Assets
 
 ## Guidelines and downloadable [designlanguage.mozilla.org]
+
 With the new logo and the new look, we now have [a brand new guideline](designlanguage.mozilla.org) at a new home. If you have resources to create your own printable file, make sure to read the guideline on the DOs and DONTs and adhere to the guidelines and suggestions closely.
 
 ### Designs
