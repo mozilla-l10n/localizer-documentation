@@ -99,6 +99,6 @@ A single snippet usually runs between 4 and 7 days. If you have a topic or campa
 
 It is always nice to have multiple snippets. Multiple snippets increases the chance of at least one of the snippets being able to make it through the review process.
 
-### If several of our snippets are approved for a single language, how are they run?  
+### If several of our snippets are approved for a single language, how are they run?
 
 Snippets of the same language usually cycle through during a given window. Normally a few snippets are running at any given time. Occasionally, one snippet is given 100% rotation for a short period in order to hit a goal. This usually applies to fundraising snippets or mobile promotion snippets.

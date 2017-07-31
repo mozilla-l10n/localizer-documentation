@@ -21,7 +21,6 @@ How to localize and test Mozilla products:
 
 * [Webprojects](webprojects/README.md)
 
-
 ## How to contribute
 
 We use [GitHub issues](https://github.com/mozilla-l10n/localizer-documentation/issues) to track missing documentation and updates to existing pages.

@@ -10,7 +10,7 @@ AMO refers to https://addons.mozilla.org/. It is one of Mozilla’s biggest web 
 
 Product updates are deployed every Thursday to production. Localizable strings can be extracted on Tuesdays, and changes landed by 5pm UTC each Tuesday go live on Thursday. To report issues, go to: https://github.com/mozilla/addons-server/issues/new.
 
-Now let’s take a look of these components in greater details.  
+Now let’s take a look of these components in greater details.
 
 ## AMO and AMO frontend
 
