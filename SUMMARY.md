@@ -27,3 +27,10 @@
 
 * [Glossary](misc/glossary.md)
 * [How to contribute](README.md#how-to-contribute)
+* [Community marketing kit](misc/community-marketing-kit.md)
+
+## Web Projects
+
+* [Webprojects](webprojects/README.md)
+* [Snippets](webprojects/snippets.md)
+* [AMO](webprojects/amo.md)
