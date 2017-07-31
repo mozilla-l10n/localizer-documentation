@@ -36,7 +36,7 @@ Snippets usually go live as soon as a day after the snippets’ due date, or as 
 
 To see snippets, you must set Firefox browser as the default browser. Then type `about:home`in the Awesome Bar, the current running snippets will be on display. A snippet can run between 4-7 days. Sometimes a set of snippets rotates within a given time frame; sometimes one snippet runs a few days before it is replaced by another one. It all depends.
 
-Take a peek of the [currently running and scheduled snippets](https://snippets.mozilla.com/).  It shows the country, the message, and the schedule of a snippet.
+Take a peek of the [currently running and scheduled snippets](https://snippets.mozilla.com/). It shows the country, the message, and the schedule of a snippet.
 
 If you spot a mistake in a snippet, [file a bug to the team](https://bugzilla.mozilla.org/enter_bug.cgi?product=Snippets&component=Service) right away. Specify language, current content, suggested correction, severity of the problem or the reason it is incorrect. And preferably, attach a screenshot.
 
@@ -61,8 +61,7 @@ Snippets should be to the point. Try writing your snippet then cut it down until
   * READABILITY: Short concise words worked for Hemingway, they’ll work just fine for you. Keep the 3 syllable words and technical jargon to a minimum.
   * CTA(Occasional): You don’t always need to blatantly tell people what to do, but sometimes you do.
   * GRAMMAR: Do your best to catch mistakes, there is a chance that all checkpoints missed will miss it but 100 million people surely won’t.
-  * SUPPORT GRAPHIC: All simple snippet copy is accompanied by an icon. Your icon and copy should work in unison. Select the [icon from this gallery](https://drive.google.com/drive/folders/0Bz48kfsl_32OMkhVakFobXZ2MFk) that best supports the message. Here are some examples of matching the graphics with the tones of the messages.
-    ![Icons](/assets/images/webprojects/snippets/snippet_w_icon_examples_png)
+  * SUPPORT GRAPHIC: All simple snippet copy is accompanied by an icon. Your icon and copy should work in unison. Select the [icon from this gallery](https://drive.google.com/drive/folders/0Bz48kfsl_32OMkhVakFobXZ2MFk) that best supports the message. Here are some examples of matching the graphics with the tones of the messages. ![Icons](/assets/images/webprojects/snippets/snippet_w_icon_examples_png)
 
 * Intangible: quality that is recognized but difficult to quantify - quick, clever, alert, untamed
 
