@@ -39,8 +39,8 @@ Unreviewed suggestions will not be migrated to Pontoon. That’s why it’s mand
 ## Q: Is there a Terminology project in Pontoon?
 
 No. We’re rolling out terminology support by the end of September in two stages:
-* Stage 1: we'll add support for using terminology in the Translate view: matched terms in the source string will be highlighted, providing definitions and possible translations for them. In this stage we'll use Microsoft Terminology as a read-only data source.
-* Stage 2: we'll add a terminology management interface, and refine the UI based on the results of the previous stage. This will allow to translate a set of Mozilla specific terms, which will then be used as a terminology source like the Microsoft Terminology introduced in Stage 1.
+* Stage 1: we’ll add support for using terminology in the Translate view: matched terms in the source string will be highlighted, providing definitions and possible translations for them. In this stage we’ll use Microsoft Terminology as a read-only data source.
+* Stage 2: we’ll add a terminology management interface, and refine the UI based on the results of the previous stage. This will allow to translate a set of Mozilla specific terms, which will then be used as a terminology source like the Microsoft Terminology introduced in Stage 1.
 
 ## Q: How do I localize the Pontoon interface?
 
@@ -49,3 +49,23 @@ Currently, Pontoon is not localizable (yes, we see the irony). That work still n
 ## Q: Are the numbers word count or string count in Pontoon?
 
 For now, Pontoon counts strings, not words. We’ll be adding word count soon.
+
+## Q: For locales who want to keep using Pootle, what options do they have? Would it be possible to run a local instance of Pootle?
+
+A: There’s a lot of development that Pootle would need to experience in order to keep pace with the technological changes coming to Firefox development. For example, l20n is already in Test Pilot projects and is coming to Firefox soon; Pootle would need to be able to support l20n in order for localizers to continue using it. Without the necessary funding to perform that development and maintenance, any community-run instance of Pootle will quickly become obsolete.
+
+## Q: Supposing I want to use an alternative l10n tool to Pontoon for my community, what technical requirements would qualify a l10n tool for use in contributing to Mozilla l10n projects?
+
+A: We assume that all tools used for localization at Mozilla are capable of:
+1. Bidirectional sync with version control repositories (for example allowing us to migrate content from the old format to FTL seamlessly for localizers).
+2. Committing with appropriate attribution to version control repositories.
+3. Support for l20n (.ftl format), including a GUI to facilitate the use of FTL syntax in translated strings.
+4. Support for the upcoming central project configuration (part of cross-channel).
+
+This list will be amended over time to suite Mozilla’s needs for localization.
+
+## Q: Does Pontoon allow to download content in Gettext format, to feed other l10n tools or translation memories?
+
+A: It’s currently not possible to export strings in Gettext (`.po`) format from Pontoon, unless that’s the format used in the project itself. Even in that case, you can only download one file, not the entire project. It’s possible to download each resource (file) in TMX format.
+
+Note that Gettext format is not capable of storing data encapsulated in FTL. That means that it will not be possible soon to export Firefox localization resources to PO.
