@@ -2,21 +2,21 @@
 
 ## Machinery
 
-Pontoon features built-in access to different translation tools and repositories. These resources are available in the workspace and on a standalone web page.
+Pontoon features built-in access to different translation tools and repositories. These resources are available in the workspace and on a [standalone web page](https://pontoon.mozilla.org/machinery/).
 
-When translating, double click any machinery entry to auto-fill the editing space with the machinery translation.
+When translating, click on any machinery entry to auto-fill the editing space with the machinery translation.
 
 ### History tab
 
-The history tab shows each of the suggestions and translations that have been submitted for the current string.
+The history tab shows all of the suggestions and translations that have been submitted for the source string.
 
-In the tab, the number of history entry is visible alongside the title, `HISTORY`. The history entries are locate below the tab.
+In the tab, the number of history entry is visible alongside the title, `HISTORY`. The history entries are located below the tab.
 
 ![History tab](/assets/images/pontoon/resources/history.png)
 
 At the left of the entry, the name of the translator is visible in gray and the date of submission is visible in green.
 
-To the right of the entry, a circle icon indicates the status of the entry (see [string type]()). By clicking the trashcan icon, a translator can remove the entry from the string's history. And below the icons, the translation or suggestion is visible.
+To the right of the entry, a circle icon indicates the status of the entry (see [string type](search_filters.md)). By clicking the trashcan icon, a translator can remove the entry from the string's history. And below the icons, the translation or suggestion is visible.
 
 ### Machinery tab
 
@@ -26,13 +26,13 @@ In the tab, the number of machinery entries is visible alongside the title, `MAC
 
 ![Machinery tab](/assets/images/pontoon/resources/machinery.png)
 
-Below the tab, there is a machinery search bar. A translator can enter text into the search bar to search for any strings in the machinery resources that may be similar. The search does not need to be related tot he current project string.
+Below the tab, there is a machinery search bar. A translator can enter text into the search bar to search for any strings in the machinery resources that may be similar. The search does not need to be related to the current project string.
 
-At the left of the entry, a diff view of the current source string and the source string from the machinery resource is visible. Red-highlighted text indicates text that is present in the current string that is not in the machinery string. Green-highlighted text indicates text that is present in the machinery string that is not present in the current project string.
+At the left of the entry, a diff view of the current source string and the source string from the machinery resource is visible. Red-highlighted text indicates text that is present in the source string that is not in the machinery string. Green-highlighted text indicates text that is present in the machinery string that is not present in the current project string.
 
-To the right of the entry, the number in green shows the percent match between the machinery string and the current string. The higher the percentage, the more likely the machinery is to be useful. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right of the source indicates the number of entries for the entry string in the source.
+To the right of the entry, the number in green shows the percent match between the machinery string and the source string. The higher the percentage, the more likely the machinery is to be useful. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right indicates the number of matches for the entry in the source.
 
-Note that when using the machinery tab, source entries may not match the current string and translations may not be fluent under the context of the current string. Be aware of the meaning and purpose of each string when using the machinery tab.
+Note that when using the machinery tab, entry source string may not match the project source string and translations may not be fluent under the context of the project string. Be aware of the meaning and purpose of each string when using the machinery tab.
 
 ### Locales tab
 
@@ -44,15 +44,11 @@ In the tab, the number of entries is visible alongside the title, `LOCALES`.
 
 Next to the title, `LOCALES`, the number of locale entries is visible. The number of preferred locales is in green and the locales that are not listed as preferred are listed in gray.
 
-To add a locale to the preferred locale list, click the settings gear in the editing space and select `Change All Settings`. This will take you to the `Preferred locales` page in your profile. To add a locale to the preferred locales list, double click it in the list on the left. Preferred locales are located on the right. Click `Save` and navigate back to the project to begin translating with the updated preferred locales.
-
-![Editing Space Menu](/assets/images/pontoon/resources/settings_menu.png)
-
-![Preferred locale settings](/assets/images/pontoon/resources/settings.png)
+To add a locale to the preferred locale list, access the [user settings](https://github.com/mozilla-l10n/localizer-documentation/blob/master/tools/pontoon/users.md#user-settings) page.
 
 Entries in the `LOCALES` tab above the green line are preferred locales. Entries below the green line are not preferred locales.
 
-At the left of the entry, The translation for the current string in the foreign locale is visible. At the right of the entry, the language name is visible in gray and the locale code is visible in green.
+At the left of the entry, The translation for the source string in the foreign locale is visible. At the right of the entry, the language name is visible in gray and the locale code is visible in green.
 
 The locales tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can reference the methods that have been used by other communities in making a stylistic decision.
 
