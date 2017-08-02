@@ -62,7 +62,7 @@ When working on l20n files, the editing space will look a bit different.
 
 ![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n.png)
 
-When working on l20n files, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+In the example above, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
 
 To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
 
