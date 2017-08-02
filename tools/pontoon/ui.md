@@ -2,7 +2,7 @@
 
 ## Pontoon translation workspace
 
-Pontoon’s translation workspace features the list of strings in the left sidebar and the editing space on the right. The features in the Pontoon user interface are labeled in the image below:
+Pontoon’s translation workspace features the list of strings in the left sidebar and the editing space on the right.
 
 ![Translation Workspace](/assets/images/pontoon/ui/translation_workspace.png)
 
@@ -62,11 +62,11 @@ When working on l20n files, the editing space will look a bit different.
 
 ![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n.png)
 
-In this example, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+When working on l20n files, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
 
-To the lower-right side, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
+To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
 
-To the lower-left of the workspace, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
+To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
 
 By clicking the gear icon, the translator can activate or deactivate `Quality Checks` or `Make Suggestions` and navigate to their user settings.
 

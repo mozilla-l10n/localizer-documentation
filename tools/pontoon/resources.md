@@ -2,7 +2,7 @@
 
 ## Machinery
 
-Pontoon features built-in access to different translation memories. These resources are available in the workspace and in a [standalone web page](https://pontoon.mozilla.org/machinery/).
+Pontoon features built-in access to different translation memories. These resources are available in the workspace and on a [standalone web page](https://pontoon.mozilla.org/machinery/).
 
 When translating, click on any machinery entry to auto-fill the editing space with the selected translation.
 
