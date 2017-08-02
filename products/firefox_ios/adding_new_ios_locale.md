@@ -16,7 +16,7 @@ The App Store only supports a subset of locales, compared to what the OS itself 
 
 This list is always growing. If translation work starts on Firefox for iOS for a locale that is supported by the App Store, it will automatically be enabled under the locale’s corresponding appstore’s folder (which can be found either in [Pontoon](https://pontoon.mozilla.org/projects/appstores/) or [GitHub](https://github.com/mozilla-l10n/appstores)).
 
-Note that App Store language support is not a requirement to translate the app itself. As long as a locale is supported by iOS (see point above), it's possible to ship it.
+Note that App Store language support is not a requirement to translate the app itself. As long as a locale is supported by iOS (see point above), it’s possible to ship it.
 
 ### Right-to-left locales
 

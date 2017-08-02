@@ -1,10 +1,10 @@
-# Translating in Pontoon
+# How to translate
 
-* [Translating strings](#translating-strings)
-  * [Submit a suggestion](#submit-a-suggestion)
-  * [Review a suggestion](#review-a-suggestion)
-  * [Submit a translation](#submit-a-translation-directly)
-* [Translating using the in-context Editor](#translating-using-the-in-context-editor)
+* [Translating strings](#translating-strings):
+    * [Submit a suggestion](#submit-a-suggestion).
+    * [Review a suggestion](#review-a-suggestion).
+    * [Submit a translation](#submit-a-translation-directly).
+* [Translating using the in-context Editor](#translating-using-the-in-context-editor).
 
 ## Translating strings
 
@@ -14,7 +14,7 @@ This document is simplified to demonstrate translation modes in Pontoon. Documen
 
 ### Submit a suggestion
 
-When a translator is in Suggest Mode or doesn’t have permissions to submit translations directly, the blue `SUGGEST` button will be located to the lower-right side of the editing space.
+When a translator is in Suggest Mode, or doesn’t have permissions to submit translations directly, a blue `SUGGEST` button will be visible in the lower-right side of the editing space.
 
 ![Blue button for suggestions](/assets/images/pontoon/translate/suggest_button.png)
 
@@ -42,11 +42,13 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 
 To review a suggestion, search for suggested strings or click on a suggested string in the sidebar.
 
-If the suggested string is an acceptable translation, click on the `SAVE` button to the lower-right side of the editing space. This will set the suggested string to approved translation status and save the string to the database and to the localized file on the next sync.
+If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the blue circle right to the string. This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
 If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md)
 
 ![History Tab](/assets/images/pontoon/translate/history_tab.png)
+
+If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the current content of the editing area (approved translation, or most recent suggestion), highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
 
 ### Submit a translation directly
 
@@ -60,7 +62,7 @@ Ensure that the `Make Suggestions` option in settings is disabled. Then input th
 
 Note that only websites that have been enabled for in-context editing will display in context in Pontoon.
 
-To translate in context, find the string you want to translate in the in-context view and double click it or click on the pencil icon on the top-left of the string. Hovering over the string that you want to translate will highlight that string in the sidebar and in the in-context view.
+To translate in context, find the string you want to translate in the in-context view and double click it, or click on the pencil icon on the top-left of the string. Hovering over the string that you want to translate will highlight that string in the sidebar and in the in-context view.
 
 ![Hovering over the string will highlight in sidebar](/assets/images/pontoon/translate/hover_incontext.png)
 
@@ -68,7 +70,7 @@ Once you double click a string, the sidebar will display the editing space.
 
 ![Translate in-context projects in the sidebar](/assets/images/pontoon/translate/translate_in_sidebar.png)
 
-Input your translation or review the suggestion and click `SAVE` or `SUGGEST`. Once your translation has saved, the editing space will refresh with the next string, and that string will be highlighted in the in-context view.
+Input your translation or review the suggestion and click `SAVE` or `SUGGEST`. Once your translation is saved, the editing space will move to the next string, and that string will be highlighted in the in-context view.
 
 To return to the list of strings in the sidebar, click `BACK TO LIST` at the top-left of the sidebar.
 
