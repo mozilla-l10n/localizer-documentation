@@ -25,7 +25,7 @@ It is important that the people testing the localization be not only the one(s) 
 
 Once the Fennec Project Manager (currently **delphine** at **mozilla** dot **com**) sees that you’ve done at least one cycle on a single-locale build, that nothing breaks during sign-offs, that you’ve continued keeping your work up to date, and that you have been TESTING it - l10n-drivers will consider adding your language to the multi-locale builds. This means that - congratulations! - your locale will now officially be shipping on Firefox for Android.
 
-Once your locale is added to the multi-locale builds, it will "ride the trains" like for Firefox Desktop. It will first ship on Aurora in the Play Store, then 6 weeks later it will ship on Beta, and 6 weeks after that, it will arrive on Release.
+Once your locale is added to the multi-locale builds, it will “ride the trains” like for Firefox Desktop. It will first ship on Aurora in the Play Store, then 6 weeks later it will ship on Beta, and 6 weeks after that, it will arrive on Release.
 
 Once you start shipping in the Play Store, it makes sense to stop testing on single-locale builds. It’s strongly suggested you now start testing and using the Aurora Play Store version, since this is the branch that you localize and work on. It’s good to have other members in the community use the beta and release version too though, in case anything breaks with updates.
 

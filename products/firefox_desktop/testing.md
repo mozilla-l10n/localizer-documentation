@@ -24,7 +24,7 @@ From time to time [create a new profile](https://support.mozilla.org/kb/profile-
 ### Search for untranslated strings
 
 * Open all the voices available in the main menu and check that they’re properly localized. If you opted to keep Developer Tools in English, the choice should be consistent across the browser.
-* Check the "hamburger" menu for cut strings (unfortunately you’ll need to abbreviate some of them, if they’re not intelligible). Then choose to customize the menu and make sure everything is properly localized.
+* Check the “hamburger” menu for cut strings (unfortunately you’ll need to abbreviate some of them, if they’re not intelligible). Then choose to customize the menu and make sure everything is properly localized.
 * Open Preferences/Options and navigate through all tabs, try to open all dialogs like `Exceptions…`. Make also sure to select the `Custom settings` option for History in the Privacy panel.
 * Log in with you Firefox Account and make sure that all preferences and dialogs are properly localized.
 * Check for untranslated strings and errors in the Library (Bookmarks->View all bookmarks…).

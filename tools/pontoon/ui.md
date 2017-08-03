@@ -1,4 +1,4 @@
-# Understanding the Pontoon user interface
+# Understanding Pontoon user interface
 
 ## Pontoon translation workspace
 
@@ -28,13 +28,13 @@ An overview of the status of the selected resource is located to the right of th
 
 A project information icon is located to the right of the string overview. Translators can view information regarding the project, its priority level, and testing by clicking the icon.
 
-The notifications icon is located on the right side of the main toolbar. Translators will be notified of any important updates regarding the current project. By clicking the bell icon, translators can view notifications in more detail or see all active notifications.
+The notifications icon, represented by a bell, is located on the right side of the main toolbar. Translators will be notified of any important updates regarding the current project. By clicking the bell icon, translators can view notifications in more detail or see all active notifications.
 
 The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal the drop-down menu. From this menu, translators can perform several actions, like navigate to their profile page, download and upload translations, etc. For information about uploads, downloads, and Machinery, click [here](resources.md).
 
 ![Profile menu](/assets/images/pontoon/ui/profile_menu.png)
 
-Note that some profile menu items are restricted by [user rights](users.md).
+Note that some profile menu items are restricted by [user rights](users.md#user-roles).
 
 ### Sidebar
 
@@ -44,7 +44,7 @@ The sidebar displays the list of strings in the current project resource. Each s
 
 At the top of the sidebar, the translator can access Pontoon’s [search and string filters](search_filters.md).
 
-Note that the sidebar toggles between the strings and the editing space when in the in-context editor.
+Note that the sidebar toggles between the strings and the editing space when using the in-context editor.
 
 ### Translation workspace
 
@@ -58,21 +58,21 @@ In the upper section of the workspace, the translator can view the source string
 
 The editing space is located in the lower section of the workspace. The translator can edit the translation or suggestion in the text editor.
 
-When working on l20n files, the editing space will look a bit different.
+To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
+
+To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
+
+When working on l20n files, the editing space will look a bit different:
 
 ![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n.png)
 
 In the example above, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
 
-To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
-
-To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
-
 By clicking the gear icon, the translator can activate or deactivate `Quality Checks` or `Make Suggestions` and navigate to their user settings.
 
 ![Settings menu](/assets/images/pontoon/ui/settings.png)
 
-Note that access to certain settings may be restricted by [user rights](users.md).
+Note that access to certain settings may be restricted by [user rights](users.md#user-roles).
 
 By clicking the keyboard, a translator can view the workspace keyboard shortcuts.
 
@@ -84,11 +84,11 @@ Built-in translation resources are located below the editing space. The three in
 
 ![Translation Resources](/assets/images/pontoon/ui/resources.png)
 
-Learn how to use Pontoon’s [translation resources](resources.md).
+Learn how to use Pontoon’s translation resources [in this document](resources.md).
 
 ## Pontoon in-context editor
 
-Pontoon’s in-context editor displays the translatable strings as they appear on the web page, alongside the editing space. This means that translators can see where the source string appears and how the translation looks in real time. Pontoon’s in-context editor shows the strings in context on the right with the translation workbench on the left
+Pontoon’s in-context editor displays the translatable strings as they appear on the web page, alongside the editing space. This means that translators can see where the source string appears and how the translation looks in real time. Pontoon’s in-context editor shows the strings in context on the right with the translation workbench on the left.
 
 ![in-context editor](/assets/images/pontoon/ui/incontext_edit.png)
 
