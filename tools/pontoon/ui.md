@@ -30,7 +30,7 @@ A project information icon is located to the right of the string overview. Trans
 
 The notifications icon, represented by a bell, is located on the right side of the main toolbar. Translators will be notified of any important updates regarding the current project. By clicking the bell icon, translators can view notifications in more detail or see all active notifications.
 
-The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal the drop-down menu. From this menu, translators can perform several actions, like navigate to their profile page, download and upload translations, etc. For information about uploads, downloads, and Machinery, click [here](resources.md).
+The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal the drop-down menu. From this menu, translators can perform several actions, like navigate to their profile page, download and upload translations, etc. For information about uploading and downloading translation check [this document](translate.md#downloading-and-uploading-translations), for Machinery see [here](resources.md#machinery-tab).
 
 ![Profile menu](/assets/images/pontoon/ui/profile_menu.png)
 
