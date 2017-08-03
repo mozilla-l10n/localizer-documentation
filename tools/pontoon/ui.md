@@ -84,7 +84,7 @@ Built-in translation resources are located below the editing space. The three in
 
 ![Translation Resources](/assets/images/pontoon/ui/resources.png)
 
-Learn how to use Pontoon’s translation resources [in this document](resources.md).
+Learn how to use Pontoon’s translation resources [in this document](resources.md).
 
 ## Pontoon in-context editor
 
