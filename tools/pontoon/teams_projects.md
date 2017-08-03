@@ -27,7 +27,7 @@ There are 4 tabs available (highlighted in red), 5 if you’re an *admin* or *ma
 * **Projects**: a list of all projects enabled in Pontoon for this locale.
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, 1/3/6/12 months).
 * **Bugs**: a list of open bugs for this locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/).
-* **Info**: information about the team. This is currently only editable by administrators.
+* **Info**: information about the team. Team managers can edit it by clicking on the Edit button.
 * **Permissions**: manage user permissions (see [this document](users.md#managing-permissions) for details).
 
 Hovering a project in the list will replace the progress bar with a set of detailed statistics (untranslated strings, missing strings, etc.). Note that all these numbers are links, so you can use them to open the project with a filter already enabled, for example to display only missing strings. You can click on the number of total strings to access *All Resources* (i.e. all strings in all files) for this project.
