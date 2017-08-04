@@ -55,7 +55,11 @@ Here are a few channels to spread the words of the new Firefox launch. The follo
 * Social media: Instagram, Facebook, Twitter, Blogs, major local brand social media
 * Community: organize meetup, attend other tech meetups, be a speaker
 * Organization: team up with other tech non-profit or open source organizations, schools, universities, and libraries to discuss web or tech literacy); bulletin board
-* Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events (waiting for submission process and guideline)
+* Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events. Below is the process to get your photo published:
+
+  * Email request a week in advance to [Sierra Read](sreed@mozilla.com), in charge of social media
+  * Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this time period, they have direct access and are responsible for posting.
+
 * With advance planning, Snippets team will push localized snippets outside of the regularly supported locales. [Check out the process](https://github.com/mozilla-l10n/localizer-documentation/blob/master/webprojects/snippets/snippets.md) in getting one published.
 * Mozilla l10n blog, monthly report
 
