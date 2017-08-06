@@ -12,8 +12,8 @@ For a community new or well established, it is always exciting to reach the mile
 
 ### Key messages of the new Firefox:
 
-* Firefox is fast, modern, and fun
-* Differentiators between Firefox and the competitors
+* Firefox is fast, modern, and fun.
+* Differentiators between Firefox and the competitors.
 
   * Big vs. small
   * Bloated vs. lean
@@ -38,38 +38,38 @@ With the new logo and the new look, we now have [a new brand guideline](designla
 
 If you do not have resources in tools or talents to create your own images, you can do two things:
 
-* Check to see if what you need is already available at [OpenDesign github repository](https://github.com/mozilla/OpenDesign/tree/master/2017). We will add more images and templates over time
-* Click through some of the open and closed issues to see the kind of work the team has covered
+* Check to see if what you need is already available at [OpenDesign github repository](https://github.com/mozilla/OpenDesign/tree/master/2017). We will add more images and templates over time.
+* Click through some of the open and closed issues to see the kind of work the team has covered.
 * If you don’t find what you need or you want to have a customized one, here are the steps:
 
   * File [an issue](https://github.com/mozilla/OpenDesign/issues) to the OpenDesign team
-  * Specify your need: image, logo, with text, with localized text, your purpose
-  * Size and color
-  * Deadline
-  * A few reiterations will take place before the team hands over the finished work to you
+  * Specify your need: image, logo, with text, with localized text, your purpose.
+  * Specify size and color.
+  * State the deadline.
+  * The team delivers the finished work to you after a few reiterations.
 
 ## Spreading the words
 
 Here are a few channels to spread the words of the new Firefox launch. The followings are mere suggestions. They may or may not be applicable or appropriate for every market.
 
-* Social media: Instagram, Facebook, Twitter, Blogs, major local brand social media
-* Community: organize meetup, attend other tech meetups, be a speaker
-* Organization: team up with other tech non-profit or open source organizations, schools, universities, and libraries to discuss web or tech literacy); bulletin board
-* Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events. Below is the process to get your photo published:
+* Social media: Instagram, Facebook, Twitter, Blogs, major local brand social media.
+* Community: organize meetup, attend other tech meetups, be a speaker.
+* Organization: team up with other tech non-profit or open source organizations, schools, universities, and libraries to discuss web or tech literacy); bulletin board.
+* Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events. Below is the process to get your photos published:
 
-  * Email request a week in advance to [Sierra Read](sreed@mozilla.com), in charge of social media
-  * Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this time period, they have direct access and are responsible for posting.
+  * Email request a week in advance to [Sierra Read](sreed@mozilla.com), in charge of social media.
+  * Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this period, they have direct access and are responsible for posting.
 
 * With advance planning, Snippets team will push localized snippets outside of the regularly supported locales. [Check out the process](https://github.com/mozilla-l10n/localizer-documentation/blob/master/webprojects/snippets/snippets.md) in getting one published.
-* Mozilla l10n blog, monthly report
+* Mozilla l10n blog, monthly report.
 
 ## Guidelines to organizing events
 
 Large events are not scalable due to limited budget. Here are a few things to keep in mind when organizing a local event:
 
-* To organize an event, reach out to your local Reps (not the Reps program). The Reps are experienced in organizing events, especially the logistics
-* To fund the event, send request to the l10n team in advance. The l10n team will set aside a small budget for it
+* To organize an event, reach out to your local Reps (not the Reps program). The Reps are experienced in organizing events, especially the logistics.
+* To fund the event, send request to the l10n team in advance. The l10n team will set aside a small budget for it.
 * For new locale launch, in addition to the above steps:
 
-  * L10n team will send swags (pens, stickers) for the events
-  * L10n team will send t-shirts to the community localizers
+  * L10n team will send swags (pens, stickers) for the events.
+  * L10n team will send t-shirts to the community localizers.
