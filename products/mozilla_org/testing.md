@@ -104,8 +104,8 @@ The test can be done for all locales only on staging. For production testing, on
 * You are taken to [step one](https://www.mozilla.org/firefox/51.0.1/tracking-protection/start/?step=1).
 * Click the **Next** button, it takes you to steps [two](https://www.mozilla.org/firefox/51.0.1/tracking-protection/start/?step=2) and [three](https://www.mozilla.org/firefox/51.0.1/tracking-protection/start/?step=3).
 * In step [three](https://www.mozilla.org/firefox/51.0.1/tracking-protection/start/?step=3), an extra text box appears.
-* Click on **Disable protection for this session** button to generate a new "step three" message.
-* Click on **Enable protection** button to toggle between "enable" and "disable" protection messages.
+* Click on **Disable protection for this session** button to generate a new “step three” message.
+* Click on **Enable protection** button to toggle between *enable* and *disable* protection messages.
   * NOTE: in order to see the message of **Disable protection for this site**, the browser must be in _normal mode_.
 * Click on **Got it!** button to get to the next page.
 * Click on **Restart tour** button to go through the above steps.
