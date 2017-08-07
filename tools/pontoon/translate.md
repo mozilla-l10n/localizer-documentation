@@ -10,7 +10,7 @@
 
 ## Translating strings
 
-Three actions can be performed on strings: submit a suggestion, review a suggestion, and submit a translation directly. Availability of these actions to users depends on their [role](users.md#user-roles).
+Three actions can be performed on strings: submit a suggestion, review a suggestion, and submit a translation directly. Availability of these actions to user’s [role](users.md#user-roles).
 
 This document is simplified to demonstrate translation modes in Pontoon. Documentation includes specific pages for learning how to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
 
@@ -24,7 +24,7 @@ To suggest a translation, the translator should simply input the translation to 
 
 ![Sidebar after suggestion](/assets/images/pontoon/translate/sidebar_suggest.png)
 
-A notification will appear at the top of the window, indicating that your translation has been saved.
+A notification will appear in the window, indicating that your translation has been saved.
 
 Note that a suggested translation exists only in the Pontoon database, not in the localized file or translation memories.
 
@@ -34,7 +34,7 @@ Even if a translator has permissions to add translations directly, submitting su
 
 ![Activate make suggestions](/assets/images/pontoon/translate/activate_suggest.png)
 
-A notification will appear at the top of the window, indicating that `Make Suggestions` has been enabled.
+A notification will appear in the window, indicating that `Make Suggestions` has been enabled.
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
@@ -44,11 +44,11 @@ To review a suggestion, search for suggested strings or click on a suggested str
 
 If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the blue circle to the right of the string. This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
-If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md)
+If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
 
 ![History Tab](/assets/images/pontoon/translate/history_tab.png)
 
-If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the current content of the editing area (approved translation, or most recent suggestion), highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
+For more information about using the `HISTORY` tab, check [this document](resources.md#history-tab).
 
 ### Submit a translation directly
 
@@ -84,6 +84,8 @@ Translators can perform mass actions on batches of strings by clicking on the sq
 
 ![Mass action window](/assets/images/pontoon/translate/mass_action.png)
 
+After selecting a string, it’s possible to hold `SHIFT` and click on another string to select a range of strings.
+
 At the top-left of the mass action window, the translator can return to the editing space by clicking on the `x` icon. To the right of the exit icon, the number of strings currently selected is displayed. At the top-right of the mass action window, the translator can select all of the strings in the sidebar.
 
 In the `REVIEW TRANSLATIONS` section, the translator can approve suggestions or remove approved translations for all selected strings. Upon clicking `APPROVE ALL`, the text in the green button will be replaced with the number of new approved translations.
@@ -98,7 +100,9 @@ Pontoon features the ability to download and upload translations, including tran
 
 ![Profile dropdown menu](/assets/images/pontoon/translate/profile_menu.png)
 
-Only translators can download a translation memory (.tmx) and translations, or upload translations. When downloading translations, the resource currently selected is downloaded in its original format, it’s not converted in any way.
+Anyone can download a translation memory (.tmx) and translations, while only translators can upload translations. When downloading translations:
+* The resource currently selected is downloaded in its original format, it’s not converted in any way.
+* If the project contains more than 10 files, download is performed file-by-file. For larger projects a ZIP of all files is downloaded.
 
 When you upload translations to Pontoon:
 * Existing strings with matching translations will be ignored.
