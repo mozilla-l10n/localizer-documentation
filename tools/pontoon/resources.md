@@ -14,13 +14,18 @@ On the left side, above the entry, the name of the translator is visible in gray
 
 To the right of the entry, a circle icon indicates the [state](search_filters.md) of the entry. By clicking the trashcan icon, a translator can remove the entry from the string’s history.
 
-If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the current content of the editing area (approved translation, or most recent suggestion), highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
+If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the first entry, highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
 
 ![Diff for suggestions](/assets/images/pontoon/resources/suggestions_diff.png)
 
 ## Machinery tab
 
-The Machinery tab shows possible translations from a variety of sources. These sources include Pontoon’s internal translation memory, external translation memories, machine translation engines, and other external sources.
+The Machinery tab shows possible translations from a variety of sources. These sources include:
+* Pontoon's internal translation memory.
+* [Transvision](https://transvision.mozfr.org/).
+* [Amagama](https://amagama-live.translatehouse.org/).
+* [Microsoft Terminology](https://www.microsoft.com/Language/en-US/Search.aspx).
+* [Bing Translator](https://www.bing.com/translator).
 
 In the tab, the number of available entries is visible alongside the `MACHINERY` title.
 
@@ -36,9 +41,7 @@ Note that when using the machinery tab, entry source string may not match the pr
 
 ### Stand-alone Machinery
 
-Pontoon machinery is available also as a stand-alone webpage. To access the standalone machinery, navigate to the projects or teams page by selecting `All` or `Current` from the main toolbar. Read how to navigate the main toolbar in the [user interface](ui.md#main-toolbar) documentation.
-
-From the projects or teams page, use the navigation bar to select machinery. This will take you to the [Machinery page](https://pontoon.mozilla.org/machinery/).
+Pontoon machinery is also available as a [stand-alone webpage](https://pontoon.mozilla.org/machinery/). To access the page, use the `Machinery` link available in the Profile menu, or the `Machinery` tab in the upper navigation displayed in some pages (e.g. *Teams page* or *Projects page*).
 
 To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
 
