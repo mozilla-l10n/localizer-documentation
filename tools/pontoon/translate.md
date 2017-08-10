@@ -40,7 +40,7 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 
 ### Review a suggestion
 
-To review a suggestion, search unreviewed suggestions or click on a suggested string in the sidebar.
+To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.
 
 If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
