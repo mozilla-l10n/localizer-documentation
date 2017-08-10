@@ -40,11 +40,13 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 
 ### Review a suggestion
 
-To review a suggestion, search for suggested strings or click on a suggested string in the sidebar.
+To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.
 
-If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the blue circle to the right of the string. This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
+If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
-If the suggested string is **not** an acceptable translation, turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
+If the suggested string is **not** an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered).
+
+Alternatively, you can provide a different suggestion: turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
 
 ![History Tab](/assets/images/pontoon/translate/history_tab.png)
 
@@ -82,13 +84,13 @@ Interactive website features will work in the in-context view. Some strings that
 
 Translators can perform mass actions on batches of strings by clicking on the square to the left of any string in the sidebar. When clicked, the square will show a checkmark and the editing space will show the mass action window.
 
-![Mass action window](/assets/images/pontoon/translate/mass_action.png)
+![Mass action window](/assets/images/pontoon/translate/batch_actions.png)
 
 After selecting a string, it’s possible to hold `SHIFT` and click on another string to select a range of strings.
 
 At the top-left of the mass action window, the translator can return to the editing space by clicking on the `x` icon. To the right of the exit icon, the number of strings currently selected is displayed. At the top-right of the mass action window, the translator can select all of the strings in the sidebar.
 
-In the `REVIEW TRANSLATIONS` section, the translator can approve suggestions or remove approved translations for all selected strings. Upon clicking `APPROVE ALL`, the text in the green button will be replaced with the number of new approved translations.
+In the `REVIEW TRANSLATIONS` section, the translator can approve suggestions or reject suggestions for all selected strings. Upon clicking `APPROVE ALL` or `REMOVE ALL SUGGESTIONS`, the label of the button will be replaced with the number of affected translations.
 
 In the `REPLACE IN TRANSLATIONS` section, the translator can input a series of characters to search for, and a series of characters to use as a replacement. This is a basic find and replace feature that will work only on the selected strings.
 

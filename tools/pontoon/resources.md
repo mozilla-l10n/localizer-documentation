@@ -12,7 +12,10 @@ In the tab, the number of available entries is visible alongside the `HISTORY` t
 
 On the left side, above the entry, the name of the translator is visible in gray (linking to their profile), while in green it’s displayed how long ago the entry was submitted (full date and time is available as a tooltip). Below this information, the translation or suggestion is displayed.
 
-To the right of the entry, a circle icon indicates the [state](search_filters.md) of the entry. By clicking the trashcan icon, a translator can remove the entry from the string’s history.
+To the right of the entry, icons indicate the state of each element:
+* The green checkmark indicates that the translation has been approved.
+* If both icons are gray, translation has been suggested but not reviewed yet.
+* The red cross indicates that the translation has been rejected. The entire element will look opaque.
 
 If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the first entry, highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
 
@@ -21,7 +24,7 @@ If there are multiple suggestions for one string, it’s possible to use the `SH
 ## Machinery tab
 
 The Machinery tab shows possible translations from a variety of sources. These sources include:
-* Pontoon's internal translation memory.
+* Pontoon’s internal translation memory.
 * [Transvision](https://transvision.mozfr.org/).
 * [Amagama](https://amagama-live.translatehouse.org/).
 * [Microsoft Terminology](https://www.microsoft.com/Language/en-US/Search.aspx).
