@@ -26,8 +26,10 @@ General notes:
 2. Browse to the [project](teams_projects.md).
 3. In [filters](search_filters.md) select `Suggested`, to isolate the strings previously suggested by another translator.
 4. Review the suggested strings.
-     * If suggestion is acceptable, confirm it as an approved translation by clicking the green `SAVE` button or the blue circle near the string in the `HISTORY` tab.
-     * If the suggestion is not acceptable, switch to [Suggest mode](translate.md). Edit the translation in the editing space and click the blue `SUGGEST` button. Your version will `not` overwrite the translator’s work, but instead will appear at the top of the list under the `HISTORY` tab.
+     * If suggestion is acceptable, confirm it as an approved translation by clicking the green `SAVE` button or the green checkmark near the string in the `HISTORY` tab.
+     * If the suggestion is not acceptable:
+        * Reject the suggestion by clicking on the red cross near the string.
+        * Switch to [Suggest mode](translate.md). Edit the translation in the editing space and click the blue `SUGGEST` button. Your version will `not` overwrite the translator’s work, but instead will appear at the top of the list under the `HISTORY` tab.
 
 ### Phase 3: implementing QA
 
@@ -37,5 +39,6 @@ General notes:
 2. Review the remaining strings:
     * If you agree with the changes, confirm the reviewer’s version by clicking the green `SAVE` button or the blue circle near the string in the `HISTORY` tab. If you have not been granted saving privileges yet, simply do nothing and pass to the next one.
     * If you would rather suggest an alternative, type it over, then hit the blue `SUGGEST` button. Then resubmit it to the reviewer, back in Phase 2, step 4.
+    * Reject suggestions that you don’t consider suitable.
 
 Repeat, switching translators, until a consensus is reached.
