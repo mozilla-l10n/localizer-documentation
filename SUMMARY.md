@@ -31,3 +31,4 @@
 
 * [Glossary](misc/glossary.md)
 * [How to contribute](README.md#how-to-contribute)
+* [Community marketing kit](misc/community-marketing-kit.md)
