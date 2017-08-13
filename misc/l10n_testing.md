@@ -7,7 +7,7 @@ Mozilla encourages a three-stage review process:
 
 Other docs will cover how the Mozilla approach to the first two stages of the review process. This doc covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
 
-## L10n testing processs
+## L10n testing process
 
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
 1. You submit a translation through Pontoon.
@@ -16,7 +16,7 @@ Each Mozilla project has its own process for taking your translations and making
 4. Depending on the project, you'll need to wait anywhere from 30 minutes to 24 hours to look for your translation in the Mozilla project.
 5. Once you've found your translation, if you see a problem with it, you return to Pontoon to make any necessary corrections.
 
-Pontoon simplifies these steps for some Web projects by enabling the in-context editor (aka WYSIWYG editor). This allows you to see your translations in-context the moment you create them in Pontoon, cutting out the 30 minutes to 24 hour waiting period to test. Most projects do not have this enabled, however, so it is still important to know the typical testing process for your projects.
+Pontoon simplifies these steps for some Web projects by enabling the in-context editor (aka WYSIWYG editor). This allows you to see your translations in-context the moment you create them in Pontoon, cutting out the 30 minutes to 24 hours waiting period to test. Most projects do not have this enabled, however, so it is still important to know the typical testing process for your projects.
 
 You might be wondering, "what sort of problems am I supposed to be looking for when I test?" Good question :-) Here's a list of common l10n bugs with screenshots that illustrate the problems in context.
 
@@ -24,7 +24,10 @@ You might be wondering, "what sort of problems am I supposed to be looking for w
 
 ### Encoding and fonts
 
-Character encoding errors occur when the browser can't find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�) instead of letters or radicals in your language. These can often be resolved by either changing your browser's default encoding or by using a Unicode-enabled font on the site.
+Character encoding errors occur when the browser can't find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�) instead of letters or radicals in your language. These can often be resolved by either changing your browser's default encoding or by asking developers to use a Unicode-enabled font on the site.
+
+![Encoding bug](/assets/images/l10n_errors/Pontoon_encoding.png)
+![Font bug](/assets/images/l10n_errors/font_change_bug.png)
 
 ### Truncation
 
@@ -32,60 +35,80 @@ Truncation happens when a translation is too long to fit in its corresponding sp
 * the developer increases the UI space to accommodate longer translations,
 * the localizer creates a shorter translation that captures the primary message but may not capture secondary or tertiary messages.
 
+![Truncation bug](/assets/images/l10n_errors/truncation.png)
+
 ### String concatenation and empty strings
 
 String concatenation errors occur when a developer takes one string, splits it into multiple strings, and tells their code to display each new string one after another. This allows developers to reuse some parts of strings in multiple places in the user interface, but often the context is different enough between the multiple places its being used that the translation is correct in one place, but bad in another. This is fixed by requesting that developers not use string concatenation when putting strings in the UI.
+
+![String concatenation bug](/assets/images/l10n_errors/string_concatenation.png)
 
 ### UI layout
 
 Translated text often requires more space than the same text in the source language. For example, when translating between English and German, it's common practice to expect a length increase of 30%. This can cause problems as wrapping text elements cause different parts of the user interface move around to accommodate a longer string. To fix this, the translator often needs to create a new, shorter translation that captures the primary meaning, but might lose some of the secondary or tertiary meaning.
 
+![UI layout bug](/assets/images/l10n_errors/UI_bug.png)
+
 ### Mistranslation
 
 Mistranslation occurs when meaning is lost between the source language and the target language. This can be caused accidentally by a lack of context for where a translation will be placed within a user interface (very common in software localization), a translator's lack of subject matter expertise, or intentionally due to user interface text constraints.
 
+![Mistranslation bug](/assets/images/l10n_errors/mistranslation.png)
+
 ### Untranslated strings
 
-Untranslated strings appear in a user interface when developers don't include that string in the string resource files available for localization, but instead in their code. It's a practice called "hardcoding." The best way to correct this error is to make sure that Pontoon does not contain the string for translation (or that it's not in the string resource files) and then contact developers using bugzilla to make the string available for localization.
+Untranslated strings appear in a user interface when developers don't include that string in the string resource files available for localization, but instead in their code. It's a practice called "hardcoding." The best way to correct this error is to make sure that Pontoon does not contain the string for translation (or that it's not in the string resource files) and then contact developers using Bugzilla to make the string available for localization.
+
+![Untranslated string bug](/assets/images/l10n_errors/untranslated.png)
 
 ### Style bugs
 
 Mozilla's official style guide serves as a primer to help communities create their own style guides. Style errors are when the tone or appearance of a translation does not match the tone or appearance described in a style guide. These can be corrected by making sure that localizers understand the style guide rules and follow them when translating.
 
+![Style bug](/assets/images/l10n_errors/style_bug.png)
+
 ### Number, date, currency
 
 Every language and region displays numbers, dates, and currency differently. These errors occur when the user sees an incorrect number format, date format, or currency for the language and region of their localized Firefox. This can be fixed by filing a bug in Bugzilla.
+
+![Number bug](/assets/images/l10n_errors/number_bug.png)
 
 ### XML parsing errors
 
 XML parsing errors (aka "the yellow screen of death") cause Firefox to display a yellow error page. This is often due to a broken translated string in that localization of Firefox which causes the Firefox build to break. With l20n, these errors will no longer be relevant.
 
+![XML parsing bug](/assets/images/l10n_errors/xml_parsing.png)
+
 ### Exposed variables and placeholders
 
-Variables and placeholders become exposed in the user interface when the translated string has a typo within the variable or placeholder. Because it is not exactly what the software or website expected to find for that variable, the system simply displays the variable rather than its value. A very common example of this is with the variable &browserShortName. If that variable is typed correctly in the translation, it will return the variable's value (in this case, it's "Firefox"). If it contains a typo, the user will see the variable instead (e.g., &browsershortname). These are discoverable in the Mozilla localization dashboards and can be corrected in Pontoon.
+Variables and placeholders become exposed in the user interface when the translated string has a typo within the variable or placeholder. Because it is not exactly the variable that the software or website expected to find, the system simply displays the variable rather than its value. A very common example of this is with the variable &browserShortName. If that variable is typed correctly in the translation, it will return the variable's value (in this case, it's `Firefox`). If it contains a typo, the user will see the variable instead (e.g., `&browsershortname`). These are discoverable in the Mozilla localization dashboards and can be corrected in Pontoon.
+
+![Variable bug](/assets/images/l10n_errors/variable_bug.png)
 
 ### Broken access keys
 
-Access keys break when the same key is assigned to multiple functions within the same menu. An example is if the function "Print" and the function "Save" were both assigned the access key "s." You can find broken access keys in your Firefox localization by looking at the list of access key errors in [Transvision] (https://transvision.mozfr.org/accesskeys/) for your locale.
+Access keys are unusable when the same key is assigned to multiple functions within the same menu. Additionally, if the access key uses a letter not available in the label, it's displayed near the label. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that's not possible in some places, e.g. new preferences. You can find broken access keys in your Firefox localization by looking at the list of access key errors in [Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
+
+![Access key bug](/assets/images/l10n_errors/access_keys.png)
 
 ### Broken language preferences
 
-Users experience broken language preferences in Firefox when they are left unchanged from the en-US default set of language preferences. This can lead to the user receiving web pages in a language they're unfamiliar with by default, even when the web page is localized into their native language. It can be fixed in toolkit/chrome/global/intl.properties in the accept-lang setting.
+Users experience broken website language preferences in Firefox when the accept-lang preferences are left unchanged from the en-US default set of language preferences. This can lead to the user receiving web pages in a language they're unfamiliar with by default, even when the web page is localized into their native language. It can be fixed in toolkit/chrome/global/intl.properties in the accept-lang setting.
 
-### Broken search plugins
+### Broken searchplugins
 
-Users experiencing a broken search plugin will receive a "website unreachable" message when they attempt to perform a search from their awesome bar or search bar. If you discover that a search plugin is broken, please file a bug with the l10n-drivers.
+Users experiencing a broken searchplugin will receive a "website unreachable" message when they attempt to perform a search from their awesome bar or search bar. If you discover that a searchplugin is broken, please file a bug with the l10n-drivers.
 
 ### Broken hyperlinks
 
 Broken hyperlinks occur in a couple of different ways:
-1) when there are typos in the hyperlink markup, the markup is then exposed to users,
-2) when the hyperlink links to a site that is not obvious by the text it's linked to (e.g., linking to the wrong support article).
+1) When there are typos in the hyperlink markup, the markup is then exposed to users.
+2) When the hyperlink links to a site that is not obvious by the text it's linked to (e.g., linking to the wrong support article).
 These can only be discovered by using the website or software regularly and clicking each hyperlink available to ensure that they take the user to the intended website.
 
 ## What to do when you find an error while testing
 
-Congratulations! You've found a bug! No software is perfect and you're very likely to find bugs while you test your localization. Once you've found a bug, you can either attempt to find the affected string in your community's Pontoon projects or you can file a bug in Bugzilla for that language in Mozilla Localiztions :: [your_locale]. Once a fix for that bug is landed, it's important to test again to be sure that the issue has been resolved.
+Congratulations! You've found a bug! No software is perfect and you're very likely to find bugs while you test your localization. Once you've found a bug, you can either attempt to find the affected string in your community's Pontoon projects or you can [file a bug in Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi) for that language in Mozilla Localizations :: [your_locale]. Once a fix for that bug is landed, it's important to test again to be sure that the issue has been resolved.
 
 For project-specific testing guides, please see these pages:
 * Firefox
