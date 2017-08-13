@@ -81,7 +81,7 @@ XML parsing errors (aka "the yellow screen of death") cause Firefox to display a
 
 ### Exposed variables and placeholders
 
-Variables and placeholders become exposed in the user interface when the translated string has a typo within the variable or placeholder. Because it is not exactly the variable that the software or website expected to find, the system simply displays the variable rather than its value. A very common example of this is with the variable &browserShortName. If that variable is typed correctly in the translation, it will return the variable's value (in this case, it's `Firefox`). If it contains a typo, the user will see the variable instead (e.g., ``&browsershortname``). These are discoverable in the Mozilla localization dashboards and can be corrected in Pontoon.
+Variables and placeholders become exposed in the user interface when the translated string has a typo within the variable or placeholder. Because it is not exactly the variable that the software or website expected to find, the system simply displays the variable rather than its value. A very common example of this is with the variable `&brandShortName`. If that variable is typed correctly in the translation, it will return the variable's value (in this case, it's `Firefox`). If it contains a typo, the user will see the variable instead (e.g., `&brandshortname). These are discoverable in the Mozilla localization dashboards and can be corrected in Pontoon.
 
 ![Variable bug](/assets/images/l10n_errors/variable_bug.png)
 
@@ -111,9 +111,11 @@ These can only be discovered by using the website or software regularly and clic
 Congratulations! You've found a bug! No software is perfect and you're very likely to find bugs while you test your localization. Once you've found a bug, you can either attempt to find the affected string in your community's Pontoon projects or you can [file a bug in Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) for that language in Mozilla Localizations :: [your_locale]. Once a fix for that bug is landed, it's important to test again to be sure that the issue has been resolved.
 
 For project-specific testing guides, please see these pages:
-* Firefox
-* Mobile
-* mozilla.org
+* [Firefox](../products/firefox_desktop/testing.md)
+* [Android](../products/firefox_android/testing.md)
+* [iOS](../products/firefox_ios/testing.md)
+* [Focus](../products/focus/testing_focus.md)
+* [mozilla.org](../products/mozilla_org/testing.md)
 * Engagement campaigns
 * Snippets
 * MoFo projects
