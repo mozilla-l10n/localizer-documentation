@@ -2,23 +2,23 @@
 
 ## What is a snippet?
 
-A snippet is a small and often interesting piece of news, information, or conversation. It is a type of in-product communications (IPC) channels that the Engagement team uses to deliver messages directly to Firefox users, from our product to drive product usage and brand loyalty.
+A snippet is a small and often interesting piece of news, information or conversation. It is a type of in-product communications (IPC) channel that the Engagement team uses to deliver messages directly to Firefox users, from our product to drive usage and brand loyalty.
 
-Subjects that the snippets team has written about are: product launches, new features, MoFo content, MoFo Advocacy campaign, MoCo content, user tips, celebration of special days, etc. In a given month, the team has the opportunity to create up to 3 billion media impressions through snippets. Mozilla uses them for all sorts of purposes, to educate, inform, celebrate, and delight.
+Subjects that the snippets team has written about are: product launches, new features, Mozilla Foundation content, Mozilla Foundation Advocacy campaign, Mozilla content, user tips, celebration of special days, etc. In a given month, the team has the opportunity to create up to 3 billion media impressions through snippets. Mozilla uses them for all sorts of purposes, to educate, inform, celebrate and delight.
 
-This is what a snippet looks like on Firefox browser
+This is what a snippet looks like on Firefox browser:
 
 ![snippet](/assets/images/webprojects/snippets/snippet_fx_example.png)
 
 ## What locales are supported?
 
-Currently only eight locales are supported by the team on a regular basis. They are: cs, de, es, fr, id, pt-BR, ru, and zh-TW. Recently, the team also tested out RTL languages: ar, fa, he, and ur. The process is entirely manual, thus it is not scalable to expand to other locales, at least not on a regular basis. See section below on how to make a special request for locales not on this list.
+Currently only eight locales are supported by the team on a regular basis. They are: cs, de, es, fr, id, pt-BR, ru and zh-TW. Recently, the team also tested out RTL languages: ar, fa, he and ur. The process is entirely manual, thus it is not scalable to expand to other locales, at least not on a regular basis. See section below on how to make a special request for locales not on this list.
 
-## How often are localized snippets requested and where can I find the project?
+## How often are localized snippets requested and where is the project available?
 
-Snippets usually come on a monthly basis. Normally there is a lead time of 10-17 days between the request and the snippets on production. Occasionally there are special request outside of this cadence to support a product or feature launch for a particular market.
+Snippets usually come on a monthly basis. Normally there is a lead time of 10-17 days between the request and the snippets on production. Occasionally there are special requests outside of this cadence to support a product or feature launch for a particular market.
 
-Localizable files can be found on Pontoon under [Engagement project group](https://pontoon.mozilla.org/projects/engagement/). The pending project is also listed on the team [web project dashboard](https://l10n.mozilla-community.org/webdashboard/)
+Localizable files can be found on Pontoon under the [Engagement project](https://pontoon.mozilla.org/projects/engagement/). The pending project is also listed on the team [web project dashboard](https://l10n.mozilla-community.org/webdashboard/).
 
 ## DOs and DONTs when localizing snippets
 
