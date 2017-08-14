@@ -6,10 +6,15 @@ Strings in Pontoon can be filtered by their state. A string can be in one of the
 * *Translated*: string has an approved translation.
 * *Fuzzy*: string is marked as [fuzzy](/misc/glossary.md#fuzzy) in the localized file.
 
+Suggestions can be in two states:
+* *Unreviewed*: string has been suggested, but not approved or rejected.
+* *Rejected*: string has been reviewed and rejected by a translator.
+
 There are some extra criteria that can be used to filter strings:
 * *Untranslated*: this will display strings that are either suggested, missing, or fuzzy. Basically, anything but translated. Once selected, you will also notice that those 3 filters are automatically checked.
 * *Unchanged*: string is identical to the reference language (normally en-US).
-* *Has suggestions*: this will display strings that have at least one unapproved suggestion. If the string is *suggested*, it will be included in this filter. If the string is *translated* but has other translations in its history, it will be included as well.
+* *Unreviewed suggestions*: this will display strings that have at least one unreviewed suggestion. Note that it will include strings in *suggested*, *fuzzy* and *translated* state, as long as they have unreviewed suggestions.
+* *Rejected*: show strings that have rejected suggestions.
 
 By clicking on the funnel icon on the left, it’s possible to access filters.
 

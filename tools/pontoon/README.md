@@ -5,4 +5,7 @@ This document covers how to work with [Pontoon](https://pontoon.mozilla.org/) fr
 * [User accounts and settings](users.md).
 * [Teams and projects](teams_projects.md).
 * [Search and filters](search_filters.md).
-* Translating strings and best practices.
+* [Translation user interface](ui.md).
+* [How to translate](translate.md).
+* [Translation resources](resources.md).
+* [Example workflow](workflow.md).
