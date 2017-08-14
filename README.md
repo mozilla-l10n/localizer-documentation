@@ -19,7 +19,7 @@ How to localize and test Mozilla products:
 
 ## Web Projects
 
-* [Webprojects](webprojects/README.md)
+* [Web projects](webprojects/README.md)
 
 ## How to contribute
 
