@@ -1,13 +1,13 @@
-# Intro
+# Testing localization of Mozilla projects
 
 Mozilla encourages a three-stage review process:
 1. Linguistic review in Pontoon by community.
 2. Technical review by l10n-drivers.
 3. In-context localization testing by community and users.
 
-Other docs will cover how the Mozilla approach to the first two stages of the review process. This doc covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
+Other documents will cover how the Mozilla approach to the first two stages of the review process. This document covers what to look for when performing in-context localization testing for a Mozilla product or Web project.
 
-## L10n testing process
+## Localization testing process
 
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
 1. You submit a translation through Pontoon or directly to version control (Mercurial, GitHub).
@@ -18,42 +18,47 @@ Each Mozilla project has its own process for taking your translations and making
 
 Pontoon simplifies these steps for some Web projects by enabling the in-context editor (aka WYSIWYG editor). This allows you to see your translations in-context the moment you create them in Pontoon, cutting out the 30 minutes to 24 hours waiting period to test. Most projects do not have this enabled, however, so it is still important to know the typical testing process for your projects.
 
-You might be wondering, “what sort of problems am I supposed to be looking for when I test?” Good question :-) Here’s a list of common l10n bugs with screenshots that illustrate the problems in context.
+You might be wondering, “what sort of problems am I supposed to be looking for when I test?” Good question :-) Here’s a list of common localization bugs with screenshots that illustrate the problems in context.
 
-## Common l10n bugs
+## Common localization bugs
 
 ### Encoding and fonts
 
-Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�) instead of letters or radicals in your language. In some cases the problem can be resolved by changing your browser’s default encoding, in other cases the problem is due to the website not serving content with the right encoding and can be fixed only by the website’s owner.
+Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�), or strange glyphs, instead of letters or radicals in your language. In some cases the problem can be resolved by changing your browser’s default encoding, in other cases the problem is due to the website not serving content with the right encoding and can be fixed only by the website’s owner.
 
-![Encoding bug](/assets/images/l10n_errors/Pontoon_encoding.png)
-Fonts that do not include support for a character within a language’s set of glyphs can present a similarly to encoding issues, but can often present themselves through incorrect line spacing (leading) or character spacing (kerning). In the example below, the kerning of the Cherokee letters is too wide. This may be fixed through a different font selection on the site.
+![Encoding bug](/assets/images/l10n_errors/pontoon_encoding.png)
+
+Fonts that do not include full support for a language’s set of glyphs can present similar issues, for example showing incorrect line spacing (leading), character spacing (kerning), or missing ligatures between characters. In the example below, the kerning of the Cherokee letters is too wide. This may be fixed by using a different font on the site.
+
 ![Font bug](/assets/images/l10n_errors/font_change_bug.png)
 
 ### Truncation
 
 Truncation happens when a translation is too long to fit in its corresponding space in the user interface. This error can cause problems with transmitting the right meaning to the user by hiding part of the translation from view. It can be corrected in one of two ways:
-* The developer increases the UI space to accommodate longer translations,
+* The developer increases the UI space to accommodate longer translations.
 * The localizer creates a shorter translation that captures the primary message but may not capture secondary or tertiary messages.
 
 ![Truncation bug](/assets/images/l10n_errors/truncation.png)
 
+### String reuse
+
+String reuse occurs when the same string is used in different contexts, and it represents a poor approach to localization.
+
+Consider for example a string like *Add to bookmarks*: developers might consider a good idea to reuse the same string for both a button label and button tooltip, since it works fine for English. On the other hand, other languages might have completely different needs for these two contexts: while the button indicates an action (imperative verb), the tooltip is used to describe the action associated to the UI element and might need a sentence using a verb with the third person, and the element itself as implicit subject.
+
 ### String concatenation and empty strings
 
-String concatenation errors occur when a developer takes one string, splits it into multiple strings, and tells their code to display each new string one after another. This allows developers to do a few different things with strings:
-* Overcome technical limitations (e.g., including a link in the middle of a sentence).
-* Reuse some parts of strings in multiple places in the user interface.
-* Include white space between strings.
+String concatenation occurs when a developer takes one string, splits it into multiple strings, and tells the code to display these strings one after another.
 
-Empty strings are common when creating a sentence with a link, 3 strings are used: before_link + link + after_link. English doesn’t need the part before or after the link, but that’s useful for other languages, so they’re kept empty in English. It’s expected for some locales to have a different behavior than English. Another use for empty strings are secondary commandkeys or accesskeys, or special values that are supposed to remain empty for most locales, but some locales will need.
+This is often used to overcome technical limitations, like including a link in the middle of a sentence without exposing HTML tags to localization and injecting unsafe HTML in the UI.
 
-![String concatenation bug](/assets/images/l10n_errors/string_concatenation.png)
+Empty strings are also are common when creating a sentence with a link. Tipically 3 strings are used: before_link + link + after_link. English doesn’t need the part before or after the link, but that’s useful for other languages, so they’re kept empty in English. It’s expected for some locales to have a completely different behavior than English.
 
 ### UI layout
 
 Translated text often requires more space than the same text in the source language. For example, when translating between English and German, it’s common practice to expect a length increase of 30%. This can cause problems as wrapping text elements cause different parts of the user interface move around to accommodate a longer string. To fix this, the translator often needs to create a new, shorter translation that captures the primary meaning, but might lose some of the secondary or tertiary meaning.
 
-![UI layout bug](/assets/images/l10n_errors/UI_bug.png)
+![UI layout bug](/assets/images/l10n_errors/ui_bug.png)
 
 ### Mistranslation
 
@@ -93,7 +98,9 @@ Variables and placeholders become exposed in the user interface when the transla
 
 ### Broken access keys
 
-Access keys are unusable when the same key is assigned to multiple functions within the same menu. Additionally, if the access key uses a letter not available in the label, it’s displayed near the label. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that’s not possible in some places, e.g. new preferences. You can find broken access keys in your Firefox localization by looking at the list of access key errors in [Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
+Access keys are less effective when the same key is assigned to multiple functions within the same scope (menu, preference panel, etc.). Additionally, if the access key uses a letter not available in the label, it’s displayed near the label between parentheses. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that’s not possible in some places, e.g. the reorganized preferences shipping with Firefox 56 and later.
+
+It’s possible to see a list of access keys using letters not available in the associated label in your Firefox localization by looking at [this page in Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
 
 ![Access key bug](/assets/images/l10n_errors/access_keys.png)
 
@@ -108,8 +115,8 @@ Users experiencing a broken searchplugin will receive a “website unreachable�
 ### Broken hyperlinks
 
 Broken hyperlinks occur in a couple of different ways:
-1) When there are typos in the hyperlink markup, the markup is then exposed to users.
-2) When the hyperlink links to a site that is not obvious by the text it’s linked to (e.g., linking to the wrong support article according to the link`s context).
+1. When there are typos in the hyperlink markup, the markup is then exposed to users.
+2. When the hyperlink links to a site that is not obvious by the text it’s linked to (e.g., linking to the wrong support article according to the link’s context).
 These can only be discovered by using the website or software regularly and clicking each hyperlink available to ensure that they take the user to the intended website.
 
 ## What to do when you find an error while testing
@@ -122,10 +129,3 @@ For project-specific testing guides, please see these pages:
 * [iOS](../products/firefox_ios/testing.md)
 * [Focus](../products/focus/testing_focus.md)
 * [mozilla.org](../products/mozilla_org/testing.md)
-* Engagement campaigns
-* Snippets
-* MoFo projects
-* AMO site
-* SUMO site
-* MDN site
-* Blog posts
