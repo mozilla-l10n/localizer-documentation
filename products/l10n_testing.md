@@ -26,6 +26,8 @@ You might be wondering, “what sort of problems am I supposed to be looking for
 
 Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�), or strange glyphs, instead of letters or radicals in your language. In some cases the problem can be resolved by changing your browser’s default encoding, in other cases the problem is due to the website not serving content with the right encoding and can be fixed only by the website’s owner.
 
+![Encoding bug](/assets/images/l10n_testing/encoding_bug.png)
+
 ![Encoding bug](/assets/images/l10n_testing/pontoon_encoding.png)
 
 Fonts that do not include full support for a language’s set of glyphs can present similar issues, for example showing incorrect line spacing (leading), character spacing (kerning), or missing ligatures between characters. In the example below, the kerning of the Cherokee letters is too wide. This may be fixed by using a different font on the site.
