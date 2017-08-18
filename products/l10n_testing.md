@@ -26,11 +26,11 @@ You might be wondering, “what sort of problems am I supposed to be looking for
 
 Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�), or strange glyphs, instead of letters or radicals in your language. In some cases the problem can be resolved by changing your browser’s default encoding, in other cases the problem is due to the website not serving content with the right encoding and can be fixed only by the website’s owner.
 
-![Encoding bug](/assets/images/l10n_errors/pontoon_encoding.png)
+![Encoding bug](/assets/images/l10n_testing/pontoon_encoding.png)
 
 Fonts that do not include full support for a language’s set of glyphs can present similar issues, for example showing incorrect line spacing (leading), character spacing (kerning), or missing ligatures between characters. In the example below, the kerning of the Cherokee letters is too wide. This may be fixed by using a different font on the site.
 
-![Font bug](/assets/images/l10n_errors/font_change_bug.png)
+![Font bug](/assets/images/l10n_testing/font_change_bug.png)
 
 ### Truncation
 
@@ -38,7 +38,7 @@ Truncation happens when a translation is too long to fit in its corresponding sp
 * The developer increases the UI space to accommodate longer translations.
 * The localizer creates a shorter translation that captures the primary message but may not capture secondary or tertiary messages.
 
-![Truncation bug](/assets/images/l10n_errors/truncation.png)
+![Truncation bug](/assets/images/l10n_testing/truncation.png)
 
 ### String reuse
 
@@ -58,43 +58,43 @@ Empty strings are also are common when creating a sentence with a link. Tipicall
 
 Translated text often requires more space than the same text in the source language. For example, when translating between English and German, it’s common practice to expect a length increase of 30%. This can cause problems as wrapping text elements cause different parts of the user interface move around to accommodate a longer string. To fix this, the translator often needs to create a new, shorter translation that captures the primary meaning, but might lose some of the secondary or tertiary meaning.
 
-![UI layout bug](/assets/images/l10n_errors/ui_bug.png)
+![UI layout bug](/assets/images/l10n_testing/ui_bug.png)
 
 ### Mistranslation
 
 Mistranslation occurs when meaning is lost between the source language and the target language. This can be caused accidentally by a lack of context for where a translation will be placed within a user interface (very common in software localization), a translator’s lack of subject matter expertise, or intentionally due to user interface text constraints (e.g., truncation).
 
-![Mistranslation bug](/assets/images/l10n_errors/mistranslation.png)
+![Mistranslation bug](/assets/images/l10n_testing/mistranslation.png)
 
 ### Untranslated strings
 
 Untranslated strings appear in a user interface when developers don’t include that string in the string resource files available for localization, but instead in their code. It’s a practice called *hardcoding*. The best way to correct this error is to make sure that Pontoon does not contain the string for translation (or that it’s not in the string resource files) and then contact developers using Bugzilla to make the string available for localization.
 
-![Untranslated string bug](/assets/images/l10n_errors/untranslated.png)
+![Untranslated string bug](/assets/images/l10n_testing/untranslated.png)
 
 ### Style bugs
 
 Mozilla’s official style guide serves as a primer to help communities create their own style guides. Style errors are when the tone or appearance of a translation does not match the tone or appearance described in a style guide. These can be corrected by making sure that localizers understand the style guide rules and follow them when translating.
 
-![Style bug](/assets/images/l10n_errors/style_bug.png)
+![Style bug](/assets/images/l10n_testing/style_bug.png)
 
 ### Numbers, date, currency
 
 Every language and region displays numbers, dates, and currency differently. These errors occur when the user sees an incorrect number format, date format, or currency for the language and region of their localized Firefox. This can be fixed by filing a bug in Bugzilla.
 
-![Number bug](/assets/images/l10n_errors/number_bug.png)
+![Number bug](/assets/images/l10n_testing/number_bug.png)
 
 ### XML parsing errors
 
 XML parsing errors (aka “the yellow screen of death”) cause Firefox to display a yellow error page. This is often due to a broken translated string in that localization of Firefox which causes the Firefox build to break. With l20n, these errors will no longer be relevant.
 
-![XML parsing bug](/assets/images/l10n_errors/xml_parsing.png)
+![XML parsing bug](/assets/images/l10n_testing/xml_parsing.png)
 
 ### Exposed variables and placeholders
 
 Variables and placeholders become exposed in the user interface when the translated string has a typo within the variable or placeholder. Because it is not exactly the variable that the software or website expected to find, the system simply displays the variable rather than its value. A very common example of this is with the variable `&brandShortName`. If that variable is typed correctly in the translation, it will return the variable’s value (in this case, it’s `Firefox`). If it contains a typo, the user will see the variable instead (e.g., `&brandshortname`). These are discoverable in the Mozilla localization dashboards and can be corrected in Pontoon.
 
-![Variable bug](/assets/images/l10n_errors/variable_bug.png)
+![Variable bug](/assets/images/l10n_testing/variable_bug.png)
 
 ### Broken access keys
 
@@ -102,7 +102,7 @@ Access keys are less effective when the same key is assigned to multiple functio
 
 It’s possible to see a list of access keys using letters not available in the associated label in your Firefox localization by looking at [this page in Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
 
-![Access key bug](/assets/images/l10n_errors/access_keys.png)
+![Access key bug](/assets/images/l10n_testing/access_keys.png)
 
 ### Broken language preferences
 

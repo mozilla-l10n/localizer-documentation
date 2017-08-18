@@ -14,6 +14,7 @@
     * [How to test](products/firefox_ios/testing.md)
 * [Mozilla.org](products/mozilla_org/README.md)
     * [How to test](products/mozilla_org/testing.md)
+* [Testing localization of Mozilla projects](products/l10n_testing.md)
 
 ## Tools
 
@@ -26,6 +27,10 @@
     * [Translation resources](tools/pontoon/resources.md)
     * [Example workflow](tools/pontoon/workflow.md)
 * [Mercurial tips](tools/mercurial/README.md)
+
+## Tools
+
+* [Pontoon](products/pontoon/README.md)
 
 ## Misc
 
