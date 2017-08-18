@@ -54,7 +54,7 @@ String concatenation occurs when a developer takes one string, splits it into mu
 
 This is often used to overcome technical limitations, like including a link in the middle of a sentence without exposing HTML tags to localization and injecting unsafe HTML in the UI.
 
-Empty strings are also are common when creating a sentence with a link. Tipically 3 strings are used: before_link + link + after_link. English doesn’t need the part before or after the link, but that’s useful for other languages, so they’re kept empty in English. It’s expected for some locales to have a completely different behavior than English.
+Empty strings are also common when creating a sentence with a link. Tipically 3 strings are used: before_link + link + after_link. English doesn’t need the part before or after the link, but that’s useful for other languages, so they’re kept empty in English. It’s expected for some locales to have a completely different behavior than English.
 
 ### UI layout
 
