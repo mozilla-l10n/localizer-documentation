@@ -10,7 +10,7 @@ Other docs will cover how the Mozilla approach to the first two stages of the re
 ## L10n testing process
 
 Each Mozilla project has its own process for taking your translations and making them available for you to test. Generally speaking, the process moves like this:
-1. You submit a translation through Pontoon.
+1. You submit a translation through Pontoon or directly to version control (Mercurial, GitHub).
 2. The translation goes through a linguistic review and a technical review.
 3. Once approved, the translation is automatically pushed into the project’s repository.
 4. Depending on the project, you’ll need to wait anywhere from 30 minutes to 24 hours to look for your translation in the Mozilla project.
@@ -24,22 +24,28 @@ You might be wondering, “what sort of problems am I supposed to be looking for
 
 ### Encoding and fonts
 
-Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�) instead of letters or radicals in your language. These can often be resolved by either changing your browser’s default encoding or by asking developers to use a Unicode-enabled font on the site.
+Character encoding errors occur when the browser can’t find the correct symbol to display for a character. Normally, you will recognize these errors when you see Unicode replacement characters (�) instead of letters or radicals in your language. In some cases the problem can be resolved by changing your browser’s default encoding, in other cases the problem is due to the website not serving content with the right encoding and can be fixed only by the website’s owner.
 
 ![Encoding bug](/assets/images/l10n_errors/Pontoon_encoding.png)
+Fonts that do not include support for a character within a language’s set of glyphs can present a similarly to encoding issues, but can often present themselves through incorrect line spacing (leading) or character spacing (kerning). In the example below, the kerning of the Cherokee letters is too wide. This may be fixed through a different font selection on the site.
 ![Font bug](/assets/images/l10n_errors/font_change_bug.png)
 
 ### Truncation
 
-Truncation happens when a translation is too long to fit in its corresponding space in the user interface. This error can cause problems with transmitting the right meaning to the user by hiding part of the translation from view. It can be corrected one of two ways:
-* The developer increases the UI space to accommodate longer translations.
+Truncation happens when a translation is too long to fit in its corresponding space in the user interface. This error can cause problems with transmitting the right meaning to the user by hiding part of the translation from view. It can be corrected in one of two ways:
+* The developer increases the UI space to accommodate longer translations,
 * The localizer creates a shorter translation that captures the primary message but may not capture secondary or tertiary messages.
 
 ![Truncation bug](/assets/images/l10n_errors/truncation.png)
 
 ### String concatenation and empty strings
 
-String concatenation errors occur when a developer takes one string, splits it into multiple strings, and tells their code to display each new string one after another. This allows developers to reuse some parts of strings in multiple places in the user interface, but often the context is different enough between the multiple places its being used that the translation is correct in one place, but bad in another. This is fixed by requesting that developers not use string concatenation when putting strings in the UI.
+String concatenation errors occur when a developer takes one string, splits it into multiple strings, and tells their code to display each new string one after another. This allows developers to do a few different things with strings:
+* Overcome technical limitations (e.g., including a link in the middle of a sentence).
+* Reuse some parts of strings in multiple places in the user interface.
+* Include white space between strings.
+
+Empty strings are common when creating a sentence with a link, 3 strings are used: before_link + link + after_link. English doesn’t need the part before or after the link, but that’s useful for other languages, so they’re kept empty in English. It’s expected for some locales to have a different behavior than English. Another use for empty strings are secondary commandkeys or accesskeys, or special values that are supposed to remain empty for most locales, but some locales will need.
 
 ![String concatenation bug](/assets/images/l10n_errors/string_concatenation.png)
 
@@ -51,7 +57,7 @@ Translated text often requires more space than the same text in the source langu
 
 ### Mistranslation
 
-Mistranslation occurs when meaning is lost between the source language and the target language. This can be caused accidentally by a lack of context for where a translation will be placed within a user interface (very common in software localization), a translator’s lack of subject matter expertise, or intentionally due to user interface text constraints.
+Mistranslation occurs when meaning is lost between the source language and the target language. This can be caused accidentally by a lack of context for where a translation will be placed within a user interface (very common in software localization), a translator’s lack of subject matter expertise, or intentionally due to user interface text constraints (e.g., truncation).
 
 ![Mistranslation bug](/assets/images/l10n_errors/mistranslation.png)
 
@@ -87,13 +93,13 @@ Variables and placeholders become exposed in the user interface when the transla
 
 ### Broken access keys
 
-Access keys are unusable when the same key is assigned to multiple functions within the same menu. Additionally, if the access key uses a letter not available in the label, it’s displayed near the label. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that’s not possible in some places, e.g. the new preferences in Firefox. You can find broken access keys in your Firefox localization by looking at the list of access key errors in [Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
+Access keys are unusable when the same key is assigned to multiple functions within the same menu. Additionally, if the access key uses a letter not available in the label, it’s displayed near the label. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that’s not possible in some places, e.g. new preferences. You can find broken access keys in your Firefox localization by looking at the list of access key errors in [Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
 
 ![Access key bug](/assets/images/l10n_errors/access_keys.png)
 
 ### Broken language preferences
 
-Users experience broken website language preferences in Firefox when the accept-lang preferences are left unchanged from the en-US default. This can lead to the user receiving web pages in a language they’re unfamiliar with by default, even when the web page is localized into their native language. It can be fixed in `toolkit/chrome/global/intl.properties` in the `intl.accept_languages` key.
+Users experience broken website language preferences in Firefox when the accept-lang preferences are left unchanged from the en-US default set of language preferences. This can lead to the user receiving web pages in a language they’re unfamiliar with by default, even when the web page is localized into their native language. It can be fixed in `toolkit/chrome/global/intl.properties` in the `accept-lang setting`.
 
 ### Broken searchplugins
 
@@ -103,8 +109,7 @@ Users experiencing a broken searchplugin will receive a “website unreachable�
 
 Broken hyperlinks occur in a couple of different ways:
 1) When there are typos in the hyperlink markup, the markup is then exposed to users.
-2) When the hyperlink links to a site that is not obvious by the text it’s linked to (e.g., linking to the wrong support article).
-
+2) When the hyperlink links to a site that is not obvious by the text it’s linked to (e.g., linking to the wrong support article according to the link`s context).
 These can only be discovered by using the website or software regularly and clicking each hyperlink available to ensure that they take the user to the intended website.
 
 ## What to do when you find an error while testing
