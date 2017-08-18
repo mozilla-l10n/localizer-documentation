@@ -17,9 +17,9 @@ How to localize and test Mozilla products:
 * [How to use Pontoon](tools/pontoon/README.md).
 * [Mercurial tips](tools/mercurial/README.md).
 
-### Other
+### Other topics
 
-* [Testing localization of Mozilla projects](l10n_testing.md)
+* [Testing localization of Mozilla projects](products/l10n_testing.md).
 
 ## How to contribute
 
