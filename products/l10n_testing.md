@@ -130,5 +130,5 @@ For project-specific testing guides, please see these pages:
 * [Firefox for Android](../products/firefox_android/testing.md).
 * [Firefox for iOS](../products/firefox_ios/testing.md).
 * [Focus](../products/focus/testing_focus.md).
-* [mozilla.org](../products/mozilla_org/testing.md).
+* [Mozilla.org](../products/mozilla_org/testing.md).
 * [Snippets](../webprojects/snippets.md).
