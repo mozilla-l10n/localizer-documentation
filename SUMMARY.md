@@ -43,4 +43,4 @@
 ## Web Projects
 
 * [Web projects](webprojects/README.md)
-* [Snippets](webprojects/snippets.md)
+    * [Snippets](webprojects/snippets.md)

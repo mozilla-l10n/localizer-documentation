@@ -1,4 +1,4 @@
-Snippets: localizing, testing and creating your own
+# Snippets: localizing, testing and creating your own
 
 ## What is a snippet?
 
