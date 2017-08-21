@@ -10,6 +10,7 @@ How to localize and test Mozilla products:
 * [Firefox for desktop](products/firefox_desktop/README.md).
 * [Firefox for Android](products/firefox_android/README.md).
 * [Firefox for iOS](products/firefox_ios/README.md).
+* [Focus for Android and iOS](products/focus/README.md).
 * [Mozilla.org](products/mozilla_org/README.md).
 
 ### Tools

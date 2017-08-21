@@ -10,7 +10,7 @@ This workflow utilizes the full power of Pontoon’s online translation features
 
 1. Log in to Pontoon.
 2. Browse to the [project](teams_projects.md).
-3. Using [filters](search_filters.md) select `Untranslated` to display only the strings currently missing a translation or marked as [fuzzy](/misc/glossary.md#fuzzy)).
+3. Using [filters](search_filters.md) select `Untranslated` to display only the strings currently missing a translation or marked as [fuzzy](../../misc/glossary.md#fuzzy)).
 4. Access personal settings by clicking on the gear icon in the upper right corner, under the user image, then turn on `Make suggestions`.<br>Note that new volunteers who have not yet been granted [Translator rights](users.md#user-roles) will have `Make suggestions` enabled by default.
 5. For each string type a translation, then save it with the blue button `SUGGEST`. The string will be recorded under the `HISTORY` tab. Each string submitted shows name of the author and saving time.
 
