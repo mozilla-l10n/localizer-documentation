@@ -4,7 +4,7 @@ Strings in Pontoon can be filtered by their state. A string can be in one of the
 * *Missing*: string is not available in the localized file and doesn’t have any translations or suggestions in Pontoon.
 * *Suggested*: at least one suggestion has been submitted for this string. Note that, in this case, the translation only exists within Pontoon database, it’s not saved to the localized file.
 * *Translated*: string has an approved translation.
-* *Fuzzy*: string is marked as [fuzzy](/misc/glossary.md#fuzzy) in the localized file.
+* *Fuzzy*: string is marked as [fuzzy](../../misc/glossary.md#fuzzy) in the localized file.
 
 Suggestions can be in two states:
 * *Unreviewed*: string has been suggested, but not approved or rejected.
