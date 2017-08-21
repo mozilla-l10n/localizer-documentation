@@ -30,10 +30,6 @@
     * [Example workflow](tools/pontoon/workflow.md)
 * [Mercurial tips](tools/mercurial/README.md)
 
-## Tools
-
-* [Pontoon](products/pontoon/README.md)
-
 ## Misc
 
 * [Glossary](misc/glossary.md)
