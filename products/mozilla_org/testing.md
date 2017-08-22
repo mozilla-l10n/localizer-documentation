@@ -8,10 +8,9 @@ Mozilla.org is highly visible because the site houses the basic info of all Mozi
 * Staging: https://www-dev.allizom.org/{locale_code}/
 * Repository: https://github.com/mozilla-l10n/www.mozilla.org/
 * Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
-* Locamotion: https://mozilla.locamotion.org/projects/mozilla_lang/
 * Web dashboard: https://l10n.mozilla-community.org/webdashboard/?locale={locale_code}. Visit this page on a regular basis to check localization progress, pending work, deadline, and errors that were introduced during translation.
 
-It’s highly advised you to ask other community members to conduct peer review not only on Pontoon or Locamotion, but on staging. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
+It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
 
 ## What to test
 
@@ -20,7 +19,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Have your [glossary](https://transvision.mozfr.org/) available as a reference, select mozilla.org as Repository, your language as your Target Locale.
 * For terminology consistency, reference the product or site that the page is for, assuming the product or site is localized (e.g.: Firefox, Test Pilot).
 * Have the matching US page up as reference, though some strings may not be identical due to A/B testing.
-* Have the project you just localized available for editing (Pontoon or Locamotion).
+* Have the project you just localized available for editing in Pontoon.
 
 ### Linguistic testing
 
@@ -37,7 +36,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Nav bar terms consistent with the page titles they are linked to (except when Nav bar term is shortened due to space limitation).
 * Footer links don’t overlap with one another.
 
-You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/), [Locamotion](https://mozilla.locamotion.org/projects/mozilla_lang/), or [GitHub](https://github.com/mozilla-l10n/www.mozilla.org/).
+You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/) or [GitHub](https://github.com/mozilla-l10n/www.mozilla.org/).
 
 ### Functionality testing
 
@@ -65,7 +64,6 @@ In some cases pages receive major updates that require a complete rewrite of the
 ### Sync and update frequencies
 
 * Pontoon syncs every 20 minutes to the repository.
-* Pootle is imported manually (at least daily); an automated solution and faster sync will be implemented soon.
 * Web Dashboard and the Dev server update every 15 minutes.
 
 If you work on Pontoon, it is safe to say that it will take less than an hour to see your changes reflected on the dashboard and the dev server.

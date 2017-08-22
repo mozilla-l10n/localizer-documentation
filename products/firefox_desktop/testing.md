@@ -62,14 +62,3 @@ Photon is the redesigned UI that will ship in Firefox 57:
 * The hamburger menu will be replaced by a static dropdown menu. If you’re on Nightly and still see the old menu, make sure that `browser.photon.structure.enabled` is set to `true` in about:config (that’s the default value in Nightly 56 and later).
 * Test the *Overflow menu*: the `>>` symbol will appear automatically in the main toolbar when resizing the window to a small width. You can then pin an element to it, or add/remove items from the toolbar directly from their context menu.
 * Test the onboarding tour by clicking the small fox displayed in the left corner on the New tab. There are also onboarding notifications, displayed at the bottom of the page: you can cycle through them by opening multiple new tabs in a row. Note that the onboarding is currently not compatible with Activity Stream.
-
-## Firefox Health Report
-
-If you have just finished localizing Firefox Health Report, you’ll need to change a key in about:config in order to test against the stage server.
-1. Type `about:config` in the address bar, press Enter.
-
-2. Search for the key `datareporting.healthreport.about.reportUrl`.
-
-3. Set the value to `https://fhr-dev.allizom.org/%LOCALE%/v4/`.
-
-4. Type about:healthreport in the address bar and check that everything is correctly localized.

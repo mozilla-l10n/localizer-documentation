@@ -4,7 +4,7 @@ The release cycle for Firefox for Android is the same as Firefox for Desktop, wh
 
 You can see the [detailed schedule for each release here](https://wiki.mozilla.org/RapidRelease/Calendar).
 
-*Merge day* is when localizations move to the next train - and the last day available to include localization updates to the next Beta version if you work on tools like Pootle.
+*Merge day* is when localizations move to the next train - and the last day available to include localization updates to the next Beta version if you work on tools like Pontoon.
 
 Note: please make sure that you’ve already localized mozilla.org before you start working on Firefox for Android or any other projects.
 
@@ -26,8 +26,7 @@ Checking your team page and dashboard regularly should be something you do from 
 
 ## Localize the Firefox for Android folder
 
-* [Pontoon](https://pontoon.mozilla.org/firefox-for-android/): choose your locale code from there.
-* [Pootle](https://mozilla.locamotion.org/projects/mobile/): choose your locale code from there.
+* [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/): choose your locale code from there.
 
 Once you’ve finished covering this folder, please note you still have strings to translate. See below for more instructions.
 
@@ -35,7 +34,6 @@ Once you’ve finished covering this folder, please note you still have strings 
 
 In order to reach 100% completion on the Firefox for Android l10n project, you will have to localize the shared Firefox files (so, the ones common to Firefox Desktop and Android) as well. These are found in the Firefox folder:
 * [Pontoon](https://pontoon.mozilla.org/projects/firefox/): choose your locale code from there. Localize all file paths that start with dom, netwerk, security, services and toolkit.
-* [Pootle](https://mozilla.locamotion.org/projects/firefox/): choose your locale code from there. In the list you now see, localize the files found in `androidshared` folder.
 
 Once you’ve reached 100% completion for the shared strings: let the Fennec project manager know (currently **delphine** at **mozilla** dot **com**). A bug will be filed to add your locale to the single-locale builds.
 
