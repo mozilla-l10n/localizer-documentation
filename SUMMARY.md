@@ -30,12 +30,13 @@
     * [Example workflow](tools/pontoon/workflow.md)
 * [Mercurial tips](tools/mercurial/README.md)
 
-## Tools
-
-* [Pontoon](products/pontoon/README.md)
-
 ## Misc
 
 * [Glossary](misc/glossary.md)
 * [How to contribute](README.md#how-to-contribute)
 * [Community marketing kit](misc/community-marketing-kit.md)
+
+## Web Projects
+
+* [Web projects](webprojects/README.md)
+    * [Snippets](webprojects/snippets.md)

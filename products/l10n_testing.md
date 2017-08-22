@@ -126,8 +126,9 @@ These can only be discovered by using the website or software regularly and clic
 Congratulations! You’ve found a bug! No software is perfect and you’re very likely to find bugs while you test your localization. Once you’ve found a bug, you can either attempt to find the affected string in your community’s Pontoon projects or you can [file a bug in Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) for that language in Mozilla Localizations :: [your_locale]. Once a fix for that bug is landed, it’s important to test again to be sure that the issue has been resolved.
 
 For project-specific testing guides, please see these pages:
-* [Firefox](../products/firefox_desktop/testing.md)
-* [Android](../products/firefox_android/testing.md)
-* [iOS](../products/firefox_ios/testing.md)
-* [Focus](../products/focus/testing_focus.md)
-* [mozilla.org](../products/mozilla_org/testing.md)
+* [Firefox Desktop](../products/firefox_desktop/testing.md).
+* [Firefox for Android](../products/firefox_android/testing.md).
+* [Firefox for iOS](../products/firefox_ios/testing.md).
+* [Focus](../products/focus/testing_focus.md).
+* [Mozilla.org](../products/mozilla_org/testing.md).
+* [Snippets](../webprojects/snippets.md).
