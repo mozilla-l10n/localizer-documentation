@@ -1,4 +1,4 @@
-# AMO - how to localize and test
+# AMO: how to localize and test
 
 ## Product at a glance
 
@@ -24,7 +24,7 @@ Now let’s take a look of these components in greater details.
 
 ### Test the server and the frontend
 
-The strings will be available on Dev or Staging server depending on when they were committed. See [the section](Frequency of new strings extracted and landing of newly localized strings) for details.
+The strings will be available on Dev or Staging server depending on when they were committed. See [this section](https://github.com/mozilla-l10n/localizer-documentation/blob/2f065c6a15208cf30ec0a8d440a399a5b5424d39/webprojects/amo.md#frequencies-of-newly-extracted-strings-and-landing-of-newly-localized-strings) for details.
 
 * Dev https://addons-dev.allizom.org/
 * Staging https://addons.allizom.org/
@@ -32,19 +32,18 @@ The strings will be available on Dev or Staging server depending on when they we
 
 The hosts for the new frontend are the same as **addons-server**, except to be routed to the new frontend, you either need:
 
-* A “mamo“ cookie with the value `on`. You can set this by clicking _View mobile site_ in the footer.
+* Setting a “mamo“ cookie with the value `on` by clicking _View mobile site_ in the footer.
 * A Mobile user-agent string.
 
 ## Disco Pane app and editorial content
 
-The AMO Frontend (addons-frontend) repo is also home to the Disco Pane, short for Discovery Pane app (disco.po), which is the site containing curated addons available at `about:addons`
-(_Tools_ -> _Add-ons_ -> _Get Add-ons_). While this looks like it’s part of Firefox, it’s actually a webpage served from [here](https://discovery.addons.mozilla.org).
+The AMO Frontend (addons-frontend) repo is also home to the Disco Pane, short for Discovery Pane app (disco.po). This is the site that contains curated addons available by typing `about:addons` on the Awesome Bar. Another way to get to the same place is by clicking _Tools_ on the navigation, select _Add-ons_ in the dropdown menu, and click _Get Add-ons_ on the left panel). While this looks like it’s part of Firefox, it’s actually a webpage served from [here](https://discovery.addons.mozilla.org).
 
-However, the content for the Disco Pane comes from the API. To translate it, you will need to look in [AMO (addons-server)](https://pontoon.mozilla.org/projects/amo) project.
+The content for the Disco Pane comes from the API. To translate it, you will need to look in [AMO (addons-server)](https://pontoon.mozilla.org/projects/amo) project.
 
 ### Test the Discovery Pane
 
-The strings will be available on Dev or Staging server depending on when they were committed. See [the section below](Frequency of new strings extracted and landing of newly localized strings) for details.
+The strings will be available on Dev or Staging server depending on when they were committed. See [the section below](https://github.com/mozilla-l10n/localizer-documentation/blob/2f065c6a15208cf30ec0a8d440a399a5b5424d39/webprojects/amo.md#frequencies-of-newly-extracted-strings-and-landing-of-newly-localized-strings) for details.
 
 The hosts for the Disco Pane are as follows:
 
@@ -66,15 +65,15 @@ For localized content:
 
 The above instruction is sufficient for basic localization testing. If you need to test strings related to the install buttons, you will need to enabled preferences to allow add-on installation to work on the development and stage servers.
 
-To fully configure Firefox to install add-ons on either dev/stage you will
-need to additionally do the following:
+To fully configure Firefox to install add-ons on either dev or stage, you will
+need to do the following:
 
 * Use Firefox Nightly or Firefox Developer Edition.
 * A new profile is recommended since changing the dev certs will mark existing add-on installs as invalid (this change is not immediate).
 * Go to `about:config` and set `extensions.webapi.testing` as a Boolean to `true`.
 * To install an add-on, you will need to be able to install a signed add-on from dev or stage. Create the `xpinstall.signatures.dev-root` pref in `about:config` as a Boolean and set it to `true`.
 * For Disco Pane: Go to `about:config` and change the host in `extensions.webservice.discoverURL` to “https://discovery.addons-dev.allizom.org/“ for Dev server or “https://discovery.addons.allizom.org/“ for Staging server.
-* If you see warnings when trying to install a theme or theme previews doesn’t work, go to `about:preferences#security` and add an exception for dev/stage (See the `Exceptions` button next to _Warn me when sites try to install add-ons_).
+* If you see warnings when trying to install a theme or theme previews doesn’t work, go to `about:preferences#security` and add an exception for dev or stage. You can do so by  clicking the `Exceptions` button after selecting Privacy & Security on left panel.
 * Restart the browser.
 
 ## Additional advance testing
