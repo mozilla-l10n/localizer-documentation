@@ -45,7 +45,7 @@ If you spot a mistake in a snippet, [file a bug to the team](https://bugzilla.mo
 
 ## FAQ: process to make a special snippet request
 
-Even if your locale is requested on a monthly basis, we encourage you to come up with your own content that better fits your culture, country or language.
+Even if your locale is requested on a monthly basis, you are welcome to come up with your own content that better fits your culture, country or language.
 
 If your language is not listed above and you would like to have a snippet created for special occasions, such as new product or feature launch, a major holiday or campaign, please follow these steps.
 
@@ -95,7 +95,7 @@ Once a snippet is formalized, you can [file a Snippets bug request](https://bugz
 
 ### What is the lead time for a snippet request?
 
-The team needs a minimum of two weeks, if snippet needs to appear in target language. This assumes that the snippet doesn’t require much revision.
+The team needs a minimum of two weeks if snippet needs to appear in language other than English in your country. This assumes that the snippet doesn’t require much revision.
 
 ### What is the typical snippet review cycle for approval?
 
