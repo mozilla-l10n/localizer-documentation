@@ -14,11 +14,10 @@ For every community, new or well established, it is always exciting to reach the
 
 * Firefox is fast, modern, and fun.
 * Differentiators between Firefox and the competitors.
-
-  * Big vs. small
-  * Bloated vs. lean
-  * Being watched vs. having more privacy
-  * Ads vs. content
+    * Big vs. small
+    * Bloated vs. lean
+    * Being watched vs. having more privacy
+    * Ads vs. content
 
 ### Targeted audience - attract, inform and convert
 
@@ -41,12 +40,11 @@ If you do not have resources in tools or talents to create your own images, you 
 * Check to see if what you need is already available at [OpenDesign github repository](https://github.com/mozilla/OpenDesign/tree/master/2017). We will add more images and templates over time.
 * Click through some of the open and closed issues to see the kind of work the team has covered.
 * If you don’t find what you need or you want to have a customized one, here are the steps:
-
-  * File [an issue](https://github.com/mozilla/OpenDesign/issues) to the OpenDesign team
-  * Specify your need: image, logo, with text, with localized text, your purpose.
-  * Specify size and color.
-  * State the deadline.
-  * The team delivers the finished work to you after a few iterations.
+    * File [an issue](https://github.com/mozilla/OpenDesign/issues) to the OpenDesign team
+    * Specify your need: image, logo, with text, with localized text, your purpose.
+    * Specify size and color.
+    * State the deadline.
+    * The team delivers the finished work to you after a few iterations.
 
 ## Spreading the words
 
@@ -56,9 +54,7 @@ Here are a few channels to spread the words of the new Firefox launch. The follo
 * Community: organize meetup, attend other tech meetups, be a speaker.
 * Organization: team up with other tech non-profit or open source organizations, schools, universities, and libraries to discuss web or tech literacy; bulletin board.
 * Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events. Below is the process to get your photos published:
-
-  * Email request a week in advance to [Sierra Read](mailto:sreed@mozilla.com), in charge of social media. Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this period, they have direct access and are responsible for posting.
-
+    * Email request a week in advance to [Sierra Read](mailto:sreed@mozilla.com), in charge of social media. Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this period, they have direct access and are responsible for posting.
 * With advance planning, Snippets team will push localized snippets outside of the regularly supported locales. [Check out the process](https://github.com/mozilla-l10n/localizer-documentation/blob/master/webprojects/snippets.md) in getting one published.
 * Mozilla l10n blog, monthly report.
 
@@ -69,6 +65,5 @@ Large events are often difficult to organize, expensive, and less effective at s
 * To organize an event, reach out to your local Reps. The Reps are experienced in organizing events, especially the logistics.
 * To fund the event, send request to the l10n team in advance. The l10n-drivers will evaluate and potentially set aside a small budget for it.
 * For new locale launch, in addition to the above steps:
-
-  * L10n-drivers will send gear (pens, stickers) to distribute for the events.
-  * L10n-drivers will send t-shirts to the community localizers.
+    * L10n-drivers will send gear (pens, stickers) to distribute for the events.
+    * L10n-drivers will send t-shirts to the community localizers.
