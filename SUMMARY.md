@@ -39,4 +39,5 @@
 ## Web Projects
 
 * [Web projects](webprojects/README.md)
+    * [Addons.mozilla.org](webprojects/amo.md)
     * [Snippets](webprojects/snippets.md)
