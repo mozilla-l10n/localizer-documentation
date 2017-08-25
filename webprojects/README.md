@@ -2,7 +2,7 @@
 
 This set of documentation contains basic information on localizing and testing web based projects.
 
-* [AMO](amo.md).
+* [Addons.mozilla.org (AMO)](amo.md).
 * MDN.
 * [Snippets](snippets.md).
 * SUMO.

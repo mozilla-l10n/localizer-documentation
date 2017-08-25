@@ -1,4 +1,4 @@
-# AMO: how to localize and test
+# Addons.mozilla.org (AMO): how to localize and test
 
 ## Product at a glance
 
