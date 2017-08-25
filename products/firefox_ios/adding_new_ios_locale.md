@@ -32,8 +32,6 @@ Once it is determined if a locale is supported by the operating system and can s
 
 For Pontoon, go to the [Firefox for iOS project page here](https://pontoon.mozilla.org/projects/firefox-for-ios/), and click on the link to request to add a new language to the project.
 
-For Pootle, please send an email to the Pootle Tech team (**tech-team** at **translate** dot **org** dot **za**) to request the project.
-
 It’s also possible to work directly from GitHub on the [Firefox for iOS mozilla-l10n repo](https://github.com/mozilla-l10n/firefoxios-l10n).
 
 ## Shipping
