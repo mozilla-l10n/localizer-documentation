@@ -4,5 +4,5 @@ This set of documentation contains basic information on localizing and testing w
 
 * [AMO](amo.md).
 * MDN.
-* [Snippets](snippets.md)
+* [Snippets](snippets.md).
 * SUMO.
