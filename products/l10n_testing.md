@@ -133,3 +133,4 @@ For project-specific testing guides, please see these pages:
 * [Focus](../products/focus/testing_focus.md).
 * [Mozilla.org](../products/mozilla_org/testing.md).
 * [Snippets](../webprojects/snippets.md).
+* [Support.mozilla.org (SUMO)](../webprojects/sumo.md).
