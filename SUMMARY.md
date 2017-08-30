@@ -41,3 +41,4 @@
 * [Web projects](webprojects/README.md)
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Snippets](webprojects/snippets.md)
+    * [Support.mozilla.org](webprojects/sumo.md)
