@@ -5,4 +5,4 @@ This set of documentation contains basic information on localizing and testing w
 * [Addons.mozilla.org (AMO)](amo.md).
 * MDN.
 * [Snippets](snippets.md).
-* [Support.mozilla.org (SUMO)](sumo.md)
+* [Support.mozilla.org (SUMO)](sumo.md).
