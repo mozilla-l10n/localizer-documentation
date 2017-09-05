@@ -37,7 +37,7 @@ The hosts for the new frontend are the same as **addons-server**, except to disp
 
 ## Disco Pane app and editorial content
 
-The AMO Frontend (addons-frontend) repository is also home to the Disco Pane, short for Discovery Pane. This is the site that contains curated add-ons available by typing `about:addons` in the address bar. Another way to reach it is by clicking *Tools* in the menu bar, select *Add-ons* in the dropdown menu, and click *Get Add-ons* on the left panel. While this looks like it’s part of Firefox, it’s actually a web page served from [here](https://discovery.addons.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal).
+The AMO Frontend (addons-frontend) repository is also home to the Disco Pane, short for Discovery Pane. This is the site that contains curated add-ons available by typing `about:addons` in the address bar. Another way to reach it is by clicking *Tools* in the menu bar, select *Add-ons* in the dropdown menu, and click *Get Add-ons* on the left panel. While this looks like it’s part of Firefox, it’s actually a remote web page.
 
 The content for the Disco Pane is available for translation in the [AMO (addons-server)](https://pontoon.mozilla.org/projects/amo) project.
 

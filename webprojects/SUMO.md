@@ -1,8 +1,9 @@
 # Support.mozilla.org(SUMO): how to localize and test
 
-SUMO, short for **SU**pport.**MO**zilla.org, is a knowledge base site, providing support to Mozilla product users. More than half of all Firefox users speak a language other than English. Mozilla depends on contributors to make support available to people around the globe.
+SUMO, short for SUpport.MOzilla.org, is a knowledge base site, providing support to Mozilla product users. More than half of all Firefox users speak a language other than English. Mozilla depends on contributors to make support available to people around the globe.
 
 SUMO consists of two parts:
+
 * User interface (or UI), such as navigation and buttons.
 * Support articles, either used to troubleshoot issue or as knowledge base for Mozilla products.
 
@@ -12,8 +13,8 @@ This document only covers the UI portion localizable in Pontoon.
 
 There are two active components in Pontoon that make up [the product](https://pontoon.mozilla.org/sumo):
 
-* **LC_MESSAGES/djangojs.po** contains strings for the JS bits of the platform.
-* **LC_MESSAGES/django.po** contains the majority of strings in the SUMO product.
+* `LC_MESSAGES/djangojs.po` contains strings for the JS bits of the platform.
+* `LC_MESSAGES/django.po` contains the majority of strings in the SUMO product.
 
 SUMO is made up by several file types. In order to minimize revision and get translation right the first time, the key is to get the context right. Look for clues or ask others for help:
 
@@ -24,8 +25,8 @@ Localized strings in Pontoon will be synced up with [sumo-l10n on GitHub](https:
 
 Ignore these legacy components:
 
-* LC_MESSAGES/buddyup.po contains strings for mobile-centric 1-to-1 support project.
-* LC_MESSAGES/yaocho.po contains strings for the mobile version of the support knowledge base.
+* `LC_MESSAGES/buddyup.po` contains strings for mobile-centric 1-to-1 support project.
+* `LC_MESSAGES/yaocho.po` contains strings for the mobile version of the support knowledge base.
 
 ## Testing
 
@@ -33,7 +34,7 @@ On Thursdays, SUMO developers perform synchronization so localized content is re
 
 On Mondays, SUMO developers perform synchronization so:
 
-* New strings from code and database edits go into sumo-l10n repository and are available in Pontoon.
+* New strings from code and database edits are merged into the sumo-l10n repository and become available in Pontoon for translation.
 * Translated strings from sumo-l10n are pushed to production.
 
 There are three ways to test the product:
