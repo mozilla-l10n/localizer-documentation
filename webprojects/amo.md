@@ -37,7 +37,7 @@ The hosts for the new frontend are the same as **addons-server**, except to disp
 
 ## Disco Pane app and editorial content
 
-The AMO Frontend (addons-frontend) repository is also home to the Disco Pane, short for Discovery Pane. This is the site that contains curated add-ons available by typing `about:addons` in the address bar. Another way to reach it is by clicking *Tools* in the menu bar, select *Add-ons* in the dropdown menu, and click *Get Add-ons* on the left panel. While this looks like it’s part of Firefox, it’s actually a web page served from [here](https://discovery.addons.mozilla.org).
+The AMO Frontend (addons-frontend) repository is also home to the Disco Pane, short for Discovery Pane. This is the site that contains curated add-ons available by typing `about:addons` in the address bar. Another way to reach it is by clicking *Tools* in the menu bar, select *Add-ons* in the dropdown menu, and click *Get Add-ons* on the left panel. While this looks like it’s part of Firefox, it’s actually a web page served from [here](https://discovery.addons.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal).
 
 The content for the Disco Pane is available for translation in the [AMO (addons-server)](https://pontoon.mozilla.org/projects/amo) project.
 
@@ -47,9 +47,9 @@ The strings will be available on Dev or Staging server depending on when they we
 
 The hosts for the Disco Pane are as follows:
 
-* Dev: https://discovery.addons-dev.allizom.org
-* Staging: https://discovery.addons.allizom.org
-* Production: https://discovery.addons.mozilla.org
+* Dev: https://discovery.addons-dev.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
+* Staging: https://discovery.addons.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
+* Production: https://discovery.addons.mozilla.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
 
 ## Frequency of strings extraction and push schedule
 

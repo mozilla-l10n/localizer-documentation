@@ -62,7 +62,7 @@ No, there are no sprints. Strings are added at *as needed* basis. Whenever a rel
 
 ### How do I participate in the [SUMO l10n forum](https://support.mozilla.org/en-US/forums/l10n-forum)?
 
-To be part of the SUMO community, you need to [create a SUMO account](https://support.mozilla.org/en-US/users/authcontributor), which allows you to write in our community l10n forum and localize any articles you see in SUMO. This is separate from the account used to log into Pontoon in order to localize SUMO product and other Mozilla products and projects.
+To be part of the SUMO community, you need to [create a SUMO account](https://support.mozilla.org/en-US/users/authcontributor), which allows you to write in the community l10n forum and localize SUMO articles. This is separate from the account used to log into Pontoon in order to localize SUMO product.
 
 ### Are there email communications when new strings are added?
 
