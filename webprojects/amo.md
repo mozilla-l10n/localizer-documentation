@@ -45,11 +45,23 @@ The content for the Disco Pane is available for translation in the [AMO (addons-
 
 The strings will be available on Dev or Staging server depending on when they were committed. See [this section](#frequency-of-strings-extraction-and-push-schedule) for details.
 
-The hosts for the Disco Pane are as follows:
+The hosts for the Disco Pane are:
 
-* Dev: https://discovery.addons-dev.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
-* Staging: https://discovery.addons.allizom.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
-* Production: https://discovery.addons.mozilla.org/en-US/firefox/discovery/pane/57.0/Darwin/normal
+* Dev: `https://discovery.addons-dev.allizom.org/`.
+* Staging: `https://discovery.addons.allizom.org/`.
+* Production: `https://discovery.addons.mozilla.org/`.
+
+The actual link is automatically generated and depends on the locale, operative system and version of Firefox. To get the correct production link for your system, you can open the Browser Console from Tools > Web Developer, copy and paste this code snippet in the input area at the bottom of the window, and press enter:
+
+```
+Services.urlFormatter.formatURL(Services.prefs.getCharPref("extensions.webservice.discoverURL").replace("%COMPATIBILITY_MODE%", "normal"))
+```
+
+This code reads the preference `extensions.webservice.discoverURL` from `about:config`, and replaces placeholders with the correct data for your system. For example:
+
+* The original value of `extensions.webservice.discoverURL` is `https://discovery.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%`.
+* If you’re using Firefox 57.0 is in Italian on macOS, the resulting URL will be `https://discovery.addons.mozilla.org/it/firefox/discovery/pane/57.0a1/Darwin/normal`.
+* To reach the Dev server, replace `addons.mozilla` in the domain with `addons-dev.allizom`, resulting in `https://discovery.addons-dev.allizom.org/it/firefox/discovery/pane/57.0a1/Darwin/normal`.
 
 ## Frequency of strings extraction and push schedule
 
