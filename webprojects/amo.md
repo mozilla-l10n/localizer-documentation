@@ -60,7 +60,7 @@ Services.urlFormatter.formatURL(Services.prefs.getCharPref("extensions.webservic
 This code reads the preference `extensions.webservice.discoverURL` from `about:config`, and replaces placeholders with the correct data for your system. For example:
 
 * The original value of `extensions.webservice.discoverURL` is `https://discovery.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%`.
-* If you’re using Firefox 57.0 is in Italian on macOS, the resulting URL will be `https://discovery.addons.mozilla.org/it/firefox/discovery/pane/57.0a1/Darwin/normal`.
+* If you’re using Firefox 57.0 in Italian on macOS, the resulting URL will be `https://discovery.addons.mozilla.org/it/firefox/discovery/pane/57.0a1/Darwin/normal`.
 * To reach the Dev server, replace `addons.mozilla` in the domain with `addons-dev.allizom`, resulting in `https://discovery.addons-dev.allizom.org/it/firefox/discovery/pane/57.0a1/Darwin/normal`.
 
 ## Frequency of strings extraction and push schedule
