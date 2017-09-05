@@ -30,15 +30,15 @@
     * [Example workflow](tools/pontoon/workflow.md)
 * [Mercurial tips](tools/mercurial/README.md)
 
-## Misc
-
-* [Glossary](misc/glossary.md)
-* [How to contribute](README.md#how-to-contribute)
-* [Community marketing kit](misc/community-marketing-kit.md)
-
 ## Web Projects
 
 * [Web projects](webprojects/README.md)
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Snippets](webprojects/snippets.md)
     * [Support.mozilla.org](webprojects/sumo.md)
+
+## Misc
+
+* [Glossary](misc/glossary.md)
+* [How to contribute](README.md#how-to-contribute)
+* [Community marketing kit](misc/community-marketing-kit.md)
