@@ -29,6 +29,7 @@
     * [Translation resources](tools/pontoon/resources.md)
     * [Example workflow](tools/pontoon/workflow.md)
 * [Mercurial tips](tools/mercurial/README.md)
+    * [Using annotate](tools/mercurial/tracking_back_string_to_bug.md)
 
 ## Web Projects
 
