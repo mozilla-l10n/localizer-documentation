@@ -30,7 +30,7 @@ From time to time [create a new profile](https://support.mozilla.org/kb/profile-
 * Check for untranslated strings and errors in the Library (Bookmarks->View all bookmarks…).
 * Open a new *Private Window* and check the content of the page.
 * Type `about:support` in the address bar, press Enter, and check for errors or missing translations.
-* Check the error pages for [malware](http://www.itisatrap.org/firefox/its-an-attack.html), [unwanted software](http://www.itisatrap.org/firefox/unwanted.html), [deceptive website](http://www.itisatrap.org/firefox/its-a-trap.html).
+* Check the error pages for [malware](http://www.itisatrap.org/firefox/its-an-attack.html), [unwanted software](http://www.itisatrap.org/firefox/unwanted.html), [deceptive website](http://www.itisatrap.org/firefox/its-a-trap.html), [harmful website](http://www.itisatrap.org/firefox/harmful.html). All strings are also visible in `about:blocked`.
 * Check permissions dialogs on [this test website](http://permission.site/).
 * Visit secure and unsecure website, and check the **i** panel near the URL.
 * Right click on a page and verify all panels in the `View Page Info` dialog.
