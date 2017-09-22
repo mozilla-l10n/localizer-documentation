@@ -3,6 +3,8 @@
 This set of documentation contains basic information on localizing and testing web based projects.
 
 * [Addons.mozilla.org (AMO)](amo.md).
+* [Fundraising](fundraising.md).
 * MDN.
 * [Snippets](snippets.md).
 * [Support.mozilla.org (SUMO)](sumo.md).
+* [Thimble](thimble.md).

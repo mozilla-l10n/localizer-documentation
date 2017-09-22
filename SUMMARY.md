@@ -35,8 +35,10 @@
 
 * [Web projects](webprojects/README.md)
     * [Addons.mozilla.org](webprojects/amo.md)
+    * [Fundraising](webprojects/fundraising.md)
     * [Snippets](webprojects/snippets.md)
     * [Support.mozilla.org](webprojects/sumo.md)
+    * [Thimble](webprojects/thimble.md)
 
 ## Misc
 
