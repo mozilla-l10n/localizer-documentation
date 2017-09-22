@@ -23,8 +23,8 @@ Localizers should approach receiving feedback with these things in mind:
 ## Giving constructive feedback
 
 When reviewing someone else’s translations, feedback should be actionable and based on objective standards. [Style guides] (https://mozilla-l10n.github.io/styleguides/) and terminology resources developed within the community with agreement from its members contain those objective standards. Feedback should include the following elements:
-1. Actionable criticism
-2. Reference to where the translation violates the objective standards
+1. Actionable criticism.
+2. Reference to where the translation violates the objective standards.
 
 For example, if a translation contains a spelling error, a constructive piece of feedback would look like this:
 “There’s a spelling mistake in *moniter*. The correct spelling can be found in either our official terminology or this section of the community style guide.“
