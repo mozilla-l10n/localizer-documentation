@@ -6,7 +6,7 @@ This website relies on third parties to handle payment. The localization of the 
 
 ## Testing
 
-Your translations are automatically deployed to the staging server, so you can test them a few minutes after they have been translated.
+Submitted translations are automatically deployed to the staging server, so you can test them a few minutes after they have been translated.
 
 * Staging server: https://donate.mofostaging.net/​.
 * Production server: https://donate.mozilla.org/.
