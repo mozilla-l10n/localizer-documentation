@@ -17,7 +17,8 @@ You may want to test the complete user journey on the website, but you don’t h
 
 ### Testing currency settings
 
-You want to make sure the default currency selected for your locale is the one that makes the most sense. We can only set a default currency by locale and can’t rely on geolocation to change it.
+The first thing to check is that the website supports all the relevant currencies for your locale.
+You also want to make sure the default currency selected for your locale is the one that makes the most sense. We can only set a default currency by locale and can’t rely on geolocation to change it.
 
 Check that the currency formatting is correct for your language. If it’s not correct, please [file an issue](#How-to-report-an-issue).
 
