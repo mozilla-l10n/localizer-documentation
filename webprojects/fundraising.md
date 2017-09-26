@@ -13,7 +13,7 @@ Submitted translations are automatically deployed to the staging server, so you 
 
 ### Testing the payment flow
 
-You may want to test the complete user journey on the website, but you don’t have to make an actual donation for that. Stripe has a [test mode](https://stripe.com/docs/testing#cards) that is enabled on the staging server only. Simply use the payment info from this page on the staging server and you should be able to simulate a payment. For instance you can select an amount of money, click on donate by credit/debit card then fill out the Stripe form with the testing info. Make sure the errors are properly localized, as well as the page displayed when the donation has been successful. You should also receive a confirmation email in your language.
+You may want to test the complete user journey on the website, but you don’t have to make an actual donation for that. Stripe has a [test mode](https://stripe.com/docs/testing#cards) that is enabled on the staging server only. Simply use the payment info from this page on the staging server and you should be able to simulate a payment. For instance, you can select an amount of money, click on donate by credit/debit card then fill out the Stripe form with the testing info. Make sure errors are properly localized, as well as the page displayed when the donation has been successful. You should also receive a confirmation email in your language.
 
 ### Testing currency settings
 
