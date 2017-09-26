@@ -6,7 +6,7 @@ MDN consists of three parts:
 
 * The [site user interface](https://developer.mozilla.org/) (or UI) strings that appear on almost all MDN pages to frame the main article content and provide navigation and user controls.
 * The main body of [MDN pages](https://developer.mozilla.org/docs/MDN/Contribute/Localize/Translating_pages) consists of references, guides, and tutorial articles. Localization is done directly on the web.
-* [Macro strings](https://github.com/mdn/kumascript/tree/master/macros) are the output by macro templates that construct certain kinds of navigation, messages, or generated structures. The strings currently live on GitHub, and changes can be done through pull requests or PR.
+* [Macro strings](https://github.com/mdn/kumascript/tree/master/macros) are the output by macro templates that construct certain kinds of navigation, messages, or generated structures. The strings currently live on GitHub, and changes can be done through pull requests.
 
 This document only covers the UI portion localizable in Pontoon.
 
