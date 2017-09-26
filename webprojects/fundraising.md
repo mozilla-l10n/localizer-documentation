@@ -4,7 +4,6 @@
 
 This website relies on third parties to handle payment. The localization of the payment system for debit/credit cards is managed by Stripe which we have no control of.
 
-
 ## Testing
 
 Submitted translations are automatically deployed to the staging server, so you can test them a few minutes after they have been translated.
