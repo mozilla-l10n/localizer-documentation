@@ -2,7 +2,8 @@
 
 [donate.mozilla.org](https://donate.mozilla.org) is our platform to collect donations. The main form is for Mozilla Foundation, but it also hosts a separate form for donations to Thunderbird.
 
-This website relies on third parties to handle payment. The localization of the payment form for debit/credit card payment is managed by Stripe and we do not have control.
+This website relies on third parties to handle payment. The localization of the payment system for debit/credit cards is managed by Stripe which we have no control of.
+
 
 ## Testing
 
@@ -13,14 +14,17 @@ Submitted translations are automatically deployed to the staging server, so you 
 
 ### Testing the payment flow
 
-You may want to test the complete user journey on the website, but you don’t have to make an actual donation for that. Stripe has a [test mode](https://stripe.com/docs/testing#cards) that is enabled on the staging server only. Simply use the payment info from this page on the staging server and you should be able to simulate a payment.
+You may want to test the complete user journey on the website, but you don’t have to make an actual donation for that. Stripe has a [test mode](https://stripe.com/docs/testing#cards) that is enabled on the staging server only. Simply use the payment info from this page on the staging server and you should be able to simulate a payment. For instance you can select an amount of money, click on donate by credit/debit card then fill out the Stripe form with the testing info. Make sure the errors are properly localized, as well as the page displayed when the donation has been successful. You should also receive a confirmation email in your language.
 
 ### Testing currency settings
 
 The first thing to check is that the website supports all the relevant currencies for your locale.
-You also want to make sure the default currency selected for your locale is the one that makes the most sense. We can only set a default currency by locale and can’t rely on geolocation to change it.
 
-Check that the currency formatting is correct for your language. If it’s not correct, please [file an issue](#How-to-report-an-issue).
+You also want to make sure the default currency selected for your locale is the one that makes the most sense. We can only set a default currency per locale and can’t rely on geolocation to change it.
+
+If your language is relevant in more than one country, make sure the other currencies are also available in the drop down.
+
+Check that the currency formatting on the page is correct for your language. If it’s not correct, please [file an issue](#how-to-report-an-issue).
 
 ## How to report an issue
 

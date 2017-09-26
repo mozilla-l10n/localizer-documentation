@@ -1,6 +1,8 @@
 # Thimble: how to localize and test
 
-Thimble is enabled for [in-context translation](./tools/pontoon/translate.md#translating-using-the-in-context-editor), for a few pages. Some parts like the editor are not available, but can be [tested through the staging server](#testing).
+Thimble is an online code editor that helps anyone learn HTML,  CSS and JavaScript by creating and remixing Web projects. For instance it can be used by educators around the world to teach web skills to kids, so the localization plays an important role.
+
+Thimble is enabled for [in-context translation](../tools/pontoon/translate.md#translating-using-the-in-context-editor), for a few pages. Some parts like the editor are not available, but can be [tested through the staging server](#testing).
 
 ## Testing
 
@@ -12,9 +14,7 @@ Your translations are automatically deployed to the staging server, so you can t
 
 ## Areas that can’t be localized
 
-Some parts of the project can’t be localized yet. For instance Thimble projects themselves, or the project listing displayed on the home page. This listing is dynamic and projects can be featured for a short period of time for a specific event.
-The sign up and sign in pages can’t be localized either.
-The video will be available for subtitling through YouTube once it’s updated with the latest Thimble features.
+Some parts of the project can’t be localized yet, such as Thimble projects themselves or the project listing displayed on the home page. This listing is dynamic and projects can be featured for a short period of time for a specific event. The signup and sign-in pages can’t be localized either. The video will be available for subtitling through YouTube once it’s updated with the latest Thimble features.
 
 ## How to report an issue
 
