@@ -35,9 +35,9 @@
 
 * [Web projects](webprojects/README.md)
     * [Addons.mozilla.org](webprojects/amo.md)
-    * [Developer.mozilla.org(MDN)](mdn.md)
+    * [Developer.mozilla.org (MDN)](webprojects/mdn.md)
     * [Snippets](webprojects/snippets.md)
-    * [Support.mozilla.org](webprojects/sumo.md)
+    * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
 ## Misc
 
