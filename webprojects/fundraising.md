@@ -2,7 +2,7 @@
 
 [donate.mozilla.org](https://donate.mozilla.org) is our platform to collect donations. The main form is for Mozilla Foundation, but it also hosts a separate form for donations to Thunderbird.
 
-This website relies on third parties to handle payment. The localization of the payment system for debit/credit cards is managed by Stripe which we have no control of.
+This website relies on third parties to handle payment. The localization of the payment system for debit/credit cards is managed directly by Stripe and it’s not possible to add or change translations.
 
 ## Testing
 
@@ -19,7 +19,7 @@ You may want to test the complete user journey on the website, but you don’t h
 
 The first thing to check is that the website supports all the relevant currencies for your locale.
 
-You also want to make sure the default currency selected for your locale is the one that makes the most sense. We can only set a default currency per locale and can’t rely on geolocation to change it.
+You also want to make sure the default currency selected for your locale is the one that makes the most sense. Only one default currency can be set per locale and it’s not possible to rely on geolocation to determine the best one.
 
 If your language is relevant in more than one country, make sure the other currencies are also available in the drop down.
 
