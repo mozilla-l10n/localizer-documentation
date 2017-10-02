@@ -45,4 +45,5 @@
 
 * [Glossary](misc/glossary.md)
 * [How to contribute](README.md#how-to-contribute)
+* [l10n resources](misc/l10n_resources.md)
 * [Community marketing kit](misc/community-marketing-kit.md)
