@@ -6,12 +6,14 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are provided by the mobile teams and sent out on dev-l10n. The latest iterations can be found here: [Focus for Android](https://npark-mozilla.github.io/index.html), [Focus for iOS (iPhone5)](https://drive.google.com/drive/folders/0BwM0URyvbEeSQmZPVGdiWVlfNm8) and [Focus for iOS (iPhone7)](https://drive.google.com/drive/folders/0BwM0URyvbEeSQmZPVGdiWVlfNm8).
+Screenshots are provided by the mobile teams and sent out on dev-l10n. The latest iterations can be found here: [Focus for Android](https://npark-mozilla.github.io/index.html). Focus for iOS (iPhone5) and Focus for iOS (iPhone7) screenshots are currently on hold and will be back up soon.
 
 ## Test builds
 
 While there are testing builds available via BuddyBuilds, the process is currently manual and localizers should reach out to the l10n mobile project manager in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).<br/>
 For Focus for iOS, please note an iOS device running v9 or above is needed. There is no specified version needed for Android.
+
+There are Beta builds available for Focus Android now, that can be found by scrolling to the bottom of the [Focus for Android Play Store listing](https://play.google.com/store/apps/details?id=org.mozilla.focus&hl).
 
 ## Aspects to review
 

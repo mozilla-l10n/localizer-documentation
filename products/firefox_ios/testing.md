@@ -4,7 +4,7 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are currently provided by the iOS team on dev.l10n, and the latest iterations can be found [right here](https://people-mozilla.org/~sarentz/fxios/screenshots/).
+Screenshots are currently provided by the iOS team on dev.l10n, and the latest iterations can be found [right here](http://wopr.norad.org/~sarentz/fxios/screenshots/).
 
 ## Test builds
 
@@ -21,7 +21,7 @@ Here is a list of issues you should try to identify when testing the build:
 * Font support.
 * Untranslated content.
 
-Concerning untranslated content: please note that we currently have [two tiers of support in iOS](https://people-mozilla.org/~sarentz/ios-locales.html). If your locale is only in the Tier 2 support list, then it sometimes happens that menu items, which are part of the OS itself, may not be localizable - and will therefore unfortunately appear in English on the final UI.
+Concerning untranslated content: please note that we currently have two tiers of support in iOS. If your locale is only in the Tier 2 support list, then it sometimes happens that menu items, which are part of the OS itself, may not be localizable - and will therefore unfortunately appear in English on the final UI. To tell if a locale is supported or not, simply take a look on an actual device, under the Language Settings of the most recent iOS version available. Tier 1 locales are the ones listed under “iPod/iPhone/iPad Language”, and Tier 2 locales appear under “Other Language” (or “Add Language” if there are already some languages under that list).
 
 ## Testing a brand new locale
 
