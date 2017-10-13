@@ -4,7 +4,7 @@
 
 Once you have localized [all the strings needed to complete the Firefox for Android project](localize_android.md), and your language is now up on single-locale builds, you should start testing! This is the moment to engage as much people as possible: have them use and check-out these builds regularly. The more eyes on them, the better.
 
-First, authorize 3rd party app downloads from your Android phone’s settings. From your phone, download your locale from https://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-central-android-api-15-l10n/ by clicking on the most recent link with your locale code in it (Note: you may want to scroll down the page to make sure you are choosing the most recent build!)
+First, authorize 3rd party app downloads from your Android phone’s settings. From your phone, download your locale from http://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-central-android-api-16-l10n/ by clicking on the most recent link with your locale code in it (Note: you may want to scroll down the page to make sure you are choosing the most recent build!)
 
 Then, choose the .apk link out of the 3 possible options listed. Download should start and once the app is installed, you should be able to test your locale.
 
