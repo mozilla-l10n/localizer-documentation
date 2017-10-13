@@ -72,7 +72,7 @@ When a project has a firm deadline to meet, it will be communicated through the 
 
 ## Testing dynamic pages
 
-This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instrutions below are detailed steps to get to the localized content so it can be reviewed in context.
+This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.
 
 ### [firefox/desktop/tips.lang](https://www.mozilla.org/firefox/desktop/tips/)
 
