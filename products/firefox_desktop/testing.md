@@ -1,5 +1,7 @@
 # Testing Firefox Desktop
 
+<!-- toc -->
+
 ## Which build should I test?
 
 As a localizer you will work against Nightly, which means you should be testing a localized build of Firefox Nightly provided directly by Mozilla.
@@ -9,6 +11,10 @@ You can download the build from the [pre-release download page](https://www.mozi
 Why Nightly? Because it’s updated every day, which means that you can fix an error and verify if the correction was effective the day after. It’s definitely a good approach to use this version as your main browser.
 
 At the same time, you, or someone in your team, should be testing also Beta and Release, to make sure updates don’t introduce issues.
+
+### Building a localized version of Firefox
+
+If you’re interested in building a localized version of Firefox from source code, please follow the [official instructions](https://firefox-source-docs.mozilla.org/build/buildsystem/locales.html) available in Mozilla Source Tree Docs. Note that you will need to set up the [build environment](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build) on your system.
 
 ## How to test
 
@@ -52,7 +58,9 @@ If your locale uses a non Latin alphabet and opted to keep the English accesskey
 
 For shortcuts, you should test at least the [most common ones](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly). You should never change a shortcut, unless that combination of keys is not available in the keyboard layout commonly used for your locale. For example, in the Italian keyboard the character `[` is available pressing `Alt` and `è`. A shortcut based on `Shift + [` would never work, because it would be read as `Alt + Shift + è`.
 
-### Test the installer on windows
+Transvision has a QA view to check both [accesskeys](https://transvision.mozfr.org/accesskeys/) and [keyboard shortcuts](https://transvision.mozfr.org/commandkeys/) for each locale.
+
+### Test the installer on Windows
 
 Download the installer version and make sure that everything is working correctly. In the [FTP folder](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/) you have both the Full Installer and the Stub Installer (downloading the package from Internet). You should test both at least once.,
 
@@ -61,4 +69,4 @@ Download the installer version and make sure that everything is working correctl
 Photon is the redesigned UI that will ship in Firefox 57:
 * The hamburger menu will be replaced by a static dropdown menu. If you’re on Nightly and still see the old menu, make sure that `browser.photon.structure.enabled` is set to `true` in about:config (that’s the default value in Nightly 56 and later).
 * Test the *Overflow menu*: the `>>` symbol will appear automatically in the main toolbar when resizing the window to a small width. You can then pin an element to it, or add/remove items from the toolbar directly from their context menu.
-* Test the onboarding tour by clicking the small fox displayed in the left corner on the New tab. There are also onboarding notifications, displayed at the bottom of the page: you can cycle through them by opening multiple new tabs in a row. Note that the onboarding is currently not compatible with Activity Stream.
+* Test the onboarding tour by clicking the small fox displayed in the left corner on the New tab. There are also onboarding notifications, displayed at the bottom of the page: you can cycle through them by opening multiple new tabs in a row.
