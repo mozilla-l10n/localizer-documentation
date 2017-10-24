@@ -4,7 +4,7 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are currently provided by the iOS team on dev.l10n, and the latest iterations can be found [right here](http://wopr.norad.org/~sarentz/fxios/screenshots/).
+Screenshots are currently provided by the iOS team on dev.l10n, and the latest iterations can be found [right here](http://wopr.norad.org/~fxios/).
 
 ## Test builds
 
