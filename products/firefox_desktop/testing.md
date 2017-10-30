@@ -40,8 +40,9 @@ From time to time [create a new profile](https://support.mozilla.org/kb/profile-
 * Check permissions dialogs on [this test website](http://permission.site/).
 * Visit secure and unsecure website, and check the **i** panel near the URL.
 * Right click on a page and verify all panels in the `View Page Info` dialog.
+* Test Form Autofill using these [test pages](https://luke-chang.github.io/autofill-demo/). Make sure that `Autofill addresses` and `Autofill credit cards` are enabled in Firefox settings (*Privacy & Security* panel). Note that `Form Autofill` can be localized, it’s not a brand name.
 
-#### Testing webextension permissions dialog
+### Test webextension permissions dialog
 
 Create a new profile and open `about:config` in your browser:
 * Right click on the list of available keys and create a new boolean key `extensions.webextPermissionPrompts` set to `true`.
