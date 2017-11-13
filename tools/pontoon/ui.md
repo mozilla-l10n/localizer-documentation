@@ -1,5 +1,7 @@
 # Understanding Pontoon user interface
 
+<!-- toc -->
+
 ## Pontoon translation workspace
 
 Pontoon’s translation workspace features the list of strings in the left sidebar and the editing space on the right.
@@ -63,11 +65,15 @@ To the lower-right side of the workspace, the translator can `COPY` the source s
 
 To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
 
-When working on l20n files, the editing space will look a bit different:
+When working on FTL (Fluent) files, the editing space will look a bit different:
 
 ![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n.png)
 
-In the example above, the string has 2 attributes: `value` and `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+
+The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Irish has 5 forms (highlighted in orange).
+
+![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n_plurals.png)
 
 By clicking the gear icon, the translator can activate or deactivate `Quality Checks` or `Make Suggestions` and navigate to their user settings.
 

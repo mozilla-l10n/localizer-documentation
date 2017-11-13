@@ -88,7 +88,7 @@ Every language and region displays numbers, dates, and currency differently. The
 
 ### XML parsing errors
 
-XML parsing errors (aka “the yellow screen of death”) cause Firefox to display a yellow error page. This is often due to a broken translated string in that localization of Firefox which causes the Firefox build to break. With l20n, these errors will no longer be relevant.
+XML parsing errors (aka “the yellow screen of death”) cause Firefox to display a yellow error page. This is often due to a broken translated string in that localization of Firefox which causes the Firefox build to break. With Fluent, these errors will no longer be relevant.
 
 ![XML parsing bug](/assets/images/l10n_testing/xml_parsing.png)
 
