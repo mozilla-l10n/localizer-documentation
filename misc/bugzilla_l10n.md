@@ -17,7 +17,7 @@ A bug has a *status*, the most common ones are:
 * *NEW*: the bug has been confirmed, but it still requires action.
 * *RESOLVED*: the bug has been resolved.
 
-When a bug is marked as *resolved*, there is an [additional information](https://developer.mozilla.org/docs/Mozilla/Bugzilla/What_to_do_and_what_not_to_do_in_Bugzilla#Resolving_bugs) that describes the type of resolution:
+When a bug is marked as *RESOLVED*, there is an [additional information](https://developer.mozilla.org/docs/Mozilla/Bugzilla/What_to_do_and_what_not_to_do_in_Bugzilla#Resolving_bugs) that describes the type of resolution:
 * *FIXED*: the bug was fixed by a specific action.
 * *INVALID*: the problem described is not a bug.
 * *WONTFIX*: the problem described is a bug which will never be fixed.
@@ -48,8 +48,10 @@ The simplest way to keep your bugs under control is to follow your locale in *Mo
 The product will appear in the section *You are currently watching:* right below. From this moment, you will receive an email for all bugs filed in – or moved to – that component.
 
 There are a few limitations to this approach:
-* Bugs marked as *unconfirmed* won’t send any notification.
 * It’s not possible to follow a single locale within a component, for example for `www.mozilla.org :: L10N`.
+* By default, bugs marked as *UNCONFIRMED* won’t send any notification. In order to receive emails for unconfirmed bugs, you need to update the *Email Preferences* in your [profile](https://bugzilla.mozilla.org/userprefs.cgi), removing the flag from the *Component* column in the line `The bug is in the UNCONFIRMED state`.
+
+![Email Preferences](/assets/images/bugzilla/email_preferences.png)
 
 ### Saved searches
 
@@ -67,10 +69,10 @@ When the results appear, you can use the *Remember search* button and input fiel
 
 ![Remember search](/assets/images/bugzilla/remember_search.png)
 
-Note that you can select multiple products and multiple statuses (including *unconfirmed*) to refine or expand the search criteria.
+Note that you can select multiple products and multiple statuses (including *UNCONFIRMED*) to refine or expand the search criteria.
 
 ### Confirm and close bugs
 
-As already explained, each locale should address the bugs reported for their language in a timely manner. Bugs filed as *unconfirmed* should be triaged, marked as *new* if they’re actual bugs or closed, and marked as *fixed* once the problem is solved.
+As already explained, each locale should address the bugs reported for their language in a timely manner. Bugs filed as *UNCONFIRMED* should be triaged, marked as *NEW* if they’re actual bugs or closed, and marked as *fixed* once the problem is solved.
 
 By default, users can’t confirm or close bugs filed by other users. In order to do that, you need a permission called `editbugs`, which is normally assigned to localizers only after they demonstrated a clear understanding of how Bugzilla works and its [etiquette](https://bugzilla.mozilla.org/page.cgi?id=etiquette.html). The reason for this is that this permission is assigned across the entire Bugzilla, not on single products or components. If you need to upgrade your permissions, get [in touch with l10n-drivers](https://wiki.mozilla.org/L10n:Mozilla_Team).
