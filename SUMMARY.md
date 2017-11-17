@@ -28,6 +28,7 @@
     * [How to translate](tools/pontoon/translate.md)
     * [Translation resources](tools/pontoon/resources.md)
     * [Example workflow](tools/pontoon/workflow.md)
+* [Bugzilla for localizers](misc/bugzilla_l10n.md)
 * [Mercurial tips](tools/mercurial/README.md)
     * [Using annotate](tools/mercurial/tracking_back_string_to_bug.md)
 
