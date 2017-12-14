@@ -62,7 +62,7 @@ Writing snippets takes a lot of effort. Follow [the same guidelines](https://doc
 Snippets should be to the point. Try writing your snippet then cut it down until you are left with a sentence that is quick, clever and delightful. A good snippet copy has a few of the following qualities and characteristics:
 
 * Tangible: quality that can be easily measured.
-    * **Lenght**: the ideal snippet is between 80 and 130 characters. Think of a tweet, omit needless words.
+    * **Length**: the ideal snippet is between 80 and 130 characters. Think of a tweet, omit needless words.
     * **Readability**: short concise words worked for Hemingway, they’ll work just fine for you. Keep the 3 syllable words and technical jargon to a minimum.
     * **Call to action - CTA (Occasional)**: you don’t always need to blatantly tell people what to do, but sometimes you do.
     * **Grammar**: do your best to catch mistakes, there is a chance that all checkpoints will miss it but 100 million people surely won’t.
@@ -72,7 +72,7 @@ Snippets should be to the point. Try writing your snippet then cut it down until
 
 * Intangible: quality that is recognized but difficult to quantify.
 
-    * **Quikc**: get to the point with short words and sentences.
+    * **Quick**: get to the point with short words and sentences.
     * **Clever**: find humor, irony and wordplay. Reference modern life.
     * **Alert**: ready to offer tips, advice and guidance like a trained concierge.
     * **Untamed**: be quirky. Do and say things no other brand would.
