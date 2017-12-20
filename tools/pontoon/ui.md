@@ -65,16 +65,6 @@ To the lower-right side of the workspace, the translator can `COPY` the source s
 
 To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
 
-When working on FTL (Fluent) files, the editing space will look a bit different:
-
-![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n.png)
-
-In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
-
-The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Irish has 5 forms (highlighted in orange).
-
-![Translation workspace for l20n files](/assets/images/pontoon/ui/workspace_l20n_plurals.png)
-
 By clicking the gear icon, the translator can activate or deactivate `Quality Checks` or `Make Suggestions` and navigate to their user settings.
 
 ![Settings menu](/assets/images/pontoon/ui/settings.png)
@@ -84,6 +74,24 @@ Note that access to certain settings may be restricted by [user rights](users.md
 By clicking the keyboard, a translator can view the workspace keyboard shortcuts.
 
 ![Keyboard Shortcuts](/assets/images/pontoon/ui/shortcuts.png)
+
+#### FTL (Fluent) files
+
+When working on FTL (Fluent) files, the editing space will look a bit different:
+
+![Translation workspace for Fluent string](/assets/images/pontoon/ui/workspace_ftl.png)
+
+In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+
+The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has 3 forms (highlighted in orange).
+
+![Translation workspace for Fluent string with plurals](/assets/images/pontoon/ui/workspace_ftl_plurals.png)
+
+In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, you can check [Fluent’s documentation](http://projectfluent.org/fluent/guide/).
+
+![Translation workspace for Fluent string in source view](/assets/images/pontoon/ui/workspace_ftl_sourceview.png)
+
+Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
 ### Pontoon workspace resources
 
