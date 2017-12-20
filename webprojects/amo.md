@@ -18,7 +18,7 @@ Now let’s take a look of these components in greater details.
 
 **Addons-server** is the default front-end for desktop users of AMO. It is also the API backend and home to the developer hub and reviewer tools.
 
-### [addons-frontend](https://pontoon.mozilla.org/projects/amo)
+### [addons-frontend](https://pontoon.mozilla.org/projects/amo-frontend)
 
 **Addons-frontend** is the default frontend for mobile user-agents, and it will eventually replace the **addons-server** frontend for user-pages.
 
