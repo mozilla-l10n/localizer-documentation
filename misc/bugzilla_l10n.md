@@ -65,9 +65,15 @@ Start from the [Advanced Search page](https://bugzilla.mozilla.org/query.cgi?que
 
 ![Custom Search](/assets/images/bugzilla/custom_search.png)
 
-When the results appear, you can use the *Remember search* button and input field to save this search. The list of your searches will be displayed at the bottom of each Bugzilla page: you simply need to click the link to perform the same search.
+When the results appear, you can use the *Remember search* button and input field to save this search.
 
 ![Remember search](/assets/images/bugzilla/remember_search.png)
+
+The list of your saved searches can be displayed by clicking in the search field at the top of the page: you simply need to click one of the items to perform the search.
+
+![Remember search](/assets/images/bugzilla/saved_searches.png)
+
+At the bottom of the page displaying search results, there’s a link to delete the saved search just performed (*Forget Search 'NAME'*).
 
 Note that you can select multiple products and multiple statuses (including *UNCONFIRMED*) to refine or expand the search criteria.
 
