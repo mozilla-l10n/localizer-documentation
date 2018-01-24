@@ -75,7 +75,7 @@ By clicking the keyboard, a translator can view the workspace keyboard shortcuts
 
 ![Keyboard Shortcuts](/assets/images/pontoon/ui/shortcuts.png)
 
-#### FTL (Fluent) files
+#### Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look a bit different:
 
