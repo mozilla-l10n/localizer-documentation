@@ -106,7 +106,7 @@ emails = { $unreadEmails ->
 
 While in most cases messages will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key, that can be selected when referencing the message ID from another message. Unlike selectors, the message doesn’t depend on the value of an external variable or function.
 
-This can be useful, for example, to translate according to grammatical case or gender. The following example combines a private message (`-creature-elf`) and variants.
+This can be useful, for example, to adapt a message to different grammatical cases. The following example combines a private message (`-creature-elf`) and variants.
 
 In English:
 
