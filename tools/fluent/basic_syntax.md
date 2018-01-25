@@ -127,9 +127,9 @@ In German:
     }
 
 you-found-elf = Du hast { -creature-elf[Akkusativ] } gefunden.
-elf-found-you = Ups, { -creature-elf[Nominativ] } dich gefunden.
+elf-found-you = Ups, { -creature-elf[Nominativ] } hat dich gefunden.
 ```
 
-As for selectors, there must be a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
+Similar to selectors, there must be a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
 
 Other examples are available in the [document about brand names](brand_names.md).
