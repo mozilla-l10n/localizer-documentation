@@ -11,6 +11,6 @@ Unless indicated otherwise in comments, the [current policy](https://www.mozilla
 
 For example, a message `-brand-short-name` is exposed in `browser/branding/official/brand.ftl`, and it can be referenced in other messages as follows:
 
-```
+```PROPERTIES
 close-msg = Do you want to close { -brand-short-name }?
 ```

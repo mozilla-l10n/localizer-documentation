@@ -4,7 +4,7 @@ Functions can be used in Fluent to format data according to the current language
 
 Fluent includes some [generic built-in functions](http://projectfluent.org/fluent/guide/functions.html#built-in-functions), like `NUMBER` and `DATETIME`. Such built-in functions can be used in placeables and selectors. For example:
 
-```
+```PROPERTIES
 dpi-ratio = Your DPI ratio is { NUMBER($ratio, minimumFractionDigits: 2) }
 
 your-score = { NUMBER($score, minimumFractionDigits: 1) ->
@@ -21,8 +21,8 @@ This document describes additional built-in functions available in Gecko product
 
 For example, Firefox settings are currently called *Options* in Windows, *Preferences* in macOS and Linux. Strings can be differentiated in Fluent by defining a message as follows:
 
-```
-pref-page
+```PROPERTIES
+pref-page =
     .title = { PLATFORM() ->
         [win] Options
        *[other] Preferences
@@ -33,7 +33,7 @@ pref-page
 
 The following example uses the `PLATFORM()` built-in for each attribute:
 
-```
+```PROPERTIES
 download-choose-folder =
     .label =
         { PLATFORM() ->
