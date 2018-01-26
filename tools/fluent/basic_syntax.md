@@ -101,35 +101,3 @@ emails = { $unreadEmails ->
        *[other] You have { $unreadEmails } unread emails.
     }
 ```
-
-## Variants
-
-While in most cases messages will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key, that can be selected when referencing the message ID from another message. Unlike selectors, the message doesn’t depend on the value of an external variable or function.
-
-This can be useful, for example, to adapt a message to different grammatical cases. The following example combines a private message (`-creature-elf`) and variants.
-
-In English:
-
-```PROPERTIES
--creature-elf = an Elf
-
-you-found-elf = You found { -creature-elf }.
-elf-found-you = Oops, { -creature-elf } found you.
-```
-
-In German:
-
-```PROPERTIES
--creature-elf =
-    {
-       *[Nominativ] ein Elf
-        [Akkusativ] einen Elf
-    }
-
-you-found-elf = Du hast { -creature-elf[Akkusativ] } gefunden.
-elf-found-you = Ups, { -creature-elf[Nominativ] } hat dich gefunden.
-```
-
-Similar to selectors, there must be a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
-
-Other examples are available in the [document about brand names](brand_names.md).
