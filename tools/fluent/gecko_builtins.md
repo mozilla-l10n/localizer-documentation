@@ -2,7 +2,7 @@
 
 Functions can be used in Fluent to format data according to the current language’s rules, or can provide additional data to fine tune the translation.
 
-Fluent includes some [generic built-in functions](http://projectfluent.org/fluent/guide/functions.html#built-in-functions), like `NUMBER` and `DATETIME`, for numbers and dates formatting, respectively. Such built-in functions can be used in placeables and selectors. For example:
+Fluent includes some [generic built-in functions](http://projectfluent.org/fluent/guide/functions.html#built-in-functions), like `NUMBER` and `DATETIME`, for number and date formatting, respectively. Such built-in functions can be used in placeables and selectors. For example:
 
 ```PROPERTIES
 dpi-ratio = Your DPI ratio is { NUMBER($ratio, minimumFractionDigits: 2) }
