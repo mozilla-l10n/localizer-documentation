@@ -17,7 +17,7 @@ This document describes additional functions available in Gecko products. Please
 
 ## PLATFORM
 
-`PLATFORM` is a function that allows localizers to taylor messages to the current platform. Allowed key variants are: `linux`, `win`, `macosx`, `android`, `other`.
+`PLATFORM` is a function that allows localizers to tailor messages to the current platform. Allowed variant keys are: `linux`, `win`, `macosx`, `android`, `other`.
 
 For example, Firefox settings are currently called *Options* in Windows, *Preferences* in macOS and Linux. Strings can be differentiated in Fluent by defining a message as follows:
 
