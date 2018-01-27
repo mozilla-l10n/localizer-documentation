@@ -17,14 +17,14 @@ This document describes additional functions available in Gecko products. Please
 
 ## PLATFORM
 
-`PLATFORM` is a function that allows localizers to tailor messages to the current platform. Allowed variant keys are: `linux`, `win`, `macosx`, `android`, `other`.
+`PLATFORM` is a function that allows localizers to tailor messages to the current platform. Allowed variant keys are: `windows`, `macos`, `linux`, `android`, `other`.
 
 For example, Firefox settings are currently called *Options* in Windows, *Preferences* in macOS and Linux. Strings can be differentiated in Fluent by defining a message as follows:
 
 ```PROPERTIES
 pref-page =
     .title = { PLATFORM() ->
-        [win] Options
+        [windows] Options
        *[other] Preferences
     }
 ```
@@ -37,12 +37,12 @@ The following example uses the `PLATFORM()` function for each attribute:
 download-choose-folder =
     .label =
         { PLATFORM() ->
-            [macosx] Choose…
+            [macos] Choose…
            *[other] Browse…
         }
     .accesskey =
         { PLATFORM() ->
-            [macosx] e
+            [macos] e
            *[other] o
         }
 ```
