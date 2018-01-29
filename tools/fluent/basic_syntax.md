@@ -4,7 +4,7 @@
 
 ## Basic syntax
 
-A *message* represents the basic unit of translation in Fluent. This is the simplest form a message could take:
+A *Message* represents the basic unit of translation in Fluent. This is the simplest form messages can take:
 
 ```PROPERTIES
 welcome-msg = Hello, World!
@@ -12,7 +12,7 @@ welcome-msg = Hello, World!
 
 `welcome-msg` is the message identifier (or message ID), and `Hello, World!` is the **value** of this message.
 
-A message can contain **external arguments**, for example:
+Messages can contain **external arguments**, for example:
 
 ```PROPERTIES
 welcome-msg = Welcome { $user }
@@ -31,12 +31,12 @@ menu-settings = Settings
 help-menu-settings = Click { menu-settings } to save the file.
 ```
 
-There is a special category of messages, called **private messages**:
-* Private messages have identifiers starting with a dash, e.g. `-brand-short-name`.
+A *Term* is a special category of Message:
+* Terms have identifiers starting with a dash, e.g. `-brand-short-name`.
 * They can’t be called directly in the source code, but only referenced within other messages.
 * Each localization can add or remove attributes, regardless of the reference language (typically `en-US`).
 
-For example, a private message is used to define the *Firefox* brand name. For more details, see [this document](brand_names.md).
+For example, a term is used to define the *Firefox* brand name. For more details, see [this document](brand_names.md).
 
 ```PROPERTIES
 -brand-short-name = Firefox
@@ -56,7 +56,7 @@ login-button =
 The message `login-button` doesn’t have a *value*, but has 2 *attributes* defined: `label` and `accesskey`. There are a few things to highlight in this FTL fragment:
 * Attribute definitions must be indented and start with a period.
 * There is an equal sign following the message identifier, even if there is no value (i.e. the value is *Null*).
-* All attributes of public messages found in the reference language – typically `en-US` – must be present in the localization. This will be enforced by tools like compare-locales, which will warn on missing or obsolete (only available in the localization) attributes.
+* All attributes of messages found in the reference language – typically `en-US` – must be present in the localization. This will be enforced by tools like compare-locales, which will warn on missing or obsolete (only available in the localization) attributes.
 
 ```PROPERTIES
 instructions-link = Log out
