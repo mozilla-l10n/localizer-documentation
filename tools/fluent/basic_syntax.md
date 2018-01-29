@@ -34,7 +34,7 @@ help-menu-settings = Click { menu-settings } to save the file.
 There is a special category of messages, called **private messages**:
 * Private messages have identifiers starting with a dash, e.g. `-brand-short-name`.
 * They can’t be called directly in the source code, but only referenced within other messages.
-* Each localization can add or remove attributes, regardless of the reference language (typically `en-US`). Names for such attributes can be defined using the local language instead of English, e.g. *Akkusativ* instead of *Accusative* for German.
+* Each localization can add or remove attributes, regardless of the reference language (typically `en-US`).
 
 For example, a private message is used to define the *Firefox* brand name. For more details, see [this document](brand_names.md).
 
@@ -57,7 +57,6 @@ The message `login-button` doesn’t have a *value*, but has 2 *attributes* defi
 * Attribute definitions must be indented and start with a period.
 * There is an equal sign following the message identifier, even if there is no value (i.e. the value is *Null*).
 * All attributes of public messages found in the reference language – typically `en-US` – must be present in the localization. This will be enforced by tools like compare-locales, which will warn on missing or obsolete (only available in the localization) attributes.
-* While it’s possible to define a new attribute with a localized name in private messages, when localizing a message with attributes, only the attribute value will be localized; the attribute name should be kept unchanged.
 
 ```PROPERTIES
 instructions-link = Log out
