@@ -101,3 +101,14 @@ emails = { $unreadEmails ->
        *[other] You have { $unreadEmails } unread emails.
     }
 ```
+
+Note how the `[one]` form in English doesn’t explicitly use the variable, in order to display the word `one` instead of the digit `1`.
+
+In plural messages is always possible to expose the number, even if the reference language doesn’t; the name of the variable is defined at the beginning of the select expression, in this case `$unreadEmails`. The first example in this section can be translated in Italian using `$unreadEmails` in both forms:
+
+```PROPERTIES
+emails = { $unreadEmails ->
+        [one] C’è { $unreadEmails } messaggio non letto.
+       *[other] Ci sono { $unreadEmails } messaggi non letti.
+    }
+```
