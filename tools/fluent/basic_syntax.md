@@ -108,7 +108,7 @@ In plural messages is always possible to expose the number, even if the referenc
 
 ```PROPERTIES
 emails = { $unreadEmails ->
-        [one] C’è { $unreadEmails } un messaggio non letto.
+        [one] C’è { $unreadEmails } messaggio non letto.
        *[other] Ci sono { $unreadEmails } messaggi non letti.
     }
 ```
