@@ -61,6 +61,15 @@ For shortcuts, you should test at least the [most common ones](https://support.m
 
 Transvision has a QA view to check both [accesskeys](https://transvision.mozfr.org/accesskeys/) and [keyboard shortcuts](https://transvision.mozfr.org/commandkeys/) for each locale.
 
+### Test certificate error pages
+
+There are several certificate error pages in Firefox, the message displayed can vary depending on the error being bypassable or not:
+* SEC_ERROR_UNKNOWN_ISSUER: [bypassable](https://untrusted-root.badssl.com), [not bypassable](https://a.subdomain.preloaded-hsts.badssl.com).
+* SSL_ERROR_BAD_CERT_DOMAIN: [bypassable](https://wrong.host.badssl.com), [not bypassable](https://subdomain.preloaded-hsts.badssl.com).
+* SEC_ERROR_EXPIRED_CERTIFICATE: [bypassable](https://expired.badssl.com).
+
+Other test pages for certificates, both valid and invalid, are available at [https://badssl.com](https://badssl.com).
+
 ### Test the installer on Windows
 
 Download the installer version and make sure that everything is working correctly. In the [FTP folder](http://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/) you have both the Full Installer and the Stub Installer (downloading the package from Internet). You should test both at least once.,
