@@ -34,6 +34,22 @@ We use [GitHub issues](https://github.com/mozilla-l10n/localizer-documentation/i
 
 In order to contribute, open a pull request in the [repository](https://github.com/mozilla-l10n/localizer-documentation), adding the new file or updating an existing document. Make sure to follow [these style guidelines](https://github.com/mozilla-l10n/documentation/blob/master/misc/documentation_styleguide.md), and note that all pull requests need to be reviewed before merge.
 
+You can run the following commands to make sure that files are correctly formatted (you will need to [install npm](https://www.npmjs.com/get-npm) if it’s not already available):
+
+```
+$ npm install
+$ npm test
+```
+
+## GitBook
+
+GitBook is built automatically via Travis, and changes pushed to the `gh-pages` branch. If you want to build and preview the GitBook locally, [install npm](https://www.npmjs.com/get-npm) and and run the following commands from the root of the repository:
+
+```
+$ npm install
+$ npm start
+```
+
 GitBook is used to generate [these pages](https://mozilla-l10n.github.io/localizer-documentation): it’s run automatically via Travis and content pushed to the gh-pages branch.
 
 If you want content to be available in GitBook, make sure to include a link in [SUMMARY.md](SUMMARY.md).
