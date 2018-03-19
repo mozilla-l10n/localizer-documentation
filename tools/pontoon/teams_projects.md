@@ -8,6 +8,8 @@ From each locale’s *Team page* it’s also possible to [request a project](#re
 
 The [Projects page](https://pontoon.mozilla.org/teams/) lists all projects that are available in Pontoon. From here you can access the list of locales that are enabled for the requested project. This is called a [Project page](#project-page) in Pontoon. By selecting a locale in the *Project page* you access the [Localization page](#localization-page).
 
+There is also a special Localization page that allows to access all resources for all projects enabled for a specific locale: `/locale/all-projects/all-resources`.
+
 The following diagram shows how these pages are organized and connected to each other:
 
 ![Team and project pages flow](/assets/images/pontoon/teams_projects/page_flow.png)
@@ -20,7 +22,7 @@ This is a screenshot of the [Italian team page](https://pontoon.mozilla.org/it):
 
 ![Team page for Italian](/assets/images/pontoon/teams_projects/team_page.png)
 
-The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics.
+The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects, for example to reach all missing strings across projects available for Italian in Pontoon.
 
 ![Header of team page for Italian](/assets/images/pontoon/teams_projects/team_page_header.png)
 

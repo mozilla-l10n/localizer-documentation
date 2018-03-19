@@ -1,12 +1,6 @@
 # How to translate
 
-* [Translating strings](#translating-strings):
-    * [Submit a suggestion](#submit-a-suggestion).
-    * [Review a suggestion](#review-a-suggestion).
-    * [Submit a translation](#submit-a-translation-directly).
-* [Translating using the in-context Editor](#translating-using-the-in-context-editor).
-* [Performing batch actions on strings](#performing-batch-actions-on-strings).
-* [Downloading and uploading translations](#downloading-and-uploading-translations).
+<!-- toc -->
 
 ## Translating strings
 

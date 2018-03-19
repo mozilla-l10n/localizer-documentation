@@ -1,9 +1,6 @@
 # User accounts and settings
 
-* [Creating an account](#creating-an-account).
-* [User settings](#user-settings).
-* [User roles](#user-roles).
-* [Managing permissions](#managing-permissions).
+<!-- toc -->
 
 ## Creating an account
 

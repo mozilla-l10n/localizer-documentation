@@ -20,7 +20,7 @@ To navigate to another project, click on each item to open the drop-down menu an
 
 Clicking `All` or `Current` in the drop-down menu might navigate away from the translation workspace:
 * In the `Locales` section, `All Teams` links to the *Teams page*, while `Current Team` links to the *Team page* for the current locale.
-* In the `Project` section, `All Projects` links to the *Projects page*, while `Current Project` links to the *Project page* for the current project.
+* In the `Project` section, `All Projects` allows to access resources for all projects enabled in a specific locale, `Projects Dashboard` links to the *Projects page*, while `Current Project Dashboard` links to the *Project page* for the current project.
 * In the `Resources` section, `All Resources` will display string for all files in the projects, while `Current Localization` links to the *Localization page*.
 
 More information on how pages are organized in Pontoon is available in [this document](teams_projects.md).
