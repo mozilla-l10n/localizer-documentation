@@ -19,7 +19,13 @@ To create an account on [Pontoon](https://pontoon.mozilla.org/), simply click on
 
 ![Pontoon login](/assets/images/pontoon/users/menu_settings.png)
 
-Profile picture can be set on [Gravatar](http://gravatar.com/), while the displayed name can be edited simply by clicking on it.
+Profile picture can be set or updated on [Gravatar](http://gravatar.com/) by clicking directly on the image.
+
+In the *Personal information* section it’s possible to update the displayed name and change the email address used to log in to Pontoon.
+
+It’s also possible to set the default homepage displayed when visiting Pontoon as a logged in user. Current options are:
+* Default homepage (Localization page for the Pontoon Intro project).
+* [A Team page](teams_projects.md#team-page).
 
 ![Pontoon login](/assets/images/pontoon/users/profile_page.png)
 
