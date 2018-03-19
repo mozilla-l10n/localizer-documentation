@@ -1,5 +1,7 @@
 # Translation resources
 
+<!-- toc -->
+
 Pontoon features built-in access to different translation memories. These resources are available in the translation workspace and, for machinery, on a [standalone web page](https://pontoon.mozilla.org/machinery/).
 
 ## History tab
