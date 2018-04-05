@@ -112,3 +112,27 @@ emails = { $unreadEmails ->
        *[other] Ci sono { $unreadEmails } messaggi non letti.
     }
 ```
+
+## Variants
+
+While in most cases messages will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key, that can be selected when referencing the message ID from another message. Unlike selectors, the message doesn’t depend on the value of an external variable or function.
+
+This can be useful, for example, to adapt a message to different grammatical cases or usages. Consider the following example in English:
+
+```PROPERTIES
+-fxaccount-brand-name = Firefox Account
+sync-signedout-account-title = Connect with a { -fxaccount-brand-name }
+```
+
+In Italian this can become:
+
+```PROPERTIES
+-fxaccount-brand-name =
+    {
+        [lowercase] account Firefox
+       *[uppercase] Account Firefox
+    }
+sync-signedout-account-title = Connetti il tuo { -fxaccount-brand-name[lowercase] }
+```
+
+Similar to selectors, there must be a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
