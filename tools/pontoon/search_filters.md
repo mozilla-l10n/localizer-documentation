@@ -1,5 +1,9 @@
 # Search and filters
 
+<!-- toc -->
+
+## Filters
+
 Strings in Pontoon can be filtered by their state. A string can be in one of the following states:
 * *Missing*: string is not available in the localized file and doesn’t have any translations or suggestions in Pontoon.
 * *Suggested*: at least one suggestion has been submitted for this string. Note that, in this case, the translation only exists within Pontoon database, it’s not saved to the localized file.
@@ -30,8 +34,14 @@ In this case 3 filters are selected.
 
 To select a **time range**, you need to click *EDIT RANGE*, then either pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on *SAVE RANGE* to store the range, then apply the filter.
 
+## Search
+
 It’s possible to search within a project using the search field. Searches include strings, string IDs and comments.
 
 ![Search field](/assets/images/pontoon/search_filters/search_field.png)
 
 Note that searches take active filters into account, for example a search would be performed only on missing strings if that filter is selected.
+
+Like in search engines, by default Pontoon will display matches that contain all the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
+
+If you want to search for a perfect match, wrap the search terms in double quotes, e.g. `"new tab"`. If, on the other hand, you want to search for strings that contain double quotes, you can escape them with a backslash, e.g. `\"`.
