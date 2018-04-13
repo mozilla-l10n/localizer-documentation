@@ -115,11 +115,11 @@ emails = { $unreadEmails ->
 
 ## Variants and Terms
 
-As described at the beginning of the document, **terms** are a special type of **messages**: they can be recognized because of the identifier starting with a dash, e.g. `-brand-short-name`, and can only be referenced within other messages. More important, they are allowed to define additional attributes compared to the reference language (typically `en-US`).
+As described at the beginning of the document, **terms** are a special type of **messages**. They are used to define translations of common words and phrases, which can then be used inside of other messages. They can be recognized because of the identifier starting with a dash, e.g. `-brand-short-name`. Terms can also define additional language-specific attributes which are not present in the reference language (typically `en-US`).
 
-While in most cases terms will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key, that can be selected when referencing the term ID from another message (or term). Unlike select expressions with a selector (e.g. the `emails` message in the previous section), the value retrieved doesn’t depend on external variables or functions.
+While in most cases terms will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key. Variants represent different forms of the same value. They can be used to define grammatical cases or any other language-specific modifications of the value required by the grammar of the spelling rules. When referencing a term from another message, you can specify which variant to use with the `-term-identifier[variant name]` syntax.
 
-This can be useful, for example, to adapt a message to different grammatical cases or usages. Consider the following example in English:
+Consider the following example in English:
 
 ```PROPERTIES
 -fxaccount-brand-name = Firefox Account
@@ -138,5 +138,3 @@ sync-signedout-account-title = Connetti il tuo { -fxaccount-brand-name[lowercase
 ```
 
 Similar to select expressions, you must define a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
-
-It’s important to note that this entire section applies to terms, not messages: while it’s possible to define variants in messages using a select expressions without a selector, such variants cannot be retrieved from other messages.
