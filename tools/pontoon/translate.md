@@ -32,6 +32,20 @@ A notification will appear in the window, indicating that `Make Suggestions` has
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
+## Error and quality checks
+
+When submitting a translation or suggestion, Pontoon can perform two types of automated checks:
+* Translate Toolkit Checks, developed as part of [Translate Toolkit](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/), include controls on punctuation, number of sentences, capitalization, etc. These warnings can be ignored by localizers, since they don’t prevent from submitting a translation, and can be [completely disabled](users.md#user-settings).
+* Internal error checks, mostly based on the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales), include controls on strings exceeding the allowed maximum length, errors related to variables and placeholders, number of plural forms in properties files, etc.
+
+Pontoon’s internal checks can’t be disabled by the user: in case of warnings, indicated by a gray circled X, localizers are still allowed to submit their translation.
+
+![Internal check: warning](/assets/images/pontoon/translate/check_warning.png)
+
+Errors, indicated by a red cicled X, cannot be ignored, and the button to submit translations is removed. This type of errors would cause the string to be ignored, for example removed from the build in case of Firefox, and that’s the reason why Pontoon doesn’t allow to save it.
+
+![Internal check: error](/assets/images/pontoon/translate/check_error.png)
+
 ### Review a suggestion
 
 To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.

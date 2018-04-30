@@ -26,8 +26,8 @@ It’s also possible to set the default homepage displayed when visiting Pontoon
 
 ![Pontoon login](/assets/images/pontoon/users/profile_page.png)
 
-Both *Quality checks* and *Make suggestions* are checkboxes. In the picture above *Quality checks* is disabled while *Make suggestions* is enabled.
-* *Quality checks* (check for number of sentences, placeholders, HTML tags, punctuation, etc.) are performed when saving a translation.
+Both *Translation Toolkit Checks* and *Make suggestions* are checkboxes. In the picture above *Translation Toolkit Checks* is disabled while *Make suggestions* is enabled.
+* *Translation Toolkit Checks* (check for number of sentences, placeholders, HTML tags, punctuation, etc.) are performed when saving a translation. For more information about quality checks see [this document](translate.md#error-and-quality-checks).
 * *Make suggestions* allows a translator or a manager to submit suggestions instead of translations.
 
 Both settings can also be changed directly from the gear menu (highlighted in orange) when translating strings. User settings are also accessible from this menu by selecting *Change all settings*.
