@@ -35,8 +35,8 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 ## Error and quality checks
 
 When submitting a translation or suggestion, Pontoon can perform two types of automated checks:
-* Translate Toolkit Checks, developed as part of [Translate Toolkit](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/), include controls on punctuation, number of sentences, capitalization, etc. These warnings can be ignored by localizers, since they don’t prevent from submitting a translation, and can be [completely disabled](users.md#user-settings).
-* Internal error checks, mostly based on the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales), include controls on strings exceeding the allowed maximum length, errors related to variables and placeholders, number of plural forms in properties files, etc.
+* Translate Toolkit Checks, developed as part of [Translate Toolkit](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/), cover punctuation, number of sentences, capitalization, etc. These warnings can be ignored by localizers, since they don’t prevent from submitting a translation, and can be [completely disabled](users.md#user-settings).
+* Internal error checks, mostly based on the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales), cover strings exceeding the allowed maximum length, errors related to variables and placeholders, number of plural forms in properties files, etc.
 
 Pontoon’s internal checks can’t be disabled by the user: in case of warnings, indicated by a gray circled X, localizers are still allowed to submit their translation.
 
