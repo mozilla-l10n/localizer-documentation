@@ -24,7 +24,7 @@ close-msg = Do you want to close { -brand-short-name }?
 
 `-brand-short-name` is defined as a *term* to allow localizers to define custom attributes, for example to store grammatical properties. Mozilla tools like compare-locales won’t report those attributes as obsolete if the reference language (`en-US`) doesn’t have them. Each language is then free to put information about genders, animacy, the first letter being a vowel or not, and any more into attributes of terms.
 
-Here's an example in English:
+Here’s an example in English:
 
 ```PROPERTIES
 -brand-name = Firefox
