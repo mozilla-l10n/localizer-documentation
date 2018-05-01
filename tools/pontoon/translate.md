@@ -32,19 +32,31 @@ A notification will appear in the window, indicating that `Make Suggestions` has
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
-## Error and quality checks
+## Quality checks
 
-When submitting a translation or suggestion, Pontoon can perform two types of automated checks:
-* Translate Toolkit Checks, developed as part of [Translate Toolkit](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/), cover punctuation, number of sentences, capitalization, etc. These warnings can be ignored by localizers, since they don’t prevent from submitting a translation, and can be [completely disabled](users.md#user-settings).
-* Internal error checks, mostly based on the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales), cover strings exceeding the allowed maximum length, errors related to variables and placeholders, number of plural forms in properties files, etc.
+When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. There are two types of quality check failures: errors and warnings.
 
-Pontoon’s internal checks can’t be disabled by the user: in case of warnings, indicated by a gray circled X, localizers are still allowed to submit their translation.
+### Errors
+
+Errors cover issues that would cause the string to be ignored, for example removed from Firefox builds or mozilla.org. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.
+
+Examples include exceeding the maximum string length, errors related to variables and placeholders, incorrect number of plural forms in properties files, etc. Errors are denoted with a red circled X.
+
+![Internal check: error](/assets/images/pontoon/translate/check_error.png)
+
+Errors are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and Pontoon’s internal checks.
+
+### Warnings
+
+Warnings, unlike errors, are displayed when it’s not possible to be completely sure that the string contains critical issues. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
+
+Examples include punctuation, number of sentences, capitalization, etc. Warnings are denoted with a grey circled X.
 
 ![Internal check: warning](/assets/images/pontoon/translate/check_warning.png)
 
-Errors, indicated by a red cicled X, cannot be ignored, and the button to submit translations is removed. This type of errors would cause the string to be ignored, for example removed from the build in case of Firefox, and that’s the reason why Pontoon doesn’t allow to save it.
+Warnings are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
 
-![Internal check: error](/assets/images/pontoon/translate/check_error.png)
+Note: since Translate Toolkit checks may result in many false positives in some scenarios, they can be [completely disabled](users.md#user-settings).
 
 ### Review a suggestion
 
