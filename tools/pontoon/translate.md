@@ -32,6 +32,32 @@ A notification will appear in the window, indicating that `Make Suggestions` has
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
+## Quality checks
+
+When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. There are two types of quality check failures: errors and warnings.
+
+### Errors
+
+Errors cover issues that would cause the string to be ignored, for example removed from Firefox builds or mozilla.org. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.
+
+Examples include exceeding the maximum string length, errors related to variables and placeholders, incorrect number of plural forms in properties files, etc. Errors are denoted with a red circled X.
+
+![Internal check: error](/assets/images/pontoon/translate/check_error.png)
+
+Errors are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and Pontoon’s internal checks.
+
+### Warnings
+
+Warnings, unlike errors, are displayed when it’s not possible to be completely sure that the string contains critical issues. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
+
+Examples include punctuation, number of sentences, capitalization, etc. Warnings are denoted with a grey circled X.
+
+![Internal check: warning](/assets/images/pontoon/translate/check_warning.png)
+
+Warnings are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
+
+Note: since Translate Toolkit checks may result in many false positives in some scenarios, they can be [completely disabled](users.md#user-settings).
+
 ### Review a suggestion
 
 To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.

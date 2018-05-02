@@ -61,11 +61,11 @@ In the upper section of the workspace, the translator can view the source string
 
 The editing space is located in the lower section of the workspace. The translator can edit the translation or suggestion in the text editor.
 
-To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button.
+To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
 To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
 
-By clicking the gear icon, the translator can activate or deactivate `Quality Checks` or `Make Suggestions` and navigate to their user settings.
+By clicking the gear icon, the translator can activate or deactivate `Translation Toolkit Checks` or `Make Suggestions` and navigate to their user settings.
 
 ![Settings menu](/assets/images/pontoon/ui/settings.png)
 

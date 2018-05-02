@@ -73,7 +73,7 @@ The list of your saved searches can be displayed by clicking in the search field
 
 ![Remember search](/assets/images/bugzilla/saved_searches.png)
 
-At the bottom of the page displaying search results, there’s a link to delete the saved search just performed (*Forget Search 'NAME'*).
+At the bottom of the page displaying search results, there’s a link to delete the saved search just performed (*Forget Search “NAME”*).
 
 Note that you can select multiple products and multiple statuses (including *UNCONFIRMED*) to refine or expand the search criteria.
 
