@@ -32,6 +32,28 @@ A notification will appear in the window, indicating that `Make Suggestions` has
 
 To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the `Make Suggestions` option. The green `SAVE` button should appear to the lower-right side of the editing space.
 
+### Review a suggestion
+
+To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.
+
+If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
+
+If the suggested string is **not** an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered).
+
+Alternatively, you can provide a different suggestion: turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
+
+![History Tab](/assets/images/pontoon/translate/history_tab.png)
+
+For more information about using the `HISTORY` tab, check [this document](resources.md#history-tab).
+
+### Submit a translation directly
+
+Note that it is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.
+
+To submit a translation directly, search for and click on any string in the sidebar.
+
+Ensure that the `Make Suggestions` option in settings is disabled. Then input the translation to the editing space and click `SAVE`. This will save your translation directly, without review, to the localized file.
+
 ## Quality checks
 
 When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. There are two types of quality check failures: errors and warnings.
@@ -57,28 +79,6 @@ Examples include punctuation, number of sentences, capitalization, etc. Warnings
 Warnings are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
 
 Note: since Translate Toolkit checks may result in many false positives in some scenarios, they can be [completely disabled](users.md#user-settings).
-
-### Review a suggestion
-
-To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.
-
-If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
-
-If the suggested string is **not** an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered).
-
-Alternatively, you can provide a different suggestion: turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
-
-![History Tab](/assets/images/pontoon/translate/history_tab.png)
-
-For more information about using the `HISTORY` tab, check [this document](resources.md#history-tab).
-
-### Submit a translation directly
-
-Note that it is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.
-
-To submit a translation directly, search for and click on any string in the sidebar.
-
-Ensure that the `Make Suggestions` option in settings is disabled. Then input the translation to the editing space and click `SAVE`. This will save your translation directly, without review, to the localized file.
 
 ## Translating using the in-context editor
 
