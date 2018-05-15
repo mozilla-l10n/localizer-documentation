@@ -33,7 +33,7 @@ In order to reach 100% completion on the Firefox for Android l10n project, you w
 
 Once you’ve reached 100% completion for the shared strings: let the Fennec project manager know (currently **delphine** at **mozilla** dot **com**). A bug will be filed to add your locale to the single-locale builds.
 
-These builds are available here: https://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-central-android-api-15-l10n/.
+These builds are available here: https://ftp.mozilla.org/pub/mobile/nightly/latest-mozilla-central-android-api-16-l10n/.
 This means that you will be able to download a build on your Android device to test your locale. Please note that at this point, your locale still isn’t shipping on official Firefox for Android builds. That will come later.
 
 ## Considerations for brand new locales that have no Desktop version yet
