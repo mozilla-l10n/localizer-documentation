@@ -12,13 +12,13 @@ welcome-msg = Hello, World!
 
 `welcome-msg` is the message identifier (or message ID), and `Hello, World!` is the **value** of this message.
 
-Messages can contain **external arguments**, for example:
+Messages can contain **variables**, for example:
 
 ```PROPERTIES
 welcome-msg = Welcome { $user }
 ```
 
-`$user` is the name of the argument, and should never be translated. The fragment included between curly braces is called a **placeable**, and can be moved within the text. For example, the message above would be translated in Italian as follows, leaving the placeable unchanged:
+`$user` is the name of the variable, and should never be translated. The fragment included between curly braces is called a **placeable**, and can be moved within the text. For example, the message above would be translated in Italian as follows, leaving the placeable unchanged:
 
 ```PROPERTIES
 welcome-msg = Benvenuto { $user }
@@ -69,7 +69,7 @@ It’s important to note that, in FTL files, **indendation** is part of the synt
 
 ## Selectors and plurals
 
-With the select expression, a single message can provide several alternatives. The selected value will depend on the value of an external variable, another message attribute, or a function.
+With the select expression, a single message can provide several alternatives. The selected value will depend on the value of a variable, another message attribute, or a function.
 
 The most common use of select expressions is for plural forms:
 
