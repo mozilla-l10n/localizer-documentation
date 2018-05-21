@@ -42,11 +42,7 @@ For specific projects it’s also possible to filter strings based on *tags*. Ta
 
 ![Tags in filters](/assets/images/pontoon/search_filters/filters_tags.png)
 
-In this case, there are 3 tags defined for the project (highlighted in red).
-
-If tags are enabled, the list of tags available is also displayed in a *Tags* tab in the localization page. This view includes information like the priority associated to the tag, and latest activity.
-
-![Tags tab in localization page](/assets/images/pontoon/search_filters/tags_list.png)
+In this case, there are 3 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
 
 ## Search
 
