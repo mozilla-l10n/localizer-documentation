@@ -71,9 +71,10 @@ It also includes an indication of the overall status of completion and statistic
 
 ![Header of project page for Mozilla.org](/assets/images/pontoon/teams_projects/project_page_header.png)
 
-There are 3 tabs available (highlighted in red):
+There can be up to 4 tabs available (highlighted in red):
 
 * **Teams**: a list of all locales enabled in Pontoon for this project.
+* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, 1/3/6/12 months).
 * **Info**: information about this project.
 
@@ -89,6 +90,7 @@ The page header contains useful information about the current project (same as t
 
 There are 4 tabs available (highlighted in red):
 * **Resources**: files available in the project.
+* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time. Unlike the tab available in the *Team page*, this only includes contributions to localization of the project for the current locale.
 * **Project info**: information about the project.
 * **Team info**: same content as the *Info* tab in the *Team page*.

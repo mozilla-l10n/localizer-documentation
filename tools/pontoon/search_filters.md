@@ -4,13 +4,15 @@
 
 ## Filters
 
-Strings in Pontoon can be filtered by their state. A string can be in one of the following states:
+### String status
+
+Strings in Pontoon can be filtered by their status. A string can be in one of the following status:
 * *Missing*: string is not available in the localized file and doesn’t have any translations or suggestions in Pontoon.
 * *Suggested*: at least one suggestion has been submitted for this string. Note that, in this case, the translation only exists within Pontoon database, it’s not saved to the localized file.
 * *Translated*: string has an approved translation.
 * *Fuzzy*: string is marked as [fuzzy](../../misc/glossary.md#fuzzy) in the localized file.
 
-Suggestions can be in two states:
+Suggestions can be in two status:
 * *Unreviewed*: string has been suggested, but not approved or rejected.
 * *Rejected*: string has been reviewed and rejected by a translator.
 
@@ -33,6 +35,14 @@ At this point it’s possible to:
 In this case 3 filters are selected.
 
 To select a **time range**, you need to click *EDIT RANGE*, then either pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on *SAVE RANGE* to store the range, then apply the filter.
+
+### Tags
+
+For specific projects it’s also possible to filter strings based on *tags*. Tags are used to logically group resources based on their priority, allowing localizers to focus their work on important strings first, and project managers to better assess the overall localization status of the project.
+
+![Tags in filters](/assets/images/pontoon/search_filters/filters_tags.png)
+
+In this case, there are 3 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
 
 ## Search
 
