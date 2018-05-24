@@ -10,10 +10,11 @@ Screenshots are provided by the mobile teams and sent out on dev-l10n. The lates
 
 ## Test builds
 
-While there are testing builds available via BuddyBuilds, the process is currently manual and localizers should reach out to the l10n mobile project manager in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).<br/>
+For Focus Android, while there are Nightly builds available via the Google Play Store, the process is currently manual and localizers should reach out to the l10n mobile project manager in order to be added to these builds (currently **delphine** at **mozilla** dot **com**), and send out their current Google email that they use to connect to Google Play Store. Once the account has been whitelisted (usually the next day), localizers will need to opt-in with the same Google account by going [on this URL](https://play.google.com/apps/internaltest/4698596548865727179). At the next update, the app will update to the Nightly version.
+
 For Focus for iOS, please note an iOS device running v9 or above is needed. There is no specified version needed for Android.
 
-There are Beta builds available for Focus Android now, that can be found by scrolling to the bottom of the [Focus for Android Play Store listing](https://play.google.com/store/apps/details?id=org.mozilla.focus&hl).
+There are Beta builds available for Focus Android as well, that can be found by scrolling to the bottom of the [Focus for Android Play Store listing](https://play.google.com/store/apps/details?id=org.mozilla.focus&hl).
 
 ## Aspects to review
 
