@@ -7,7 +7,7 @@
 ### String status
 
 Strings in Pontoon can be filtered by their status. A string can be in one of the following status:
-* *Missing*: string is not available in the localized file and doesn’t have any translations or pending suggestions in Pontoon.
+* *Missing*: string is not available in the localized file and doesn’t have any approved translations in Pontoon.
 * *Fuzzy*: string is marked as [fuzzy](../../misc/glossary.md#fuzzy) in the localized file.
 * *Translated*: string has an approved translation.
 * *Unreviewed*: string has been submitted – either to a string with an existing approved translation, or to a missing string – but not reviewed yet by translators. Note that, in both cases, the translation only exists within Pontoon database, it’s not saved to the localized file.
