@@ -24,7 +24,7 @@ General notes:
 
 1. Log in to Pontoon.
 2. Browse to the [project](teams_projects.md).
-3. In [filters](search_filters.md) select `Unreviewed Suggestions`, to isolate the strings previously suggested by another translator.
+3. In [filters](search_filters.md) select `Unreviewed`, to isolate the strings previously suggested by another translator.
 4. Review the suggested strings.
      * If suggestion is acceptable, confirm it as an approved translation by clicking the green `SAVE` button or the checkmark icon near the string in the `HISTORY` tab (it turns green when hovered).
      * If the suggestion is not acceptable:
@@ -35,7 +35,7 @@ General notes:
 
 #### Translator A
 
-1. In the project, select `Unreviewed Suggestions` from the filter search. Then compare your entries with those of your reviewer for changes.
+1. In the project, select `Unreviewed` from the filter search. Then compare your entries with those of your reviewer for changes.
 2. Review the remaining strings:
     * If you agree with the changes, confirm the reviewer’s version by clicking the green `SAVE` button or the blue circle near the string in the `HISTORY` tab. If you have not been granted saving privileges yet, simply do nothing and pass to the next one.
     * If you would rather suggest an alternative, type it over, then hit the blue `SUGGEST` button. Then resubmit it to the reviewer, back in Phase 2, step 4.
