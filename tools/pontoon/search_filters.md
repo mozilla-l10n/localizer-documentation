@@ -7,19 +7,15 @@
 ### String status
 
 Strings in Pontoon can be filtered by their status. A string can be in one of the following status:
-* *Missing*: string is not available in the localized file and doesn’t have any translations or suggestions in Pontoon.
-* *Suggested*: at least one suggestion has been submitted for this string. Note that, in this case, the translation only exists within Pontoon database, it’s not saved to the localized file.
-* *Translated*: string has an approved translation.
+* *Missing*: string is not available in the localized file and doesn’t have any translations or pending suggestions in Pontoon.
 * *Fuzzy*: string is marked as [fuzzy](../../misc/glossary.md#fuzzy) in the localized file.
-
-Suggestions can be in two status:
-* *Unreviewed*: string has been suggested, but not approved or rejected.
+* *Translated*: string has an approved translation.
+* *Unreviewed*: string has been submitted – either to a string with an existing approved translation, or to a missing string – but not reviewed yet by translators. Note that, in both cases, the translation only exists within Pontoon database, it’s not saved to the localized file.
 * *Rejected*: string has been reviewed and rejected by a translator.
 
 There are some extra criteria that can be used to filter strings:
-* *Untranslated*: this will display strings that are either suggested, missing, or fuzzy. Basically, anything but translated. Once selected, you will also notice that those 3 filters are automatically checked.
+* *Untranslated*: this will display strings that are either missing – including those with unreviewed suggestions – or fuzzy. Basically, anything but translated. Once selected, you will also notice that those 2 filters are automatically checked.
 * *Unchanged*: string is identical to the reference language (normally en-US).
-* *Unreviewed suggestions*: this will display strings that have at least one unreviewed suggestion. Note that it will include strings in *suggested*, *fuzzy* and *translated* state, as long as they have unreviewed suggestions.
 * *Rejected*: show strings that have rejected suggestions.
 
 By clicking on the funnel icon on the left, it’s possible to access filters.
