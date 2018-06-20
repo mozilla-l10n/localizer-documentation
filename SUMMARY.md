@@ -2,6 +2,11 @@
 
 * [Introduction](README.md)
 
+## Community
+
+* [Roles](community/l10n_community_roles.md)
+* [Giving good feedback](community/l10n_feedback.md)
+
 ## Products
 
 * [Firefox for desktop](products/firefox_desktop/README.md)
