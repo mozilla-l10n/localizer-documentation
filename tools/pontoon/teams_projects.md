@@ -36,6 +36,8 @@ There are 4 tabs available (highlighted in red), 5 if you’re an *admin* or *ma
 
 Hovering a project in the list will replace the progress bar with a set of detailed statistics (untranslated strings, missing strings, etc.). Note that all these numbers are links, so you can use them to open the project with a filter already enabled, for example to display only missing strings. You can click on the number of total strings to access *All Resources* (i.e. all strings in all files) for this project.
 
+The rightmost column in the table will display a blue lightbulb icon if there are unreviewed strings. The icon in the table header can be used to sort rows based on the number of unreviewed strings.
+
 ![Project hover](/assets/images/pontoon/teams_projects/project_hover.png)
 
 ### Requesting a project
