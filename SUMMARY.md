@@ -4,8 +4,8 @@
 
 ## Community
 
-* [Roles within Mozilla l10n communities](community/l10n_community_roles.md)
-* [Reviewing translations within your community](community/l10n_feedback.md)
+* [Roles](community/l10n_community_roles.md)
+* [Giving good feedback](community/l10n_feedback.md)
 
 ## Products
 
