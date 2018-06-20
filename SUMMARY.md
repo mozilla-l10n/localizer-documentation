@@ -2,6 +2,11 @@
 
 * [Introduction](README.md)
 
+## Community
+
+* [Roles within Mozilla l10n communities](community/l10n_community_roles.md)
+* [Reviewing translations within your community](community/l10n_feedback.md)
+
 ## Products
 
 * [Firefox for desktop](products/firefox_desktop/README.md)

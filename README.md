@@ -4,6 +4,11 @@ This repository includes several documents describing topics of interest for loc
 
 ## Table of contents
 
+### Community
+
+* [Roles within Mozilla l10n communities](community/l10n_community_roles.md).
+* [Reviewing translations within your community](community/l10n_feedback.md).
+
 ### Products
 
 How to localize and test Mozilla products:
@@ -28,7 +33,7 @@ How to localize and test Mozilla products:
 
 * [Testing localization of Mozilla projects](products/l10n_testing.md).
 
-## How to contribute
+## How to contribute to documentation
 
 We use [GitHub issues](https://github.com/mozilla-l10n/localizer-documentation/issues) to track missing documentation and updates to existing pages.
 
