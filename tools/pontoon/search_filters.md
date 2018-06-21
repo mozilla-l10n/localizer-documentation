@@ -16,7 +16,6 @@ Strings in Pontoon can be filtered by their status. A string can be in one of th
 There are some extra criteria that can be used to filter strings:
 * *Untranslated*: this will display strings that are either missing – including those with unreviewed suggestions – or fuzzy. Basically, anything but translated. Once selected, you will also notice that those 2 filters are automatically checked.
 * *Unchanged*: string is identical to the reference language (normally en-US).
-* *Rejected*: show strings that have rejected suggestions.
 
 By clicking on the funnel icon on the left, it’s possible to access filters.
 
