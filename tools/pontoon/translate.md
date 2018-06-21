@@ -14,7 +14,7 @@ When a translator is in Suggest Mode, or doesn’t have permissions to submit tr
 
 ![Blue button for suggestions](/assets/images/pontoon/translate/suggest_button.png)
 
-To suggest a translation, the translator should simply input the translation to the editing space and click `SUGGEST`. Once the translator has suggested the translation, the string’s status will be updated from **missing** to **suggested**. This is indicated in the sidebar by the color of the checkbox next to the string.
+To suggest a translation, the translator should simply input the translation to the editing space and click `SUGGEST`. Once the translator has suggested the translation, the suggestion will appear in the sidebar. In case of multiple suggestions, sidebar will show the most recent one.
 
 ![Sidebar after suggestion](/assets/images/pontoon/translate/sidebar_suggest.png)
 
@@ -34,7 +34,7 @@ To switch to Review and Direct Translation Mode, go to the settings menu by clic
 
 ### Review a suggestion
 
-To review a suggestion, search for unreviewed suggestions or click on a suggested string in the sidebar.
+To review a suggestion, search for unreviewed strings in the sidebar.
 
 If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
