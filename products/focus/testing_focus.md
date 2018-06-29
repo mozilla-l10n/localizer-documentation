@@ -10,11 +10,11 @@ Screenshots are provided by the mobile teams and sent out on dev-l10n. The lates
 
 ## Test builds
 
-There are Nightly localized builds for Focus Android, that are accessible by following [the instructions here](https://github.com/mozilla-mobile/focus-android/wiki/Release-tracks). There are other builds available too, but Nightly is preferred for testing localizations, since it is updated daily.
+There are Nightly localized builds for Focus for Android, that are accessible by following [the instructions here](https://github.com/mozilla-mobile/focus-android/wiki/Release-tracks). There are other builds available too, but Nightly is preferred for testing localizations, since it is updated daily.
 
 Note that for those who do not wish to use Google Play, there are also Nightly builds available on [Taskcluster here](https://tools.taskcluster.net/index/project.mobile.focus.nightly/latest). The build to download is the APK file containing "universal-release" in the name.
 
-For Focus iOS Nightly builds, reach out to the mobile project manager (currently delphine at mozilla dot com) to be added to the BuddyBuild system. There are also Beta builds [available here](https://www.mozilla.org/en-US/firefox/ios/testflight/).
+For Focus for iOS Nightly builds, reach out to the mobile project manager (currently delphine at mozilla dot com) to be added to the BuddyBuild system. There are also Beta builds [available here](https://www.mozilla.org/en-US/firefox/ios/testflight/).
 
 For Focus for iOS, please note an iOS device running v9 or above is needed. There is no specified version needed for Android.
 
