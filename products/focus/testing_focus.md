@@ -16,7 +16,7 @@ Note that for those who do not wish to use Google Play, there are also Nightly b
 
 For Focus for iOS Nightly builds, reach out to the mobile project manager (currently delphine at mozilla dot com) to be added to the BuddyBuild system. There are also Beta builds [available here](https://www.mozilla.org/en-US/firefox/ios/testflight/).
 
-For Focus for iOS, please note an iOS device running v9 or above is needed. There is no specified version needed for Android.
+For Focus for iOS, please note an iOS device running v9 or above is needed. For Focus for Android, an Android device running 5.0 or above is needed.
 
 ## Aspects to review
 
