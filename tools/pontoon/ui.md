@@ -75,6 +75,10 @@ By clicking the keyboard, a translator can view the workspace keyboard shortcuts
 
 ![Keyboard Shortcuts](/assets/images/pontoon/ui/shortcuts.png)
 
+Note that a project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the LOCALES tab, but it won’t be possible to change or submit translations directly in Pontoon.
+
+![Read-only mode](/assets/images/pontoon/ui/readonly.png)
+
 #### Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look a bit different:
