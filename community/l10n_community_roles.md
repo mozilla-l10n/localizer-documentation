@@ -4,6 +4,29 @@ Within Mozilla l10n communities, each individual is organized into one of three 
 
 This document defines the roles within each l10n community, as well as the responsibilities and expectations of each. We also define what the l10n-driver responsibilities and expectations are with regard to the community as a whole. Here we define responsibilities as what each individual commits to by accepting their role in the community. We define expectations as how you carry yourself in the role.
 
+## L10n-drivers (Mozilla staff)
+
+L10n-driver responsibilities and expectations are multifaceted, being that in addition to being accountable to the community, we’re accountable to Mozilla leadership as well as the many teams throughout Mozilla that we support with localization. This section describes how the l10n-drivers are accountable to the community.
+
+### Responsibilities
+
+* Mentor new l10n communities through the process of launching a new localized Mozilla product.
+* Communicate project updates and participation invitations in primary communications channels, like the dev-l10n mailing list and IRC.
+* Respond to reports of CPG violations within the community.
+* Create and guarantee a safe, collaborative space for all communities.
+* Work with l10n communities to increase the user base for their localizations.
+* Perform technical validation of contributions from the community to determine whether to ship contributions.
+* Create and maintain tooling that promotes a healthy and simple localization workflow for the community.
+* Recognize outstanding contributions made by the community.
+* Promote translation and localization best practices within the project.
+
+### Expectations
+
+* Promote the growth and health of each l10n community.
+* Represent and advocate for the needs of the l10n community to the Mozilla organization.
+* Respond positively to ideas for l10n improvements from the community.
+* Utilize open communication channels at every opportunity.
+
 ## Locale manager
 
 ### Responsibilities
@@ -59,6 +82,8 @@ This document defines the roles within each l10n community, as well as the respo
 
 ## Implementation
 
-Each community implements these roles according to their own cultural and unique situations. In some smaller communities, everyone may be Managers and the responsibilities for the role is shared among them. In other communities, there will be one Manager, several Translators, and many Contributors. We respect each community’s rights to implement these roles as best works for them, while maintaining emphasis of each role’s responsibilities and expectations.
+Each community implements these roles according to their own cultural and unique situations, in accordance with the [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/) and Mozilla Leadership Agreements. For example, in some smaller communities, everyone may be Managers and the responsibilities for the role are shared among them. In other communities, there may be one Manager, several Translators, and many Contributors. We respect each community’s rights to implement these roles as best works for them, within the constraints mentioned above.
 
-Evaluations to determine whether someone should move into a more advanced role should not be done in a vacuum, but in consultation with other experienced localizers within the community. Typically, role advancements for a community member when they have proven themselves to satisfy the responsibilities and expectations of their role, even going above and beyond what’s expected.
+Evaluating whether someone should move into a more advanced role should be done by consulting with other experienced localizers within the community, not in a vacuum. Typically, a localizer is ready for a role change member when they have proven themselves to satisfy the responsibilities and expectations of their current role and even go above and beyond what’s expected. When considering someone for a role change, consider the responsibilities of the new role and how the candidate localizer will perform in that role. For example, when considering moving a Translator to a Manager, consider if they have mastered the responsibilities and expectations of a Translator first and whether they have the skills to successfully master the responsibilities and expectations of a Manager. Translating fluently and in a timely manner may be applicable to evaluating them as a Translator, but not as relevant to evaluating them as a Manager.
+
+These evaluations should be done regularly and mentored feedback should be given to teach community member regularly.
