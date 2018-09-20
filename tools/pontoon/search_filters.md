@@ -12,9 +12,11 @@ Strings in Pontoon can be filtered by their status. A string can be in one of th
 * *Translated*: string has an approved translation.
 * *Unreviewed*: string has been submitted – either to a string with an existing approved translation, or to a missing string – but not reviewed yet by translators. Note that, in both cases, the translation only exists within Pontoon database, it’s not saved to the localized file.
 * *Rejected*: string has been reviewed and rejected by a translator.
+* *Warnings*: string contains issues classified as [warnings](translate.md#warnings).
+* *Errors*: string contains [critical issues](translate.md#errors).
 
 There are some extra criteria that can be used to filter strings:
-* *Untranslated*: this will display strings that are either missing – including those with unreviewed suggestions – or fuzzy. Basically, anything but translated. Once selected, you will also notice that those 2 filters are automatically checked.
+* *Untranslated*: this will display strings that are missing (including those with unreviewed suggestions), fuzzy, or that contain errors. Once selected, you will also notice that those 3 individual filters are automatically checked.
 * *Unchanged*: string is identical to the reference language (normally en-US).
 
 By clicking on the funnel icon on the left, it’s possible to access filters.

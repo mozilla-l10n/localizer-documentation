@@ -45,6 +45,13 @@ The sidebar displays the list of strings in the current project resource. Each s
 
 ![Sidebar](/assets/images/pontoon/ui/sidebar.png)
 
+Color legend:
+* **<span style="color: #7bc876;">green</span>**: string is translated.
+* **<span style="color: #fed271;">yellow</span>**: string is fuzzy.
+* **<span style="color: #ffa10f;">orange</span>**: string has warnings.
+* **<span style="color: #f36;">red</span>**: string has errors.
+* **<span style="color: #4d5967;">gray</span>**: string is missing.
+
 At the top of the sidebar, the translator can access Pontoon’s [search and string filters](search_filters.md).
 
 Note that the sidebar toggles between the strings and the editing space when using the in-context editor.

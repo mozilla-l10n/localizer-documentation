@@ -56,7 +56,9 @@ Ensure that the `Make Suggestions` option in settings is disabled. Then input th
 
 ## Quality checks
 
-When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. There are two types of quality check failures: errors and warnings.
+When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. Failures for these checks are stored in the database, and it’s possible to filter strings with issues from the search bar.
+
+There are two types of quality check failures: errors and warnings.
 
 ### Errors
 
