@@ -10,7 +10,7 @@ For example, if you want to know which bug introduced the string `Would you like
 
 In the results, you can use the `<source>` link in the en-US column to [open the file](https://hg.mozilla.org/l10n/gecko-strings/file/default/mobile/android/chrome/browser.properties) in Mercurial.
 
-Note that Transvision will open the `gecko-strings` repository, not the source code repository. Starting from Firefox 57, all versions of Firefox desktop and Firefox for Android ship from a single localization repository ([l10n-central](https://hg.mozilla.org/l10n-central/)). The repository containining the reference English strings, called [gecko-strings](https://hg.mozilla.org/l10n/gecko-strings), is generated from strings landing in the code repository for each branch (e.g. mozilla-central and comm-central for Nightly, mozilla-beta and comm-beta for Beta, etc.), and it’s exposed to localization tools like Pontoon and Transvision.
+Note that Transvision will open the `gecko-strings` repository, not the source code repository. Starting from Firefox 57, all versions of Firefox desktop and Firefox for Android ship from a single localization repository ([l10n-central](https://hg.mozilla.org/l10n-central/)). The repository containing the reference English strings, called [gecko-strings](https://hg.mozilla.org/l10n/gecko-strings), is generated from strings landing in the code repository for each branch (e.g. mozilla-central and comm-central for Nightly, mozilla-beta and comm-beta for Beta, etc.), and it’s exposed to localization tools like Pontoon and Transvision.
 
 ## Find the bug
 
