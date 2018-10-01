@@ -65,7 +65,7 @@ instructions-link = Log out
 
 In this case, `instructions-link` has a *value* (`Log out`) and a `tooltip` *attribute* (`Disconnect from this account`).
 
-It’s important to note that, in FTL files, **indendation** is part of the syntax; indenting elements incorrectly will lead to parsing errors.
+It’s important to note that, in FTL files, **indentation** is part of the syntax; indenting elements incorrectly will lead to parsing errors.
 
 ## Selectors and plurals
 
