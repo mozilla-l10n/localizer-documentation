@@ -47,8 +47,9 @@ From time to time [create a new profile](https://support.mozilla.org/kb/profile-
 Create a new profile and open `about:config` in your browser:
 * Right click on the list of available keys and create a new boolean key `extensions.webextPermissionPrompts` set to `true`.
 * Search for the key `xpinstall.signatures.required` and set it to `false`. This will allow installing unsigned add-ons.
-* Open [this link](https://github.com/mozilla-l10n/localizer-documentation/blob/master/products/firefox_desktop/files/webext_permissions.xpi), select **Download** and save the file on your computer.
-* Drag the .xpi file on your browser’s window to display the dialog (you don’t need to actually install it).
+* Open [this link](https://github.com/mozilla-l10n/localizer-documentation/blob/master/products/firefox_desktop/files/webext_permissions.zip), select **Download** and save the file on your computer.
+* Extract the archive
+* Drag each (one by one) of the .xpi files on your browser’s window to display the dialog (you don’t need to actually install it).
 
 ### Test accesskeys and shortcuts
 
