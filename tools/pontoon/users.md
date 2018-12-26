@@ -49,7 +49,7 @@ There are currently four user roles in Pontoon.
 
 ## Managing permissions
 
-A **manager** can upgrade other users’ permissions within a locale. To manage users, open the team page and select the *CONTRIBUTORS* tab (it will only be visible to **managers** and **admins**).
+A **manager** can upgrade other users’ permissions within a locale. To manage users, open the team page and select the *PERMISSIONS* tab (it will only be visible to **managers** and **admins**).
 
 By default there’s only a **General** section: permissions defined here will apply to all projects, but can be overridden by custom project permissions.
 
