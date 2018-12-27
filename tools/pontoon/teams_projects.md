@@ -80,6 +80,16 @@ There can be up to 4 tabs available (highlighted in red):
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, 1/3/6/12 months).
 * **Info**: information about this project.
 
+### Requesting a language
+
+It’s possible to request an additional language for a project from its *Project page*.
+
+![Request a project](/assets/images/pontoon/teams_projects/request_locale.png)
+
+Click on *REQUEST NEW LANGUAGE* (highlighted in red), select the language you want to add and then click *REQUEST NEW LANGUAGE*.
+
+An email will be sent to Pontoon’s administrators, and the localization driver in charge of the project will act on the request. The same restrictions described in the [Requesting a project](#requesting-a-project) section apply here.
+
 ## Localization page
 
 You can access a project’s *Localization page* in two ways:
