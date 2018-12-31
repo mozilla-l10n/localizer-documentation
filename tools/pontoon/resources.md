@@ -18,6 +18,7 @@ To the right of the entry, icons indicate the state of each element:
 * The green checkmark indicates that the translation has been approved.
 * If both icons are gray, translation has been suggested but not reviewed yet.
 * The red cross indicates that the translation has been rejected. The entire element will look opaque.
+* The trashcan, available only for rejected translations, can be used to completely delete a translation.
 
 If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the first entry, highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
 

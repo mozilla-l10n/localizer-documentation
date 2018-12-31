@@ -4,7 +4,7 @@
 
 ## Translating strings
 
-Three actions can be performed on strings: submit a suggestion, review a suggestion, and submit a translation directly. Availability of these actions depends on user’s [role](users.md#user-roles).
+Four actions can be performed on strings: submit a suggestion, review a suggestion, delete a rejected suggestion, and submit a translation directly. Availability of these actions depends on user’s [role](users.md#user-roles).
 
 This document is simplified to demonstrate translation modes in Pontoon. Documentation includes specific pages for learning how to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
 
@@ -38,7 +38,7 @@ To review a suggestion, search for unreviewed strings in the sidebar.
 
 If the suggested string is an acceptable translation, either click on the `SAVE` button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.
 
-If the suggested string is **not** an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered).
+If the suggested string is **not** an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered). After rejecting a suggestion, it’s also possible to delete it completely by clicking the trashcan icon.
 
 Alternatively, you can provide a different suggestion: turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
 
