@@ -113,16 +113,17 @@ emails = { $unreadEmails ->
     }
 ```
 
-## Variants and Terms
+## Terms and parameterized terms
 
 As described at the beginning of the document, **terms** are a special type of **messages**. They are used to define translations of common words and phrases, which can then be used inside of other messages. They can be recognized because of the identifier starting with a dash, e.g. `-brand-short-name`. Terms can also define additional language-specific attributes which are not present in the reference language (typically `en-US`).
 
-While in most cases terms will have a single value, it’s also possible to define multiple **variants**: different values, each one associated to a key. Variants represent different forms of the same value. They can be used to define grammatical cases or any other language-specific modifications of the value required by the grammar of the spelling rules. When referencing a term from another message, you can specify which variant to use with the `-term-identifier[variant name]` syntax.
+While in most cases terms will have a single value, it’s also possible to define multiple values associated to a parameter. These parameterized values can be used to define grammatical cases or any other language-specific modifications of the value required by the grammar of the spelling rules. When referencing a term from another message, you can specify a *parameter* and its *value* with the `-term-identifier(parameter: "value")` syntax.
 
 Consider the following example in English:
 
 ```PROPERTIES
 -fxaccount-brand-name = Firefox Account
+
 sync-signedout-account-title = Connect with a { -fxaccount-brand-name }
 ```
 
@@ -130,11 +131,46 @@ In Italian this can become:
 
 ```PROPERTIES
 -fxaccount-brand-name =
-    {
+    { $capitalization ->
         [lowercase] account Firefox
        *[uppercase] Account Firefox
     }
-sync-signedout-account-title = Connetti il tuo { -fxaccount-brand-name[lowercase] }
+
+sync-signedout-account-title =
+  Connetti il tuo { -fxaccount-brand-name(capitalization: "lowercase") }
 ```
 
-Similar to select expressions, you must define a default variant, identified by `*`. Also notice that key names are arbitrary, and don’t need to be in English.
+Similar to select expressions, you must define a default value, identified by `*`. Also notice that parameter names are arbitrary, and don’t need to be in English. To get the default value (*uppercase* in the example), the term can be called without any parameter (`{ -fxaccount-brand-name }`.
+
+Parameters can also be nested for more complex situations, for example:
+
+```PROPERTIES
+-sync-brand-short-name =
+    { $case ->
+        *[nom] { $capitalization ->
+           *[upper] Синхронізація
+            [lower] синхронізація
+        }
+        [gen] { $capitalization ->
+           *[upper] Синхронізації
+            [lower] синхронізації
+        }
+        [dat] { $capitalization ->
+           *[upper] Синхронізації
+            [lower] синхронізації
+        }
+        [acc] { $capitalization ->
+           *[upper] Синхронізацію
+            [lower] синхронізацію
+        }
+        [abl] { $capitalization ->
+           *[upper] Синхронізацією
+            [lower] синхронізацією
+        }
+    }
+
+use-firefox-sync =
+    Підказка: При цьому використовуються окремі профілі. Скористайтеся
+    { -sync-brand-short-name(case: "abl", capitalization: "lower") }
+    для обміну даними між ними.
+```
