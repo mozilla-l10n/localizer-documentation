@@ -117,7 +117,7 @@ emails = { $unreadEmails ->
 
 As described at the beginning of the document, **terms** are a special type of **messages**. They are used to define translations of common words and phrases, which can then be used inside of other messages. They can be recognized because of the identifier starting with a dash, e.g. `-brand-short-name`. Terms can also define additional language-specific attributes which are not present in the reference language (typically `en-US`).
 
-While in most cases terms will have a single value, it’s also possible to define multiple values associated to a parameter. These parameterized values can be used to define grammatical cases or any other language-specific modifications of the value required by the grammar of the spelling rules. When referencing a term from another message, you can specify a *parameter* and its *value* with the `-term-identifier(parameter: "value")` syntax.
+While in most cases terms will have a single value, it’s also possible to define multiple values associated controlled by a parameter. These parameterized values can be used to define grammatical cases or any other language-specific modifications of the value required by the grammar of the spelling rules. When referencing a term from another message, you can optionally specify a *parameter* and its *value* with the `-term-identifier(parameter: "value")` syntax.
 
 Consider the following example in English:
 
@@ -140,7 +140,7 @@ sync-signedout-account-title =
   Connetti il tuo { -fxaccount-brand-name(capitalization: "lowercase") }
 ```
 
-Similar to select expressions, you must define a default value, identified by `*`. Also notice that parameter names are arbitrary, and don’t need to be in English. To get the default value (*uppercase* in the example), the term can be called without any parameter (`{ -fxaccount-brand-name }`.
+Similar to select expressions, you must define a default value, identified by `*`. Also notice that parameter names are arbitrary, and don’t need to be in English. To get the default value (*uppercase* in the example), the term can be called without any parameter (`{ -fxaccount-brand-name }` or `{ -fxaccount-brand-name() }`).
 
 Parameters can also be nested for more complex situations, for example:
 
@@ -174,3 +174,5 @@ use-firefox-sync =
     { -sync-brand-short-name(case: "abl", capitalization: "lower") }
     для обміну даними між ними.
 ```
+
+Again, not all parameters need to be specified at all times when referencing a term. If some (or all) parameters are omitted, the corresponding default values will be used. In the example above, `{ -sync-brand-short-name(case: "abl") }` will result in the uppercase `Синхронізацією` translation because `upper` is defined as the default value of the ablative case.
