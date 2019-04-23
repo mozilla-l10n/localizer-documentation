@@ -8,7 +8,6 @@ Mozilla.org is highly visible because the site houses the basic info of all Mozi
 * Staging: https://www-dev.allizom.org/{locale_code}/
 * Repository: https://github.com/mozilla-l10n/www.mozilla.org/
 * Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
-* Web dashboard: https://l10n.mozilla-community.org/webdashboard/?locale={locale_code}. Visit this page on a regular basis to check localization progress, pending work, deadline, and errors that were introduced during translation.
 
 It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
 
