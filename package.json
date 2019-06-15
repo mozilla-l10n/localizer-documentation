@@ -1,0 +1,26 @@
+{
+  "name": "mozilla-l10n-localizer-documentation",
+  "version": "1.0.0",
+  "description": "Documentation for Mozilla localizers.",
+  "main": "README.md",
+  "devDependencies": {
+    "mozilla-l10n-docs-linter": "github:flodolo/l10ndocs-linter"
+  },
+  "scripts": {
+    "test": "node node_modules/mozilla-l10n-docs-linter/linter/markdownlint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:mozilla-l10n/localizer-documentation"
+  },
+  "keywords": [
+    "localization",
+    "l10n",
+    "documentation",
+    "mozilla"
+  ],
+  "bugs": {
+    "url": "https://github.com/mozilla-l10n/localizer-documentation/issues"
+  },
+  "homepage": "https://mozilla-l10n.github.io/localizer-documentation/"
+}
