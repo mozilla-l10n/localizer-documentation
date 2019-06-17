@@ -18,7 +18,7 @@ Currently only eight locales are supported by the team on a regular basis. They 
 
 Snippets usually come on a monthly basis. Normally there is a lead time of 10-14 days between the request and the snippets being available in Firefox. Occasionally there are special requests outside of this cadence to support a product or feature launch for a particular market.
 
-Localizable files can be found on Pontoon under the [Engagement project](https://pontoon.mozilla.org/projects/engagement/). The pending project is also listed on the team [web project dashboard](https://l10n.mozilla-community.org/webdashboard/).
+Localizable files can be found on Pontoon under the [Engagement project](https://pontoon.mozilla.org/projects/engagement/).
 
 ## Guidelines on localizing snippets
 
