@@ -1,7 +1,5 @@
 # Understanding Pontoon user interface
 
-<!-- toc -->
-
 ## Pontoon translation workspace
 
 Pontoon’s translation workspace features the list of strings in the left sidebar and the editing space on the right.
