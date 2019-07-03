@@ -17,7 +17,7 @@ If your locale is up to speed, doesn’t have any pending suggestions, and you p
 
 ## Q: Will there be a training session, doc or video on how to use Pontoon?
 
-We’ve created this [set of documents](../tools/pontoon/README.md) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [localizer documentation GitHub repository](https://github.com/mozilla-l10n/localizer-documentation).
+We’ve created this [set of documents](../tools/pontoon/) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [localizer documentation GitHub repository](https://github.com/mozilla-l10n/localizer-documentation).
 
 ## Q: What will happen to my user profiles translation stats on Pootle?
 

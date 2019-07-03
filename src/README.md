@@ -10,22 +10,22 @@
 ### Products
 
 How to localize and test Mozilla products:
-* [Firefox for desktop](products/firefox_desktop/README.md).
-* [Firefox for Android](products/firefox_android/README.md).
-* [Firefox for iOS](products/firefox_ios/README.md).
-* [Focus for Android and iOS](products/focus/README.md).
-* [Mozilla.org](products/mozilla_org/README.md).
+* [Firefox for desktop](products/firefox_desktop/).
+* [Firefox for Android](products/firefox_android/).
+* [Firefox for iOS](products/firefox_ios/).
+* [Focus for Android and iOS](products/focus/).
+* [Mozilla.org](products/mozilla_org/).
 
 ### Tools
 
-* [How to use Pontoon](tools/pontoon/README.md).
-* [Fluent for localizers](tools/fluent/README.md).
+* [How to use Pontoon](tools/pontoon/).
+* [Fluent for localizers](tools/fluent/).
 * [Bugzilla for localizers](misc/bugzilla_l10n.md).
-* [Mercurial tips](tools/mercurial/README.md).
+* [Mercurial tips](tools/mercurial/).
 
 ## Web Projects
 
-* [Web projects](webprojects/README.md)
+* [Web projects](webprojects/)
 
 ### Other topics
 

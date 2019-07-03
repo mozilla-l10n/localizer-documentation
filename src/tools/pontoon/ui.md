@@ -96,7 +96,7 @@ The following image is an example of a string with plurals: while English only h
 
 ![Translation workspace for Fluent string with plurals](/assets/images/pontoon/ui/workspace_ftl_plurals.png)
 
-In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see [Fluent for localizers](../fluent/README.md).
+In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see [Fluent for localizers](../fluent/).
 
 ![Translation workspace for Fluent string in source view](/assets/images/pontoon/ui/workspace_ftl_sourceview.png)
 
