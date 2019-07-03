@@ -1,7 +1,5 @@
 # Teams and projects
 
-<!-- toc -->
-
 The [Teams page](https://pontoon.mozilla.org/teams/) lists all locales that are enabled in Pontoon. From here you can access a specific [Team page](#team-page), where you’ll get a list of all projects enabled for the requested locale. Selecting a project from the *Team page* will take you to what is called the [Localization page](#localization-page).
 
 From each locale’s *Team page* it’s also possible to [request a project](#requesting-a-project), that is asking to add that locale to a project already available in Pontoon, not asking to support localization for a brand new project.

@@ -7,7 +7,7 @@ There are a few things you can do to make the transition run smoothly:
 2. Check your permissions on your profile to make sure they match what you’d expect.
 3. Flag issues with Pontoon to the l10n-drivers so that we can triage them and address them in a timely manner. To do this, please [file a bug here](https://goo.gl/tRQzAJ), or reach out to the l10n-drivers if you’re not yet comfortable with Bugzilla.
 
-If you’re a locale manager on Pootle, check the [community permissions](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/users.html#managing-permissions) on Pontoon and make any necessary changes to mirror your community’s permission settings.
+If you’re a locale manager on Pootle, check the [community permissions](../tools/pontoon/users.md#managing-permissions) on Pontoon and make any necessary changes to mirror your community’s permission settings.
 
 ## Q: When is my locale going to be migrated to Pontoon?
 
@@ -17,7 +17,7 @@ If your locale is up to speed, doesn’t have any pending suggestions, and you p
 
 ## Q: Will there be a training session, doc or video on how to use Pontoon?
 
-We’ve created this [set of documents](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [localizer documentation GitHub repository](https://github.com/mozilla-l10n/localizer-documentation).
+We’ve created this [set of documents](../tools/pontoon/README.md) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [localizer documentation GitHub repository](https://github.com/mozilla-l10n/localizer-documentation).
 
 ## Q: What will happen to my user profiles translation stats on Pootle?
 
@@ -30,7 +30,7 @@ Pontoon has three user types with specific rights:
 * **Translator** - authorized to review translation suggestions and submit translations.
 * **Manager** - authorized to review translation suggestions, submit translations, and adjust the user rights of people within the community
 
-Unlike Pootle, there’s no difference between the ability to review suggestions and submit translations. [This document](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/users.html#user-roles) describes user roles in Pontoon with more details.
+Unlike Pootle, there’s no difference between the ability to review suggestions and submit translations. [This document](../tools/pontoon/users.md#user-roles) describes user roles in Pontoon with more details.
 
 ## Q: What happens to unreviewed suggestions on Pootle?
 

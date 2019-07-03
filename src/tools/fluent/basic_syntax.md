@@ -1,7 +1,5 @@
 # Introduction to Fluent syntax
 
-<!-- toc -->
-
 ## Basic syntax
 
 A *Message* represents the basic unit of translation in Fluent. This is the simplest form messages can take:

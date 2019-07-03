@@ -1,7 +1,5 @@
 # User accounts and settings
 
-<!-- toc -->
-
 ## Creating an account
 
 Pontoon currently uses Firefox Accounts to manage users, so you will need to [create an account](https://accounts.firefox.com/signup) in order to log in.
