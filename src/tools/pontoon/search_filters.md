@@ -19,13 +19,13 @@ There are some extra criteria that can be used to filter strings:
 
 By clicking on the funnel icon on the left, it’s possible to access filters.
 
-![Filters](/assets/images/pontoon/search_filters/filters.png)
+![Filters](../../assets/images/pontoon/search_filters/filters.png)
 
 At this point it’s possible to:
 * Click directly on the description of one of the filters. This will select and activate only this filter, and the search field placeholder will change accordingly. For example, clicking on *Missing* will show only missing strings, and the placeholder will read *Search in Missing*.
 * Click on the icons for each filter, or the user avatars, in order to apply multiple filters. When you hover the icons, you will notice that they transform into checkmarks. A new button *APPLY X FILTERS* will appear at the bottom of the panel, where `X` is the number of active filters.
 
-![Multiple filters](/assets/images/pontoon/search_filters/filters_multiple.png)
+![Multiple filters](../../assets/images/pontoon/search_filters/filters_multiple.png)
 
 In this case 3 filters are selected.
 
@@ -35,7 +35,7 @@ To select a **time range**, you need to click *EDIT RANGE*, then either pick one
 
 For specific projects it’s also possible to filter strings based on *tags*. Tags are used to logically group resources based on their priority, allowing localizers to focus their work on important strings first, and project managers to better assess the overall localization status of the project.
 
-![Tags in filters](/assets/images/pontoon/search_filters/filters_tags.png)
+![Tags in filters](../../assets/images/pontoon/search_filters/filters_tags.png)
 
 In this case, there are 3 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
 
@@ -43,7 +43,7 @@ In this case, there are 3 tags defined for the project (highlighted in red). Nea
 
 It’s possible to search within a project using the search field. Searches include strings, string IDs and comments.
 
-![Search field](/assets/images/pontoon/search_filters/search_field.png)
+![Search field](../../assets/images/pontoon/search_filters/search_field.png)
 
 Note that searches take active filters into account, for example a search would be performed only on missing strings if that filter is selected.
 

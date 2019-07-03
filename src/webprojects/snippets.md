@@ -8,7 +8,7 @@ These are some examples of the subjects used in snippets: product launches, new 
 
 This is what a snippet looks like on Firefox browser:
 
-![snippet](/assets/images/webprojects/snippets/snippet_fx_example.png)
+![snippet](../assets/images/webprojects/snippets/snippet_fx_example.png)
 
 ## Which locales are supported?
 
@@ -68,7 +68,7 @@ Snippets should be to the point. Try writing your snippet then cut it down until
     * **Grammar**: do your best to catch mistakes, there is a chance that all checkpoints will miss it but 100 million people surely won’t.
     * **Support graphic**: all simple snippet copy is accompanied by an icon. Your icon and copy should work in unison. Select the [icon from this gallery](https://drive.google.com/drive/folders/0Bz48kfsl_32OMkhVakFobXZ2MFk) (need to request for access) that best supports the message. Here are some examples of matching the graphics with the tones of the messages.
 
-![Icons](/assets/images/webprojects/snippets/snippet_w_icon_examples.png)
+![Icons](../assets/images/webprojects/snippets/snippet_w_icon_examples.png)
 
 * Intangible: quality that is recognized but difficult to quantify.
 
