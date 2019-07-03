@@ -10,11 +10,11 @@ This document is simplified to demonstrate translation modes in Pontoon. Documen
 
 When a translator is in Suggest Mode, or doesn’t have permissions to submit translations directly, a blue `SUGGEST` button will be visible in the lower-right side of the editing space.
 
-![Blue button for suggestions](/assets/images/pontoon/translate/suggest_button.png)
+![Blue button for suggestions](../../assets/images/pontoon/translate/suggest_button.png)
 
 To suggest a translation, the translator should simply input the translation to the editing space and click `SUGGEST`. Once the translator has suggested the translation, the suggestion will appear in the sidebar. In case of multiple suggestions, sidebar will show the most recent one.
 
-![Sidebar after suggestion](/assets/images/pontoon/translate/sidebar_suggest.png)
+![Sidebar after suggestion](../../assets/images/pontoon/translate/sidebar_suggest.png)
 
 A notification will appear in the window, indicating that your translation has been saved.
 
@@ -24,7 +24,7 @@ Note that a suggested translation exists only in the Pontoon database, not in th
 
 Even if a translator has permissions to add translations directly, submitting suggestions to be reviewed helps ensure quality. To manually switch to Suggestion Mode, click the Settings gear to the lower-left side of the editing space and click the icon to the left of `Make Suggestions` so that it becomes a green circle. The `SUGGEST` button should then appear to the lower-right side of the editing space.
 
-![Activate make suggestions](/assets/images/pontoon/translate/activate_suggest.png)
+![Activate make suggestions](../../assets/images/pontoon/translate/activate_suggest.png)
 
 A notification will appear in the window, indicating that `Make Suggestions` has been enabled.
 
@@ -40,7 +40,7 @@ If the suggested string is **not** an acceptable translation, you can reject it 
 
 Alternatively, you can provide a different suggestion: turn on `Make Suggestions` in settings. Once the `SUGGEST` button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click `SUGGEST`. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the [Translation resources documentation](resources.md).
 
-![History Tab](/assets/images/pontoon/translate/history_tab.png)
+![History Tab](../../assets/images/pontoon/translate/history_tab.png)
 
 For more information about using the `HISTORY` tab, check [this document](resources.md#history-tab).
 
@@ -64,7 +64,7 @@ Errors cover issues that would cause the string to be ignored, for example remov
 
 Examples include exceeding the maximum string length, errors related to variables and placeholders, incorrect number of plural forms in properties files, etc. Errors are denoted with a red circled X.
 
-![Internal check: error](/assets/images/pontoon/translate/check_error.png)
+![Internal check: error](../../assets/images/pontoon/translate/check_error.png)
 
 Errors are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and Pontoon’s internal checks.
 
@@ -74,7 +74,7 @@ Warnings, unlike errors, are displayed when it’s not possible to be completely
 
 Examples include punctuation, number of sentences, capitalization, etc. Warnings are denoted with a grey circled X.
 
-![Internal check: warning](/assets/images/pontoon/translate/check_warning.png)
+![Internal check: warning](../../assets/images/pontoon/translate/check_warning.png)
 
 Warnings are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
 
@@ -86,11 +86,11 @@ Note that only websites that have been enabled for in-context editing will displ
 
 To translate in context, find the string you want to translate in the in-context view and double click it, or click on the pencil icon on the top-left of the string. Hovering over the string that you want to translate will highlight that string in the sidebar and in the in-context view.
 
-![Hovering over the string will highlight in sidebar](/assets/images/pontoon/translate/hover_incontext.png)
+![Hovering over the string will highlight in sidebar](../../assets/images/pontoon/translate/hover_incontext.png)
 
 Once you double click a string, the sidebar will display the editing space.
 
-![Translate in-context projects in the sidebar](/assets/images/pontoon/translate/translate_in_sidebar.png)
+![Translate in-context projects in the sidebar](../../assets/images/pontoon/translate/translate_in_sidebar.png)
 
 Input your translation or review the suggestion and click `SAVE` or `SUGGEST`. Once your translation is saved, the editing space will move to the next string, and that string will be highlighted in the in-context view.
 
@@ -98,13 +98,13 @@ To return to the list of strings in the sidebar, click `BACK TO LIST` at the top
 
 Interactive website features will work in the in-context view. Some strings that you can see in the sidebar will not be visible in the in-context view until you activate the website feature. In the picture below, the translator has clicked on the hamburger to reveal a drop-down menu.
 
-![Interactive Hamburger menu](/assets/images/pontoon/translate/interactive_features.png)
+![Interactive Hamburger menu](../../assets/images/pontoon/translate/interactive_features.png)
 
 ## Performing batch actions on strings
 
 Translators can perform mass actions on batches of strings by clicking on the square to the left of any string in the sidebar. When clicked, the square will show a checkmark and the editing space will show the mass action window.
 
-![Mass action window](/assets/images/pontoon/translate/batch_actions.png)
+![Mass action window](../../assets/images/pontoon/translate/batch_actions.png)
 
 After selecting a string, it’s possible to hold `SHIFT` and click on another string to select a range of strings.
 
@@ -120,7 +120,7 @@ Note that mass actions are only available to users with [translators rights](use
 
 Pontoon features the ability to download and upload translations, including translation memories. To access these features, click on your user icon in the top-right section of Pontoon. Note that you must be in the translation workspace for the download/upload options to display in the dropdown menu.
 
-![Profile dropdown menu](/assets/images/pontoon/translate/profile_menu.png)
+![Profile dropdown menu](../../assets/images/pontoon/translate/profile_menu.png)
 
 Anyone can download a translation memory (.tmx) and translations, while only translators can upload translations. When downloading translations:
 * The resource currently selected is downloaded in its original format, it’s not converted in any way.

@@ -2,7 +2,7 @@
 
 ## What are l10n resources
 
-![The different levels l10n resources help ensure quality and consistency.](/assets/images/l10n_resources/lang_resources.png)
+![The different levels l10n resources help ensure quality and consistency.](../assets/images/l10n_resources/lang_resources.png)
 L10n resources are used to ensure consistency of translation and localization at specific levels of a document or set of documents. These levels are:
 1. Word or phrase level (terminology).
 2. Sentence or string level (translation memory).

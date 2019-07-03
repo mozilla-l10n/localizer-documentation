@@ -10,7 +10,7 @@ There is also a special Localization page that allows to access all resources fo
 
 The following diagram shows how these pages are organized and connected to each other:
 
-![Team and project pages flow](/assets/images/pontoon/teams_projects/page_flow.png)
+![Team and project pages flow](../../assets/images/pontoon/teams_projects/page_flow.png)
 
 ## Team page
 
@@ -18,11 +18,11 @@ You can access a team’s page by selecting it from the [Teams page](https://pon
 
 This is a screenshot of the [Italian team page](https://pontoon.mozilla.org/it):
 
-![Team page for Italian](/assets/images/pontoon/teams_projects/team_page.png)
+![Team page for Italian](../../assets/images/pontoon/teams_projects/team_page.png)
 
 The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects, for example to reach all missing strings across projects available for Italian in Pontoon.
 
-![Header of team page for Italian](/assets/images/pontoon/teams_projects/team_page_header.png)
+![Header of team page for Italian](../../assets/images/pontoon/teams_projects/team_page_header.png)
 
 There are 4 tabs available (highlighted in red), 5 if you’re an *admin* or *manager*:
 
@@ -36,17 +36,17 @@ Hovering a project in the list will replace the progress bar with a set of detai
 
 The rightmost column in the table will display a blue lightbulb icon if there are unreviewed strings. The icon in the table header can be used to sort rows based on the number of unreviewed strings.
 
-![Project hover](/assets/images/pontoon/teams_projects/project_hover.png)
+![Project hover](../../assets/images/pontoon/teams_projects/project_hover.png)
 
 ### Requesting a project
 
 It’s possible to request a project from a locale’s *Team page*.
 
-![Request a project](/assets/images/pontoon/teams_projects/request_project.png)
+![Request a project](../../assets/images/pontoon/teams_projects/request_project.png)
 
 Click on *REQUEST MORE PROJECTS* (highlighted in red), select the project you want to add and then click *REQUEST NEW PROJECT* (you need to select at least one project for the button to be displayed).
 
-![Request a project](/assets/images/pontoon/teams_projects/request_project_selected.png)
+![Request a project](../../assets/images/pontoon/teams_projects/request_project_selected.png)
 
 An email will be sent to Pontoon’s administrators, and the localization driver in charge of the project will act on the request. Please note that:
 * Some projects have a closed list of supported locales, meaning that you can’t request the project on Pontoon.
@@ -58,7 +58,7 @@ You can access a project’s page by selecting it from the [Projects page](https
 
 This is a screenshot of the [Mozilla.org project page](https://pontoon.mozilla.org/projects/mozillaorg/):
 
-![Project page for Mozilla.org](/assets/images/pontoon/teams_projects/project_page.png)
+![Project page for Mozilla.org](../../assets/images/pontoon/teams_projects/project_page.png)
 
 The page header contains useful information about the current project:
 * **Priority**: it goes from 5 stars (highest priority) to 1 star (lowest priority).
@@ -69,7 +69,7 @@ The page header contains useful information about the current project:
 
 It also includes an indication of the overall status of completion and statistics across all enabled languages.
 
-![Header of project page for Mozilla.org](/assets/images/pontoon/teams_projects/project_page_header.png)
+![Header of project page for Mozilla.org](../../assets/images/pontoon/teams_projects/project_page_header.png)
 
 There can be up to 4 tabs available (highlighted in red):
 
@@ -82,7 +82,7 @@ There can be up to 4 tabs available (highlighted in red):
 
 It’s possible to request an additional language for a project from its *Project page*.
 
-![Request a project](/assets/images/pontoon/teams_projects/request_locale.png)
+![Request a project](../../assets/images/pontoon/teams_projects/request_locale.png)
 
 Click on *REQUEST NEW LANGUAGE* (highlighted in red), select the language you want to add and then click *REQUEST NEW LANGUAGE*.
 
@@ -96,7 +96,7 @@ You can access a project’s *Localization page* in two ways:
 
 The page header contains useful information about the current project (same as the [Project page](#project-page)).
 
-![Header of localization page](/assets/images/pontoon/teams_projects/localization_page_header.png)
+![Header of localization page](../../assets/images/pontoon/teams_projects/localization_page_header.png)
 
 There are 4 tabs available (highlighted in red):
 * **Resources**: files available in the project.

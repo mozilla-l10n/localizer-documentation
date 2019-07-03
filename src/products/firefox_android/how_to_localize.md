@@ -42,6 +42,6 @@ If you have not already launched Firefox Desktop in your language, then you are 
 
 Bugs will need to be filed by l10n-drivers, and done by following filing out the form here: https://l10n.mozilla.org/bugs/new-locale
 
-Please read this [document](https://github.com/mozilla-l10n/documentation/blob/master/products/firefox_android/setup_searchplugins.md) for more details on how to add search plugins.
+Please read this [document](https://github.com/mozilla-l10n/documentation/blob/master/products/searchplugins/setup_searchplugins.md) for more details on how to add search plugins.
 
-Once you have finished localization work on Android and your locale is up on single-locale builds, you may now move to [the testing phase](testing_android.md).
+Once you have finished localization work on Android and your locale is up on single-locale builds, you may now move to [the testing phase](testing.md).

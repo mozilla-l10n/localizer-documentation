@@ -8,7 +8,7 @@ Bugs are filed in a *Product*, each product has multiple *Components*. For local
 
 Bugzilla components are often referenced in the form of `product :: component`, e.g. `Mozilla Localizations :: it / Italian` or `www.mozilla.org :: L10N`. For some components, there is also a *Locale* field, that allows selecting one or more languages affected.
 
-![Locale field](/assets/images/bugzilla/locale.png)
+![Locale field](../assets/images/bugzilla/locale.png)
 
 A bug has a *status*, the most common ones are:
 * *UNCONFIRMED*: the bug was reported but it’s not confirmed yet. By default, a new user can only submit bugs as unconfirmed.
@@ -41,7 +41,7 @@ The simplest way to keep your bugs under control is to follow your locale in *Mo
 * In the right section, select *Mozilla Localizations* as product, then your locale in the *Component* list.
 * Click *Add*.
 
-![Watch a component](/assets/images/bugzilla/watch_component.png)
+![Watch a component](../assets/images/bugzilla/watch_component.png)
 
 The product will appear in the section *You are currently watching:* right below. From this moment, you will receive an email for all bugs filed in – or moved to – that component.
 
@@ -49,7 +49,7 @@ There are a few limitations to this approach:
 * It’s not possible to follow a single locale within a component, for example for `www.mozilla.org :: L10N`.
 * By default, bugs marked as *UNCONFIRMED* won’t send any notification. In order to receive emails for unconfirmed bugs, you need to update the *Email Preferences* in your [profile](https://bugzilla.mozilla.org/userprefs.cgi), removing the flag from the *Component* column in the line `The bug is in the UNCONFIRMED state`.
 
-![Email Preferences](/assets/images/bugzilla/email_preferences.png)
+![Email Preferences](../assets/images/bugzilla/email_preferences.png)
 
 ### Saved searches
 
@@ -61,15 +61,15 @@ Start from the [Advanced Search page](https://bugzilla.mozilla.org/query.cgi?que
 * Select `L10N` as Component.
 * Expand the *Custom Search* section at the bottom, and set it to *Locale* + *contains the string* + *it*.
 
-![Custom Search](/assets/images/bugzilla/custom_search.png)
+![Custom Search](../assets/images/bugzilla/custom_search.png)
 
 When the results appear, you can use the *Remember search* button and input field to save this search.
 
-![Remember search](/assets/images/bugzilla/remember_search.png)
+![Remember search](../assets/images/bugzilla/remember_search.png)
 
 The list of your saved searches can be displayed by clicking in the search field at the top of the page: you simply need to click one of the items to perform the search.
 
-![Remember search](/assets/images/bugzilla/saved_searches.png)
+![Remember search](../assets/images/bugzilla/saved_searches.png)
 
 At the bottom of the page displaying search results, there’s a link to delete the saved search just performed (*Forget Search “NAME”*).
 

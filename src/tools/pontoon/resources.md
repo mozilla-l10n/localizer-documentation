@@ -8,7 +8,7 @@ The history tab shows all of the suggestions and translations that have been sub
 
 In the tab, the number of available entries is visible alongside the `HISTORY` title. The history entries are located below the tab.
 
-![History tab](/assets/images/pontoon/resources/history.png)
+![History tab](../../assets/images/pontoon/resources/history.png)
 
 On the left side, above the entry, the name of the translator is visible in gray (linking to their profile), while in green it’s displayed how long ago the entry was submitted (full date and time is available as a tooltip). Below this information, the translation or suggestion is displayed.
 
@@ -20,7 +20,7 @@ To the right of the entry, icons indicate the state of each element:
 
 If there are multiple suggestions for one string, it’s possible to use the `SHOW DIFF` link displayed on the right side of the suggestion: it will compare the selected suggestion to the first entry, highlighting in green all added text, in red all removed text. `HIDE DIFF` will display the original string.
 
-![Diff for suggestions](/assets/images/pontoon/resources/suggestions_diff.png)
+![Diff for suggestions](../../assets/images/pontoon/resources/suggestions_diff.png)
 
 ## Machinery tab
 
@@ -31,7 +31,7 @@ The Machinery tab shows possible translations from a variety of sources. These s
 
 In the tab, the number of available entries is visible alongside the `MACHINERY` title.
 
-![Machinery tab](/assets/images/pontoon/resources/machinery.png)
+![Machinery tab](../../assets/images/pontoon/resources/machinery.png)
 
 Below the tab, there is a machinery search bar (highlighted in red). A translator can enter text into the search bar to search for any strings in the machinery resources that may be similar. The search does not need to be related to the current project string.
 
@@ -51,7 +51,7 @@ To use the machinery, select the target locale from the dropdown menu to the rig
 
 The locales tab shows approved translations from Pontoon projects in other locales.
 
-![Locales tab](/assets/images/pontoon/resources/locales.png)
+![Locales tab](../../assets/images/pontoon/resources/locales.png)
 
 Next to the `LOCALES` title, the number of available entries is visible. The number of preferred locales is in green, all other locales are listed in gray.
 
