@@ -11,7 +11,7 @@ This document only covers the UI portion localizable in Pontoon.
 
 ## Localizing the strings
 
-There are two active components in Pontoon that make up [the product](https://pontoon.mozilla.org/sumo):
+There are two active components in Pontoon that make up [the product](https://pontoon.mozilla.org/projects/sumo):
 
 * `LC_MESSAGES/djangojs.po` contains strings for the JS bits of the platform.
 * `LC_MESSAGES/django.po` contains the majority of strings in the SUMO product.
@@ -67,12 +67,12 @@ To be part of the SUMO community, you need to [create a SUMO account](https://su
 
 ### Are there email communications when new strings are added?
 
-Only when there is a release or a major change will there be communications to localizers through [mailing list](sumo-locale-leaders@), private messages, and the SUMO l10n forum. The Pontoon dashboard is the best way to check for pending tasks.
+Only when there is a release or a major change will there be communications to localizers through mailing list (sumo-locale-leaders@), private messages, and the SUMO l10n forum. The Pontoon dashboard is the best way to check for pending tasks.
 
 ### What are the ways to report an issue?
 
 The best place to report issues is by filing [bugs to SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
 
-Alternatively, you can report a problem through the SUMO l10n forum. You can also raise questions through [web projects mailing list](dev-l10n-web@lists.mozilla.org), in the #sumo channel on [IRC](https://wiki.mozilla.org/IRC), and other social channels. In the end, issues identified will be tracked through Bugzilla.
+Alternatively, you can report a problem through the SUMO l10n forum. You can also raise questions through [web projects mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web), in the #sumo channel on [IRC](https://wiki.mozilla.org/IRC), and other social channels. In the end, issues identified will be tracked through Bugzilla.
 
 It is not recommended to file issues on [GitHub sumo-l10n](https://github.com/mozilla-l10n/sumo-l10n/issues?q=is%3Aopen+is%3Aissue).
