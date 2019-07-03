@@ -26,7 +26,7 @@ If there are multiple suggestions for one string, it’s possible to use the `SH
 
 The Machinery tab shows possible translations from a variety of sources. These sources include:
 * Pontoon’s internal translation memory.
-* [Microsoft Terminology](https://www.microsoft.com/Language/en-US/Search.aspx).
+* [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
 
 In the tab, the number of available entries is visible alongside the `MACHINERY` title.

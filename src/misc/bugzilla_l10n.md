@@ -27,7 +27,7 @@ When filing new bugs, the rule of thumb is:
 * If the issue can be fixed by the localization team, e.g. it’s about a typo or mistranslation, it should be filed in `Mozilla Localizations :: Language` or `www.mozilla.org :: L10N`.
 * If the issue needs work from a developer, e.g. a window is too narrow or a string is hardcoded, it’s a product bug, and should be filed accordingly. In case of doubt on which product or component to pick, `Firefox :: Untriaged` is usually a good starting point for Firefox bugs. If you’re reporting a bug for a specific string, you should [trace back](../tools/mercurial/tracking_back_string_to_bug) that string to a bug, and file your report in the same product and component.
 
-More information about Bugzilla are available in [this guide](https://wiki.mozilla.org/BMO/UserGuide). If you want to experiment with Bugzilla, you can use this [test installation](http://landfill.bugzilla.org/).
+More information about Bugzilla are available in [this guide](https://wiki.mozilla.org/BMO/UserGuide).
 
 ## Triage localization bugs
 
