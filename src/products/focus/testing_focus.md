@@ -6,7 +6,7 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are provided by the mobile teams and sent out through Pöntoon notifications.
+Screenshots are provided by the mobile teams and sent out through Pontoon notifications.
 
 ## Test builds
 
