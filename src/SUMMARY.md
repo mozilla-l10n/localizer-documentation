@@ -44,7 +44,6 @@
     * [Fundraising](webprojects/fundraising.md)
     * [Snippets](webprojects/snippets.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
-    * [Thimble](webprojects/thimble.md)
 
 [Glossary](misc/glossary.md)
 [l10n resources](misc/l10n_resources.md)
