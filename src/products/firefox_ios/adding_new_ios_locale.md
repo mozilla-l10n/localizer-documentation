@@ -4,7 +4,7 @@
 
 ### iOS language support
 
-iOS currently supports two tiers of locales, and a locale must be part of that list in order to ship on Firefox for iOS. Unlike Firefox for Android, there’s no locale switcher included in the app, so it’s possible to ship only locales that are supported by iOS.
+iOS currently supports two tiers of locales, and a locale must be part of one of these two lists in order to ship on Firefox for iOS. Unlike Firefox for Android, there’s no locale switcher included in the app, so it’s possible to ship only locales that are supported by iOS.
 
 Note that for Tier 2 locales, some menu items in Firefox for iOS can not be translated since they are part of the OS itself. Strings will unfortunately appear in English on the final UI in these cases.
 
