@@ -1,5 +1,7 @@
 # Search and filters
 
+<!-- toc -->
+
 ## Filters
 
 ### String status

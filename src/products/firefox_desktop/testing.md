@@ -1,5 +1,7 @@
 # Testing Firefox Desktop
 
+<!-- toc -->
+
 ## Which build should I test?
 
 As a localizer you will work against Nightly, which means you should be testing a localized build of Firefox Nightly provided directly by Mozilla.
