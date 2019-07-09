@@ -6,7 +6,7 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are provided by the mobile teams and sent out on dev-l10n. The latest iterations can be found here: [Focus for Android](https://npark-mozilla.github.io/index.html). Focus for iOS (iPhone5) and Focus for iOS (iPhone7) screenshots [can be found here](https://wopr.norad.org/~fxios/screenshots/focus/).
+Screenshots are provided by the mobile teams and sent out through Pontoon notifications.
 
 ## Test builds
 
