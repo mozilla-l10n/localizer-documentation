@@ -19,7 +19,7 @@ There are two active components in Pontoon that make up [the product](https://po
 SUMO is made up by several file types. In order to minimize revision and get translation right the first time, the key is to get the context right. Look for clues or ask others for help:
 
 * String comments: in Pontoon they’re displayed above the area where you can enter your translation for a string. They always include a reference to the code where the string is used, and you can use this information to search for context in the [Kitsune GitHub repository](https://github.com/mozilla/kitsune).
-* [The SUMO l10n forum](https://support.mozilla.org/forums/l10n-forum). But first thing first, you need to [create a SUMO account](https://support.mozilla.org/users/authcontributor) in order to participate in the discussions in the forum.
+* [The SUMO l10n forum](https://support.mozilla.org/forums/l10n-forum). But first thing first, you need to [create a Firefox account](https://support.mozilla.org/users/auth) in order to participate in the discussions in the forum.
 
 Localized strings in Pontoon will be synced up with [sumo-l10n on GitHub](https://github.com/mozilla-l10n/sumo-l10n) every 20 minutes, making the repository the source of truth.
 
@@ -51,11 +51,11 @@ Localization updates are pushed on Thursdays on staging for review in context, a
 
 Kitsune’s codebase is currently not ready for a large audience, and the SUMO team has very limited resources to support local installs. Unless you are technical and self sufficient, you are strongly advised to use Pontoon and staging server to preview your localization work.
 
-If you choose to give local install a try, follow the step by step instructions on [testing localized SUMO locally]((https://kitsune.readthedocs.io/en/latest/localization.html#testing-localized-strings), including local installation of Kitsune, file compilation and steps to commit changes to repository.
+If you choose to give local install a try, follow the step by step instructions on [testing localized SUMO locally](https://kitsune.readthedocs.io/en/latest/localization.html#testing-localized-strings), including local installation of Kitsune, file compilation and steps to commit changes to repository.
 
 ## FAQ
 
-For any additional questions not covered here, you can contact [Michał](mailto:mdziewonski@mozilla.com).
+For any additional questions not covered here, you can contact [Rubén](mailto:nukeador@mozilla.com).
 
 ### How often are new strings added? Is there a sprint?
 
@@ -63,7 +63,7 @@ No, there are no sprints. Strings are added at *as needed* basis. Whenever a rel
 
 ### How do I participate in the [SUMO l10n forum](https://support.mozilla.org/en-US/forums/l10n-forum)?
 
-To be part of the SUMO community, you need to [create a SUMO account](https://support.mozilla.org/en-US/users/authcontributor), which allows you to write in the community l10n forum and localize SUMO articles. This is separate from the account used to log into Pontoon in order to localize SUMO product.
+To be part of the SUMO community, you need to [create a Firefox account](https://support.mozilla.org/users/auth), which allows you to write in the community l10n forum and localize SUMO articles. This is separate from the account used to log into Pontoon in order to localize SUMO product.
 
 ### Are there email communications when new strings are added?
 
@@ -73,6 +73,6 @@ Only when there is a release or a major change will there be communications to l
 
 The best place to report issues is by filing [bugs to SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
 
-Alternatively, you can report a problem through the SUMO l10n forum. You can also raise questions through [web projects mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web), in the #sumo channel on [IRC](https://wiki.mozilla.org/IRC), and other social channels. In the end, issues identified will be tracked through Bugzilla.
+Alternatively, you can report a problem through the SUMO l10n forum. You can also raise questions through [web projects mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web), in the #sumo channel on [Discourse](https://discourse.mozilla.org/c/sumo/), and other social channels. In the end, issues identified will be tracked through Bugzilla.
 
 It is not recommended to file issues on [GitHub sumo-l10n](https://github.com/mozilla-l10n/sumo-l10n/issues?q=is%3Aopen+is%3Aissue).
