@@ -15,13 +15,15 @@ $ npm install
 $ npm test
 ```
 
-## mdBook
+## GitHub Pages
 
-To generate these pages, mdBook is used and built automatically via Travis, and changes pushed to the `gh-pages` branch. If you want to build and preview the mdBook locally, [install Rust and cargo](https://www.rust-lang.org/learn/get-started) and then run the following commands from the root of the repository:
+To generate these pages, [mdBook](https://github.com/rust-lang-nursery/mdBook/) is used and built automatically via Travis, and changes pushed to the `gh-pages` branch. If you want to build and preview the pages locally, [install Rust and cargo](https://www.rust-lang.org/learn/get-started) and then run the following commands from the root of the repository:
 
 ```
-$ cargo install --vers "^0.3" mdbook
+$ cargo install --vers "^0.2" mdbook-toc
 $ mdbook serve
 ```
 
-If you want a new page to be available in mdBook, make sure to include a link in [src/SUMMARY.md](src/SUMMARY.md).
+[mdbook-toc](https://github.com/badboy/mdbook-toc/) is used as a preprocessor, and will install the correct version of mdBook as a dependency.
+
+If you want a new page to be available in GitHub pages, make sure to include a link in [src/SUMMARY.md](src/SUMMARY.md).

@@ -1,5 +1,7 @@
 # How to translate
 
+<!-- toc -->
+
 ## Translating strings
 
 Four actions can be performed on strings: submit a suggestion, review a suggestion, delete a rejected suggestion, and submit a translation directly. Availability of these actions depends on user’s [role](users.md#user-roles).

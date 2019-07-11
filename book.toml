@@ -3,5 +3,6 @@ multilingual = false
 src = "src"
 title = "Documentation for Mozilla localizers"
 
-[preprocessor.create_toc]
-command = "python3 create_toc.py"
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]

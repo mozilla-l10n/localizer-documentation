@@ -1,5 +1,7 @@
 # Example workflow
 
+<!-- toc -->
+
 ## AB workflow
 
 This workflow utilizes the full power of Pontoon’s online translation features. It assumes that at least two translators are available for the project; however, this workflow can be completed by a single translator in an **AA workflow** performing each phase or by multiple translators in an **ABC<sub>n</sub> workflow** repeating Phase 3.
