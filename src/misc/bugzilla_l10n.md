@@ -1,5 +1,7 @@
 # Bugzilla for localizers
 
+<!-- toc -->
+
 [Bugzilla](https://bugzilla.mozilla.org/) is the system used to track issues for most of Mozilla’s projects. For this reason, every localizer should [have an account on Bugzilla](https://wiki.mozilla.org/BMO/UserGuide#Creating_a_Bugzilla_Account), and check incoming emails and notifications. Since bugs need to be read and understood by several people, including developers, English is the language commonly used in Bugzilla.
 
 Bugs are filed in a *Product*, each product has multiple *Components*. For localization, there are two main products:
