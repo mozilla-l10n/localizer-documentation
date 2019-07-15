@@ -6,7 +6,7 @@ This repository includes several documents describing topics of interest for loc
 
 We use [GitHub issues](https://github.com/mozilla-l10n/localizer-documentation/issues) to track missing documentation and updates to existing pages.
 
-In order to contribute, open a pull request in the [repository](https://github.com/mozilla-l10n/localizer-documentation), adding the new file or updating an existing document. Make sure to follow [these style guidelines](https://github.com/mozilla-l10n/documentation/blob/master/misc/documentation_styleguide.md), and note that all pull requests need to be reviewed before merge.
+In order to contribute, open a pull request in the [repository](https://github.com/mozilla-l10n/localizer-documentation), adding the new file or updating an existing document. Make sure to follow [these style guidelines](https://github.com/mozilla-l10n/documentation/blob/master/src/misc/documentation_styleguide.md), and note that all pull requests need to be reviewed before merge.
 
 You can run the following commands to make sure that files are correctly formatted (you will need to [install npm](https://www.npmjs.com/get-npm) if it’s not already available):
 
