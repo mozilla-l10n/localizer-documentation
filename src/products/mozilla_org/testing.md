@@ -73,16 +73,18 @@ When a project has a firm deadline to meet, it will be communicated through the 
 
 This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.
 
-### [firefox/new/trailhead.lang](https://www.mozilla.org/firefox/new/)
+### [firefox/accounts-2019.lang](https://www.mozilla.org/firefox/accounts/)
 
-* Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download if not logged in to a Firefox account. If you have already logged in, a window will be popped up to invite you to save the updated Firefox download.
-* Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
-* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page. (See detailed testing instruction [below](#firefox/all-unified.lang]).)
-* Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings?utm_source=mozilla.org&utm_medium=referral&utm_campaign=fix-problem-link) article in your language if it is localized.
-* The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
+* Click the **Sign In to Monitor** button, you will be taken to the sign-in page in order to get to the [Firefox Monitor](https://monitor.firefox.com) site.
+* Click on the links under each of the following products:
+   * Firefox browser
+   * Firefox Lockwise
+   * Firefox Monitor
+   * Firefox Send
+
+Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to English. Or it will fall back to your second language preference if the product is translated into that language.
 
 ### [firefox/all-unified.lang](https://www.mozilla.org/firefox/all/)
-
 On the lower left side of the page:
 * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the topic on [MDN](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Source_Code) site in your language if it is localized.
@@ -94,16 +96,13 @@ On the right side of the page:
 * Click on the ````?```` at the end of **Select your preferred installer**, a popup window shows the descriptions of different versions of installers available for download.
 * Under the section of **Select your preferred language**, check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
 
-### [firefox/accounts-2019.lang](https://www.mozilla.org/firefox/accounts/)
+### [firefox/new/trailhead.lang](https://www.mozilla.org/firefox/new/)
 
-* Click the **Sign In to Monitor** button, you will be taken to the sign-in page in order to get to the [Firefox Monitor](https://monitor.firefox.com) site.
-* Click on the links under each of the following products:
-   * Firefox browser
-   * Firefox Lockwise
-   * Firefox Monitor
-   * Firefox Send
-
-Note: You may see different languages between mozilla.org, the login window and the products above. If any of these products is not localized in your locale, it will fall back to English. Or it will fall back to your second language preference if the product is translated into that language.
+* Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download if not logged in to a Firefox account. If you have already logged in, a window will be popped up to invite you to save the updated Firefox download.
+* Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
+* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page. (See detailed testing instruction [below](#firefox/all-unified.lang]).)
+* Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings?utm_source=mozilla.org&utm_medium=referral&utm_campaign=fix-problem-link) article in your language if it is localized.
+* The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 
 ### firefox/tracking-protection-tour.lang
 
@@ -114,9 +113,9 @@ This page has been redesigned. The Tracking Protection feature is now part of Co
 * In step [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2), an extra text box appears which shows your current Content Blocking settings of the page.
 * Click on **Got it!** button to finish step three.
 * Click on **Restart tour** button to go through the above steps.
-* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to SuMo site.
+* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to the topic on SUMO site. 
 
-### [navigation.lang](https://www.mozilla.org/en-US/)
+### [navigation.lang](https://www.mozilla.org/)
 
 This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox**, **Projects**, **Developers** or **About**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
 * Not all links take you to a site that's localizable for all locales.
