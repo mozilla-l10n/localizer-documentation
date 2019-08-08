@@ -63,7 +63,7 @@ In some cases, pages receive major updates that require a complete rewrite of th
 ### Sync and update frequencies
 
 * Pontoon syncs every 20 minutes to the repository.
-* The Dev server update every 15 minutes.
+* The Dev server updates every 15 minutes.
 
 If you work on Pontoon, it is safe to say that it will take less than an hour to see your changes reflected on the dev server.
 
@@ -77,7 +77,7 @@ This section focuses on instructions for testing pages with dynamically generate
 
 * Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download if not logged in to a Firefox account. If you have already logged in, a window will be popped up to invite you to save the updated Firefox download.
 * Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
-* Click on the **Download in another language** link, you will be directed to the [firefox/all-unified.lang](https://www.mozilla.org/firefox/all/) page. (See detailed testing instruction below.)
+* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page. (See detailed testing instruction [below](#firefox/all-unified.lang]).)
 * Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings?utm_source=mozilla.org&utm_medium=referral&utm_campaign=fix-problem-link) article in your language if it is localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 
@@ -103,22 +103,22 @@ On the right side of the page:
    * Firefox Monitor
    * Firefox Send
 
-Note: You may see different languages between mozilla.org, the login window and the products above. If any of these products is not localized in your locale, it will fall back to the second language of your preference in the priority order you set in the browser. If the product is not localized in any of the languages selected in the preference, it will eventually default to English.
+Note: You may see different languages between mozilla.org, the login window and the products above. If any of these products is not localized in your locale, it will fall back to English. Or it will fall back to your second language preference if the product is translated into that language.
 
 ### firefox/tracking-protection-tour.lang
 
 This page has been redesigned. The Tracking Protection feature is now part of Content Blocking, a collection of Firefox privacy features. It now points users to the SUMO page to better understand the topics. In order to check the localized content of this tour, you need to do the following:
-* Open the browser by selecting either New Window or New Private Window
+* Open the browser by selecting either New Window or New Private Window.
 * Copy and paste [step one](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=1&variation=0) URL to your browse, then hit the "return" or "enter" keyboard button. A text box pops up.
 * Click the **Next** button, which takes you to steps [two](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=2&variation=1) and [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2).
 * In step [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2), an extra text box appears which shows your current Content Blocking settings of the page.
-* Click on **Got it!** button to finish step three
+* Click on **Got it!** button to finish step three.
 * Click on **Restart tour** button to go through the above steps.
-* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to SuMo site
+* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to SuMo site.
 
 ### [navigation.lang](https://www.mozilla.org/en-US/)
 
 This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox**, **Projects**, **Developers** or **About**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
-* Not all links take you to a site that's localizable for all locales
-* Not all products are offered in your locales
-* Brand and product names must remain unchanged
+* Not all links take you to a site that's localizable for all locales.
+* Not all products are offered in your locales.
+* Brand and product names must remain unchanged.
