@@ -100,7 +100,7 @@ On the right side of the page:
 
 * Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download if not logged in to a Firefox account. If you have already logged in, a window will be popped up to invite you to save the updated Firefox download.
 * Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
-* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page. (See detailed testing instruction [below](#firefox/all-unified.lang]).)
+* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page.
 * Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings?utm_source=mozilla.org&utm_medium=referral&utm_campaign=fix-problem-link) article in your language if it is localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 
@@ -113,7 +113,7 @@ This page has been redesigned. The Tracking Protection feature is now part of Co
 * In step [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2), an extra text box appears which shows your current Content Blocking settings of the page.
 * Click on **Got it!** button to finish step three.
 * Click on **Restart tour** button to go through the above steps.
-* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to the topic on SUMO site. 
+* Click on the [FAQ](https://support.mozilla.org/kb/what-happened-tracking-protection) link which takes you to the topic on SUMO site.
 
 ### [navigation.lang](https://www.mozilla.org/)
 
