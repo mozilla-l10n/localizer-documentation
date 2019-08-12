@@ -85,6 +85,7 @@ This section focuses on instructions for testing pages with dynamically generate
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to English. Or it will fall back to your second language preference if the product is translated into that language.
 
 ### [firefox/all-unified.lang](https://www.mozilla.org/firefox/all/)
+
 On the lower left side of the page:
 * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the topic on [MDN](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Source_Code) site in your language if it is localized.
