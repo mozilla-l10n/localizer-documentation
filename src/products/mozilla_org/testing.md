@@ -102,7 +102,7 @@ On the right side of the page:
 * Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download.
 * Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
 * Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page.
-* Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings) article in your language if it is localized.
+* Click on the **Fix a problem** link, you will be directed to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings) article in your language if it is localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 
 ### firefox/tracking-protection-tour.lang
