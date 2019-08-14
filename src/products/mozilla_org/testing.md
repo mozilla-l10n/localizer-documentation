@@ -35,7 +35,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Nav bar terms consistent with the page titles they are linked to (except when Nav bar term is shortened due to space limitation).
 * Footer links don’t overlap with one another.
 
-You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/)
+You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/).
 
 ### Functionality testing
 
@@ -82,7 +82,7 @@ This section focuses on instructions for testing pages with dynamically generate
    * Firefox Monitor
    * Firefox Send
 
-Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to English. Or it will fall back to your second language preference if the product is translated into that language.
+Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 
 ### [firefox/all-unified.lang](https://www.mozilla.org/firefox/all/)
 
@@ -93,23 +93,23 @@ On the lower left side of the page:
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
 
 On the right side of the page:
-* Click on the ````?```` at the end of **Which browser would you like to download?**, a popup window shows the descriptions of different versions of Firefox available for download.
-* Click on the ````?```` at the end of **Select your preferred installer**, a popup window shows the descriptions of different versions of installers available for download.
+* Click on the `?` at the end of **Which browser would you like to download?**, a popup window shows the descriptions of different versions of Firefox available for download.
+* Click on the `?` at the end of **Select your preferred installer**, a popup window shows the descriptions of different versions of installers available for download.
 * Under the section of **Select your preferred language**, check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
 
 ### [firefox/new/trailhead.lang](https://www.mozilla.org/firefox/new/)
 
-* Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download if not logged in to a Firefox account. If you have already logged in, a window will be popped up to invite you to save the updated Firefox download.
+* Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download.
 * Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
 * Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page.
-* Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings?utm_source=mozilla.org&utm_medium=referral&utm_campaign=fix-problem-link) article in your language if it is localized.
+* Click on the **Fix a problem** link, you will be directed to to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings) article in your language if it is localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 
 ### firefox/tracking-protection-tour.lang
 
 This page has been redesigned. The Tracking Protection feature is now part of Content Blocking, a collection of Firefox privacy features. It now points users to the SUMO page to better understand the topics. In order to check the localized content of this tour, you need to do the following:
 * Open the browser by selecting either New Window or New Private Window.
-* Copy and paste [step one](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=1&variation=0) URL to your browse, then hit the "return" or "enter" keyboard button. A text box pops up.
+* Copy and paste [step one](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=1&variation=0) URL to your browse, then hit the “return” or “enter” keyboard button. A text box pops up.
 * Click the **Next** button, which takes you to steps [two](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=2&variation=1) and [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2).
 * In step [three](https://www.mozilla.org/firefox/68.0.1/tracking-protection/start/?step=3&variation=2), an extra text box appears which shows your current Content Blocking settings of the page.
 * Click on **Got it!** button to finish step three.
@@ -119,6 +119,6 @@ This page has been redesigned. The Tracking Protection feature is now part of Co
 ### [navigation.lang](https://www.mozilla.org/)
 
 This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox**, **Projects**, **Developers** or **About**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
-* Not all links take you to a site that's localizable for all locales.
-* Not all products are offered in your locales.
+* Not all links take you to a site that’s localizable for all locales.
+* Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
