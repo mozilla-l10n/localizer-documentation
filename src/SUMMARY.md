@@ -15,8 +15,6 @@
     * [Firefox for iOS](products/firefox_ios/README.md)
         * [Adding a new locale](products/firefox_ios/adding_new_ios_locale.md)
         * [How to test](products/firefox_ios/testing.md)
-    * [Focus](products/focus/README.md)
-        * [How to test](products/focus/testing_focus.md)
     * [Mozilla.org](products/mozilla_org/README.md)
         * [How to test](products/mozilla_org/testing.md)
     * [Testing localization of Mozilla projects](products/l10n_testing.md)
