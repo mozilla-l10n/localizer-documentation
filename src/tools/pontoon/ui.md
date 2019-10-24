@@ -10,18 +10,15 @@ Pontoon’s translation workspace features the list of strings in the left sideb
 
 ### Main toolbar
 
-The main toolbar allows you to navigate between projects without leaving the translation workspace.
+The main toolbar allows you to navigate to the dashboards or to change the selected resource.
 
 ![main toolbar](../../assets/images/pontoon/ui/main_toolbar.png)
 
-To navigate to another project, click on each item to open the drop-down menu and select the locale, project, and resource to work on. Then click `Go`. Note that the button will get a green background as soon as you change one of the items.
+Clicking the locale name will take you to the *Team page* for that locale. Clicking the project name will take you to the *Project page* for that project and the selected locale.
 
 ![Navigating in the main toolbar](../../assets/images/pontoon/ui/main_nav.png)
 
-Clicking `All` or `Current` in the drop-down menu might navigate away from the translation workspace:
-* In the `Locales` section, `Teams Dashboard` links to the *Teams page*, while `Current Team Dashboard` links to the *Team page* for the current locale.
-* In the `Project` section, `All Projects` allows to access resources for all projects enabled in a specific locale, `Projects Dashboard` links to the *Projects page*, while `Current Project Dashboard` links to the *Project page* for the current project.
-* In the `Resources` section, `All Resources` will display string for all files in the projects, while `Current Localization` links to the *Localization page*.
+If you click on the resource (or `All Resources`), you will see a list of all resources available for that project. You can search for a resource, and click one to load only the entities of that resource. You can also click `All Resources` to go back to seeing all resources, or `All Projects` to load entities for all projects under the selected locale.
 
 More information on how pages are organized in Pontoon is available in [this document](teams_projects.md).
 

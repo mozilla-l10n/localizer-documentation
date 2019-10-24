@@ -6,7 +6,7 @@
 
 Pontoon currently uses Firefox Accounts to manage users, so you will need to [create an account](https://accounts.firefox.com/signup) in order to log in.
 
-To create an account on [Pontoon](https://pontoon.mozilla.org/), simply click on the menu icon in the top right corner and select *Sign In*.
+To create an account on [Pontoon](https://pontoon.mozilla.org/), simply click on the *Sign In* button in the top right corner.
 
 ![Pontoon login](../../assets/images/pontoon/users/menu_login.png)
 
