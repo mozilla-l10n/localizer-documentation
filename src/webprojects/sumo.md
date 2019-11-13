@@ -30,28 +30,18 @@ Ignore these legacy components:
 
 ## Testing
 
-On Thursdays, SUMO developers perform synchronization so localized content is ready on staging for testing.
+On Wednesdays, SUMO developers extract new strings from code and database edits. These strings are merged into the sumo-l10n repository and become available in Pontoon for translation.
 
-On Mondays, SUMO developers perform synchronization so:
-
-* New strings from code and database edits are merged into the sumo-l10n repository and become available in Pontoon for translation.
-* Translated strings from sumo-l10n are pushed to production.
+Translated strings from Pontoon are pushed automatically to the staging and production when there is a release to the respected environment. Usually this happens once a week.
 
 There are three ways to test the product:
 
 * Staging server: https://support.allizom.org​.
 * Production server: http://support.mozilla.org/.
-* Locally: if you want to test your update in a fast and independent way, you should [install Kitsune](https://kitsune.readthedocs.io/en/latest/localization.html#testing-localized-strings) on your computer.
 
-### Testing on production
+### Testing on production/staging
 
-Localization updates are pushed on Thursdays on staging for review in context, and on Mondays on production. Either way, the SUMO team relies on contributors to find issues and report bugs that are usually fixed at a timely manner.
-
-### Testing locally
-
-Kitsune’s codebase is currently not ready for a large audience, and the SUMO team has very limited resources to support local installs. Unless you are technical and self sufficient, you are strongly advised to use Pontoon and staging server to preview your localization work.
-
-If you choose to give local install a try, follow the step by step instructions on [testing localized SUMO locally](https://kitsune.readthedocs.io/en/latest/localization.html#testing-localized-strings), including local installation of Kitsune, file compilation and steps to commit changes to repository.
+Localization updates are pushed to the staging and production environments usually once a week. More often for staging. Either way, the SUMO team relies on contributors to find issues and report bugs that are usually fixed at a timely manner.
 
 ## FAQ
 
