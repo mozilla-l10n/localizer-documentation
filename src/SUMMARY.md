@@ -41,7 +41,7 @@
 * [Web projects](webprojects/README.md)
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Developer.mozilla.org (MDN)](webprojects/mdn.md)
-    * [Fundraising](webprojects/fundraising.md)
+    * [Mozilla Donate website](webprojects/fundraising.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
 [Glossary](misc/glossary.md)
