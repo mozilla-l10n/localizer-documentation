@@ -1,0 +1,25 @@
+{
+  "default": false,
+  "header-increment": {},
+  "first-header-h1": {},
+  "header-style": {
+      "style": "atx"
+  },
+  "ul-style": {
+      "style": "asterisk"
+  },
+  "list-indent": {},
+  "no-trailing-spaces": {},
+  "no-multiple-blanks": {},
+  "no-missing-space-atx": {},
+  "no-multiple-space-atx": {},
+  "blanks-around-headers": {},
+  "header-start-left": {},
+  "single-h1": {},
+  "list-marker-space": {},
+  "blanks-around-fences": {},
+  "no-space-in-emphasis": {},
+  "no-space-in-code": {},
+  "no-space-in-links": {},
+  "first-line-h1": {}
+}

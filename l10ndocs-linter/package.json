@@ -1,0 +1,25 @@
+{
+  "name": "mozilla-l10n-docs-linter",
+  "version": "1.0.0",
+  "description": "Mozilla l10n Documentation Linter",
+  "main": "linter/markdownlint.js",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "markdownlint": "^0.4.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flodolo/l10ndocs-linter.git"
+  },
+  "author": "Francesco Lodolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flodolo/l10ndocs-linter/issues"
+  },
+  "homepage": "https://github.com/flodolo/l10ndocs-linter#readme"
+}
