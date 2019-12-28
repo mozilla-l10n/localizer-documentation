@@ -4,11 +4,11 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are currently provided by the iOS team on dev.l10n, and the latest iterations can be found [right here](http://screenshots.norad.org/~fxios/screenshots/fxios/).
+Screenshots are currently provided by the iOS team, and the latest iterations can be found [right here](https://drive.google.com/drive/folders/1VOq91kGIm0XuneKdSl48HCwTkwXCw_Ve).
 
 ## Test builds
 
-While there are testing builds available on Test Flight, the process is currently manual and localizers should reach out to the l10n mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
+The beta version used for testing can be found [here](https://www.mozilla.org/en-US/firefox/ios/testflight/). In case the registration does not work from there, localizers can also reach out to the l10n mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
 Please note you will need an iOS device running v9 or above.
 
 ## Aspects to review
