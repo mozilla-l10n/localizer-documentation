@@ -20,7 +20,7 @@ $ npm test
 To generate these pages, [mdBook](https://github.com/rust-lang/mdBook/) is used and built automatically via Travis, and changes pushed to the `gh-pages` branch. If you want to build and preview the pages locally, [install Rust and cargo](https://www.rust-lang.org/learn/get-started) and then run the following commands from the root of the repository:
 
 ```
-$ cargo install --vers "^0.2" mdbook-toc
+$ cargo install --vers "^0.3" mdbook-toc
 $ mdbook serve
 ```
 
