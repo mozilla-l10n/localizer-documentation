@@ -52,15 +52,15 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 * Test the page layout on the leading locally developed browser if available.
 * Test the page layout on mobile devices of major platforms.
 
-## When can I see the localized page on the production server?
+## How to test localized pages on the production server
 
 Updated translations are pushed to the production server regularly throughout the day.
 
-* When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. This means, after it reaches this threshold, the page will be on production in English and target language in certain phase. Before the page is activated, rely on staging server for testing.
-* When an activated page receives updates with new strings, the strings will appear in English on production right away. Localized content will be pushed to production string by string soon after a sync is complete.
-* When an activated page receives updates with tagged new strings, this means, the switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.
-* An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
-* In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
+* New page: When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. Before it reaches 100% completion level, the page will be on production with English content mixed with translation. Before the page is activated, use staging server for testing.
+* Activated page with new string update: The strings will appear in English on production right away. Localized content will be pushed to production string by string soon after a sync is complete.
+* Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.
+* Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
+* Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
 
 ### Sync and update frequencies
 
