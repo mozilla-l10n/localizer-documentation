@@ -57,65 +57,6 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 Updated translations are pushed to the production server regularly throughout the day.
 
 * When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. This means, after it reaches this threshold, the page will be on production in English and target language.
-* When an existing page receives updates with ne# Testing Mozilla.org
-
-Mozilla.org is highly visible because the site houses the basic info of all Mozilla products, conveys Mozilla’s mission, vision, and values it stands for. Additionally, it promotes initiatives and campaigns in time of these events. The localized versions reach 60% of the Mozilla users globally. It is very important that, not only the main pages are localized, they are thoroughly tested before they are launched on production.
-
-## Key links
-
-* Production: https://www.mozilla.org/{locale_code}/
-* Staging: https://www-dev.allizom.org/{locale_code}/
-* Repository: https://github.com/mozilla-l10n/www.mozilla.org/
-* Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
-
-It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
-
-## What to test
-
-### Pre-l10n test
-
-* Have your [glossary](https://transvision.mozfr.org/) available as a reference, select mozilla.org as Repository, your language as your Target Locale.
-* For terminology consistency, reference the product or site that the page is for, assuming the product or site is localized (e.g.: Firefox, Monitor).
-* Have the matching US page up as reference, though some strings may not be identical due to A/B testing.
-* Have the project you just localized available for editing in Pontoon.
-
-### Linguistic testing
-
-* Translation quality in context.
-* Grammar correctness in context.
-* Truncation: button text should remain inside the button.
-* Header line break wraps at proper place.
-* Text not overlapping graphic.
-* Terminology consistent with product, and among web pages.
-* Brand names remain in English.
-* Product names comply to Mozilla guideline and adhere to what the community has agreed to.
-* No corrupted characters.
-* Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not..
-* Nav bar terms consistent with the page titles they are linked to (except when Nav bar term is shortened due to space limitation).
-* Footer links don’t overlap with one another.
-
-You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/).
-
-### Functionality testing
-
-* Click the download link, you should be able to download the product in your language, if it is localized, such as Firefox.
-* Font support and readability.
-* Footer: verify that the translation of the link is coherent and the link is functional.
-* Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/en-US to confirm.
-* Error page: deliberately type a broken link, such as https://www.mozilla.org/firefox/neu/, check whether [404 page](https://www-dev.allizom.org/404/) is localized.
-* If your language is RTL, make sure that the page layout and text flow in the correct directions.
-
-### Compatibility testing:
-
-* Test the page layout in other major browsers and on other platforms.
-* Test the page layout on the leading locally developed browser if available.
-* Test the page layout on mobile devices of major platforms.
-
-## Page activation
-
-Updated translations are pushed to the production server regularly throughout the day.
-
-* When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. This means, after it reaches this threshold, the page will be on production in English and target language
 * When an existing page receives updates with new strings, these new strings may or may not have fallback strings. For a page that is completely translated, depending on the rule set for the page, the update may appear once fully localized, or the update will be in English.
 * An activated page falling far behind with multiple updates will create bad user experience. The page will risk being disabled but deactivation will be done manually.
 * In some cases, a page receives a major update that require a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
