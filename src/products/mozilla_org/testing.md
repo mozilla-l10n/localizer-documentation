@@ -9,7 +9,7 @@ Mozilla.org is highly visible because the site houses the basic info of all Mozi
 * Repository: https://github.com/mozilla-l10n/www.mozilla.org/
 * Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
 
-It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
+It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
 
 ## What to test
 
@@ -52,27 +52,28 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 * Test the page layout on the leading locally developed browser if available.
 * Test the page layout on mobile devices of major platforms.
 
-## Page activation
+## When can I see the localized page on the production server?
 
 Updated translations are pushed to the production server regularly throughout the day.
 
-* When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. This means, after it reaches this threshold, the page will be on production in English and target language.
-* When an existing page receives updates with new strings, these new strings may or may not have fallback strings. For a page that is completely translated, depending on the rule set for the page, the update may appear once fully localized, or the update will be in English.
-* An activated page falling far behind with multiple updates will create bad user experience. The page will risk being disabled but deactivation will be done manually.
-* In some cases, a page receives a major update that require a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
+* When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. This means, after it reaches this threshold, the page will be on production in English and target language in certain phase. Before the page is activated, rely on staging server for testing.
+* When an activated page receives updates with new strings, the strings will appear in English on production right away. Localized content will be pushed to production string by string soon after a sync is complete.
+* When an activated page receives updates with tagged new strings, this means, the switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.
+* An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
+* In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
 
 ### Sync and update frequencies
 
 Updated translations are pushed to the production server regularly throughout the day.
 
-* Pontoon syncs every 20 minutes to the repository.
+* Pontoon syncs every 10 minutes to the repository.
 * GitHub update is pushed to production every 5 minutes.
 
 It is safe to say that it will take less than an hour to see your changes reflected on the production server.
 
 When a project has a firm deadline to meet, it will be communicated through the [dev-l10n-web mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web). Be sure to sign up so you receive important community wide information on web related projects. You can also check out the deadline at page level in Pontoon.
 
-## Testing Fluent migration
+## Testing content migrated to Fluent
 
 This section focuses on review and test after a page is migrated to Fluent.
 
@@ -86,21 +87,24 @@ This new file captures all the brand and product names that appear in all the pa
 
 If your community decides to translate any of these products or feature names, translate it once and translate it in this file. Be sure to have a consensus among active contributors what the translation should be before updating this file. This practice will ensure term use consistency across all pages.  
 
-Please refer to the guidelines for brands and trademark when reviewing and updating this file.
+Please refer to the [guidelines for brands and trademarks](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when reviewing and updating this file.
 
 ### Reviewing and updating migrated files
 
-The dashboard contains fewer files than before. This list will grow over time as the mozilla.org team continues migrating from .lang to Fluent. Keep track of what is reviewed and what is pending for a review. Here are a few things to check:
-* On the project dashboard, if there is orange color in the status progress bar, click on the file.  Check the strings with the orange color indicator first. If the localized string is absent of a variable, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
-* Do not translate words in a variable.
+The project dashboard contains fewer files than before. This list will grow over time as the mozilla.org team continues migrating from .lang to Fluent. Keep track of what is reviewed and what is pending for a review. Here are a few things to check:
+
+* On the project dashboard, if there is orange color in the status progress bar, click on the file.  Use the `Search in All`filter to isolate the strings with warnings . If the localized string is
+missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
+* Do not translate words in placeables, like term references.
 * If there is enough bandwidth within a team, work in pairs, one updates the string as a suggestion, another reviews and approves it.
 * Review your changes on production, especially those with brand and product names.
 
 ### Reporting technical issues
 
 Report issues that can’t be resolved in Pontoon by:
-* Filing a bug in Bugzilla and filing it under your locale.
-* Adding the l10n-driver in charge for NI.
+
+* Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
+* Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
 
 ## Testing dynamic pages
@@ -146,23 +150,23 @@ This page is activated on production whether it is localized or not. It is not a
 * Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
 
-## Fixing issues in pages not migrated to Fluent
+## Fixing issues in pages  still using .lang format
 
 Migration of all the pages from .lang to Fluent will take some time to complete. The pages in the old format are disabled on Pontoon. Unless there is a glaring mistake or a serious layout issue in localized content, please refrain from making change requests. If changes are indeed needed, here are the steps to get it fixed. If it is brand or product name related correction, please wait until the page is migrated.
 
 ### Fixing it through GitHub
 
-* Search in https://transvision.mozfr.org/ for the string or part of the string to correct.
+* Search in https://transvision.mozfr.org/ for the string or part of the string to correct. Make sure to select `mozilla.org` as the repository.
 * Locate the file name where the string comes from.
-* Find the file in the [mozilla.org legacy repo](https://github.com/mozilla-l10n/www.mozilla.org).
-* Create a PR and invite a peer to review and approve the suggestion
-* Once the PR is approved, the l10n-driver in charge will merge the PR to master.
+* Click on the `Source` link under the localized term in the target language column.
+* Create a PR and invite a peer to review and approve the suggestion.
+* Once the PR is approved, the l10n PM in charge will merge the PR to master.
 
-### Fixing it through Bugzilla
+### Reporting it through Bugzilla
 
-* File a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and file under your locale.
-* Search in https://transvision.mozfr.org/ for the string or part of the string to correct.
+* File a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and select your locale.
+* Search by selecting the mozilla.org repository in https://transvision.mozfr.org/ for the string or part of the string to correct.
 * Locate the file name where the string comes from, and state the file name in the bug.
 * Provide the current string along with suggested correction. Preferably, the suggested changes ha gone through peer review and approval.
-* Add the l10n-driver in charge for NI to have the change made in [mozilla.org legacy repo](https://github.com/mozilla-l10n/www.mozilla.org)
+* Add the l10n PM in charge for NI to have the change made in [mozilla.org legacy repo](https://github.com/mozilla-l10n/www.mozilla.org).
 * Confirm the correction on production. Close the bug.
