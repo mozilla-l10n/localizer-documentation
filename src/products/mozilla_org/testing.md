@@ -6,7 +6,7 @@ Mozilla.org is highly visible because the site houses the basic info of all Mozi
 
 * Production: https://www.mozilla.org/{locale_code}/
 * Staging: https://www-dev.allizom.org/{locale_code}/
-* Repository: https://github.com/mozilla-l10n/www.mozilla.org/
+* Repository: https://github.com/mozilla-l10n/www-l10n
 * Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
 
 It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
@@ -56,8 +56,8 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 
 Updated translations are pushed to the production server regularly throughout the day.
 
-* New page: When a brand new page is available for localization, it won’t be enabled on production until it’s at least 80% complete. Before it reaches 100% completion level, the page will be on production with English content mixed with translation. Before the page is activated, use staging server for testing.
-* Activated page with new string update: The strings will appear in English on production right away. Localized content will be pushed to production string by string soon after a sync is complete.
+* New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.
+* Activated page with new string update (no tags): The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.
 * Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.
 * Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
 * Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
@@ -92,9 +92,7 @@ Please refer to the [guidelines for brands and trademarks](https://mozilla-l10n.
 ### Reviewing and updating migrated files
 
 The project dashboard contains fewer files than before. This list will grow over time as the mozilla.org team continues migrating from .lang to Fluent. Keep track of what is reviewed and what is pending for a review. Here are a few things to check:
-
-* On the project dashboard, if there is orange color in the status progress bar, click on the file.  Use the `Search in All`filter to isolate the strings with warnings . If the localized string is
-missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
+* On the project dashboard, if there is orange color in the status progress bar, click on the orange number of warnings. If the localized string is missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
 * Do not translate words in placeables, like term references.
 * If there is enough bandwidth within a team, work in pairs, one updates the string as a suggestion, another reviews and approves it.
 * Review your changes on production, especially those with brand and product names.
