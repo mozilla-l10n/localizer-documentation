@@ -40,7 +40,6 @@
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Developer.mozilla.org (MDN)](webprojects/mdn.md)
     * [Mozilla Donate website](webprojects/fundraising.md)
-    * [Snippets](webprojects/snippets.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
 [Glossary](misc/glossary.md)

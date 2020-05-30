@@ -7,7 +7,6 @@ For every community, new or well established, it is always exciting to reach the
 ### Source
 
 * mozilla.org! Localize it! The site is having a makeover leading up to the autumn launch of the new Firefox. In addition to the new look and feel, there is a lot of new content, and tone is less formal and more fun. Translate these new pages, you will have all your key messages already.
-* [Snippets](https://github.com/mozilla-l10n/engagement-l10n/tree/master/en-US/snippets/2017) and [emails](https://github.com/mozilla-l10n/engagement-l10n/tree/master/en-US/emails/2017): Only eight locales are supported on a regular basis. The Snippets team is not ready to expand to more locales due to the fragile and manual process for pushing them live. You can leverage the content you see fit and publish them on your community social channels. We are in discussion with the Snippets team to support occasional request for locales not regularly supported. Check [Snippets](../webprojects/snippets.md) documentation for details.
 * Other marketing messages: Occasionally we come across interesting messages through Mozilla social channels. The l10n drivers will share them through familiar communication channels such as Facebook, Telegram, and Twitter.
 
 ### Key messages of the new Firefox:
@@ -55,7 +54,6 @@ Here are a few channels to spread the words of the new Firefox launch. The follo
 * Organization: team up with other tech non-profit or open source organizations, schools, universities, and libraries to discuss web or tech literacy; bulletin board.
 * Mozilla: [Mozillagram](https://www.instagram.com/mozillagram/) will share photos from events. Below is the process to get your photos published:
     * Email request a week in advance to [Sierra Read](mailto:sreed@mozilla.com), in charge of social media. Once the community lead is granted access, the person or the group is allowed to take over the account for a few days at a time. During this period, they have direct access and are responsible for posting.
-* With advance planning, Snippets team will push localized snippets outside of the regularly supported locales. [Check out the process](../webprojects/snippets.md) in getting one published.
 * Mozilla l10n blog, monthly report.
 
 ## Guidelines to organizing events
