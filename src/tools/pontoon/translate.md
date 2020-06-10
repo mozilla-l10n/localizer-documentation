@@ -137,6 +137,7 @@ When you upload translations to Pontoon:
 Translation memory (.tmx) files can grow big in size over time. To download files via command line it is advised to use `curl` command with the `--compressed` flag to reduce download times and avoid request timeouts.
 
 Here's an example command to download German (de) .tmx file across all projects:
+
 ```
 curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/de/all-projects/de.all-projects.tmx
 ```
