@@ -19,7 +19,7 @@ before_install:
 
 before_script:
   - curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git rust-lang/mdBook
-  - curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git badboy/mdbook-toc
+  - curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git badboy/mdbook-toc --tag 0.4.1
 
 script:
   - mdbook --version
