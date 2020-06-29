@@ -2,6 +2,7 @@
 
 This set of documentation contains basic information on localizing and testing web based projects.
 
+* [Accounts.firefox.com (FxA)](fxa.md)
 * [Addons.mozilla.org (AMO)](amo.md).
 * [Developer.mozilla.org (MDN)](mdn.md).
 * [Mozilla Donate website](fundraising.md).
