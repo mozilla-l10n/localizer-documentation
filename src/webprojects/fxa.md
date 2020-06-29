@@ -89,12 +89,12 @@ Payment testing is tied to the language of user preference and location. Payment
 * Add number(s) or letter(s) to your existing account to create more accounts by adding a `+` in your email address. For example, if your main email is `abc@xyz.com`, your expanded accounts could be `abc+1@xyz.com` and `abc+m@xyz.com`. You will receive email notifications in your `abc@xyz.com` inbox. You can add anything you want, several digits and/or letters.
 * Keep your password simple so you can log in and log out easily. Keep track of which account is connected with which password. Of course, there is Lockwise for the rescue!
 
-### Testing payment and subscription creation
+#### Testing payment and subscription creation
 
 * Go to [Firefox Privacy Network](https://stage.guardian.nonprod.cloudops.mozgcp.net/)
 * Click on the **Subscribe** button which takes you to a subscription form. If you don't have a Firefox account at this point, you will need to create one.
 * Fill out all the required fields with any made up information you want, as long as the format conforms to the requirement for your market.
-* Credit card number: Use one of the [Stripe test credit card number](https://stripe.com/docs/testing#international-cards) corresponding to the location you are in physically or virtually
+* Credit card number: Use one of the [Stripe test credit card numbers](https://stripe.com/docs/testing#international-cards) corresponding to the location you are in physically or virtually
 * Check formatting accuracy for date and currency. Check the box on usage agreement.
 * Click on **Pay Now**
 * An email confirmation arrives in your inbox. The content should match the summary on the page you just completed your subscription.
@@ -102,7 +102,7 @@ Payment testing is tied to the language of user preference and location. Payment
 * It takes you to the Firefox Privacy Network (FPN) add-on download page. Click on **+ Add to Firefox** button. A series of pop-up windows will walk you through the installation process, and where to find and manage your FPN.
 * The FPN icon will appear on the Firefox browser toolbar. Click on the icon and log in with your Firefox account.
 * Click on **Manage Account** in the dropdown window, it will take you to your account setting.
-* Click on Subscriptions and Payments* in the **Setting** page, which shows the summary of your payment setup.
+* Click on **Subscriptions and Payments** in the **Setting** page, which shows the summary of your payment setup.
 
 **Note**, the Privacy Notice and Terms of Use documents are not localized in all the languages where the product is offered. When not available, you will be redirected to the English versions.
 
