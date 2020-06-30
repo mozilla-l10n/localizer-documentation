@@ -19,7 +19,7 @@ The above could change over time as the team is planning to migrate .po files to
 
 FxA lives in two file formats. The shorter a string is, especially the kind containing variable or placeable, the more context you need to make sure you get the translation right. Look for clues or ask others for clarification:
 
-* String comments: Pay attention to the comment or string ID. In Pontoon, the comments are displayed above the area where you can enter your translation for a string. Some strings are used in more than one place. Finding the appropriate translation that works broadly is important.
+* String comments: Pay attention to the comment or string ID. In Pontoon, the comments are displayed above the area where you can enter your translation for a string.
 * [Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org): ping the L10n PM in charge with any issues you may have.
 * [Web projects mailing list](https://groups.google.com/g/mozilla.dev.l10n.web): Raise questions here so others may benefit from the information.
 
@@ -30,9 +30,11 @@ During translation, do not alter codes in a string, such as variables and HTML m
 For .po file format, a few FxA contacts would be notified when a code in localized string is broken. Any subsequent commits by other localizers in other languages will trigger this warning until the broken string is fixed by one of the people notified. Here are a few common errors seen in localized content:
 
 ✅ `The recipient’s consent is required. <a %(escapedLearnMoreAttributes)s>Learn more</a>`<br>
-❌ Alter the code by omitting or inserting space breaks the build: `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`<br></br>
+❌ Alter the code by omitting or inserting space breaks the build: `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`
+
 ✅ `<span class="number">2</span>Point the camera at the QR code and tap the link that appears`<br>
-❌ Attributes should remain unchanged: `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`<br></br>
+❌ Attributes should remain unchanged: `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
+
 ✅ `Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>.`<br>
 ❌  Markup elements come in pairs, one opens and one closes: `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b>).`
 
@@ -79,24 +81,23 @@ Payment testing is tied to the language of user preference and location. Payment
 
 * Have a Firefox account. If you don’t have one, the staging link will take you to the signup process.
 * Choose a Firefox browser for: desktop (Windows only), Android, or iOS. Support for macOS and Linux is coming soon.
-* If you are not already using the browser in the language you are going to test in, type in the URL field `about:Preferences`, you will be taken to the preferences setting page. Scroll down to the **Language and Appearance** section, under **Language**, click on the **Choose** button. Select the language you want to test in.
-* Use a VPN to configure to the desired location if you are not physically in the correct language and country/region combination.
-* Have these links handy: Staging for [Firefox Privacy Network](https://stage.guardian.nonprod.cloudops.mozgcp.net/) and [Stripe test credit cards](https://stripe.com/docs/testing#international-cards).
+* If you are not already using the browser in the language you are going to test in, type in the URL field `about:Preferences`. Or follow the steps detailed in this [SUMO article](https://support.mozilla.org/en-US/kb/choose-display-languages-multilingual-web-pages) to configure to the correct display language.
+* Have the staging link ready for [subcription testing](accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I)
 
-**Tips:** Feeling not having enough test accounts to use for testing? You are not alone. Here are some tips you can consider. It works with Gmail and maybe other domains:
+**Tips:** Feeling not having enough test accounts to use for testing? You are not alone. Here are some tips you can consider. Note that this works with Gmail and Google Apps domains:
 
 * Add number(s) or letter(s) to your existing account to create more accounts by adding a `+` in your email address. For example, if your main email is `name@xyz.com`, your expanded accounts could be `name+1@xyz.com` and `name+m@xyz.com`. You will receive email notifications in your `name@xyz.com` inbox. You can add anything you want, several digits and/or letters.
 * Keep your password simple so you can log in and log out easily. Keep track of which account is connected with which password. Of course, there is Lockwise for the rescue!
 
 #### Testing payment and subscription creation
 
-* Go to [Firefox Privacy Network](https://stage.guardian.nonprod.cloudops.mozgcp.net/)
+* Go to the [subscription staging server](accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I)
 * Click on the **Subscribe** button which takes you to a subscription form. If you don't have a Firefox account at this point, you will need to create one.
 * Fill out all the required fields with any made up information you want, as long as the format conforms to the requirement for your market.
-* Credit card number: Use one of the [Stripe test credit card numbers](https://stripe.com/docs/testing#international-cards) corresponding to the country location you are in physically or virtually. Select the region above the table first, then look for the country code. It is likely that your particular country is not listed. Stay tuned for workaround and news for expanded offers at a later time.
-* Check formatting accuracy for date, currency and postal. Check the box on usage agreement.
+* Type credit card number `4242 4242 4242 4242`.
+* Check formatting accuracy for date, currency and postal code. Check the box on usage agreement.
 * Click on **Pay Now**
-* An email confirmation arrives in your inbox. The content should match the summary on the page you just completed your subscription.
+* An email confirmation arrives in your inbox. The content should match the summary on the page where you just completed your subscription.
 * A *Thank You* payment confirmation message appears with the subscription summary on your browser page with an invitation to download. Click on **Continue to Download**.
 * It takes you to the Firefox Privacy Network (FPN) add-on download page. Click on **+ Add to Firefox** button. A series of pop-up windows will walk you through the installation process, and where to find and manage your FPN.
 * The FPN icon will appear on the Firefox browser toolbar. Click on the icon and log in with your Firefox account.
