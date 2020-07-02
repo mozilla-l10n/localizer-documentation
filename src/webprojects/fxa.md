@@ -34,21 +34,21 @@ For .po file format, a few FxA contacts would be notified when code in a localiz
 * Target:
    * ❌ `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`
    * ✅ `A címzett hozzájárulása szükséges. <a% (escapedLearnMoreAttributes)s>Tudjon meg többet</a>.`
-   * What changed: `<a%(` -> `<a% (`; `)s >`-> `)s>`.
+   * What changed in the broken translation (❌): space is removed from `<a% (` to `<a%(`; extra space was added from `)s>` to`)s >`.
 
 **Example:** Attributes should remain unchanged.
 * Source: `<span class="number">2</span>Point the camera at the QR code and tap the link that appears`
 * Target:
    * ❌ `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
    * ✅ `<span class="number">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
-   * What changed: `<span classe="numero">` -> `<span class="number">`.
+   * What changed in the broken translation (❌): both the attribute's name `(class)` and value `(number)` were localized.
 
 **Example:** Markup elements often come in pairs, one opens and one closes.
 * Source: `Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>.`
 * Target:
-   * ❌ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b>).`
+   * ❌ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b.`
    * ✅ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b><b>%(escapedSelectedProduct)s</b>.`
-* What changed: `)s</b (<b>%(` -> `)s</b><b>%(`; `)s</b>)` -> `)s</b>`
+* What changed in the broken translation (❌): the closing element `</b>` was replaced by `</b`, leaving the tag open; adding extra element to `s</b><b>%` with `s</b (<b>%`.
 
 For .ftl file format, such error checking mechanism is not in place either in Pontoon or GitHub: Pontoon doesn’t have a warning, and the FxA repository doesn’t send out notifications. Before a script is developed to catch the errors, please use the above examples as general guidelines to avoid making these common mistakes.
 
