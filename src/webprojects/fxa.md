@@ -48,7 +48,7 @@ For .po file format, a few FxA contacts would be notified when code in a localiz
 * Target:
    * ❌ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b.`
    * ✅ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b><b>%(escapedSelectedProduct)s</b>.`
-* What changed in the broken translation (❌): the closing element `</b>` was replaced by `</b`, leaving the tag open; adding extra element to `s</b><b>%` with `s</b (<b>%`.
+   * What changed in the broken translation (❌): the closing element `</b>` was replaced by `</b`, leaving the tag open.
 
 For .ftl file format, such error checking mechanism is not in place either in Pontoon or GitHub: Pontoon doesn’t have a warning, and the FxA repository doesn’t send out notifications. Before a script is developed to catch the errors, please use the above examples as general guidelines to avoid making these common mistakes.
 
@@ -96,9 +96,9 @@ Payment testing is tied to the language of user preference and location. Payment
    * Add number(s) or letter(s) to your existing account to create more accounts by adding a `+` in your email address. For example, if your main email is `name@xyz.com`, your expanded accounts could be `name+1@xyz.com` and `name+m@xyz.com`. You will receive email notifications in your `name@xyz.com` inbox. You can add anything you want, several digits and/or letters. Note that this works with Gmail and Google Apps domains.
    * Keep your password simple so you can log in and log out easily. Keep track of which account is connected with which password. Of course, there is Lockwise for the rescue!
 
-* Create a new Firefox account for testing purpose. Your existing account may or may not work.
+* Create a new Firefox account for testing purposes. Your existing account may or may not work.
 * Choose a Firefox browser for desktop, Android, or iOS.
-* Set the language you are testing in. Find out how to configure to the correct display language by following the steps detailed in this [SUMO article](https://support.mozilla.org/kb/choose-display-languages-multilingual-web-pages).
+* Set the language you are testing in. Find out how to configure the correct display language by following the steps detailed in this [SUMO article](https://support.mozilla.org/kb/choose-display-languages-multilingual-web-pages).
 * Have the link ready for the [subscription testing server](https://accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I). Note, this link is for testing subscription only, different from the FxA staging server.
 
 #### Testing payment and subscription creation
