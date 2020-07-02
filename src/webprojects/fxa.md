@@ -34,7 +34,7 @@ For .po file format, a few FxA contacts would be notified when code in a localiz
 * Target:
    * ❌ `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`
    * ✅ `A címzett hozzájárulása szükséges. <a% (escapedLearnMoreAttributes)s>Tudjon meg többet</a>.`
-   * What changed in the broken translation (❌): space is removed from `<a% (` to `<a%(`; extra space was added from `)s>` to`)s >`.
+   * What changed in the broken translation (❌): space is removed from `<a% (` to `<a%(`; extra space was added from `)s>` to `)s >`.
 
 **Example:** Attributes should remain unchanged.
 * Source: `<span class="number">2</span>Point the camera at the QR code and tap the link that appears`
