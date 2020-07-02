@@ -1,6 +1,6 @@
 # Firefox Accounts (FxA): how to localize and test
 
-FFirefox Accounts (or FxA) refers to [https://accounts.firefox.com](https://accounts.firefox.com). There are three components in Pontoon that make up [FxA](https://pontoon.mozilla.org/projects/firefox-accounts/):
+Firefox Accounts (or FxA) refers to [https://accounts.firefox.com](https://accounts.firefox.com). There are three components in Pontoon that make up [FxA](https://pontoon.mozilla.org/projects/firefox-accounts/):
 
 * `LC_MESSAGES/client.po`: the content server for UI and frontend.
 * `LC_MESSAGES/server.po`: strings for emails and backend templates.
@@ -12,7 +12,7 @@ The above could change over time as the team is planning to migrate .po files to
 
 * [Production](https://accounts.firefox.com)
 * [Staging](https://latest.dev.lcip.org/)
-* [Repository](https://github.com/mozilla/fxa-content-server-l10n)
+* [L10n Repository](https://github.com/mozilla/fxa-content-server-l10n)
 * [Pontoon](https://pontoon.mozilla.org/projects/firefox-accounts/)
 
 ## Localizing the strings
@@ -29,17 +29,26 @@ During translation, do not alter code in a string, such as variables and HTML ma
 
 For .po file format, a few FxA contacts would be notified when code in a localized string is broken. Any subsequent commits by other localizers in other languages will trigger this warning until the broken string is fixed by one of the people notified. Here are a few common errors seen in localized content:
 
-**Example:** Alter the code by omitting or inserting space breaks the build.<br>
-❌ `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`<br>
-✅ `A címzett hozzájárulása szükséges. <a% (escapedLearnMoreAttributes)s>Tudjon meg többet</a>.`
+**Example:** Alter the code by omitting or inserting space breaks the build.
+* Source: `The recipient’s consent is required. <a %(escapedLearnMoreAttributes)s>Learn more</a>`
+* Target:
+   * ❌ `A címzett hozzájárulása szükséges. <a%(escapedLearnMoreAttributes)s >Tudjon meg többet</a>.`
+   * ✅ `A címzett hozzájárulása szükséges. <a% (escapedLearnMoreAttributes)s>Tudjon meg többet</a>.`
+   * What changed: `<a%(` -> `<a% (`; `)s >`-> `)s>`.
 
-**Example:** Attributes should remain unchanged.<br>
-❌ `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`<br>
-✅ `<span class="number">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
+**Example:** Attributes should remain unchanged.
+* Source: `<span class="number">2</span>Point the camera at the QR code and tap the link that appears`
+* Target:
+   * ❌ `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
+   * ✅ `<span class="number">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
+   * What changed: `<span classe="numero">` -> `<span class="number">`.
 
-**Example:** Markup elements often come in pairs, one opens and one closes.<br>
-❌ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b>).`<br>
-✅ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b><b>%(escapedSelectedProduct)s</b>.`
+**Example:** Markup elements often come in pairs, one opens and one closes.
+* Source: `Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>.`
+* Target:
+   * ❌ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b (<b>%(escapedSelectedProduct)s</b>).`
+   * ✅ `Köszönjük, hogy felkereste a Mozilla támogatást a következő témában: <b>%(escapedLowercaseTopic)s</b><b>%(escapedSelectedProduct)s</b>.`
+* What changed: `)s</b (<b>%(` -> `)s</b><b>%(`; `)s</b>)` -> `)s</b>`
 
 For .ftl file format, such error checking mechanism is not in place either in Pontoon or GitHub: Pontoon doesn’t have a warning, and the FxA repository doesn’t send out notifications. Before a script is developed to catch the errors, please use the above examples as general guidelines to avoid making these common mistakes.
 
@@ -82,23 +91,23 @@ Payment testing is tied to the language of user preference and location. Payment
 
 #### Before testing
 
+* **Tips:** Feeling not having enough test accounts to use for testing? You are not alone. Here are some tips you can consider.
+
+   * Add number(s) or letter(s) to your existing account to create more accounts by adding a `+` in your email address. For example, if your main email is `name@xyz.com`, your expanded accounts could be `name+1@xyz.com` and `name+m@xyz.com`. You will receive email notifications in your `name@xyz.com` inbox. You can add anything you want, several digits and/or letters. Note that this works with Gmail and Google Apps domains.
+   * Keep your password simple so you can log in and log out easily. Keep track of which account is connected with which password. Of course, there is Lockwise for the rescue!
+
 * Create a new Firefox account for testing purpose. Your existing account may or may not work.
 * Choose a Firefox browser for desktop, Android, or iOS.
 * Set the language you are testing in. Find out how to configure to the correct display language by following the steps detailed in this [SUMO article](https://support.mozilla.org/kb/choose-display-languages-multilingual-web-pages).
 * Have the link ready for the [subscription testing server](https://accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I). Note, this link is for testing subscription only, different from the FxA staging server.
-
-**Tips:** Feeling not having enough test accounts to use for testing? You are not alone. Here are some tips you can consider.
-
-* Add number(s) or letter(s) to your existing account to create more accounts by adding a `+` in your email address. For example, if your main email is `name@xyz.com`, your expanded accounts could be `name+1@xyz.com` and `name+m@xyz.com`. You will receive email notifications in your `name@xyz.com` inbox. You can add anything you want, several digits and/or letters. Note that this works with Gmail and Google Apps domains.
-* Keep your password simple so you can log in and log out easily. Keep track of which account is connected with which password. Of course, there is Lockwise for the rescue!
 
 #### Testing payment and subscription creation
 
 * Go to the [subscription testing server](https://accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I)
 * Click on the **Subscribe** button which takes you to a subscription form. If you don't have a Firefox account at this point or if your existing account doesn't work, you will need to create one.
 * Fill out all the required fields in the form.
-* Key in credit card number `4242 4242 4242 4242`. The mandatory fields for Expiration date, CCV and postal code can be of any random information.
-* Check formatting accuracy for date, currency and postal code. Check the box on usage agreement.
+* Key in credit card number `4242 4242 4242 4242`. The mandatory fields for Expiration date, CCV and postal code can be filled with random values.
+* Verify formatting accuracy for date, currency and postal code. Check the box on usage agreement.
 * Click on **Pay Now**
 * A *Thank You* payment confirmation message appears with the subscription summary on your browser page with an invitation to download.
 * An email confirmation arrives in your inbox. The content should match the summary on the page where you just completed your subscription.
