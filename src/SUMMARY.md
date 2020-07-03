@@ -37,6 +37,7 @@
         * [Using annotate](tools/mercurial/tracking_back_string_to_bug.md)
 
 * [Web projects](webprojects/README.md)
+    * [Accounts.firefox.com (FxA)](webprojects/fxa.md)
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Developer.mozilla.org (MDN)](webprojects/mdn.md)
     * [Mozilla Donate website](webprojects/fundraising.md)
