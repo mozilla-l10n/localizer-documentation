@@ -41,7 +41,7 @@ For .po file format, a few FxA contacts would be notified when code in a localiz
 * Target:
    * ❌ `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
    * ✅ `<span class="number">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
-   * What changed in the broken translation (❌): both the attribute's name `(class)` and value `(number)` were localized.
+   * What changed in the broken translation (❌): both the attribute's name `class` and value `number` were localized.
 
 **Example:** Markup elements often come in pairs, one opens and one closes.
 * Source: `Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>.`
