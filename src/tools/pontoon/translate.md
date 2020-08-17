@@ -120,11 +120,11 @@ Note that mass actions are only available to users with [translators rights](use
 
 ## Downloading and uploading translations
 
-Pontoon features the ability to download and upload translations, including translation memories. To access these features, click on your user icon in the top-right section of Pontoon. Note that you must be in the translation workspace for the download/upload options to display in the dropdown menu.
+Pontoon features the ability to download and upload translations, including terminology and translation memories. To access these features, click on your user icon in the top-right section of Pontoon. Note that you must be in the translation workspace for the download/upload options to display in the dropdown menu.
 
 ![Profile dropdown menu](../../assets/images/pontoon/translate/profile_menu.png)
 
-Anyone can download a translation memory (.tmx) and translations, while only translators can upload translations. When downloading translations:
+Anyone can download a terminology (.tbx), translation memory (.tmx) and translations, while only translators can upload translations. When downloading translations:
 * The resource currently selected is downloaded in its original format, it’s not converted in any way.
 * If the project contains more than 10 files, download is performed file-by-file. For larger projects a ZIP of all files is downloaded.
 
