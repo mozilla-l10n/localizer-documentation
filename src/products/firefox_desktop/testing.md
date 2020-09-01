@@ -45,7 +45,7 @@ From time to time [create a new profile](https://support.mozilla.org/kb/profile-
 
 ### Test the New Tab page and Contextual Feature Recommendations
 
-First of all, make sure that everything is correctly translated in `about:newtab`. That's the default page displayed when opening a new tab in Firefox.
+First of all, make sure that everything is correctly translated in `about:newtab`. That’s the default page displayed when opening a new tab in Firefox.
 
 In order to test other features available for New Tab, it’s necessary to enable a *devtools* option: open `about:config`, search for `browser.newtabpage.activity-stream.asrouter.devtoolsEnabled` and set it to `true`. After that, in the top right corner of the New Tab page a small wrench icon will be displayed.
 

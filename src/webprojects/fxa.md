@@ -41,7 +41,7 @@ For .po file format, a few FxA contacts would be notified when code in a localiz
 * Target:
    * ❌ `<span classe="numero">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
    * ✅ `<span class="number">2</span>Puncta le camera al codice QR e tocca le ligamine que appare`
-   * What changed in the broken translation (❌): both the attribute's name `class` and value `number` were localized.
+   * What changed in the broken translation (❌): both the attribute’s name `class` and value `number` were localized.
 
 **Example:** Markup elements often come in pairs, one opens and one closes.
 * Source: `Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>.`
@@ -104,7 +104,7 @@ Payment testing is tied to the language of user preference and location. Payment
 #### Testing payment and subscription creation
 
 * Go to the [subscription testing server](https://accounts.stage.mozaws.net/subscriptions/products/prod_HEJ13uxjG4Rj6L?plan=plan_HEJ1l12p1taV7I)
-* Click on the **Subscribe** button which takes you to a subscription form. If you don't have a Firefox account at this point or if your existing account doesn't work, you will need to create one.
+* Click on the **Subscribe** button which takes you to a subscription form. If you don’t have a Firefox account at this point or if your existing account doesn’t work, you will need to create one.
 * Fill out all the required fields in the form.
 * Key in credit card number `4242 4242 4242 4242`. The mandatory fields for Expiration date, CCV and postal code can be filled with random values.
 * Verify formatting accuracy for date, currency and postal code. Check the box on usage agreement.

@@ -136,7 +136,7 @@ When you upload translations to Pontoon:
 
 Terminology (.tbx) and translation memory (.tmx) files can grow big in size over time. To download files via command line it is advised to use `curl` command with the `--compressed` flag to reduce download times and avoid request timeouts.
 
-Here's an example command to download German (de) .tmx file across all projects:
+Here’s an example command to download German (de) .tmx file across all projects:
 
 ```
 curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/de/all-projects/de.all-projects.tmx
@@ -144,7 +144,7 @@ curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/de/all-proj
 
 Note that Terminology files can be downloaded in the TBX 2008 (v2) format in addition to the default TBX v3 format available via the profile menu.
 
-Here's an example command to download German (de) .tbx file in the TBX 2008 (v2) format:
+Here’s an example command to download German (de) .tbx file in the TBX 2008 (v2) format:
 
 ```
 curl -o de.v2.tbx --compressed https://pontoon.mozilla.org/terminology/de.v2.tbx
