@@ -23,7 +23,7 @@ It is important that the people testing the localization be not only the one(s) 
 
 ## Testing on multi-locale builds (shipping in Play Store)
 
-Once the Fennec Project Manager (currently **delphine** at **mozilla** dot **com**) sees that you’ve done at least one cycle on a single-locale build, that nothing breaks during sign-offs, that you’ve continued keeping your work up to date, and that you have been TESTING it - l10n-drivers will consider adding your language to the multi-locale builds. This means that - congratulations! - your locale will now officially be shipping on Firefox for Android.
+Once the Fennec Project Manager (currently **delphine** at **mozilla** dot **com**) sees that you’ve done at least one cycle on a single-locale build, that you’ve continued keeping your work up to date, and that you have been TESTING it - l10n-drivers will consider adding your language to the multi-locale builds. This means that - congratulations! - your locale will now officially be shipping on Firefox for Android.
 
 Once your locale is added to the multi-locale builds, it will “ride the trains” like for Firefox Desktop. It will first start shipping on Nightly on the Play Store, then once next merge day arrives it will ship on Beta, and again the following merge day, it will arrive on Release (cycles are usually 6 or 8 weeks). You can check all upcoming merge days on the [Rapid Release Calendar](https://wiki.mozilla.org/RapidRelease/Calendar).
 

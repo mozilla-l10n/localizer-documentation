@@ -33,7 +33,7 @@ More information about Bugzilla are available in [this guide](https://wiki.mozil
 
 ## Triage localization bugs
 
-Each localization team should keep an eye on bugs filed for their languages. There are several ways to do it, the simplest one is to use the existing dashboards: both Pontoon and the [Team page](https://l10n.mozilla.org/teams/) have *Bugzilla* sections showing open bugs filed against each locale.
+Each localization team should keep an eye on bugs filed for their languages. The simplest way to do it is to use the *BUGS* tab on their team page in Pontoon.
 
 ### Follow the Bugzilla component for your locale
 
