@@ -2,7 +2,7 @@
 
 Firefox for Android is on a four week rapid release cycle. This means that usually there is a new release going out every four weeks.
 
-Within this timeframe, localizers usually will have four weeks to localize and test their strings for a given release: strings land continuously during the first two weeks, and then stop landing for two weeks so that you can complete your work. The deadline in Pontoon is an indicator of when the next localization cut-off date is for the upcoming release.
+Within this timeframe, localizers will usually have four weeks to localize and test their strings for a given release: strings land continuously during the first two weeks, and then stop landing for two weeks so that you can complete your work. The deadline in Pontoon is an indicator of when the next localization cut-off date is for the upcoming release.
 
 ## Localize Firefox for Android in Pontoon
 
