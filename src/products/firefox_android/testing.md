@@ -6,6 +6,8 @@ Once you have localized [all the strings needed to complete the Firefox for Andr
 
 ### What to look out for?
 
+(For more detailed explanations about testing, please refer to [testing localization of Mozilla projects](l10n_testing.md))
+
 * Language quality.
 * Truncated words (cut-off from screen).
 * Anything that appears broken on the UI.
