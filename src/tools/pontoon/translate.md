@@ -139,7 +139,7 @@ Terminology (.tbx) and translation memory (.tmx) files can grow big in size over
 Here’s an example command to download German (de) .tmx file across all projects:
 
 ```
-curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/de/all-projects/de.all-projects.tmx
+curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/translation-memory/de.all-projects.tmx
 ```
 
 Note that Terminology files can be downloaded in the TBX 2008 (v2) format in addition to the default TBX v3 format available via the profile menu.
