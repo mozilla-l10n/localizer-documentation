@@ -18,7 +18,14 @@ jobs:
         uses: actions/setup-node@v2.1.2
       - name: Clone repository
         uses: actions/checkout@v2
-      - name: Run linter
+      - name: Run markdown linter
         run: |
           npm install
           npm test
+      - name: Set up Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Check SUMMARY.md
+        run: |                
+          python .github/scripts/check_summary.py src          

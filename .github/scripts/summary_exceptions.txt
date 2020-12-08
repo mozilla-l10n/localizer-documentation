@@ -1,0 +1,3 @@
+# List of markdown files that can be missing from SUMMARY.md
+misc/pootle-migration.md
+tools/README.md
