@@ -15,15 +15,19 @@ parser.add_argument("docs_path", help="Path to folder with docs")
 args = parser.parse_args()
 docs_path = args.docs_path
 
+if not os.path.isdir(docs_path):
+    sys.exit(f"The provided path {docs_path} does not exist.")
+
 # Load exceptions, if the file exist
 exceptions_file = os.path.join(script_folder, "summary_exceptions.txt")
 exceptions = []
 if os.path.isfile(exceptions_file):
     with open(exceptions_file) as f:
         for line in f.readlines():
-            if line.startswith("#"):
+            line = line.rstrip()
+            if line.startswith("#") or line == '':
                 continue
-            exceptions.append(line.rstrip())
+            exceptions.append(line)
 
 # Get a list of all .md files
 md_files = []

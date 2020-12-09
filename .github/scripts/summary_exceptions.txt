@@ -1,3 +1,4 @@
 # List of markdown files that can be missing from SUMMARY.md
+# Lines starting with # or empty will be ignored.
 misc/pootle-migration.md
 tools/README.md
