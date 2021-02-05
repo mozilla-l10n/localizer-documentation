@@ -1,4 +1,4 @@
-name: Run linter
+name: Docs Linter
 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -27,5 +27,5 @@ jobs:
         with:
           python-version: '3.8'
       - name: Check SUMMARY.md
-        run: |                
-          python .github/scripts/check_summary.py src          
+        run: |
+          python .github/scripts/check_summary.py src
