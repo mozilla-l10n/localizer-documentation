@@ -1,5 +1,8 @@
 # Documentation for Mozilla localizers
 
+![Deployment status](https://github.com/mozilla-l10n/localizer-documentation/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+![Linter status](https://github.com/mozilla-l10n/localizer-documentation/workflows/Docs%20Linter/badge.svg)
+
 This repository includes several documents describing topics of interest for localizers at Mozilla. If you’re reading these pages on GitHub, a version with improved readability and search capabilities is available [here](https://mozilla-l10n.github.io/localizer-documentation/).
 
 ## How to contribute to documentation
