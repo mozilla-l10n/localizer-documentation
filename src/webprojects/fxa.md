@@ -5,13 +5,14 @@ Firefox Accounts (or FxA) refers to [https://accounts.firefox.com](https://accou
 * `LC_MESSAGES/client.po`: the content server for UI and frontend.
 * `LC_MESSAGES/server.po`: strings for emails and backend templates.
 * `Main.ftl`: payments for both frontend and backend.
+* `Settings.ftl`: new subscription service.
 
 The above could change over time as the team is planning to migrate .po files to .ftl, which may involve restructuring the files.
 
 ## Key links
 
 * [Production](https://accounts.firefox.com)
-* [Staging](https://latest.dev.lcip.org/)
+* [Staging](https://accounts.stage.mozaws.net/)
 * [L10n Repository](https://github.com/mozilla/fxa-content-server-l10n)
 * [Pontoon](https://pontoon.mozilla.org/projects/firefox-accounts/)
 
