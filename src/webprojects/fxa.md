@@ -12,7 +12,7 @@ The above could change over time as the team is planning to migrate .po files to
 ## Key links
 
 * [Production](https://accounts.firefox.com)
-* [Staging](https://accounts.stage.mozaws.net)
+* [Staging](https://accounts.stage.mozaws.net/)
 * [L10n Repository](https://github.com/mozilla/fxa-content-server-l10n)
 * [Pontoon](https://pontoon.mozilla.org/projects/firefox-accounts/)
 
