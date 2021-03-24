@@ -5,7 +5,7 @@ Firefox Accounts (or FxA) refers to [https://accounts.firefox.com](https://accou
 * `LC_MESSAGES/client.po`: the content server for UI and frontend.
 * `LC_MESSAGES/server.po`: strings for emails and backend templates.
 * `Main.ftl`: payments for both frontend and backend.
-* `Settings.ftl`: new subscription service.
+* `Settings.ftl`: pages for account settings.
 
 The above could change over time as the team is planning to migrate .po files to .ftl, which may involve restructuring the files.
 
