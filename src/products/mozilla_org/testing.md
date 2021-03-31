@@ -105,6 +105,14 @@ Report issues that can’t be resolved in Pontoon by:
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
 
+### Reporting vendor translation errors
+
+If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by Mozilla staff or a translation vendor. Report any translation errors from Mozilla staff or a translation vendor by:
+
+* Filing a bug using one of these templates and selecting your locale in the component list:
+  * This [template is to report single errors](https://mzl.la/2P9PABx).
+  * This [template is to report a batch of errors](https://mzl.la/3u0mao2).
+
 ## Testing dynamic pages
 
 This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.
