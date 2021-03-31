@@ -110,7 +110,7 @@ Report issues that can’t be resolved in Pontoon by:
 If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by Mozilla staff or a translation vendor. Report any translation errors from Mozilla staff or a translation vendor by:
 
 * Filing a bug using one of these templates and selecting your locale in the component list:
-  * This [template is to report single errors](https://mzl.la/2P9PABx).
+  * This [template is to report a single error](https://mzl.la/2P9PABx).
   * This [template is to report a batch of errors](https://mzl.la/3u0mao2).
 
 ## Testing dynamic pages
