@@ -1,5 +1,7 @@
 # Testing Mozilla.org
 
+<!-- toc -->
+
 Mozilla.org is highly visible because the site houses the basic info of all Mozilla products, conveys Mozilla’s mission, vision, and values it stands for. Additionally, it promotes initiatives and campaigns in time of these events. The localized versions reach 60% of the Mozilla users globally. It is very important that, not only the main pages are localized, they are thoroughly tested before they are launched on production.
 
 ## Key links
@@ -155,24 +157,3 @@ This page is activated on production whether it is localized or not. It is not a
 * Not all links take you to a site that’s localizable for all locales.
 * Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
-
-## Fixing issues in pages  still using .lang format
-
-Migration of all the pages from .lang to Fluent will take some time to complete. The pages in the old format are disabled on Pontoon. Unless there is a glaring mistake or a serious layout issue in localized content, please refrain from making change requests. If changes are indeed needed, here are the steps to get it fixed. If it is brand or product name related correction, please wait until the page is migrated.
-
-### Fixing it through GitHub
-
-* Search in https://transvision.mozfr.org/ for the string or part of the string to correct. Make sure to select `mozilla.org` as the repository.
-* Locate the file name where the string comes from.
-* Click on the `Source` link under the localized term in the target language column.
-* Create a PR and invite a peer to review and approve the suggestion.
-* Once the PR is approved, the l10n PM in charge will merge the PR to master.
-
-### Reporting it through Bugzilla
-
-* File a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and select your locale.
-* Search by selecting the mozilla.org repository in https://transvision.mozfr.org/ for the string or part of the string to correct.
-* Locate the file name where the string comes from, and state the file name in the bug.
-* Provide the current string along with suggested correction. Preferably, the suggested changes ha gone through peer review and approval.
-* Add the l10n PM in charge for NI to have the change made in [mozilla.org legacy repo](https://github.com/mozilla-l10n/www.mozilla.org).
-* Confirm the correction on production. Close the bug.
