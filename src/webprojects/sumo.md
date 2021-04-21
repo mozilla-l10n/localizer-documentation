@@ -45,7 +45,7 @@ Localization updates are pushed to the staging and production environments usual
 
 ## FAQ
 
-For any additional questions not covered here, you can contact [Rubén](mailto:nukeador@mozilla.com).
+For any additional questions not covered here, you can reach out to the #sumo room in [Matrix](https://chat.mozilla.org/#/room/#sumo:mozilla.org) to discuss it.
 
 ### How often are new strings added? Is there a sprint?
 
@@ -61,8 +61,11 @@ Only when there is a release or a major change will there be communications to l
 
 ### What are the ways to report an issue?
 
-The best place to report issues is by filing [bugs to SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
-
-Alternatively, you can report a problem through the SUMO l10n forum. You can also raise questions through [web projects mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web), in the #sumo channel on [Discourse](https://discourse.mozilla.org/c/sumo/), and other social channels. In the end, issues identified will be tracked through Bugzilla.
+* File a [bug for SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
+* Discuss it in [the SUMO l10n forum](https://support.mozilla.org/forums/l10n-forum).
+* Raise questions in the SUMO category on [Discourse](https://discourse.mozilla.org/c/sumo/).
+* Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) the l10n PM responsible for the project.
+* Through Pontoon, click the REQUEST CONTEXT or REPORT ISSUE button next to the string and make a comment. This will notify the l10n PM in charge.
+* Send a direct email to the l10n PM responsible for the project. The email address can be found in the profile in Pontoon.
 
 It is not recommended to file issues on [GitHub sumo-l10n](https://github.com/mozilla-l10n/sumo-l10n/issues?q=is%3Aopen+is%3Aissue).
