@@ -119,14 +119,13 @@ If the mozilla.org project is not in your Pontoon dashboard, but the site is loc
 
 This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.
 
-### [firefox/accounts-2019.ftl](https://www.mozilla.org/firefox/accounts/)
+### [firefox/accounts.ftl](https://www.mozilla.org/firefox/accounts/)
 
 * Click the **Sign In to Monitor** button, you will be taken to the sign-in page in order to get to the [Firefox Monitor](https://monitor.firefox.com) site.
 * Click on the links under each of the following products:
    * Firefox browser
    * Firefox Lockwise
    * Firefox Monitor
-   * Firefox Send
 
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 

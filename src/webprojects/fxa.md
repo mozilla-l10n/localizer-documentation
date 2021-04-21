@@ -21,8 +21,8 @@ The above could change over time as the team is planning to migrate .po files to
 FxA lives in two file formats: .po and .ftl, both contain variable or placeable in the strings. The shorter the string, the more context you need to make sure you get the translation right. Look for clues or get clarifications through the following methods:
 
 * String comments: Pay attention to the comment or string ID. In Pontoon, the comments are displayed above the area where you can enter your translation for a string.
-* [Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org): ping the L10n PM in charge with any issues you may have.
-* [Web projects mailing list](https://groups.google.com/g/mozilla.dev.l10n.web): Raise questions here so others may benefit from the information.
+* [Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org): Ping the L10n PM in charge with any issues you may have.
+* [Localization on Discourse](https://discourse.mozilla.org/c/l10n/547): Follow announcement and discussions, and raise questions you have.
 
 ## Errors in translations can break the build for all languages
 
@@ -121,5 +121,5 @@ There are a few ways to report non-linguistic related bugs:
 
 * File an issue [here](https://github.com/mozilla/fxa-content-server-l10n/issues).
 * Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) to the l10n PM responsible for the project.
-* Send an email to the [web projects mailing list](https://groups.google.com/g/mozilla.dev.l10n.web).
+* Comment on the string in Pontoon and ping the L10n PM responsible for the project.
 * Send a direct email to the l10n PM responsible for the project.
