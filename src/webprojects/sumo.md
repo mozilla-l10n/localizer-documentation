@@ -61,11 +61,11 @@ Only when there is a release or a major change will there be communications to l
 
 ### What are the ways to report an issue?
 
-* File a [bug to SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
-* Discuss it in [the SUMO l10n forum](https://support.mozilla.org/forums/l10n-forum)
-* Raise questions in the #sumo channel on [Discourse](https://discourse.mozilla.org/c/sumo/)
-* Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) to the l10n PM responsible for the project.
-* Comment on the string in Pontoon and ping the L10n PM responsible for the project.
-* Send a direct email to the l10n PM responsible for the project.
+* File a [bug for SUMO](https://bugzilla.mozilla.org/enter_bug.cgi?product=support.mozilla.org&component=Localization). This is the quickest way to have a problem resolved.
+* Discuss it in [the SUMO l10n forum](https://support.mozilla.org/forums/l10n-forum).
+* Raise questions in the SUMO category on [Discourse](https://discourse.mozilla.org/c/sumo/).
+* Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) the l10n PM responsible for the project.
+* Through Pontoon, click the REQUEST CONTEXT or REPORT ISSUE button next to the string and make a comment. This will notify the l10n PM in charge.
+* Send a direct email to the l10n PM responsible for the project. The email address can be found in the profile in Pontoon.
 
 It is not recommended to file issues on [GitHub sumo-l10n](https://github.com/mozilla-l10n/sumo-l10n/issues?q=is%3Aopen+is%3Aissue).

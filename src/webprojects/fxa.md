@@ -121,5 +121,5 @@ There are a few ways to report non-linguistic related bugs:
 
 * File an issue [here](https://github.com/mozilla/fxa-content-server-l10n/issues).
 * Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) to the l10n PM responsible for the project.
-* Comment on the string in Pontoon and ping the L10n PM responsible for the project.
-* Send a direct email to the l10n PM responsible for the project.
+* Through Pontoon, click the REQUEST CONTEXT or REPORT ISSUE button next to the string and make a comment. This will notify the l10n PM in charge.
+* Send a direct email to the l10n PM responsible for the project. The email address can be found in the profile in Pontoon.
