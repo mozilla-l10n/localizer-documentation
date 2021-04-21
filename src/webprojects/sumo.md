@@ -45,7 +45,7 @@ Localization updates are pushed to the staging and production environments usual
 
 ## FAQ
 
-For any additional questions not covered here, you can reach out to the #sumo room in [Matrix](https://chat.mozilla.org/#/room/#sumo:mozilla.org0) to discuss it.
+For any additional questions not covered here, you can reach out to the #sumo room in [Matrix](https://chat.mozilla.org/#/room/#sumo:mozilla.org) to discuss it.
 
 ### How often are new strings added? Is there a sprint?
 
