@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>How to test - Documentation for Mozilla localizers</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../favicon.png">
+        
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../../community/index.html"><strong aria-hidden="true">1.</strong> Community</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../community/l10n_community_roles.html"><strong aria-hidden="true">1.1.</strong> Roles</a></li><li class="chapter-item expanded "><a href="../../community/l10n_feedback.html"><strong aria-hidden="true">1.2.</strong> Giving good feedback</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/index.html"><strong aria-hidden="true">2.</strong> Products</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_desktop/index.html"><strong aria-hidden="true">2.1.</strong> Firefox for desktop</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_desktop/testing.html"><strong aria-hidden="true">2.1.1.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/firefox_android/index.html"><strong aria-hidden="true">2.2.</strong> Firefox for Android</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_android/how_to_localize.html"><strong aria-hidden="true">2.2.1.</strong> How to localize</a></li><li class="chapter-item expanded "><a href="../../products/firefox_android/testing.html"><strong aria-hidden="true">2.2.2.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/firefox_ios/index.html"><strong aria-hidden="true">2.3.</strong> Firefox for iOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_ios/adding_new_ios_locale.html"><strong aria-hidden="true">2.3.1.</strong> Adding a new locale</a></li><li class="chapter-item expanded "><a href="../../products/firefox_ios/testing.html"><strong aria-hidden="true">2.3.2.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/mozilla_org/index.html"><strong aria-hidden="true">2.4.</strong> Mozilla.org</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/mozilla_org/testing.html" class="active"><strong aria-hidden="true">2.4.1.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/l10n_testing.html"><strong aria-hidden="true">2.5.</strong> Testing localization of Mozilla projects</a></li></ol></li><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">3.</strong> Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/pontoon/index.html"><strong aria-hidden="true">3.1.</strong> Pontoon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/pontoon/users.html"><strong aria-hidden="true">3.1.1.</strong> User accounts and settings</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/teams_projects.html"><strong aria-hidden="true">3.1.2.</strong> Teams and projects</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/search_filters.html"><strong aria-hidden="true">3.1.3.</strong> Search and filters</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/ui.html"><strong aria-hidden="true">3.1.4.</strong> Translation user interface</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/translate.html"><strong aria-hidden="true">3.1.5.</strong> How to translate</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/resources.html"><strong aria-hidden="true">3.1.6.</strong> Translation resources</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/workflow.html"><strong aria-hidden="true">3.1.7.</strong> Example workflow</a></li></ol></li><li class="chapter-item expanded "><a href="../../tools/fluent/index.html"><strong aria-hidden="true">3.2.</strong> Fluent</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/fluent/basic_syntax.html"><strong aria-hidden="true">3.2.1.</strong> Fluent syntax</a></li><li class="chapter-item expanded "><a href="../../tools/fluent/functions.html"><strong aria-hidden="true">3.2.2.</strong> Functions</a></li><li class="chapter-item expanded "><a href="../../tools/fluent/brand_names.html"><strong aria-hidden="true">3.2.3.</strong> Brand names</a></li></ol></li><li class="chapter-item expanded "><a href="../../misc/bugzilla_l10n.html"><strong aria-hidden="true">3.3.</strong> Bugzilla for localizers</a></li><li class="chapter-item expanded "><a href="../../tools/mercurial/index.html"><strong aria-hidden="true">3.4.</strong> Mercurial tips</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/mercurial/tracking_back_string_to_bug.html"><strong aria-hidden="true">3.4.1.</strong> Using annotate</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../webprojects/index.html"><strong aria-hidden="true">4.</strong> Web projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../webprojects/fxa.html"><strong aria-hidden="true">4.1.</strong> Accounts.firefox.com (FxA)</a></li><li class="chapter-item expanded "><a href="../../webprojects/amo.html"><strong aria-hidden="true">4.2.</strong> Addons.mozilla.org</a></li><li class="chapter-item expanded "><a href="../../webprojects/mdn.html"><strong aria-hidden="true">4.3.</strong> Developer.mozilla.org (MDN)</a></li><li class="chapter-item expanded "><a href="../../webprojects/fundraising.html"><strong aria-hidden="true">4.4.</strong> Mozilla Donate website</a></li><li class="chapter-item expanded "><a href="../../webprojects/sumo.html"><strong aria-hidden="true">4.5.</strong> Support.mozilla.org (SUMO)</a></li></ol></li><li class="chapter-item expanded "><a href="../../misc/glossary.html">Glossary</a></li><li class="chapter-item expanded affix "><a href="../../misc/l10n_resources.html">l10n resources</a></li><li class="chapter-item expanded affix "><a href="../../misc/community-marketing-kit.html">Community marketing kit</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Documentation for Mozilla localizers</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="testing-mozillaorg"><a class="header" href="#testing-mozillaorg">Testing Mozilla.org</a></h1>
+<ul>
+<li><a href="#key-links">Key links</a></li>
+<li><a href="#what-to-test">What to test</a>
+<ul>
+<li><a href="#pre-l10n-test">Pre-l10n test</a></li>
+<li><a href="#linguistic-testing">Linguistic testing</a></li>
+<li><a href="#functionality-testing">Functionality testing</a></li>
+<li><a href="#compatibility-testing">Compatibility testing:</a></li>
+</ul>
+</li>
+<li><a href="#how-to-test-localized-pages-on-the-production-server">How to test localized pages on the production server</a>
+<ul>
+<li><a href="#sync-and-update-frequencies">Sync and update frequencies</a></li>
+</ul>
+</li>
+<li><a href="#testing-content-migrated-to-fluent">Testing content migrated to Fluent</a>
+<ul>
+<li><a href="#reviewing-and-updating-brandsftl">Reviewing and updating brands.ftl</a></li>
+<li><a href="#reviewing-and-updating-migrated-files">Reviewing and updating migrated files</a></li>
+<li><a href="#reporting-technical-issues">Reporting technical issues</a></li>
+<li><a href="#reporting-vendor-translation-errors">Reporting vendor translation errors</a></li>
+</ul>
+</li>
+<li><a href="#testing-dynamic-pages">Testing dynamic pages</a>
+<ul>
+<li><a href="#firefoxaccountsftl">firefox/accounts.ftl</a></li>
+<li><a href="#firefoxallftl">firefox/all.ftl</a></li>
+<li><a href="#firefoxnewdownloadftl">firefox/new/download.ftl</a></li>
+<li><a href="#navigationftl">navigation.ftl</a></li>
+</ul>
+</li>
+</ul>
+<p>Mozilla.org is highly visible because the site houses the basic info of all Mozilla products, conveys Mozilla’s mission, vision, and values it stands for. Additionally, it promotes initiatives and campaigns in time of these events. The localized versions reach 60% of the Mozilla users globally. It is very important that, not only the main pages are localized, they are thoroughly tested before they are launched on production.</p>
+<h2 id="key-links"><a class="header" href="#key-links">Key links</a></h2>
+<ul>
+<li>Production: https://www.mozilla.org/{locale_code}/</li>
+<li>Staging: https://www-dev.allizom.org/{locale_code}/</li>
+<li>Repository: https://github.com/mozilla-l10n/www-l10n</li>
+<li>Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/</li>
+</ul>
+<p>It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.</p>
+<h2 id="what-to-test"><a class="header" href="#what-to-test">What to test</a></h2>
+<h3 id="pre-l10n-test"><a class="header" href="#pre-l10n-test">Pre-l10n test</a></h3>
+<ul>
+<li>Have your <a href="https://transvision.mozfr.org/">glossary</a> available as a reference, select mozilla.org as Repository, your language as your Target Locale.</li>
+<li>For terminology consistency, reference the product or site that the page is for, assuming the product or site is localized (e.g.: Firefox, Monitor).</li>
+<li>Have the matching US page up as reference, though some strings may not be identical due to A/B testing.</li>
+<li>Have the project you just localized available for editing in Pontoon.</li>
+</ul>
+<h3 id="linguistic-testing"><a class="header" href="#linguistic-testing">Linguistic testing</a></h3>
+<ul>
+<li>Translation quality in context.</li>
+<li>Grammar correctness in context.</li>
+<li>Truncation: button text should remain inside the button.</li>
+<li>Header line break wraps at proper place.</li>
+<li>Text not overlapping graphic.</li>
+<li>Terminology consistent with product, and among web pages.</li>
+<li>Brand names remain in English.</li>
+<li>Product names comply to Mozilla guideline and adhere to what the community has agreed to.</li>
+<li>No corrupted characters.</li>
+<li>Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not..</li>
+<li>Nav bar terms consistent with the page titles they are linked to (except when Nav bar term is shortened due to space limitation).</li>
+<li>Footer links don’t overlap with one another.</li>
+</ul>
+<p>You can make linguistic changes directly in <a href="https://pontoon.mozilla.org/projects/mozillaorg/">Pontoon</a>.</p>
+<h3 id="functionality-testing"><a class="header" href="#functionality-testing">Functionality testing</a></h3>
+<ul>
+<li>Click the download link, you should be able to download the product in your language, if it is localized, such as Firefox.</li>
+<li>Font support and readability.</li>
+<li>Footer: verify that the translation of the link is coherent and the link is functional.</li>
+<li>Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/en-US to confirm.</li>
+<li>Error page: deliberately type a broken link, such as https://www.mozilla.org/firefox/neu/, check whether <a href="https://www-dev.allizom.org/404/">404 page</a> is localized.</li>
+<li>If your language is RTL, make sure that the page layout and text flow in the correct directions.</li>
+</ul>
+<h3 id="compatibility-testing"><a class="header" href="#compatibility-testing">Compatibility testing:</a></h3>
+<ul>
+<li>Test the page layout in other major browsers and on other platforms.</li>
+<li>Test the page layout on the leading locally developed browser if available.</li>
+<li>Test the page layout on mobile devices of major platforms.</li>
+</ul>
+<h2 id="how-to-test-localized-pages-on-the-production-server"><a class="header" href="#how-to-test-localized-pages-on-the-production-server">How to test localized pages on the production server</a></h2>
+<p>Updated translations are pushed to the production server regularly throughout the day.</p>
+<ul>
+<li>New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.</li>
+<li>Activated page with new string update (no tags): The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.</li>
+<li>Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.</li>
+<li>Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.</li>
+<li>Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.</li>
+</ul>
+<h3 id="sync-and-update-frequencies"><a class="header" href="#sync-and-update-frequencies">Sync and update frequencies</a></h3>
+<p>Updated translations are pushed to the production server regularly throughout the day.</p>
+<ul>
+<li>Pontoon syncs every 10 minutes to the repository.</li>
+<li>GitHub update is pushed to production every 5 minutes.</li>
+</ul>
+<p>It is safe to say that it will take less than an hour to see your changes reflected on the production server.</p>
+<p>When a project has a firm deadline to meet, it will be communicated through the <a href="https://lists.mozilla.org/listinfo/dev-l10n-web">dev-l10n-web mailing list</a>. Be sure to sign up so you receive important community wide information on web related projects. You can also check out the deadline at page level in Pontoon.</p>
+<h2 id="testing-content-migrated-to-fluent"><a class="header" href="#testing-content-migrated-to-fluent">Testing content migrated to Fluent</a></h2>
+<p>This section focuses on review and test after a page is migrated to Fluent.</p>
+<h3 id="reviewing-and-updating-a-hrefhttpsgithubcommozilla-l10nwww-l10nblobmasterenbrandsftlbrandsftla"><a class="header" href="#reviewing-and-updating-a-hrefhttpsgithubcommozilla-l10nwww-l10nblobmasterenbrandsftlbrandsftla">Reviewing and updating <a href="https://github.com/mozilla-l10n/www-l10n/blob/master/en/brands.ftl">brands.ftl</a></a></h3>
+<p>This new file captures all the brand and product names that appear in all the pages on mozilla.org as of now. As a general rule, brands and product names remain unchanged. The exceptions are:</p>
+<ul>
+<li>Account/Accounts in Firefox Account/Accounts</li>
+<li>Sync in Firefox Sync</li>
+<li>Browser in Firefox Browser</li>
+</ul>
+<p>If your community decides to translate any of these products or feature names, translate it once and translate it in this file. Be sure to have a consensus among active contributors what the translation should be before updating this file. This practice will ensure term use consistency across all pages.  </p>
+<p>Please refer to the <a href="https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark">guidelines for brands and trademarks</a> when reviewing and updating this file.</p>
+<h3 id="reviewing-and-updating-migrated-files"><a class="header" href="#reviewing-and-updating-migrated-files">Reviewing and updating migrated files</a></h3>
+<p>The project dashboard contains fewer files than before. This list will grow over time as the mozilla.org team continues migrating from .lang to Fluent. Keep track of what is reviewed and what is pending for a review. Here are a few things to check:</p>
+<ul>
+<li>On the project dashboard, if there is orange color in the status progress bar, click on the orange number of warnings. If the localized string is missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.</li>
+<li>Do not translate words in placeables, like term references.</li>
+<li>If there is enough bandwidth within a team, work in pairs, one updates the string as a suggestion, another reviews and approves it.</li>
+<li>Review your changes on production, especially those with brand and product names.</li>
+</ul>
+<h3 id="reporting-technical-issues"><a class="header" href="#reporting-technical-issues">Reporting technical issues</a></h3>
+<p>Report issues that can’t be resolved in Pontoon by:</p>
+<ul>
+<li>Filing a bug in <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations">Bugzilla</a> and selecting your locale.</li>
+<li>Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the <a href="https://pontoon.mozilla.org/projects/mozillaorg/">project page</a>.</li>
+<li>Including the file name plus a screenshot and/or URL.</li>
+</ul>
+<h3 id="reporting-vendor-translation-errors"><a class="header" href="#reporting-vendor-translation-errors">Reporting vendor translation errors</a></h3>
+<p>If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by Mozilla staff or a translation vendor. Report any translation errors from Mozilla staff or a translation vendor by:</p>
+<ul>
+<li>Filing a bug using one of these templates and selecting your locale in the component list:
+<ul>
+<li>This <a href="https://mzl.la/2P9PABx">template is to report a single error</a>.</li>
+<li>This <a href="https://mzl.la/3u0mao2">template is to report a batch of errors</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="testing-dynamic-pages"><a class="header" href="#testing-dynamic-pages">Testing dynamic pages</a></h2>
+<p>This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.</p>
+<h3 id="a-hrefhttpswwwmozillaorgfirefoxaccountsfirefoxaccountsftla"><a class="header" href="#a-hrefhttpswwwmozillaorgfirefoxaccountsfirefoxaccountsftla"><a href="https://www.mozilla.org/firefox/accounts/">firefox/accounts.ftl</a></a></h3>
+<ul>
+<li>Click the <strong>Sign In to Monitor</strong> button, you will be taken to the sign-in page in order to get to the <a href="https://monitor.firefox.com">Firefox Monitor</a> site.</li>
+<li>Click on the links under each of the following products:
+<ul>
+<li>Firefox browser</li>
+<li>Firefox Lockwise</li>
+<li>Firefox Monitor</li>
+</ul>
+</li>
+</ul>
+<p>Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.</p>
+<h3 id="a-hrefhttpswwwmozillaorgfirefoxallfirefoxallftla"><a class="header" href="#a-hrefhttpswwwmozillaorgfirefoxallfirefoxallftla"><a href="https://www.mozilla.org/firefox/all/">firefox/all.ftl</a></a></h3>
+<p>On the lower left side of the page:</p>
+<ul>
+<li>These two sites are in English only: <a href="https://www.mozilla.org/firefox/system-requirements/">Check the system requirements</a> and <a href="https://www.mozilla.org/firefox/notes/">Release notes</a>.</li>
+<li>Click on the <strong>Source code</strong> link, you will be directed to the topic on <a href="https://developer.mozilla.org/docs/Mozilla/Developer_guide/Source_Code">MDN</a> site in your language if it is localized.</li>
+<li>The <a href="https://www.mozilla.org/privacy/firefox/">Firefox Privacy Notice</a> document is localized in limited number of languages.</li>
+<li>Click on the <strong>Need Help</strong> link, you will be directed to the <a href="https://support.mozilla.org/products?utm_source=mozilla.org&amp;utm_medium=referral&amp;utm_campaign=need-help-link">SUMO</a> home page.</li>
+</ul>
+<p>On the right side of the page:</p>
+<ul>
+<li>Click on the <code>?</code> at the end of <strong>Which browser would you like to download?</strong>, a popup window shows the descriptions of different versions of Firefox available for download.</li>
+<li>Click on the <code>?</code> at the end of <strong>Select your preferred installer</strong>, a popup window shows the descriptions of different versions of installers available for download.</li>
+<li>Under the section of <strong>Select your preferred language</strong>, check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the <strong>Download Now</strong> button corresponds to your new selection.</li>
+</ul>
+<h3 id="a-hrefhttpswwwmozillaorgfirefoxnewfirefoxnewdownloadftla"><a class="header" href="#a-hrefhttpswwwmozillaorgfirefoxnewfirefoxnewdownloadftla"><a href="https://www.mozilla.org/firefox/new/">firefox/new/download.ftl</a></a></h3>
+<ul>
+<li>Click the <strong>Download Now</strong> button to check the <a href="https://www.mozilla.org/en-US/firefox/download/thanks">thank you</a> page that triggers an automatic download.</li>
+<li>Click on the <strong>Advanced install options &amp; other platforms</strong> link, a pop-up window displays options in various platforms.</li>
+<li>Click on the <strong>Download in another language</strong> link, you will be directed to the <a href="https://www.mozilla.org/firefox/all/">firefox/all</a> page.</li>
+<li>Click on the <strong>Fix a problem</strong> link, you will be directed to this <a href="https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings">SUMO</a> article in your language if it is localized.</li>
+<li>The <a href="https://www.mozilla.org/privacy/firefox/">Firefox Privacy Notice</a> document is localized in limited number of languages.</li>
+</ul>
+<h3 id="a-hrefhttpswwwmozillaorgnavigationftla"><a class="header" href="#a-hrefhttpswwwmozillaorgnavigationftla"><a href="https://www.mozilla.org/">navigation.ftl</a></a></h3>
+<p>This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, <strong>Firefox</strong>, <strong>Projects</strong>, <strong>Developers</strong> or <strong>About</strong>, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:</p>
+<ul>
+<li>Not all links take you to a site that’s localizable for all locales.</li>
+<li>Not all products are offered in your locale.</li>
+<li>Brand and product names must remain unchanged.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../products/mozilla_org/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../products/l10n_testing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../products/mozilla_org/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../products/l10n_testing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

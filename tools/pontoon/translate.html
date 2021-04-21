@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>How to translate - Documentation for Mozilla localizers</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../favicon.png">
+        
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../../community/index.html"><strong aria-hidden="true">1.</strong> Community</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../community/l10n_community_roles.html"><strong aria-hidden="true">1.1.</strong> Roles</a></li><li class="chapter-item expanded "><a href="../../community/l10n_feedback.html"><strong aria-hidden="true">1.2.</strong> Giving good feedback</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/index.html"><strong aria-hidden="true">2.</strong> Products</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_desktop/index.html"><strong aria-hidden="true">2.1.</strong> Firefox for desktop</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_desktop/testing.html"><strong aria-hidden="true">2.1.1.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/firefox_android/index.html"><strong aria-hidden="true">2.2.</strong> Firefox for Android</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_android/how_to_localize.html"><strong aria-hidden="true">2.2.1.</strong> How to localize</a></li><li class="chapter-item expanded "><a href="../../products/firefox_android/testing.html"><strong aria-hidden="true">2.2.2.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/firefox_ios/index.html"><strong aria-hidden="true">2.3.</strong> Firefox for iOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/firefox_ios/adding_new_ios_locale.html"><strong aria-hidden="true">2.3.1.</strong> Adding a new locale</a></li><li class="chapter-item expanded "><a href="../../products/firefox_ios/testing.html"><strong aria-hidden="true">2.3.2.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/mozilla_org/index.html"><strong aria-hidden="true">2.4.</strong> Mozilla.org</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../products/mozilla_org/testing.html"><strong aria-hidden="true">2.4.1.</strong> How to test</a></li></ol></li><li class="chapter-item expanded "><a href="../../products/l10n_testing.html"><strong aria-hidden="true">2.5.</strong> Testing localization of Mozilla projects</a></li></ol></li><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">3.</strong> Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/pontoon/index.html"><strong aria-hidden="true">3.1.</strong> Pontoon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/pontoon/users.html"><strong aria-hidden="true">3.1.1.</strong> User accounts and settings</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/teams_projects.html"><strong aria-hidden="true">3.1.2.</strong> Teams and projects</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/search_filters.html"><strong aria-hidden="true">3.1.3.</strong> Search and filters</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/ui.html"><strong aria-hidden="true">3.1.4.</strong> Translation user interface</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/translate.html" class="active"><strong aria-hidden="true">3.1.5.</strong> How to translate</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/resources.html"><strong aria-hidden="true">3.1.6.</strong> Translation resources</a></li><li class="chapter-item expanded "><a href="../../tools/pontoon/workflow.html"><strong aria-hidden="true">3.1.7.</strong> Example workflow</a></li></ol></li><li class="chapter-item expanded "><a href="../../tools/fluent/index.html"><strong aria-hidden="true">3.2.</strong> Fluent</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/fluent/basic_syntax.html"><strong aria-hidden="true">3.2.1.</strong> Fluent syntax</a></li><li class="chapter-item expanded "><a href="../../tools/fluent/functions.html"><strong aria-hidden="true">3.2.2.</strong> Functions</a></li><li class="chapter-item expanded "><a href="../../tools/fluent/brand_names.html"><strong aria-hidden="true">3.2.3.</strong> Brand names</a></li></ol></li><li class="chapter-item expanded "><a href="../../misc/bugzilla_l10n.html"><strong aria-hidden="true">3.3.</strong> Bugzilla for localizers</a></li><li class="chapter-item expanded "><a href="../../tools/mercurial/index.html"><strong aria-hidden="true">3.4.</strong> Mercurial tips</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/mercurial/tracking_back_string_to_bug.html"><strong aria-hidden="true">3.4.1.</strong> Using annotate</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../webprojects/index.html"><strong aria-hidden="true">4.</strong> Web projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../webprojects/fxa.html"><strong aria-hidden="true">4.1.</strong> Accounts.firefox.com (FxA)</a></li><li class="chapter-item expanded "><a href="../../webprojects/amo.html"><strong aria-hidden="true">4.2.</strong> Addons.mozilla.org</a></li><li class="chapter-item expanded "><a href="../../webprojects/mdn.html"><strong aria-hidden="true">4.3.</strong> Developer.mozilla.org (MDN)</a></li><li class="chapter-item expanded "><a href="../../webprojects/fundraising.html"><strong aria-hidden="true">4.4.</strong> Mozilla Donate website</a></li><li class="chapter-item expanded "><a href="../../webprojects/sumo.html"><strong aria-hidden="true">4.5.</strong> Support.mozilla.org (SUMO)</a></li></ol></li><li class="chapter-item expanded "><a href="../../misc/glossary.html">Glossary</a></li><li class="chapter-item expanded affix "><a href="../../misc/l10n_resources.html">l10n resources</a></li><li class="chapter-item expanded affix "><a href="../../misc/community-marketing-kit.html">Community marketing kit</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Documentation for Mozilla localizers</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="how-to-translate"><a class="header" href="#how-to-translate">How to translate</a></h1>
+<ul>
+<li><a href="#translating-strings">Translating strings</a>
+<ul>
+<li><a href="#submit-a-suggestion">Submit a suggestion</a>
+<ul>
+<li><a href="#manually-switch-to-suggestion-mode">Manually switch to suggestion mode</a></li>
+</ul>
+</li>
+<li><a href="#review-a-suggestion">Review a suggestion</a></li>
+<li><a href="#submit-a-translation-directly">Submit a translation directly</a></li>
+</ul>
+</li>
+<li><a href="#quality-checks">Quality checks</a>
+<ul>
+<li><a href="#errors">Errors</a></li>
+<li><a href="#warnings">Warnings</a></li>
+</ul>
+</li>
+<li><a href="#translating-using-the-in-context-editor">Translating using the in-context editor</a></li>
+<li><a href="#performing-batch-actions-on-strings">Performing batch actions on strings</a></li>
+<li><a href="#downloading-and-uploading-translations">Downloading and uploading translations</a></li>
+<li><a href="#downloading-tbx-and-tmx-files-via-command-line">Downloading .tbx and .tmx files via command line</a></li>
+</ul>
+<h2 id="translating-strings"><a class="header" href="#translating-strings">Translating strings</a></h2>
+<p>Four actions can be performed on strings: submit a suggestion, review a suggestion, delete a rejected suggestion, and submit a translation directly. Availability of these actions depends on user’s <a href="users.html#user-roles">role</a>.</p>
+<p>This document is simplified to demonstrate translation modes in Pontoon. Documentation includes specific pages for learning how to use Pontoon’s <a href="ui.html">interface</a> and <a href="resources.html">translation resources</a>.</p>
+<h3 id="submit-a-suggestion"><a class="header" href="#submit-a-suggestion">Submit a suggestion</a></h3>
+<p>When a translator is in Suggest Mode, or doesn’t have permissions to submit translations directly, a blue <code>SUGGEST</code> button will be visible in the lower-right side of the editing space.</p>
+<p><img src="../../assets/images/pontoon/translate/suggest_button.png" alt="Blue button for suggestions" /></p>
+<p>To suggest a translation, the translator should simply input the translation to the editing space and click <code>SUGGEST</code>. Once the translator has suggested the translation, the suggestion will appear in the sidebar. In case of multiple suggestions, sidebar will show the most recent one.</p>
+<p><img src="../../assets/images/pontoon/translate/sidebar_suggest.png" alt="Sidebar after suggestion" /></p>
+<p>A notification will appear in the window, indicating that your translation has been saved.</p>
+<p>Note that a suggested translation exists only in the Pontoon database, not in the localized file or translation memories.</p>
+<h4 id="manually-switch-to-suggestion-mode"><a class="header" href="#manually-switch-to-suggestion-mode">Manually switch to suggestion mode</a></h4>
+<p>Even if a translator has permissions to add translations directly, submitting suggestions to be reviewed helps ensure quality. To manually switch to Suggestion Mode, click the Settings gear to the lower-left side of the editing space and click the icon to the left of <code>Make Suggestions</code> so that it becomes a green circle. The <code>SUGGEST</code> button should then appear to the lower-right side of the editing space.</p>
+<p><img src="../../assets/images/pontoon/translate/activate_suggest.png" alt="Activate make suggestions" /></p>
+<p>A notification will appear in the window, indicating that <code>Make Suggestions</code> has been enabled.</p>
+<p>To switch to Review and Direct Translation Mode, go to the settings menu by clicking on the gear and turn off the <code>Make Suggestions</code> option. The green <code>SAVE</code> button should appear to the lower-right side of the editing space.</p>
+<h3 id="review-a-suggestion"><a class="header" href="#review-a-suggestion">Review a suggestion</a></h3>
+<p>To review a suggestion, search for unreviewed strings in the sidebar.</p>
+<p>If the suggested string is an acceptable translation, either click on the <code>SAVE</code> button to the lower-right side of the editing space, or click on the checkmark icon to the right of the string (it becomes green when hovered). This will transform the suggested string into an approved translation, save the string to the database and to the localized file on the next sync operation.</p>
+<p>If the suggested string is <strong>not</strong> an acceptable translation, you can reject it by clicking the cross icon to the right of the string (it becomes red when hovered). After rejecting a suggestion, it’s also possible to delete it completely by clicking the trashcan icon.</p>
+<p>Alternatively, you can provide a different suggestion: turn on <code>Make Suggestions</code> in settings. Once the <code>SUGGEST</code> button appears on the lower-right side of the editing space, edit the suggested string as appropriate and click <code>SUGGEST</code>. This will add your translation as a new suggested string in the Pontoon database but will not save the string in the localized file. To see the old and new suggestions, click on the history tab below the editing space. To learn about the history tab and other resources, check the <a href="resources.html">Translation resources documentation</a>.</p>
+<p><img src="../../assets/images/pontoon/translate/history_tab.png" alt="History Tab" /></p>
+<p>For more information about using the <code>HISTORY</code> tab, check <a href="resources.html#history-tab">this document</a>.</p>
+<h3 id="submit-a-translation-directly"><a class="header" href="#submit-a-translation-directly">Submit a translation directly</a></h3>
+<p>Note that it is always best practice to have a translation reviewed by another translator; however, if no reviewer is available, these instructions allow a translator to translate without review.</p>
+<p>To submit a translation directly, search for and click on any string in the sidebar.</p>
+<p>Ensure that the <code>Make Suggestions</code> option in settings is disabled. Then input the translation to the editing space and click <code>SAVE</code>. This will save your translation directly, without review, to the localized file.</p>
+<h2 id="quality-checks"><a class="header" href="#quality-checks">Quality checks</a></h2>
+<p>When submitting a translation or suggestion, Pontoon performs automated quality checks. They are meant to help localizers identify issues with punctuation, capitalization, variables, etc. before translations are saved. Failures for these checks are stored in the database, and it’s possible to filter strings with issues from the search bar.</p>
+<p>There are two types of quality check failures: errors and warnings.</p>
+<h3 id="errors"><a class="header" href="#errors">Errors</a></h3>
+<p>Errors cover issues that would cause the string to be ignored, for example removed from Firefox builds or mozilla.org. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.</p>
+<p>Examples include exceeding the maximum string length, errors related to variables and placeholders, incorrect number of plural forms in properties files, etc. Errors are denoted with a red circled X.</p>
+<p><img src="../../assets/images/pontoon/translate/check_error.png" alt="Internal check: error" /></p>
+<p>Errors are detected using the <a href="https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales">compare-locales library</a> and Pontoon’s internal checks.</p>
+<h3 id="warnings"><a class="header" href="#warnings">Warnings</a></h3>
+<p>Warnings, unlike errors, are displayed when it’s not possible to be completely sure that the string contains critical issues. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.</p>
+<p>Examples include punctuation, number of sentences, capitalization, etc. Warnings are denoted with a grey circled X.</p>
+<p><img src="../../assets/images/pontoon/translate/check_warning.png" alt="Internal check: warning" /></p>
+<p>Warnings are detected using the <a href="https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales">compare-locales library</a> and <a href="http://docs.translatehouse.org/projects/translate-toolkit/en/latest/">Translate Toolkit libraries</a>.</p>
+<p>Note: since Translate Toolkit checks may result in many false positives in some scenarios, they can be <a href="users.html#user-settings">completely disabled</a>.</p>
+<h2 id="translating-using-the-in-context-editor"><a class="header" href="#translating-using-the-in-context-editor">Translating using the in-context editor</a></h2>
+<p>Note that only websites that have been enabled for in-context editing will display in context in Pontoon.</p>
+<p>To translate in context, find the string you want to translate in the in-context view and double click it, or click on the pencil icon on the top-left of the string. Hovering over the string that you want to translate will highlight that string in the sidebar and in the in-context view.</p>
+<p><img src="../../assets/images/pontoon/translate/hover_incontext.png" alt="Hovering over the string will highlight in sidebar" /></p>
+<p>Once you double click a string, the sidebar will display the editing space.</p>
+<p><img src="../../assets/images/pontoon/translate/translate_in_sidebar.png" alt="Translate in-context projects in the sidebar" /></p>
+<p>Input your translation or review the suggestion and click <code>SAVE</code> or <code>SUGGEST</code>. Once your translation is saved, the editing space will move to the next string, and that string will be highlighted in the in-context view.</p>
+<p>To return to the list of strings in the sidebar, click <code>BACK TO LIST</code> at the top-left of the sidebar.</p>
+<p>Interactive website features will work in the in-context view. Some strings that you can see in the sidebar will not be visible in the in-context view until you activate the website feature. In the picture below, the translator has clicked on the hamburger to reveal a drop-down menu.</p>
+<p><img src="../../assets/images/pontoon/translate/interactive_features.png" alt="Interactive Hamburger menu" /></p>
+<h2 id="performing-batch-actions-on-strings"><a class="header" href="#performing-batch-actions-on-strings">Performing batch actions on strings</a></h2>
+<p>Translators can perform mass actions on batches of strings by clicking on the square to the left of any string in the sidebar. When clicked, the square will show a checkmark and the editing space will show the mass action window.</p>
+<p><img src="../../assets/images/pontoon/translate/batch_actions.png" alt="Mass action window" /></p>
+<p>After selecting a string, it’s possible to hold <code>SHIFT</code> and click on another string to select a range of strings.</p>
+<p>At the top-left of the mass action window, the translator can return to the editing space by clicking on the <code>x</code> icon. To the right of the exit icon, the number of strings currently selected is displayed. At the top-right of the mass action window, the translator can select all of the strings in the sidebar.</p>
+<p>In the <code>REVIEW TRANSLATIONS</code> section, the translator can approve suggestions or reject suggestions for all selected strings. Upon clicking <code>APPROVE ALL</code> or <code>REMOVE ALL SUGGESTIONS</code>, the label of the button will be replaced with the number of affected translations.</p>
+<p>In the <code>REPLACE IN TRANSLATIONS</code> section, the translator can input a series of characters to search for, and a series of characters to use as a replacement. This is a basic find and replace feature that will work only on the selected strings.</p>
+<p>Note that mass actions are only available to users with <a href="users.html#user-roles">translators rights</a>.</p>
+<h2 id="downloading-and-uploading-translations"><a class="header" href="#downloading-and-uploading-translations">Downloading and uploading translations</a></h2>
+<p>Pontoon features the ability to download and upload translations, including terminology and translation memories. To access these features, click on your user icon in the top-right section of Pontoon. Note that you must be in the translation workspace for the download/upload options to display in the dropdown menu.</p>
+<p><img src="../../assets/images/pontoon/translate/profile_menu.png" alt="Profile dropdown menu" /></p>
+<p>Anyone can download a terminology (.tbx), translation memory (.tmx) and translations, while only translators can upload translations. When downloading translations:</p>
+<ul>
+<li>The resource currently selected is downloaded in its original format, it’s not converted in any way.</li>
+<li>If the project contains more than 10 files, download is performed file-by-file. For larger projects a ZIP of all files is downloaded.</li>
+</ul>
+<p>When you upload translations to Pontoon:</p>
+<ul>
+<li>Existing strings with matching translations will be ignored.</li>
+<li>New strings and new translations will be imported and attributed to the user uploading the file.</li>
+</ul>
+<h2 id="downloading-tbx-and-tmx-files-via-command-line"><a class="header" href="#downloading-tbx-and-tmx-files-via-command-line">Downloading .tbx and .tmx files via command line</a></h2>
+<p>Terminology (.tbx) and translation memory (.tmx) files can grow big in size over time. To download files via command line it is advised to use <code>curl</code> command with the <code>--compressed</code> flag to reduce download times and avoid request timeouts.</p>
+<p>Here’s an example command to download German (de) .tmx file across all projects:</p>
+<pre><code>curl -o de.all-projects.tmx --compressed https://pontoon.mozilla.org/translation-memory/de.all-projects.tmx
+</code></pre>
+<p>Note that Terminology files can be downloaded in the TBX 2008 (v2) format in addition to the default TBX v3 format available via the profile menu.</p>
+<p>Here’s an example command to download German (de) .tbx file in the TBX 2008 (v2) format:</p>
+<pre><code>curl -o de.v2.tbx --compressed https://pontoon.mozilla.org/terminology/de.v2.tbx
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../tools/pontoon/ui.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../tools/pontoon/resources.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../tools/pontoon/ui.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../tools/pontoon/resources.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
