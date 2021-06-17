@@ -1,10 +1,10 @@
 # Testing on iOS for a new release
 
-Localizers currently mostly rely on screenshots for testing. Latest information and updates about testing are provided on the [dev.l10n mailing list](https://lists.mozilla.org/listinfo/dev-l10n), which you should follow if you are working on l10n for any of the existing Mozilla products.
+Localizers currently mostly rely on screenshots for testing. Latest information and updates about Firefox for iOS are generally announced on the [Discourse Localization category](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on l10n for any of the existing Mozilla products.
 
 ## Testing with screenshots
 
-Screenshots are currently provided by the iOS team, and the latest iterations can be found [right here](https://drive.google.com/drive/folders/1VOq91kGIm0XuneKdSl48HCwTkwXCw_Ve).
+Screenshots are currently provided by the iOS team, and the latest iterations can be found [right here](https://firefox-ci-tc.services.mozilla.com/tasks/index/mobile.v2.firefox-ios.l10n-screenshots.latest). Once you find your locale in the list, you should choose and download the .zip file that contains your locale code.
 
 ## Test builds
 
@@ -23,10 +23,6 @@ Here is a list of issues you should try to identify when testing the build:
 
 Concerning untranslated content: please note that we currently have two tiers of support in iOS. If your locale is only in the Tier 2 support list, then it sometimes happens that menu items, which are part of the OS itself, may not be localizable - and will therefore unfortunately appear in English on the final UI. To tell if a locale is supported or not, simply take a look on an actual device, under the Language Settings of the most recent iOS version available. Tier 1 locales are the ones listed under “iPod/iPhone/iPad Language”, and Tier 2 locales appear under “Other Language” (or “Add Language” if there are already some languages under that list).
 
-## Testing a brand new locale
+## Shipping a brand new locale
 
-When a locale is brand new, l10n-drivers and the localization team will work through Bugzilla to process sign-offs on l10n testing.
-
-The l10n Mobile Project Manager will open up a meta bug for this and attach all needed bugs under their corresponding component. Closing the bug as resolved-fixed will signal that a locale is signing off on testing, and good to go for release.
-
-Details concerning all this process are always announced on the [dev.l10n mailing list](https://lists.mozilla.org/listinfo/dev-l10n).
+The locale is tested and has reached 20% completion, we will add the locale to release builds.
