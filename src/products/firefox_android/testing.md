@@ -26,4 +26,4 @@ Please note that it is strongly suggested to start using Nightly builds on a dai
 
 Also, it is important that builds are tested by people outside the localization team. Ask other people from your community to help test in order to have fresh eyes looking at your work.
 
-l10n-drivers send out regular reminders about merge days, android updates, schedule and important info on [the Discourse Localization channel](https://discourse.mozilla.org/c/l10n/). Please make sure you’re following this channel closely so that you get regular updates about which part of the cycle you’re at, when you need to finish your work, and anything relevant to what you are doing.
+l10n-drivers send out regular reminders about merge days, android updates, schedule and important info on [the Discourse Localization category](https://discourse.mozilla.org/c/l10n/). Please make sure you’re following this category closely so that you get regular updates about which part of the cycle you’re at, when you need to finish your work, and anything relevant to what you are doing.
