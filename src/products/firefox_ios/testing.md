@@ -1,6 +1,6 @@
 # Testing on iOS for a new release
 
-Localizers currently mostly rely on screenshots for testing. Latest information and updates about Firefox for iOS are generally announced on the [Discourse Localization channel](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on l10n for any of the existing Mozilla products.
+Localizers currently mostly rely on screenshots for testing. Latest information and updates about Firefox for iOS are generally announced on the [Discourse Localization category](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on l10n for any of the existing Mozilla products.
 
 ## Testing with screenshots
 

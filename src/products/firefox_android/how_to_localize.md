@@ -2,7 +2,7 @@
 
 Firefox for Android is on a four week rapid release cycle. This means that usually there is a new release going out every four weeks.
 
-Within this timeframe, localizers will usually have four weeks to localize and test their strings for a given release: strings land continuously during the first two weeks, and then stop landing for two weeks so that localizers can complete their work. The deadline in [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/) is an indicator of when the next localization cut-off date is for the upcoming release - in other words, the last day to get localization updates into that release.
+Within this timeframe, localizers will usually have approximately four weeks to localize and test their strings for a given release: strings land continuously on [Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fenix) during the first four weeks, and then these strings ride the train to the [Beta version](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta). The deadline in [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/) is an indicator of when the next localization cut-off date is for the upcoming release - in other words, the last day to get localization updates into that release.
 
 Note that all files contained in the project should be localized in order for Firefox for Android to be complete.
 

@@ -20,4 +20,4 @@ For Pontoon, go to the [Firefox for iOS project page here](https://pontoon.mozil
 
 Once pending localization work is complete for a given release, l10n-drivers will work on adding the locale to [the list of shipping locales](https://github.com/mozilla-mobile/firefox-ios/blob/master/shipping_locales.txt).
 
-Remember to regularly check the [Discourse Localization channel](https://discourse.mozilla.org/c/l10n/) for latest information and updates on the project.
+Remember to regularly check the [Discourse Localization category](https://discourse.mozilla.org/c/l10n/) for latest information and updates on the project.
