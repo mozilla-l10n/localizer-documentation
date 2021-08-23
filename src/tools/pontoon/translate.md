@@ -68,7 +68,7 @@ Examples include exceeding the maximum string length, errors related to variable
 
 ![Internal check: error](../../assets/images/pontoon/translate/check_error.png)
 
-Errors are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and Pontoon’s internal checks.
+Errors are detected using the [compare-locales library](https://pypi.org/project/compare-locales/) and Pontoon’s internal checks.
 
 ### Warnings
 
@@ -78,7 +78,7 @@ Examples include punctuation, number of sentences, capitalization, etc. Warnings
 
 ![Internal check: warning](../../assets/images/pontoon/translate/check_warning.png)
 
-Warnings are detected using the [compare-locales library](https://developer.mozilla.org/docs/Mozilla/Projects/compare-locales) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
+Warnings are detected using the [compare-locales library](https://pypi.org/project/compare-locales/) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
 
 Note: since Translate Toolkit checks may result in many false positives in some scenarios, they can be [completely disabled](users.md#user-settings).
 

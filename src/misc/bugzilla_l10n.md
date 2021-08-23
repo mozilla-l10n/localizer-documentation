@@ -17,7 +17,7 @@ A bug has a *status*, the most common ones are:
 * *NEW*: the bug has been confirmed, but it still requires action.
 * *RESOLVED*: the bug has been resolved.
 
-When a bug is marked as *RESOLVED*, there is an [additional information](https://developer.mozilla.org/docs/Mozilla/Bugzilla/What_to_do_and_what_not_to_do_in_Bugzilla#Resolving_bugs) that describes the type of resolution:
+When a bug is marked as *RESOLVED*, there is an [additional information](https://wiki.mozilla.org/BMO/UserGuide/BugStatuses#Resolutions) that describes the type of resolution:
 * *FIXED*: the bug was fixed by a specific action.
 * *INVALID*: the problem described is not a bug.
 * *WONTFIX*: the problem described is a bug which will never be fixed.

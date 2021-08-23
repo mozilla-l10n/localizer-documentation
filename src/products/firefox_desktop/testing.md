@@ -14,7 +14,7 @@ At the same time, you, or someone in your team, should be testing also Beta and 
 
 ### Building a localized version of Firefox
 
-If you’re interested in building a localized version of Firefox from source code, please follow the [official instructions](https://firefox-source-docs.mozilla.org/build/buildsystem/locales.html) available in Mozilla Source Tree Docs. Note that you will need to set up the [build environment](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build) on your system.
+If you’re interested in building a localized version of Firefox from source code, please follow the [official instructions](https://firefox-source-docs.mozilla.org/build/buildsystem/locales.html) available in Mozilla Source Tree Docs. Note that you will need to set up the [build environment](https://firefox-source-docs.mozilla.org/setup/index.html) on your system.
 
 ## How to test
 
