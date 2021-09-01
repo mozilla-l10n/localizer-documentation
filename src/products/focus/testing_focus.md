@@ -2,21 +2,21 @@
 
 Given Focus for iOS and Focus for Android have very similar test procedures, this document will cover both at once.
 
-Localizers currently mostly rely on screenshots for testing. Latest information and updates about testing are provided on the [dev-l10n mailing list](https://lists.mozilla.org/listinfo/dev-l10n), which you should follow if you are working on l10n for any of the existing Mozilla products.
+Localizers currently mostly rely on screenshots for testing Focus for iOS. Latest information and updates about testing are provided on the [l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on localizing any of the existing Mozilla products.
+Links to iOS screenshots are also provided under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page.
+For Focus Android and iOS, there are also links to testing builds, if and when those are currently available.
 
-## Testing with screenshots
+## Testing with screenshots (currently available Focus for iOS only)
 
-Screenshots are provided by the mobile teams and sent out through Pontoon notifications.
+Screenshots are provided by the mobile teams for iOS and appear under the Resources section in Pontoon or in the l10n Discourse channel (see above point for more details).
 
 ## Test builds
 
 There are Nightly localized builds for Focus for Android, that are accessible by following [the instructions here](https://github.com/mozilla-mobile/focus-android/wiki/Release-tracks). There are other builds available too, but Nightly is preferred for testing localizations, since it is updated daily.
 
-Note that for those who do not wish to use Google Play, there are also Nightly builds available on [Taskcluster here](https://tools.taskcluster.net/index/project.mobile.focus.nightly/latest). The build to download is the APK file containing "universal-release" in the name.
+For Focus for iOS Nightly builds, check under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
 
-For Focus for iOS Nightly builds, reach out to the mobile project manager (currently delphine at mozilla dot com) to be added to the BuddyBuild system.
-
-For Focus for iOS, please note an iOS device running v9 or above is needed. For Focus for Android, an Android device running 5.0 or above is needed.
+For Focus for iOS, please note an iOS device running v11.4 or above is needed. For Focus for Android, an Android device running 5.0 or above is needed.
 
 ## Aspects to review
 
@@ -40,4 +40,4 @@ may have already been reported to the mobile team to correct.
 Focus for Android issues [can be filed here](https://github.com/mozilla-mobile/focus-android/issues/).<br/>
 Focus for iOS issues [can be filed here](https://github.com/mozilla-mobile/focus-ios/issues).
 
-Details concerning all this process are always announced on the [dev-l10n mailing list](https://lists.mozilla.org/listinfo/dev-l10n).
+Details concerning all this process are always announced on the [[l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/).
