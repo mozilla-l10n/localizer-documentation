@@ -13,6 +13,7 @@ How to localize and test Mozilla products:
 * [Firefox for desktop](products/firefox_desktop/).
 * [Firefox for Android](products/firefox_android/).
 * [Firefox for iOS](products/firefox_ios/).
+* [Focus for Android and iOS](products/focus/).
 * [Mozilla.org](products/mozilla_org/).
 
 ### Tools
