@@ -1,6 +1,6 @@
 # Testing Focus for iOS and Focus for Android for a new release
 
-Given Focus for iOS and Focus for Android have very similar test procedures, this document will cover both at once. Please note that certain markets, the app is named Klar. For the sake of simplicity, we will only call out the name “Focus” in this document.
+Given Focus for iOS and Focus for Android have very similar test procedures, this document will cover both at once. Please note that in certain markets, the app is named “Klar”. For the sake of simplicity, we will only call out the name “Focus” in this document.
 
 Localizers currently mostly rely on screenshots for testing Focus for iOS. Latest information and updates about testing are provided on the [l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on localizing any of the existing Mozilla products.
 Links to iOS screenshots are also provided under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page.
@@ -38,4 +38,4 @@ may have already been reported to the mobile team to correct - we will ship any 
 Focus for Android issues [can be filed here](https://github.com/mozilla-mobile/focus-android/issues/).<br/>
 Focus for iOS issues [can be filed here](https://github.com/mozilla-mobile/focus-ios/issues).
 
-Details concerning any major updates concerning these products are always announced on the [[l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/) - and reflected in this document as well.
+Details about any major updates concerning these products are always announced on the [[l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/) - and are reflected in this document as well.
