@@ -1,10 +1,10 @@
-# Testing on Focus for iOS and Focus for Android for a new release
+# Testing Focus for iOS and Focus for Android for a new release
 
-Given Focus for iOS and Focus for Android have very similar test procedures, this document will cover both at once.
+Given Focus for iOS and Focus for Android have very similar test procedures, this document will cover both at once. Please note that certain markets, the app is named Klar. For the sake of simplicity, we will only call out the name “Focus” in this document.
 
 Localizers currently mostly rely on screenshots for testing Focus for iOS. Latest information and updates about testing are provided on the [l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on localizing any of the existing Mozilla products.
 Links to iOS screenshots are also provided under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page.
-For Focus Android and iOS, there are also links to testing builds, if and when those are currently available.
+For Focus for Android and iOS, there are also links to testing builds, if they are currently available.
 
 ## Testing with screenshots (currently available for Focus for iOS only)
 
@@ -12,7 +12,7 @@ Screenshots are provided by the mobile teams for iOS and appear under the Resour
 
 ## Test builds
 
-There are a few iterations of Nightly localized builds being created for Focus for Android, but they are not updated daily yet. The link appears under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-android/).
+There are a few iterations of Nightly localized builds being created for Focus for Android, but they are not updated daily yet. The link appears under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-android/). At this point, they are not yet automatically updated once installed.
 
 For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
 
@@ -32,12 +32,10 @@ Concerning untranslated content on Focus for iOS: please note that we currently 
 
 ## Locale sign-offs
 
-L10n-drivers and the localization team will work together to determine if a locale can ship or not, for each release.
-
-For mobile app projects (so all except Firefox for Android), all locales with complete translations and without errors on the [web dashboard](https://l10n.mozilla-community.org/webstatus/?product=focus-ios) at l10n deadline are considered for shipping. Additionally, they must have no visible l10n errors upon review of the locale’s screenshots (e.g., significant truncation, text overflow, encoding, etc.) besides what
-may have already been reported to the mobile team to correct.
+Unless there are visible l10n errors upon review of the locale’s screenshots (e.g., significant truncation, text overflow, encoding, etc.) - and besides what
+may have already been reported to the mobile team to correct - we will ship any locale that has started to localize (this applies to both Focus products).
 
 Focus for Android issues [can be filed here](https://github.com/mozilla-mobile/focus-android/issues/).<br/>
 Focus for iOS issues [can be filed here](https://github.com/mozilla-mobile/focus-ios/issues).
 
-Details concerning all this process are always announced on the [[l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/).
+Details concerning any major updates concerning these products are always announced on the [[l10n Discourse Channel](https://discourse.mozilla.org/c/l10n/) - and reflected in this document as well.
