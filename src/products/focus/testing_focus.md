@@ -6,17 +6,17 @@ Localizers currently mostly rely on screenshots for testing Focus for iOS. Lates
 Links to iOS screenshots are also provided under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page.
 For Focus Android and iOS, there are also links to testing builds, if and when those are currently available.
 
-## Testing with screenshots (currently available Focus for iOS only)
+## Testing with screenshots (currently available for Focus for iOS only)
 
 Screenshots are provided by the mobile teams for iOS and appear under the Resources section in Pontoon or in the l10n Discourse channel (see above point for more details).
 
 ## Test builds
 
-There are Nightly localized builds for Focus for Android, that are accessible by following [the instructions here](https://github.com/mozilla-mobile/focus-android/wiki/Release-tracks). There are other builds available too, but Nightly is preferred for testing localizations, since it is updated daily.
+There are a few iterations of Nightly localized builds being created for Focus for Android, but they are not updated daily yet. The link appears under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-android/).
 
-For Focus for iOS Nightly builds, check under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
+For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
 
-For Focus for iOS, please note an iOS device running v11.4 or above is needed. For Focus for Android, an Android device running 5.0 or above is needed.
+For Focus for iOS, please note an iOS device running v13.6 or above is needed. For Focus for Android, an Android device running v5.0 or above is needed.
 
 ## Aspects to review
 
