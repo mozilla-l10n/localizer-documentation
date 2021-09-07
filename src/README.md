@@ -33,4 +33,4 @@ How to localize and test Mozilla products:
 
 ## How to contribute to documentation
 
-Please see the [README file in our GitHub repository](https://github.com/mozilla-l10n/localizer-documentation/blob/master/README.md).
+Please see the [README file in our GitHub repository](https://github.com/mozilla-l10n/localizer-documentation/blob/main/README.md).
