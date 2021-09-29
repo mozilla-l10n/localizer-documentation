@@ -9,7 +9,7 @@ Screenshots are currently provided by the iOS team, and the latest iterations ca
 ## Test builds
 
 The beta version used for testing can be found [here](https://www.mozilla.org/en-US/firefox/ios/testflight/). In case the registration does not work from there, localizers can also reach out to the l10n mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
-Please note you will need an iOS device running v9 or above.
+Please note you will need an iOS device running v13.6 or above.
 
 ## Aspects to review
 
