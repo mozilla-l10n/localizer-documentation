@@ -1,9 +1,10 @@
 # Firefox Accounts (FxA): how to localize and test
 
-Firefox Accounts (or FxA) refers to [https://accounts.firefox.com](https://accounts.firefox.com). There are three components in Pontoon that make up [FxA](https://pontoon.mozilla.org/projects/firefox-accounts/):
+Firefox accounts (or FxA) refers to [https://accounts.firefox.com](https://accounts.firefox.com). There are three components in Pontoon that make up [FxA](https://pontoon.mozilla.org/projects/firefox-accounts/):
 
+* `auth.ftl`: strings for emails
 * `LC_MESSAGES/client.po`: the content server for UI and frontend.
-* `LC_MESSAGES/server.po`: strings for emails and backend templates.
+* `LC_MESSAGES/server.po`: strings for emails and backend templates. To be replaced by `auth.ftl`.
 * `Main.ftl`: payments for both frontend and backend.
 * `Settings.ftl`: pages for account settings.
 
@@ -22,7 +23,6 @@ FxA lives in two file formats: .po and .ftl, both contain variable or placeable 
 
 * String comments: Pay attention to the comment or string ID. In Pontoon, the comments are displayed above the area where you can enter your translation for a string.
 * [Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org): ping the L10n PM in charge with any issues you may have.
-* [Web projects mailing list](https://groups.google.com/g/mozilla.dev.l10n.web): Raise questions here so others may benefit from the information.
 
 ## Errors in translations can break the build for all languages
 
@@ -59,7 +59,7 @@ Product updates are deployed to Pontoon on Fridays. Localized content is pushed 
 
 You can test on either staging and production, both involve having an account in order to access the environment. The payment feature will be rolling out to international markets through wave releases. It’s best to review localization work on the staging environment before the feature is launched to the market.
 
-Firefox Accounts can be tested through Firefox browsers for desktop and mobile. In addition to following [the general localization testing guidelines](../products/l10n_testing.md), there are features unique to the product that need special attention. Make sure you test them thoroughly.
+Firefox accounts can be tested through Firefox browsers for desktop and mobile. In addition to following [the general localization testing guidelines](../products/l10n_testing.md), there are features unique to the product that need special attention. Make sure you test them thoroughly.
 
 ### Testing account setup
 
@@ -121,5 +121,4 @@ There are a few ways to report non-linguistic related bugs:
 
 * File an issue [here](https://github.com/mozilla/fxa-content-server-l10n/issues).
 * Ping in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) to the l10n PM responsible for the project.
-* Send an email to the [web projects mailing list](https://groups.google.com/g/mozilla.dev.l10n.web).
 * Send a direct email to the l10n PM responsible for the project.
