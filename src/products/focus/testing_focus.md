@@ -12,9 +12,17 @@ Screenshots are provided by the mobile teams for iOS and appear under the Resour
 
 ## Test builds
 
-There are a few iterations of Nightly localized builds being created for Focus for Android, but they are not updated daily yet. The link appears under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-android/). At this point, they are not yet automatically updated once installed.
+* For Focus for Android testing of either Nightly or Beta, you will first have to join [this google group](https://groups.google.com/g/firefox-focus-pre-release ). Please note that you must use the same Google account you use on your device to download apps from Google Play.
 
-For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
+For Beta releases:
+After you have joined the group, opt-in to receive Beta builds, (again with the same Google account) [here](https://play.google.com/apps/testing/org.mozilla.focus.beta).
+Then, download Firefox Focus (Beta) from Google Play [here](https://play.google.com/store/apps/details?id=org.mozilla.focus.beta).
+
+For Nightly releases:
+After you have joined the group opt-in, to receive Nightly builds, (again with the same Google account) [here](https://play.google.com/apps/testing/org.mozilla.focus.nightly).
+Then, download Firefox Focus (Nightly) from Google Play [here](https://play.google.com/store/apps/details?id=org.mozilla.focus.nightly).
+
+* For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile project manager (currently delphine at mozilla dot com) to be added to the TestFlight system.
 
 For Focus for iOS, please note an iOS device running v13.6 or above is needed. For Focus for Android, an Android device running v5.0 or above is needed.
 
