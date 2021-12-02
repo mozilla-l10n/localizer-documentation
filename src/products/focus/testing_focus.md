@@ -13,9 +13,11 @@ Screenshots are provided by the mobile teams for iOS and appear under the Resour
 ## Test builds
 
 * For Focus for Android testing of either Nightly or Beta, you will first have to join [this google group](https://groups.google.com/g/firefox-focus-pre-release ). Please note that you must use the same Google account you use on your device to download apps from Google Play.
+
 For Beta releases:
 After you have joined the group, opt-in to receive Beta builds, (again with the same Google account) [here](https://play.google.com/apps/testing/org.mozilla.focus.beta).
 Then, download Firefox Focus (Beta) from Google Play [here](https://play.google.com/store/apps/details?id=org.mozilla.focus.beta).
+
 For Nightly releases:
 After you have joined the group opt-in, to receive Nightly builds, (again with the same Google account) [here](https://play.google.com/apps/testing/org.mozilla.focus.nightly).
 Then, download Firefox Focus (Nightly) from Google Play [here](https://play.google.com/store/apps/details?id=org.mozilla.focus.nightly).
