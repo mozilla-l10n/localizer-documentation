@@ -6,7 +6,7 @@ Once you have localized [all the strings needed to complete the Firefox for Andr
 
 ### What to look out for?
 
-(For more detailed explanations about testing, please refer to [testing localization of Mozilla projects](l10n_testing.md))
+(For more detailed explanations about testing, please refer to [testing localization of Mozilla projects](../l10n_testing.md))
 
 * Language quality.
 * Truncated words (cut-off from screen) or overlaps.
@@ -20,7 +20,7 @@ If you find issues such as the ones listed above, there are two possible options
 In fact, language quality, truncations, overlaps and unlocalized strings can usually be fixed directly via Pontoon. You can verify that your fix has worked by checking it in the new Nightly version that usually ships the next day.
 
 If the issue is something else, you will probably have to get a mobile developer’s help to fix it. Please [file an issue here](https://github.com/mozilla-mobile/fenix/issues/new/choose), and CC the mobile PM in charge (@ followed by the GitHub username, which is currently “delphine”).
-Once more, please refer to [testing localization of Mozilla projects](l10n_testing.md) for more details on how to fix different kind of issues.
+Once more, please refer to [testing localization of Mozilla projects](../l10n_testing.md) for more details on how to fix different kind of issues.
 
 Please note that it is strongly suggested to start using Nightly builds on a daily basis - and even after your locale is shipping on release version - so that you can get into as many screens as possible and check that everything looks fine.
 
