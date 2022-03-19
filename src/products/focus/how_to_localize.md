@@ -14,8 +14,8 @@ When the locale has been set up, localizers can choose it from the list of local
 
 Once localization starts, the locale should become available in Nightly builds within the next few days, which will enable localizers to check and test their work. For Nightly builds and testing instructions, please refer again [here](testing_focus.md).
 
-Once the locale starts work and reaches even 1% completion in Pontoon (and assuming that active testing has taken place), it will be added to the release version either in the Google Play Store or the iOS AppStore.
+Once the locale starts work and reaches even 1% completion in Pontoon (and assuming that active testing has taken place), it will be added to the release version either in the Google Play Store or the iOS App Store.
 
-Note that Focus for Android strings share common strings with Android-Components, just like Fenix (Firefox for Android) does. At the moment, Android-Components strings all live in the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) folder in Pontoon - these are all the files in your locale folder that start with mozilla-mobile/android-components/. In the case that Firefox for Android is not yet activated for your locale, you will be asked to complete that work first.
+Note that Focus for Android strings share common strings with `android-components`, just like Fenix (Firefox for Android) does. At the moment, `android-components` strings all live in the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) project in Pontoon - these are all the files in your locale folder that start with `mozilla-mobile/android-components/`. If Firefox for Android is not yet enabled for your locale, you will be asked to complete that work first.
 
 Localization deadlines for projects are noted as Resources in each project page in Pontoon, and the main Project Manager’s contact information can be found there as well.
