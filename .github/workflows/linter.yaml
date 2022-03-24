@@ -1,8 +1,8 @@
 name: Docs Linter
 
 on:
-  # Triggers the workflow on push or pull request events but only
-  # for the default branch
+  # Triggers the workflow on push or pull request events but
+  # only for the default branch
   push:
     branches: [ main ]
   pull_request:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run markdown linter
         run: |
           npm install
@@ -26,7 +26,7 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.9'
       - name: Check SUMMARY.md
         run: |
           python .github/scripts/check_summary.py src
