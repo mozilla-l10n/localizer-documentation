@@ -18,7 +18,7 @@ Phone masking, a paid service, is offered to limited markets. Localizable conten
 
 **NOTE**:
 * Some locales have more files than other locales. This is due to feature availability and avoiding using community resources for features not available in the mid term or not at all.
-* The staging server is not ideal. It syncs once a day. Premium features are not available for testing. Not all free service features can be tested.  
+* The staging server is not ideal. It syncs once a day. Premium features are not available for testing. Not all free service features can be tested.
 
 ### Localizing the strings
 
@@ -57,7 +57,7 @@ There are three level of testings:
 
 * Configure the Settings. Go through all the applicable categories.
 * Check for email notifications with each of the initial setups.
-* Make changes to some of the settings, check for possible error messages or warnings;
+* Make changes to some of the settings, check for possible error messages or warnings.
 * Check for followup confirmation emails and phone messages (if applicable).
 
 ## Firefox Relay Add-on
@@ -75,7 +75,7 @@ You need to download the build at https://github.com/mozilla/fx-private-relay-ad
 
 There are a few ways to report non-linguistic related bugs:
 
-* File an issue for Firefox Relay Website and Firefox Relay Add-on
+* File an issue for Firefox Relay Website and Firefox Relay Add-on.
 * Ping in the Matrix channel to the l10n PM responsible for the project.
 * Through Pontoon, click the REQUEST CONTEXT or REPORT ISSUE button next to the string and make a comment. This will notify the l10n PM in charge.
 * Send a direct email to the l10n PM responsible for the project. The email address can be found in the profile in Pontoon.
