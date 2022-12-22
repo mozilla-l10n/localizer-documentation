@@ -15,7 +15,6 @@ Phone masking, a paid service, is offered to limited markets. Localizable conten
 * Production: https://relay.firefox.com/
 * Stage: https://fx-relay-demo.netlify.app
 
-
 **NOTE**:
 * Some locales have more files than other locales. This is due to feature availability and avoiding using community resources for features not available in the mid term or not at all.
 * The staging server is not ideal. It syncs once a day. Premium features are not available for testing. Not all free service features can be tested.
