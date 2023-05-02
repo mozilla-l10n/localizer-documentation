@@ -97,7 +97,7 @@ Pontoon provides the ability to download and upload translations, including term
 
 Anyone can download terminology (`.tbx`), translation memory (`.tmx`) and translations, while only translators can upload translations. When downloading translations:
 * The resource currently selected is downloaded in its original format, it’s not converted in any way.
-* If the project contains multiple files, a ZIP of all files is downloaded. If the project contains more than 10 files, download is performed file-by-file.
+* If the project contains multiple files, a ZIP of all files is downloaded. If the project contains more than 10 files, only the file currently translated will be downloaded.
 
 When uploading translations to Pontoon:
 * Existing strings with matching translations will be ignored.
