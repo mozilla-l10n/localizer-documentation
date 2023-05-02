@@ -25,6 +25,8 @@
 * [Tools](README.md)
     * [Pontoon](tools/pontoon/README.md)
         * [User accounts and settings](tools/pontoon/users.md)
+        * [Profile page](tools/pontoon/profile.md)
+        * [Notifications](tools/pontoon/notifications.md)
         * [Teams and projects](tools/pontoon/teams_projects.md)
         * [Search and filters](tools/pontoon/search_filters.md)
         * [Translation user interface](tools/pontoon/ui.md)
