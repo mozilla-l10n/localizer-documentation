@@ -26,7 +26,7 @@ This notification informs users when a project is incomplete and it’s approach
 
 Pontoon distinguishes two types of comment:
 * **Translation comments** are associated with a specific translation. These comments are displayed under the translation itself.
-* **Source strings comments** are associated with the source string. These comments are displayed in the `COMMENTS` tab in the right column.
+* **Source string comments** are associated with the source string. These comments are displayed in the `COMMENTS` tab in the right column.
 
 This type of notification is sent as soon as a comment is added.
 
