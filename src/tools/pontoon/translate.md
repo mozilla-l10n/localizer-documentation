@@ -54,25 +54,21 @@ There are two types of quality check failures: errors and warnings.
 
 ### Errors
 
-Errors cover issues that would cause the string to be ignored, for example removed from Firefox builds. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.
+Errors cover critical issues that would cause the string to be removed from products. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.
 
 Examples include exceeding the maximum string length, incorrect syntax, etc. Errors are denoted with a circled X with red background.
 
 ![Internal check: error](../../assets/images/pontoon/translate/check_error.png "Example of error")
 
-Errors are detected using the [compare-locales library](https://pypi.org/project/compare-locales/) and Pontoon’s internal checks.
-
 ### Warnings
 
-Warnings, unlike errors, are displayed when potential issues are detected in the string, but there is no guarantee that they would create problems. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
+Warnings are displayed when potential issues are detected in the string, but it’s not certain that they will create problems in products (unlike errors). For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
 
 Examples include missing punctuation, differences in number of sentences and capitalization, etc. Warnings are denoted with a circled X with gray background.
 
 ![Internal check: warning](../../assets/images/pontoon/translate/check_warning.png "Example of warning")
 
-Warnings are detected using the [compare-locales library](https://pypi.org/project/compare-locales/) and [Translate Toolkit libraries](http://docs.translatehouse.org/projects/translate-toolkit/en/latest/).
-
-Note: since Translate Toolkit checks may result in many false positives, they can be [completely disabled](users.md#user-settings).
+Certain types of checks (reported by the Translate Toolkit library) may result in many false positives. For this reason, they can be [completely disabled](users.md#user-settings).
 
 ## Performing batch actions on strings
 
