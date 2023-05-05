@@ -33,6 +33,7 @@
         * [How to translate](tools/pontoon/translate.md)
         * [Translation resources](tools/pontoon/resources.md)
         * [Example workflow](tools/pontoon/workflow.md)
+        * [Glossary](tools/pontoon/glossary.md)
     * [Fluent](tools/fluent/README.md)
         * [Fluent syntax](tools/fluent/basic_syntax.md)
         * [Functions](tools/fluent/functions.md)

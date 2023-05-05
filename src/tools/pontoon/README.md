@@ -11,3 +11,4 @@ This document covers how to work with [Pontoon](https://pontoon.mozilla.org/) fr
 * [How to translate](translate.md).
 * [Translation resources](resources.md).
 * [Example workflow](workflow.md).
+* [Glossary](glossary.md).
