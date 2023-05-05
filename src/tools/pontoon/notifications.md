@@ -6,11 +6,11 @@ When the user receives a notification, the bell icon near the user avatar in the
 
 ![Dropdown notifications](../../assets/images/pontoon/notifications/notifications_dropdown.png "Dropdown menu showing 3 notifications, and the “See all Notifications” button")
 
-Clicking `See all Notifications` at the bottom will take the user to the complete list of notifications. The same list can also be accessed by opening directly the `/notifications` URL (e.g. [pontoon.mozilla.org/notifications](https://pontoon.mozilla.org/notifications/)).
+Clicking `See all Notifications` at the bottom will take the user to the complete list of notifications. The same list can also be accessed by opening the `/notifications` URL directly (e.g. [pontoon.mozilla.org/notifications](https://pontoon.mozilla.org/notifications/)).
 
 ## Disabling notifications
 
-Pontoon includes several types of notification. and most of them can be [manually disabled](users.md#notification-subscriptions) by users if they don’t find them useful.
+Pontoon includes several types of notifications. and most of them can be [manually disabled](users.md#notification-subscriptions) by users if they don’t find them useful.
 
 ## Notification types
 
@@ -24,11 +24,11 @@ This notification informs users when a project is incomplete and it’s approach
 
 ### Comments
 
-Pontoon distinguishes two types of comment:
+Pontoon distinguishes between two types of comments:
 * **Translation comments** are associated with a specific translation. These comments are displayed under the translation itself.
 * **Source string comments** are associated with the source string. These comments are displayed in the `COMMENTS` tab in the right column.
 
-This type of notification is sent as soon as a comment is added.
+For either type of comment, a notification is sent as soon as a comment is added.
 
 For translation comments, the recipients are:
 * Authors of other translation comments associated with the same translation.
@@ -36,7 +36,7 @@ For translation comments, the recipients are:
 * Translation reviewer.
 
 For source strings comments, the recipients are:
-* Users with translator rights for the specific combination of project and locale, including team managers.
+* Users with the ability to review translations for the string.
 * Authors of translation comments.
 * Authors of source string comments.
 * Translation authors.
@@ -56,4 +56,4 @@ This notification is sent to team managers, as soon as a new user makes the firs
 
 ### Manual notifications
 
-Administrators can send manual notifications to a project, including all locales or a subset of them. Unlike other types of notification, this can’t be disabled.
+Administrators can send manual notifications to a project, including all locales or a subset of them. Unlike other types of notifications, this can’t be disabled.

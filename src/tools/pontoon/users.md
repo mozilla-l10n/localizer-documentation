@@ -12,7 +12,7 @@ To create an account, click on the `Sign In` button in the top right corner and 
 
 User settings can be accessed by:
 * Clicking the user avatar in the top right corner, and selecting `Settings` from the dropdown menu.
-* Opening directly the `/settings` URL (e.g. [pontoon.mozilla.org/settings](https://pontoon.mozilla.org/settings/)).
+* Opening the `/settings` URL directly (e.g. [pontoon.mozilla.org/settings](https://pontoon.mozilla.org/settings/)).
 * Using the `CHANGE SETTINGS` button in the [Profile page](profile.md).
 
 ![User menu with profile settings](../../assets/images/pontoon/users/profile_settings.png "User menu with profile settings")
@@ -24,8 +24,8 @@ The profile picture can be set or updated on [Gravatar](http://gravatar.com/) by
 ### Personal information
 
 In this section it’s possible to update the display name and other personal information:
-* `Display name`: it’s the name displayed in Pontoon, for example when submitting a translation or suggestion. It’s also used as the author name when committing translation to VCS (i.e. git or hg repositories).
-* `Username`: this is currently used to generate the URL for the [Profile page](profile.md) (e.g. `https://pontoon.mozilla.org/contributors/USERNAME/`). If not provided, an hash will be used instead of the username.
+* `Display name`: it’s the name displayed in Pontoon, for example when submitting a translation or suggestion. It’s also used as the author name when committing translations to version control system (i.e. git or hg repositories).
+* `Username`: this is currently used to generate the URL for the [Profile page](profile.md) (e.g. `https://pontoon.mozilla.org/contributors/USERNAME/`). If not provided, a hash will be used instead of the username.
 * `Contact email address`: if provided, this will be displayed in the Profile page instead of the login email address.
 * `Bio`: a short text that will be displayed in the Profile page.
 
