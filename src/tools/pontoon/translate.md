@@ -4,15 +4,15 @@
 
 Four actions can be performed on strings: submit a suggestion, review a suggestion/pretranslation, delete a rejected suggestion/pretranslation, and submit a translation directly. Availability of these actions depends on the user’s [role](users.md#user-roles).
 
-This document is a summary to demonstrate the different translation modes available in Pontoon. This documentation includes specific pages for learning how to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
+This document is a summary to demonstrate the different translation modes available in Pontoon. Other parts of documentation include specific pages for learning how to use Pontoon’s [interface](ui.md) and [translation resources](resources.md).
 
 ### Submit a suggestion
 
-When the user is in *Suggest Mode*, or doesn’t have permissions to submit translations directly, a blue `SUGGEST` button will be displayed in the lower-right side of the editing space.
+When the user is in *Suggestion Mode*, or doesn’t have permissions to submit translations directly, a blue `SUGGEST` button will be displayed in the lower-right side of the editing space.
 
 ![Blue button for suggestions](../../assets/images/pontoon/translate/suggest_button.png "Editing space in Pontoon with the blue SUGGEST button")
 
-To suggest a translation, the user can input the translation in the editing space and click `SUGGEST`. The suggestion will then be displayed below the editing space and in the sidebar (in case of multiple suggestions, the most recent suggestion will be displayed).
+To suggest a translation, the user can input the translation in the editor and click `SUGGEST`. The suggestion will then be displayed below the editing space and in the sidebar, where in case of multiple suggestions, only the most recent suggestion will be displayed.
 
 ![Sidebar after suggestion](../../assets/images/pontoon/translate/sidebar_suggest.png "Pontoon’s sidebar before and after a suggestion is submitted")
 
@@ -20,21 +20,21 @@ Note that a suggested translation exists only in the Pontoon database, not in th
 
 #### Manually switch to suggestion mode
 
-Even if the user has permissions to add translations directly, submitting suggestions to be reviewed by another person helps ensure quality. To manually switch to *Suggestion Mode*, click the settings gear in the lower-left side of the editing space and click on `Make Suggestions`, so that the icon changes from a prohibition sign to a green checkmark. The `SUGGEST` button will be displayed in the lower-right side of the editing space, replacing the green `SAVE` button.
+Even if the user has permissions to add translations directly, submitting suggestions to be reviewed by another person helps ensure quality. To manually switch to *Suggestion Mode*, click the settings icon in the lower-left side of the editing space and select `Make Suggestions`. The `SUGGEST` button will be displayed in the lower-right side of the editing space, replacing the green `SAVE` button.
 
 ![Make suggestions enabled](../../assets/images/pontoon/translate/activate_suggest.png "Setting menu in the editing space, with the Make Suggestions menu enabled")
 
-To switch back to *Translation Mode*, click the gear icon again and turn off `Make Suggestions`.
+To switch back to *Translation Mode*, click the settings icon again and turn off `Make Suggestions`.
 
 ### Review a suggestion or pretranslation
 
 To review a suggestion or pretranslation, [search](search_filters.md) for unreviewed or pretranslated strings in the sidebar.
 
-If the current proposal is acceptable, either click on the `SAVE` button in the lower-right side of the editing space, or click on the checkmark icon to the right of the text (it switches from gray or light green to green when hovered). This will transform the suggestion or pretranslation into an approved translation. In case of suggestions, the approved text will be stored in the repository on the next sync cycle.
+If the current translation is acceptable, either click on the `APPROVE` button in the lower-right side of the editing space, or click on the approve icon to the right of the text. This will transform the suggestion or pretranslation into an approved translation. In case of suggestions, the approved text will be stored in the repository on the next sync cycle.
 
-If the current proposal string is **not** an acceptable translation, it can be rejected by clicking the cross icon to the right of the suggestion (it becomes red when hovered). After rejecting a suggestion or pretranslation, it’s also possible to delete it completely by clicking the trashcan icon. In case of pretranslations, the rejected text will be removed from the repository on the next sync cycle.
+If the current translation is **not** an acceptable translation, it can be rejected by clicking the reject icon to the right of the suggestion. After rejecting a suggestion or pretranslation, it’s also possible to delete it completely by clicking the trashcan icon. In case of pretranslations, the rejected text will be removed from the repository on the next sync cycle.
 
-It’s worth noting that submitting a translation directly through the editing space will automatically reject all pending suggestions or pretranslations.
+It’s worth noting that submitting a translation directly will automatically reject all pending suggestions or pretranslations.
 
 Alternatively, it’s possible to provide a different suggestion: turn on `Make Suggestions`, edit the suggested string as appropriate, and click `SUGGEST`. This will add the translation as a new suggested string in the Pontoon database but will not save the string in the repository.
 
@@ -44,7 +44,7 @@ Note that it is always best practice to have a translation reviewed by another p
 
 To submit a translation directly, search for untranslated strings and click on any of them.
 
-Ensure that the `Make Suggestions` option in settings is disabled, then input the translation to the editing space and click `SAVE`. This will save the translation directly, without review, to the repository.
+Ensure that the `Make Suggestions` option in settings is disabled, then input the translation in the editor and click `SAVE`. This will save the translation directly, without review, to the repository.
 
 ## Quality checks
 
@@ -56,7 +56,7 @@ There are two types of quality check failures: errors and warnings.
 
 Errors cover issues that would cause the string to be ignored, for example removed from Firefox builds. For this reason, errors cannot be bypassed by localizers - the button to submit a translation is removed and the error needs to be fixed before the translation can be saved.
 
-Examples include exceeding the maximum string length, incorrect Fluent syntax, etc. Errors are denoted with a circled X with red background.
+Examples include exceeding the maximum string length, incorrect syntax, etc. Errors are denoted with a circled X with red background.
 
 ![Internal check: error](../../assets/images/pontoon/translate/check_error.png "Example of error")
 
@@ -64,9 +64,9 @@ Errors are detected using the [compare-locales library](https://pypi.org/project
 
 ### Warnings
 
-Warnings, unlike errors, are displayed when potential issues are detected in the string, but there’s a risk they might be false positives. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
+Warnings, unlike errors, are displayed when potential issues are detected in the string, but there is no guarantee that they would create problems. For that reason, warnings can be bypassed by localizers, allowing them to save a translation anyway.
 
-Examples include missing punctuation, differences in number of sentences and capitalization, etc. Warnings are denoted a circled X with gray background.
+Examples include missing punctuation, differences in number of sentences and capitalization, etc. Warnings are denoted with a circled X with gray background.
 
 ![Internal check: warning](../../assets/images/pontoon/translate/check_warning.png "Example of warning")
 
@@ -74,26 +74,24 @@ Warnings are detected using the [compare-locales library](https://pypi.org/proje
 
 Note: since Translate Toolkit checks may result in many false positives, they can be [completely disabled](users.md#user-settings).
 
-### Performing batch actions on strings
+## Performing batch actions on strings
 
-It’s possible to perform mass actions on batches of strings by clicking on the square to the left of any string in the sidebar. When clicked, the square will show a checkmark and the editing space will show the mass action window.
+Mass actions can be performed on multiple strings at once at once by clicking on the square to the left of any string in the sidebar. When clicked, the square will show a checkmark and the editing space will show the mass action panel. Note that mass actions are only available to users with [translator rights](users.md#user-roles).
 
 ![Mass action window](../../assets/images/pontoon/translate/batch_actions.png)
 
-After selecting a string, it’s possible to hold `SHIFT` and click on another string to select a range of strings.
+To select a range of strings, select the first one and hold `SHIFT`, then select the last one. To select all strings, click `SELECT ALL` on the top-right of the mass action panel. The number of selected strings will appear on the top-left, next to the Exit icon.
 
-At the top-left of the mass action column, the user can return to the editing space by clicking on the `X` icon. To the right of the exit icon, the number of strings currently selected is displayed. At the top-right of the mass action window, it”s possible to select all the strings in the sidebar.
+To return back to the default editing space, click the Exit icon on the top-left of the mass action panel.
 
-In the `REVIEW TRANSLATIONS` section, the user can approve suggestions or reject suggestions for all selected strings. Upon clicking `APPROVE ALL` or `REMOVE ALL SUGGESTIONS`, the label of the button will be replaced with the number of affected translations.
+In the `REVIEW TRANSLATIONS` section, the user can approve or reject suggestions for all selected strings. Upon clicking `APPROVE ALL` or `REMOVE ALL SUGGESTIONS`, the label of the button will be replaced with the number of affected translations.
 Note that `APPROVE ALL` accepts the latest suggestion, but doesn’t reject other suggestions if available.
 
-In the `REPLACE IN TRANSLATIONS` section, the user can input the text to search for, and the text to use as a replacement. This is a basic find and replace feature that will work only on the selected strings.
-
-Note that mass actions are only available to users with [translator rights](users.md#user-roles).
+In the `REPLACE IN TRANSLATIONS` section, the user can input the text to search for, and the text to replace it with. This is a basic find and replace feature that will work only on the selected strings.
 
 ## Downloading and uploading translations
 
-Pontoon provides the ability to download and upload translations, including terminology and translation memories. To access these features, click on the user icon in the top-right section of Pontoon. Note that the user must be in the translation workspace for the download/upload options to be displayed in the dropdown menu.
+Pontoon provides the ability to download and upload translations, including terminology and translation memories. To access these features,  click on the profile icon in the top-right corner of any page. Note that the user must be in the translation workspace for the download/upload options to be displayed in the dropdown menu.
 
 ![Profile dropdown menu](../../assets/images/pontoon/translate/profile_menu.png)
 
@@ -102,8 +100,8 @@ Anyone can download terminology (`.tbx`), translation memory (`.tmx`) and transl
 * If the project contains multiple files, a ZIP of all files is downloaded. If the project contains more than 10 files, only the file currently translated will be downloaded.
 
 When uploading translations to Pontoon:
-* Existing strings with matching translations will be ignored.
-* New strings and new translations will be imported and attributed to the user uploading the file.
+* Translations different from the ones in Pontoon will be imported and attributed to the user uploading the file.
+* Translations matching the ones in Pontoon will be ignored.
 
 ## Downloading .tbx and .tmx files via command line
 
