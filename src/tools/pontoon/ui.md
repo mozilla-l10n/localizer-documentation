@@ -42,7 +42,7 @@ The sidebar displays the list of strings in the current project resource. For ea
 * The source string.
 * The approved translation or the most recent suggestion if available.
 
-![Sidebar](../../assets/images/pontoon/ui/sidebar.png "Screenshot of the sidebar, with a list of string showing string missing, warning, error")
+![Sidebar](../../assets/images/pontoon/ui/sidebar.png "Screenshot of the sidebar, with a list of strings showing the different string statuses")
 
 Color legend:
 * **<span style="color: #7bc876;">green</span>**: string is translated.
@@ -53,6 +53,10 @@ Color legend:
 
 At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
+When a string is selected in the sidebar, a small icon with 4 arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
+
+![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
+
 ### Translation workspace
 
 The translation workspace is where the translation takes place.
@@ -61,25 +65,21 @@ The translation workspace is where the translation takes place.
 
 It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace, or by using keyboard shortcuts (`ALT` + arrow down or up). The `COPY LINK` button copies in the clipboard a link to the current string.
 
-Above the editing area, the user can view the source string, any comments regarding the string, and the resource path where the string is located.
+Above the editor, the user can view the source string, any comments regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
 
-The editing space is located in the middle section of the column, and it’s where users can edit their translations or suggestions.
+The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
 
 In the lower-right side of the workspace, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
 In the lower-left side:
 * Clicking the gear icon allows users to toggle `Translation Toolkit Checks` or `Make Suggestions`, and navigate to the user settings.
 * Clicking the keyboard icon displays a list of available shortcuts.
-* The numbers displayed right of the keyboard icon (e.g. `50|59`) are the number of characters in the source and target string.
+* The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the source and target string.
 
-Note that access to certain settings may be restricted by [user permissions](users.md#user-roles).
+Note that access to some settings is restricted by [user permissions](users.md#user-roles).
 
-A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editing are, and all other controls are hidden.
-
-![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
-
-The space below the main editing area displays the list of suggestions or translations for the current string.
+The space below the editor displays the list of suggestions or translations for the current string.
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
@@ -87,13 +87,19 @@ In this case, the first item is the approved translation (green checkmark), whil
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
+#### Read-only projects
+
+A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
+
+![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
+
 #### Fluent - FTL files
 
-When working on FTL (Fluent) files, the editing space will look a bit different.
+When working on FTL (Fluent) files, the editing space will look slightly different.
 
 ![Translation workspace for Fluent string](../../assets/images/pontoon/ui/workspace_ftl.png "Screenshot of the translation workspace for Fluent string")
 
-In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).
 
 The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has 3 forms (highlighted in orange).
 
@@ -111,7 +117,7 @@ Built-in translation tools are located in the rightmost column. For more informa
 
 #### Terminogy
 
-The `TERMS` tab shows the definition for a term, in case the source string includes matches with the built-in terminology. The matching term is also highlighted in the source string.
+The `TERMS` tab shows the definition for a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string.
 
 ![Translation workspace for string with match in terminology](../../assets/images/pontoon/ui/workspace_terminology.png "Screenshot of the translation workspace for string with match in terminology")
 
