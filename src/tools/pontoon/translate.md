@@ -82,11 +82,11 @@ In the `REPLACE IN TRANSLATIONS` section, the user can input the text to search 
 
 ## Downloading and uploading translations
 
-Pontoon provides the ability to download and upload translations, including [terminology](glossary.md#terminology) and [translation memories](glossary.md#translation-memory. To access these features, click on the profile icon in the top-right corner of any page. Note that the user must be in the translation workspace for the download/upload options to be displayed in the dropdown menu.
+Pontoon provides the ability to download and upload translations, including [terminology](glossary.md#terminology) and [translation memories](glossary.md#translation-memory). To access these features, click on the profile icon in the top-right corner of any page. Note that the user must be in the translation workspace for the download/upload options to be displayed in the dropdown menu.
 
 ![Profile dropdown menu](../../assets/images/pontoon/translate/profile_menu.png)
 
-Anyone can download terminology (`.tbx`), translation memory (`.tmx`) and translations, while only user with translator permissions can upload translations. When downloading translations:
+Anyone can download terminology (`.tbx`), translation memory (`.tmx`) and translations, while only users with translator permissions can upload translations. When downloading translations:
 * The resource currently selected is downloaded in its original format, it’s not converted in any way.
 * If the project contains multiple files, a ZIP of all files is downloaded. If the project contains more than 10 files, only the file currently translated will be downloaded.
 
