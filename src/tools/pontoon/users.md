@@ -36,7 +36,7 @@ In this section it’s possible to specify the username used in external account
 ### Visibility of data on the Profile page
 
 Users can determine the visibility of fields containing personal information — like email address or external accounts — and statistics about their contribution. From the smallest audience to the largest, a field can be visible to:
-* `Translators`: these are users with translator rights in Pontoon, independently from the locale. The rationale is that translators need to have access to specific information to either contact a contributor during review, or check stats about their previous contributions.
+* `Translators`: these are users with translator permissions in Pontoon, independently from the locale. The rationale is that translators need to have access to specific information to either contact a contributor during review, or check stats about their previous contributions.
 * `Logged-in users`: these are users logged-in to Pontoon, independently from their permissions.
 * `Public`: this includes all users and not logged-in visitors.
 
@@ -55,7 +55,7 @@ For more information about this topic, refer to the page dedicated to [notificat
 
 `Translation Toolkit Checks` (checks for number of sentences, placeholders, HTML tags, punctuation, etc.) are performed when saving a translation. For more information about quality checks, see [this document](translate.md#quality-checks).
 
-`Make suggestions` allows a translator or a team manager to submit suggestions instead of translations. This setting is also displayed to users with translator rights.
+`Make suggestions` allows a translator or a team manager to submit suggestions instead of translations. This setting is also displayed to users with translator permissions.
 
 ### Locale settings
 
