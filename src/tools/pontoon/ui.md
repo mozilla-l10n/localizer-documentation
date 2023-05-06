@@ -33,7 +33,7 @@ The profile menu is located at the far right of the main toolbar. Clicking the p
 
 ![Profile menu](../../assets/images/pontoon/ui/profile_menu.png "Screenshot of the profile menu")
 
-Note that some profile menu items are only available to users with specific [rights](users.md#user-roles).
+Note that some profile menu items are only available to users with specific [permissions](users.md#user-roles).
 
 ### String list and filters
 
@@ -73,7 +73,7 @@ In the lower-left side:
 * Clicking the keyboard icon displays a list of available shortcuts.
 * The numbers displayed right of the keyboard icon (e.g. `50|59`) are the number of characters in the source and target string.
 
-Note that access to certain settings may be restricted by [user rights](users.md#user-roles).
+Note that access to certain settings may be restricted by [user permissions](users.md#user-roles).
 
 A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editing are, and all other controls are hidden.
 
