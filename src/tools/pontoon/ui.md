@@ -73,7 +73,7 @@ The editor is located in the middle section of the column, and it’s where user
 In the lower-right side of the workspace, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
 In the lower-left side:
-* Clicking the gear icon allows users to toggle `Translation Toolkit Checks` or `Make Suggestions`, and navigate to the user settings.
+* Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings.
 * Clicking the keyboard icon displays a list of available shortcuts.
 * The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the source and target string.
 
