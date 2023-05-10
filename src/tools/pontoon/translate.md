@@ -23,11 +23,11 @@ When the user is in *Translation Mode*, a green `SAVE` button will be displayed 
 
 ### Manually switch to suggestion mode
 
-Even if the user has permissions to add translations directly, submitting suggestions to be reviewed by another person helps ensure quality. To manually switch to *Suggestion Mode*, click the settings icon in the lower-left side of the editing space and select `Make Suggestions`. The `SUGGEST` button will be displayed in the lower-right side of the editing space, replacing the green `SAVE` button.
+Even if the user has permissions to add translations directly, submitting suggestions to be reviewed by another person helps ensure quality. To manually switch to *Suggestion Mode*, click the settings icon in the lower-left side of the editing space and select `Make suggestions`. The `SUGGEST` button will be displayed in the lower-right side of the editing space, replacing the green `SAVE` button.
 
-![Make suggestions enabled](../../assets/images/pontoon/translate/activate_suggest.png "Setting menu in the editing space, with the Make Suggestions menu enabled")
+![Make suggestions enabled](../../assets/images/pontoon/translate/activate_suggest.png "Setting menu in the editing space, with the Make suggestions menu enabled")
 
-To switch back to *Translation Mode*, click the settings icon again and turn off `Make Suggestions`.
+To switch back to *Translation Mode*, click the settings icon again and turn off `Make suggestions`.
 
 ## Reviewing strings
 
@@ -39,7 +39,7 @@ If the current translation is acceptable, either click on the `APPROVE` button i
 
 If the current translation is **not** acceptable, it can be rejected by clicking the reject icon to the right of the suggestion. After rejecting a suggestion or pretranslation, it’s also possible to delete it completely by clicking the trashcan icon. In the case of pretranslations, the rejected text will be also removed from version control systems (where applicable).
 
-Alternatively, it’s possible to provide a different suggestion: turn on `Make Suggestions`, edit the translation as appropriate, and click `SUGGEST`. This will add the translation as a new suggested string.
+Alternatively, it’s possible to provide a different suggestion: turn on `Make suggestions`, edit the translation as appropriate, and click `SUGGEST`. This will add the translation as a new suggested string.
 
 ## Quality checks
 
