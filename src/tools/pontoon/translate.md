@@ -12,13 +12,13 @@ When the user is in *Suggestion Mode* — [manually selected](#manually-switch-t
 
 ![Blue button for suggestions](../../assets/images/pontoon/translate/suggest_button.png "Editing space in Pontoon with the blue SUGGEST button")
 
-To suggest a translation, the user can input the text in the editor and click `SUGGEST`. The suggestion will then be displayed below the editing space and in the sidebar where, in case of multiple suggestions, only the most recent one will be displayed.
+To suggest a translation, the user can input the text in the editor and click `SUGGEST`. The suggestion will then be displayed below the editing space and in the sidebar where, in the case of multiple suggestions, only the most recent one will be displayed.
 
 Note that a suggestion exists only in the Pontoon database, and it’s not added to the [translation memory](glossary.md#translation-memory). For projects using [version control systems](glossary.md#version-control-system), the translation is not stored in localized files outside of Pontoon.
 
 When the user is in *Translation Mode*, a green `SAVE` button will be displayed instead of `SUBMIT`. When saving a translation:
 * The translation will be displayed directly below the editing space and in the sidebar.
-* The translation will be stored in version control system (where applicable).
+* The translation will be stored in the version control system (where applicable).
 * All pending suggestions or [pretranslations](glossary.md#pretranslation) will be rejected.
 
 ### Manually switch to suggestion mode
@@ -33,11 +33,11 @@ To switch back to *Translation Mode*, click the settings icon again and turn off
 
 To review a suggestion or pretranslation, [search](search_filters.md) for unreviewed or pretranslated strings in the sidebar.
 
-If the current translation is acceptable, either click on the `APPROVE` button in the lower-right side of the editing space, or click on the approve icon to the right of the text. This will transform the suggestion or pretranslation into an approved translation. In case of suggestions, the approved translation will also be stored in version control system (where applicable).
+If the current translation is acceptable, either click on the `APPROVE` button in the lower-right side of the editing space, or click on the approve icon to the right of the text. This will transform the suggestion or pretranslation into an approved translation. In the case of suggestions, the approved translation will also be stored in the version control system (where applicable).
 
 ![Approve button](../../assets/images/pontoon/translate/approve_button.png "Editing space in Pontoon with the green APPROVE button")
 
-If the current translation is **not** acceptable, it can be rejected by clicking the reject icon to the right of the suggestion. After rejecting a suggestion or pretranslation, it’s also possible to delete it completely by clicking the trashcan icon. In case of pretranslations, the rejected text will be also removed from version control systems (where applicable).
+If the current translation is **not** acceptable, it can be rejected by clicking the reject icon to the right of the suggestion. After rejecting a suggestion or pretranslation, it’s also possible to delete it completely by clicking the trashcan icon. In the case of pretranslations, the rejected text will be also removed from version control systems (where applicable).
 
 Alternatively, it’s possible to provide a different suggestion: turn on `Make Suggestions`, edit the translation as appropriate, and click `SUGGEST`. This will add the translation as a new suggested string.
 
@@ -75,10 +75,10 @@ To select a range of strings, select the first one and hold `SHIFT`, then select
 
 To return back to the default editing space, click the Exit icon on the top-right of the mass action panel.
 
-In the `REVIEW TRANSLATIONS` section, the user can approve or reject suggestions for all selected strings. Upon clicking `APPROVE ALL` or `REMOVE ALL SUGGESTIONS`, the label of the button will be replaced with the number of affected translations.
+In the `REVIEW TRANSLATIONS` section, the user can approve or reject suggestions for all selected strings. Upon clicking `APPROVE ALL` or `REJECT ALL SUGGESTIONS`, the label of the button will be replaced with the number of affected translations.
 Note that `APPROVE ALL` accepts the latest suggestion, but doesn’t reject other suggestions if available.
 
-In the `REPLACE IN TRANSLATIONS` section, the user can input the text to search for, and the text to replace it with. This is a basic find and replace feature that will work only on the selected strings.
+In the `FIND & REPLACE IN TRANSLATIONS` section, the user can input the text to search for, and the text to replace it with. This is a basic find and replace feature that will work only on the selected strings.
 
 ## Downloading and uploading translations
 

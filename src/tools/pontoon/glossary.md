@@ -41,7 +41,7 @@ TBX, or TermBase eXchange, is a standard file format used in the translation ind
 
 ## Translation memory
 
-Translation memory is a database that stores all previous translations for a specific string. It can be leverage to provide suggestions when translating new content.
+Translation memory is a database that stores all previous translations for a specific string. It can be leveraged to provide suggestions when translating new content.
 
 TMX, or Translation Memory eXchange, is a standard file format used in the translation industry to represent and exchange translation memories.
 
