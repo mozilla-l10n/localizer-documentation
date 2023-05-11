@@ -4,7 +4,7 @@
 
 ## Pontoon translation workspace
 
-Pontoon’s translation workspace is organized in 3 columns:
+Pontoon’s translation workspace consists of the main toolbar and 3 columns:
 * The left columns includes a list of strings with a search field at the top.
 * The main editing space is located in the middle column.
 * The right column includes information about terminology, source string comments, suggestions from translation memory, machine translation, and other locales.
@@ -27,7 +27,7 @@ A pie chart showing the translation status of the current resource is located to
 
 When clicked, the information icon located to the right of the pie chart provides information regarding the project, its priority level, and testing.
 
-The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received..
+The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
 The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), etc.
 
@@ -47,9 +47,9 @@ The sidebar displays the list of strings in the current project resource. For ea
 Color legend:
 * **<span style="color: #7bc876;">green</span>**: string is translated.
 * **<span style="color: #c0ff00;">light-green</span>**: string is pretranslated.
-* **<span style="color: #ffa10f;">orange</span>**: string has warnings.
-* **<span style="color: #f36;">red</span>**: string has errors.
-* **<span style="color: #4d5967;">gray</span>**: string is missing.
+* **<span style="color: #ffa10f;">orange</span>**: translation has warnings.
+* **<span style="color: #f36;">red</span>**: translation has errors.
+* **<span style="color: #4d5967;">gray</span>**: there are no translations (the string status is *missing*).
 
 At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
@@ -65,7 +65,7 @@ The translation workspace is where the translation takes place.
 
 It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace, or by using keyboard shortcuts (`ALT` + arrow down or up). The `COPY LINK` button copies in the clipboard a link to the current string.
 
-Above the editor, the user can view the source string, any comments regarding the string, and the resource path where the string is located.
+Above the editor, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
 
 The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
@@ -75,7 +75,7 @@ In the lower-right side of the workspace, it’s possible to `COPY` the source s
 In the lower-left side:
 * Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings.
 * Clicking the keyboard icon displays a list of available shortcuts.
-* The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the source and target string.
+* The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the target and source string.
 
 Note that access to some settings is restricted by [user permissions](users.md#user-roles).
 
@@ -83,7 +83,7 @@ The space below the editor displays the list of suggestions or translations for 
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
-In this case, the first item is the approved translation (green checkmark), while the other 2 are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
+In the screenshot above, the first item is the approved translation (green checkmark), while the other 2 are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
@@ -125,4 +125,4 @@ The `TERMS` tab shows the definition for a term, in case the source string inclu
 
 The `COMMENTS` tab is used to display existing **source string comments**, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.
 
-They’re designed for team member to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.
+They’re designed for team members to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.
