@@ -4,7 +4,7 @@ This document describes briefly how to translate and review strings in Pontoon. 
 
 ## Translating strings
 
-When a string is selected in the sidebar, users can input a translation using the editor available in the middle of the page. Note that, if the string already has an approved translation or pending suggestion, the editor will be prepopulated with text that the user can modify.
+When a string is selected in the sidebar, users can input a translation using the editor available in the middle of the page. Note that, if the string already has a [translation](glossary.md#translation), the editor will be prepopulated with text that the user can modify.
 
 Depending on the current translation mode, the UI will look slightly different.
 
