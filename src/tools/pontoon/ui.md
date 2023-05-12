@@ -49,7 +49,7 @@ Color legend:
 * **<span style="color: #c0ff00;">light-green</span>**: string is pretranslated.
 * **<span style="color: #ffa10f;">orange</span>**: translation has warnings.
 * **<span style="color: #f36;">red</span>**: translation has errors.
-* **<span style="color: #4d5967;">gray</span>**: there are no translations (the string status is *missing*).
+* **<span style="color: #4d5967;">gray</span>**: translation is missing.
 
 At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
@@ -63,7 +63,7 @@ The translation workspace is where the translation takes place.
 
 ![Translation workspace](../../assets/images/pontoon/ui/workspace_standard.png "Screenshot of the standard editor in the translation workspace")
 
-It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace, or by using keyboard shortcuts (`ALT` + arrow down or up). The `COPY LINK` button copies in the clipboard a link to the current string.
+It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
 
 Above the editor, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
@@ -73,11 +73,9 @@ The editor is located in the middle section of the column, and it’s where user
 In the lower-right side of the workspace, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
 In the lower-left side:
-* Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings.
+* Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings. Note that access to some settings is restricted by [user permissions](users.md#user-roles).
 * Clicking the keyboard icon displays a list of available shortcuts.
 * The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the target and source string.
-
-Note that access to some settings is restricted by [user permissions](users.md#user-roles).
 
 The space below the editor displays the list of suggestions or translations for the current string.
 
