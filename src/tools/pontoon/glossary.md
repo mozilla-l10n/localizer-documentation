@@ -14,6 +14,10 @@ Pontoon supports two types of user comments:
 
 User comments should not be confused with *Resource comments*, which developers can add directly to the resource file. This type of comment is displayed in the editing area, along with other information like the [resource path and context](#resource).
 
+## Locale
+
+Pontoon organizes unique localizations into distinct units called locales. While often synonymous with a specific language (e.g. Italian), locales can also be more specific to a region or writing system (e.g. Chinese (China), Chinese (Taiwan), etc.).
+
 ## Permission
 
 Users in Pontoon can have different permissions depending on their role:

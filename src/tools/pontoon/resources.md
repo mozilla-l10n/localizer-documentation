@@ -55,7 +55,6 @@ Concordance search allows users to search across all projects in Pontoon. Users 
 
 ![Concordance search](../../assets/images/pontoon/resources/concordance_search.png)
 
-
 ### Stand-alone machinery
 
 Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). To access the page, use the `Machinery` link available in the Profile menu, or the `Machinery` tab in the upper navigation displayed in some pages (e.g. *Teams page* or *Projects page*).
@@ -64,7 +63,7 @@ To use the machinery, select the target locale from the dropdown menu to the rig
 
 ## Locales tab
 
-The locales tab shows approved translations from Pontoon projects in other locales.
+The locales tab shows approved translations from Pontoon projects in other [locales](glossary.md#locale).
 
 ![Locales tab](../../assets/images/pontoon/resources/locales.png)
 
