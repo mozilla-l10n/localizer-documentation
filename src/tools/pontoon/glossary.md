@@ -1,60 +1,58 @@
 # Glossary
 
-This page includes an explanation for common terms used across the documentation.
+Explanation of common terms and concepts used across documentation.
 
 <!-- toc -->
 
 ## Comment
 
-Pontoon allows users to provide comments for strings. These can be used, for example, to discuss possible translations with other team members, or request more information from project managers.
+Comments can be used, for example, to discuss possible translations with other team members or request more information from project managers.
 
-Pontoon supports two types of comments:
-* *Source string comments* are associated with the source string, and are displayed in the `COMMENTS` tab in the right column.
-* *Translation comments* are associated with a specific translation, and are displayed under the translation itself in the editing area.
+Pontoon supports two types of user comments:
+* *Source string comments* are associated with the source string and displayed in the `COMMENTS` tab in the right column.
+* *Translation comments* are associated with a specific translation and displayed under the corresponding translation in the History panel.
 
-These should not be confused with *localization comments*. Depending on the underlying format, developers can add comments directly in the localization file for specific strings. This type of comment is displayed in the editing area, together with other information like [resource and context](#resource).
+User comments should not be confused with *Resource comments*, which developers can add directly to the resource file. This type of comment is displayed in the editing area, along with other information like the [resource path and context](#resource).
 
 ## Permission
 
 Users in Pontoon can have different permissions depending on their role:
-* Translators can both submit translations directly as approved translations, or review suggestions from other users. Unlike other Translation Management Systems, this is a single permission in Pontoon, and it’s referred to as *translator permission*.
-* Team managers and Administrators have translator permissions, but can also change permissions assigned to other users (i.e. “promote” or ”demote” them).
+* Translators can either submit approved translations directly or review suggestions from other users. Unlike in some other Translation Management Systems, this is a single permission in Pontoon, and it’s referred to as *Translator permission*.
+* Team managers have translator permissions, but can also change permissions assigned to other users (i.e., ”promote” or ”demote” them).
 
 ## Resource
 
-Source content and translations are organized in localization files within a repository (see [version control system](#version-control-system)). These localization files generally follow a key-value structure: they contain a list of text snippets that are associated with unique identifiers (keys). The string is the value associated to a specific ID.
-
-In Pontoon, a file is referred to as a *resource*, while an identifier is called *context*.
+Resources are localization files within a repository (see [version control system](#version-control-system)) used to store source content and translations. They can be in different file formats but generally follow the same key-value structure, where the key (displayed as *Context* in the Source string panel) is a unique identifier and the value is a text snippet that needs to be translated.
 
 ## Translation
 
-When there is no risk of ambiguity, this term is used as an umbrella term that includes:
-* *Approved translations*: translations that have been submitted directly or approved by users with translator permissions.
-* *Suggestions*: this includes both suggestions that are still unreviewed (pending), or that have been rejected by users with translator permissions.
-* *Pretranslations*: strings that have been translated by the pretranslation feature, and are still pending review.
+A translation is any submission of the target content. There are several types of translations:
+* *Approved translations*: translations submitted directly or approved by users with translator permissions.
+* *Suggestions*: translations that have not been reviewed yet (pending).
+* *Pretranslations*: translations that have been authored by the pretranslation feature.
 
 ## Terminology
 
-Terminology — also called *glossary* in other Translation Management Systems — is a list of terms and definitions used to support the translation process. It explains what each terms means and how to translate it.
+Terminology — sometimes also referred to as a *Glossary* — is a list of terms and their definitions. Pontoon will highlight any terms in the source string and show their definitions as well as translations into the target language.
 
-TBX, or TermBase eXchange, is a standard file format used in the translation industry to represent and exchange terminological information.
+TBX, or TermBase eXchange, is a standard file format used in the translation industry to represent and exchange terminological information. Pontoon Terminology can be downloaded in the TBX format.
 
 ## Translation memory
 
-Translation memory is a database that stores all previous translations for a specific string. It can be leveraged to provide suggestions when translating new content.
+Translation memory is a list of all approved translations for any string. It can be leveraged to provide suggestions when translating new content.
 
-TMX, or Translation Memory eXchange, is a standard file format used in the translation industry to represent and exchange translation memories.
+TMX, or Translation Memory eXchange, is a standard file format used in the translation industry to represent and exchange translation memories. Pontoon Translation memory can be downloaded in the TMX format.
 
 ## Translation mode
 
-Depending on their settings or permissions, users will be able to submit translations directly (*Translation Mode*), or only submit suggestions (*Suggestion Mode*).
+Depending on their settings and permissions, users will be able to submit translations directly (*Translation Mode*), or only submit suggestions (*Suggestion Mode*).
 
-Contributors — users without translator permissions — can only access *Suggestion Mode*, while translators and team managers can manually switch to it.
+Contributors — users without translator permissions — can only access *Suggestion Mode*, while translators and team managers can manually switch between the modes.
 
 ## Version Control System
 
-Pontoon supports a special type of project, called `DB Project`, where both source content and translations are stored in Pontoon’s internal database (DB).
+Most projects store source content and translations outside of Pontoon, in repositories that use [version control systems (VCS)](https://en.wikipedia.org/wiki/Version_control). The most popular are git and Mercurial (hg).
 
-For the majority of projects, both source and translated content are also stored outside of Pontoon, in repositories that use [version control systems](https://en.wikipedia.org/wiki/Version_control) (VCS), like Mercurial (hg) or git.
+Pontoon periodically (usually every 10 minutes) imports source content and translations from these repositories and writes translations back. This process is referred to as *Sync*.
 
-Pontoon periodically reads from these repositories — both new source content and updates to existing translations — and writes back new translations from its internal database. This process is referred to as a *sync cycle*.
+Pontoon also supports the so-called `DB projects`, where source content and translations are stored in Pontoon’s internal database (DB).
