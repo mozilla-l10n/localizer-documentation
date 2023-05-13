@@ -5,7 +5,7 @@
 ## Pontoon translation workspace
 
 Pontoon’s translation workspace consists of the main toolbar and 3 columns:
-* The left columns includes a list of strings with a search field at the top.
+* The left column includes a list of strings with a search field at the top.
 * The main editing space is located in the middle column.
 * The right column includes information about terminology, source string comments, suggestions from translation memory, machine translation, and other locales.
 
