@@ -2,20 +2,20 @@
 
 <!-- toc -->
 
-Pontoon features built-in access to different translation memories. These resources are available in the translation workspace. Machinery may also be accessed via the navigation bar as a standalone web page.
+Pontoon features built-in access to different [translation memories](glossary.md#translation-memory) and tools to support translators in their work.
 
 ## History
 
-Pontoon displays the translation history for strings below the editor. The current approved translation for a source string appears at the top and all previous suggestions and translations beneath.
+Pontoon displays the translation history for strings below the editor. The current approved translation for a source string appears at the top, with all previous suggestions and translations beneath.
 
 ![History tab](../../assets/images/pontoon/resources/history.png)
 
-Each translation history entry contains:
+Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
-* Translation comments. `COMMENT` will display the number of comments, if any exist for the translation.
+* [Translation comments](glossary.md#comment). `COMMENT` will display the number of comments, if any exist for the translation.
 
 Icons to the right indicate the status of each translation:
 * The solid green circle with checkmark indicates that the translation has been approved.
@@ -24,9 +24,9 @@ Icons to the right indicate the status of each translation:
 * The red cross indicates that the translation has been rejected. The entire element will look opaque.
 * The trashcan, available only for rejected translations, can be used to completely delete a translation.
 
-### Viewing Translation Differences
+### Viewing translation differences
 
-The `DIFF` option appears if there are multiple suggestions for one string. Toggling `DIFF` compares the selected suggestion to the top entry, either the current approved translation or the most recent suggestion if no translation has been approved. Text highlighted in green indicates the text that has been added (compared to the top entry), text in red indicates removed text. Toggling `DIFF` again will display the original string.
+The `DIFF` option appears if there are multiple translations for one string. Toggling `DIFF` compares the text to the current approved translation, or the most recent suggestion if no translation has been approved yet. Text highlighted in green indicates content that has been added, while strikethrough text in red indicates removed content. Toggling `DIFF` again will display the original string.
 
 ![Diff for suggestions](../../assets/images/pontoon/resources/suggestions_diff.png)
 
@@ -37,21 +37,21 @@ The Machinery tab in the translation view shows possible translations from a var
 * [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
 
-In addition, the user has the ability to search for translations containing words via [`Concordance Search`](#concordance-search).
+In addition, the user has the ability to search for translations containing words via [`Concordance search`](#concordance-search).
 
 In the tab, the number of entries is visible alongside the `MACHINERY` title in white. If any of the machinery matches are from translation memory, the number of matches will appear separately in green. For example, the screenshot below shows `2+1`, where the green `2` represents the two matches from translation memory and the `1` represents a machinery entry from Google Translate.
 
 ![Machinery tab](../../assets/images/pontoon/resources/machinery.png)
 
-At the top of each entry, a diff view between the current source string and the source string from the machinery resource is visible. Text highlighted in red indicates text that is present in the source string but not in the machinery string, while text highlighted in green indicates the opposite (text available only in the machinery string).
+At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.
 
 To the right of the entry, the number in green shows the percent match between the machinery string and the source string. The higher the percentage, the more likely the machinery is to be useful. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory source.
 
-Pay careful attention when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect translation or unnatural translations in the context of the project being translated. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
+Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
 
 ### Concordance search
 
-Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name and clicking a result will automatically fill the translation into the editing window. The search does not need to be related to the current project string.
+Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name; clicking a result will automatically fill the translation into the editor. Note that the search does not need to be related to the current string or project.
 
 ![Concordance search](../../assets/images/pontoon/resources/concordance_search.png)
 
