@@ -36,6 +36,9 @@ The Machinery tab in the translation view shows possible translations from a var
 * [Pontoon’s internal translation memory](translate.md#downloading-and-uploading-translations).
 * [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
+* [SYSTRAN](https://www.systran.net/)
+* [Caighdean](https://github.com/kscanne/caighdean)
+* [Bing Translator](https://www.bing.com/translator) (not currently enabled on pontoon.mozilla.org)
 
 In addition, the user has the ability to search for translations containing words via [`Concordance search`](#concordance-search).
 
@@ -45,7 +48,7 @@ In the tab, the number of entries is visible alongside the `MACHINERY` title in 
 
 At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.
 
-To the right of the entry, the number in green shows the percent match between the machinery string and the source string. The higher the percentage, the more likely the machinery is to be useful. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory source.
+To the right of the entry, the number in green shows the percent match between the machinery string and the source string. The higher the percentage, the more likely the machinery is to be useful and a 100% match indicates that the source and machinery string are the same. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory source.
 
 Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
 
@@ -59,7 +62,7 @@ Concordance search allows users to search across all projects in Pontoon. Users 
 
 Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). To access the page, use the `Machinery` link available in the Profile menu, or the `Machinery` tab in the upper navigation displayed in some pages (e.g. *Teams page* or *Projects page*).
 
-To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
+To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press Enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
 
 ## Locales tab
 
@@ -67,9 +70,9 @@ The locales tab shows approved translations from Pontoon projects in other [loca
 
 ![Locales tab](../../assets/images/pontoon/resources/locales.png)
 
-Next to the `LOCALES` title, the number of available entries is visible. The number of preferred locales is in green, all other locales are listed in gray.
+Next to the `LOCALES` title, the number of available entries is visible. The number of preferred locales are in green, all other locales are listed in gray. 
 
-To add a locale to the preferred locale list, access the [user settings](users.md#user-settings) page.
+Users can select locales to appear at the top of their Locales tab as a preferred locale. To add a locale to the preferred locale list, access the [user settings](users.md#locale-settings) page.
 
 Entries in the `LOCALES` tab above the green line are preferred locales. Entries below the green line are not preferred locales.
 
