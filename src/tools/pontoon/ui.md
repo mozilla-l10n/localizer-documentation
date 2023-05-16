@@ -1,4 +1,4 @@
-# Understanding Pontoon translation workspace
+# Understanding Pontoon’s translation workspace
 
 <!-- toc -->
 
@@ -57,18 +57,18 @@ At the top of the sidebar, the user can access Pontoon’s [search and string fi
 
 ## Main editing space
 
-The translation workspace is where the translation takes place.
+The main editing space is where the translation takes place.
 
-![Translation workspace](../../assets/images/pontoon/ui/workspace_standard.png "Screenshot of the standard editor in the translation workspace")
+![Editing space](../../assets/images/pontoon/ui/editing_space_standard.png "Screenshot of the standard editor in the editing space")
 
-It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
+It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the editing space, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
 
 Above the editor, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
 
 The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
 
-In the lower-right side of the workspace, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
+In the lower-right side of the editing space, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
 In the lower-left side:
 * Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings. Note that access to some settings is restricted by [user permissions](users.md#user-roles).
@@ -93,17 +93,17 @@ A project could be enabled in *read-only* mode for some locales: their translati
 
 When working on FTL (Fluent) files, the editing space will look slightly different.
 
-![Translation workspace for Fluent string](../../assets/images/pontoon/ui/workspace_ftl.png "Screenshot of the translation workspace for Fluent string")
+![Translation editing space for Fluent string](../../assets/images/pontoon/ui/editing_space_ftl.png "Screenshot of the translation editing space for Fluent string")
 
 In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).
 
 The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has 3 forms (highlighted in orange).
 
-![Translation workspace for Fluent string with plurals](../../assets/images/pontoon/ui/workspace_ftl_plurals.png "Screenshot of the translation workspace for Fluent string with plurals")
+![Translation editing space for Fluent string with plurals](../../assets/images/pontoon/ui/editing_space_ftl_plurals.png "Screenshot of the translation editing space for Fluent string with plurals")
 
 In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see [Fluent for localizers](../fluent/).
 
-![Translation workspace for Fluent string in source view](../../assets/images/pontoon/ui/workspace_ftl_sourceview.png "Screenshot of the translation workspace for Fluent string in source view")
+![Translation editing space for Fluent string in source view](../../assets/images/pontoon/ui/editing_space_ftl_sourceview.png "Screenshot of the translation editing space for Fluent string in source view")
 
 Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
@@ -115,7 +115,7 @@ Built-in translation tools are located in the rightmost column. For more informa
 
 The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
-![Translation workspace for string with match in terminology](../../assets/images/pontoon/ui/workspace_terminology.png "Screenshot of the translation workspace for string with match in terminology")
+![Translation editing space for string with match in terminology](../../assets/images/pontoon/ui/editing_space_terminology.png "Screenshot of the translation editing space for string with match in terminology")
 
 ### Source string comments
 
