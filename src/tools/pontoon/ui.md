@@ -1,118 +1,124 @@
-# Understanding Pontoon user interface
+# Understanding Pontoon’s translation workspace
 
 <!-- toc -->
 
-## Pontoon translation workspace
+Pontoon’s translation workspace consists of the main toolbar and 3 columns:
+* The left column includes a list of strings with a search field at the top.
+* The main editing space is located in the middle column.
+* The right column includes information about terminology, source string comments, suggestions from translation memory, machine translation, and other locales.
 
-Pontoon’s translation workspace features the list of strings in the left sidebar and the editing space on the right.
+![Translation Workspace](../../assets/images/pontoon/ui/translation_workspace.png "Screenshot of the translation workspace in Pontoon")
 
-![Translation Workspace](../../assets/images/pontoon/ui/translation_workspace.png)
+## Main toolbar
 
-### Main toolbar
+The main toolbar allows users to navigate to the dashboards or to change the current resource.
 
-The main toolbar allows you to navigate to the dashboards or to change the selected resource.
+![Navigating in the main toolbar](../../assets/images/pontoon/ui/main_nav.png "Screenshot of the main toolbar, with the resource dropdown expanded")
 
-![main toolbar](../../assets/images/pontoon/ui/main_toolbar.png)
+Clicking the locale name will open the [Team page](teams_projects.md#team-page) for that locale, while clicking the project name will open the [Localization page](teams_projects.md#localization-page) for that project.
 
-Clicking the locale name will take you to the *Team page* for that locale. Clicking the project name will take you to the *Project page* for that project and the selected locale.
+Clicking on the current resource (or `All Resources`) will display a list of all resources available for that project. It’s possible to search for a resource, and click one to load only the entities included in it. Clicking `All Resources` at the bottom of the list will go back to display all resources, while `All Projects` will show entities for all projects under the selected locale.
 
-![Navigating in the main toolbar](../../assets/images/pontoon/ui/main_nav.png)
+A progress chart showing the translation status of the current resource is located to the right of the resource name. A more detailed breakdown is displayed when clicking the chart.
 
-If you click on the resource (or `All Resources`), you will see a list of all resources available for that project. You can search for a resource, and click one to load only the entities of that resource. You can also click `All Resources` to go back to seeing all resources, or `All Projects` to load entities for all projects under the selected locale.
+![Expanded status overview](../../assets/images/pontoon/ui/status_overview.png "Screenshot of the status graph expanded")
 
-More information on how pages are organized in Pontoon is available in [this document](teams_projects.md).
+When clicked, the information icon located to the right of the progress chart provides more information about the project.
 
-An overview of the status of the selected resource is located to the right of the main toolbar. Translators can view the overview in detail by clicking it once.
+The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
-![Expanded String Overview](../../assets/images/pontoon/ui/string_overview.png)
+The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), etc.
 
-A project information icon is located to the right of the string overview. Translators can view information regarding the project, its priority level, and testing by clicking the icon.
+![Profile menu](../../assets/images/pontoon/ui/profile_menu.png "Screenshot of the profile menu")
 
-The notifications icon, represented by a bell, is located on the right side of the main toolbar. Translators will be notified of any important updates regarding the current project. By clicking the bell icon, translators can view notifications in more detail or see all active notifications.
+Note that some profile menu items are only available to users with specific [permissions](users.md#user-roles).
 
-The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal the drop-down menu. From this menu, translators can perform several actions, like navigate to their profile page, download and upload translations, etc. For information about uploading and downloading translation check [this document](translate.md#downloading-and-uploading-translations), for Machinery see [here](resources.md#machinery-tab).
+## String list and filters
 
-![Profile menu](../../assets/images/pontoon/ui/profile_menu.png)
+The sidebar displays the list of strings in the current project resource. Each string is represented by:
+* A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
+* The source string.
+* The approved translation or the most recent suggestion if available.
 
-Note that some profile menu items are restricted by [user rights](users.md#user-roles).
-
-### Sidebar
-
-The sidebar displays the list of strings in the current project resource. Each string is displayed with the string status (i.e. *Missing*, *Translated*, etc.) identified by a colored square, the source string, and the approved translation or the most recent suggestion if available.
-
-![Sidebar](../../assets/images/pontoon/ui/sidebar.png)
+![Sidebar](../../assets/images/pontoon/ui/sidebar.png "Screenshot of the sidebar, with a list of strings showing the different string statuses")
 
 Color legend:
+* **<span style="color: #4d5967;">gray</span>**: translation is missing.
 * **<span style="color: #7bc876;">green</span>**: string is translated.
-* **<span style="color: #fed271;">yellow</span>**: string is fuzzy.
-* **<span style="color: #ffa10f;">orange</span>**: string has warnings.
-* **<span style="color: #f36;">red</span>**: string has errors.
-* **<span style="color: #4d5967;">gray</span>**: string is missing.
+* **<span style="color: #c0ff00;">light-green</span>**: string is pretranslated.
+* **<span style="color: #ffa10f;">orange</span>**: translation has warnings.
+* **<span style="color: #f36;">red</span>**: translation has errors.
 
-At the top of the sidebar, the translator can access Pontoon’s [search and string filters](search_filters.md).
+When a string is selected in the sidebar, a small icon with 4 arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
 
-Note that the sidebar toggles between the strings and the editing space when using the in-context editor.
+At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
-### Translation workspace
+![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
 
-The translation workspace is where strings are translated.
+## Main editing space
 
-![Translation workspace](../../assets/images/pontoon/ui/workspace_standard.png)
+The main editing space is where the translation takes place.
 
-A translator can navigate sequentially by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the workspace or by using keyboard shortcuts (`ALT` + arrow down or up).
+![Editing space](../../assets/images/pontoon/ui/editing_space_standard.png "Screenshot of the standard editor in the editing space")
 
-In the upper section of the workspace, the translator can view the source string, any comments regarding the string, and the resource path where the string is located.
+It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the editing space, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
 
-The editing space is located in the lower section of the workspace. The translator can edit the translation or suggestion in the text editor.
+Above the editor, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
+In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
 
-To the lower-right side of the workspace, the translator can `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
+The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
 
-To the lower-left side, a translator can access the workspace settings, keyboard shortcuts, and view the number of characters in the target and source string.
+In the lower-right side of the editing space, it’s possible to `COPY` the source string to the editor, `CLEAR` the area where translations are typed, and `SUGGEST` or `SAVE` the translation by clicking the corresponding button. This area is also used to [display warnings and errors](translate.md#quality-checks) when submitting a translation.
 
-By clicking the gear icon, the translator can activate or deactivate `Translation Toolkit Checks` or `Make Suggestions` and navigate to their user settings.
+In the lower-left side:
+* Clicking the gear icon allows users to toggle `Translation Toolkit checks` or `Make suggestions`, and navigate to the user settings. Note that access to some settings is restricted by [user permissions](users.md#user-roles).
+* Clicking the keyboard icon displays a list of available shortcuts.
+* The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the target and source string.
 
-![Settings menu](../../assets/images/pontoon/ui/settings.png)
+The space below the editor displays the list of suggestions or translations for the current string.
 
-Note that access to certain settings may be restricted by [user rights](users.md#user-roles).
+![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
-By clicking the keyboard, a translator can view the workspace keyboard shortcuts.
+In the screenshot above, the first item is the approved translation (green checkmark), while the other 2 are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
 
-![Keyboard Shortcuts](../../assets/images/pontoon/ui/shortcuts.png)
+If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
-Note that a project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the LOCALES tab, but it won’t be possible to change or submit translations directly in Pontoon.
+### Read-only projects
 
-![Read-only mode](../../assets/images/pontoon/ui/readonly.png)
+A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
 
-#### Fluent - FTL files
+![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
 
-When working on FTL (Fluent) files, the editing space will look a bit different:
+### Fluent - FTL files
 
-![Translation workspace for Fluent string](../../assets/images/pontoon/ui/workspace_ftl.png)
+When working on FTL (Fluent) files, the editing space will look slightly different.
 
-In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editing area (highlighted in orange).
+![Translation editing space for Fluent string](../../assets/images/pontoon/ui/editing_space_ftl.png "Screenshot of the translation editing space for Fluent string")
+
+In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).
 
 The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has 3 forms (highlighted in orange).
 
-![Translation workspace for Fluent string with plurals](../../assets/images/pontoon/ui/workspace_ftl_plurals.png)
+![Translation editing space for Fluent string with plurals](../../assets/images/pontoon/ui/editing_space_ftl_plurals.png "Screenshot of the translation editing space for Fluent string with plurals")
 
 In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see [Fluent for localizers](../fluent/).
 
-![Translation workspace for Fluent string in source view](../../assets/images/pontoon/ui/workspace_ftl_sourceview.png)
+![Translation editing space for Fluent string in source view](../../assets/images/pontoon/ui/editing_space_ftl_sourceview.png "Screenshot of the translation editing space for Fluent string in source view")
 
 Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
-### Pontoon workspace resources
+## Translation tools and comments
 
-Built-in translation resources are located below the editing space. The three integrated resources are `HISTORY`, `MACHINERY`, and `LOCALES`.
+Built-in translation tools are located in the rightmost column. For more information about `MACHINERY`, and `LOCALES`, see the page dedicated to [Pontoon’s translation resources](resources.md).
 
-![Translation Resources](../../assets/images/pontoon/ui/resources.png)
+### Terminogy
 
-Learn how to use Pontoon’s translation resources [in this document](resources.md).
+The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
-## Pontoon in-context editor
+![Translation editing space for string with match in terminology](../../assets/images/pontoon/ui/editing_space_terminology.png "Screenshot of the translation editing space for string with match in terminology")
 
-Pontoon’s in-context editor displays the translatable strings as they appear on the web page, alongside the editing space. This means that translators can see where the source string appears and how the translation looks in real time. Pontoon’s in-context editor shows the strings in context on the right with the translation workbench on the left.
+### Source string comments
 
-![in-context editor](../../assets/images/pontoon/ui/incontext_edit.png)
+The `COMMENTS` tab is used to display existing **source string comments**, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.
 
-When using the in-context editor, the sidebar features both string navigation and the editing space. To view the editing space, double click on a string. To return to string navigation, click `BACK TO LIST` at the top-left of the sidebar.
+They’re designed for team members to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.
