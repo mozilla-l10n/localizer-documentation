@@ -21,11 +21,11 @@ Clicking the locale name will open the [Team page](teams_projects.md#team-page) 
 
 Clicking on the current resource (or `All Resources`) will display a list of all resources available for that project. It’s possible to search for a resource, and click one to load only the entities included in it. Clicking `All Resources` at the bottom of the list will go back to display all resources, while `All Projects` will show entities for all projects under the selected locale.
 
-A pie chart showing the translation status of the current resource is located to the right of the resource name. A more detailed breakdown is displayed when clicking the chart.
+A progress chart showing the translation status of the current resource is located to the right of the resource name. A more detailed breakdown is displayed when clicking the chart.
 
 ![Expanded status overview](../../assets/images/pontoon/ui/status_overview.png "Screenshot of the status graph expanded")
 
-When clicked, the information icon located to the right of the pie chart provides information regarding the project, its priority level, and testing.
+When clicked, the information icon located to the right of the progress chart provides more information about the project.
 
 The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
@@ -37,7 +37,7 @@ Note that some profile menu items are only available to users with specific [per
 
 ### String list and filters
 
-The sidebar displays the list of strings in the current project resource. For each string there is:
+The sidebar displays the list of strings in the current project resource. Each string is represented by:
 * A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
 * The source string.
 * The approved translation or the most recent suggestion if available.
@@ -115,7 +115,7 @@ Built-in translation tools are located in the rightmost column. For more informa
 
 #### Terminogy
 
-The `TERMS` tab shows the definition for a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string.
+The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
 ![Translation workspace for string with match in terminology](../../assets/images/pontoon/ui/workspace_terminology.png "Screenshot of the translation workspace for string with match in terminology")
 
