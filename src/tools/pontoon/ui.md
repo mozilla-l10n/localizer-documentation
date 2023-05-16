@@ -1,8 +1,6 @@
-# Understanding Pontoon user interface
+# Understanding Pontoon translation workspace
 
 <!-- toc -->
-
-## Pontoon translation workspace
 
 Pontoon’s translation workspace consists of the main toolbar and 3 columns:
 * The left column includes a list of strings with a search field at the top.
@@ -11,7 +9,7 @@ Pontoon’s translation workspace consists of the main toolbar and 3 columns:
 
 ![Translation Workspace](../../assets/images/pontoon/ui/translation_workspace.png "Screenshot of the translation workspace in Pontoon")
 
-### Main toolbar
+## Main toolbar
 
 The main toolbar allows users to navigate to the dashboards or to change the current resource.
 
@@ -35,7 +33,7 @@ The profile menu is located at the far right of the main toolbar. Clicking the p
 
 Note that some profile menu items are only available to users with specific [permissions](users.md#user-roles).
 
-### String list and filters
+## String list and filters
 
 The sidebar displays the list of strings in the current project resource. Each string is represented by:
 * A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
@@ -45,19 +43,19 @@ The sidebar displays the list of strings in the current project resource. Each s
 ![Sidebar](../../assets/images/pontoon/ui/sidebar.png "Screenshot of the sidebar, with a list of strings showing the different string statuses")
 
 Color legend:
+* **<span style="color: #4d5967;">gray</span>**: translation is missing.
 * **<span style="color: #7bc876;">green</span>**: string is translated.
 * **<span style="color: #c0ff00;">light-green</span>**: string is pretranslated.
 * **<span style="color: #ffa10f;">orange</span>**: translation has warnings.
 * **<span style="color: #f36;">red</span>**: translation has errors.
-* **<span style="color: #4d5967;">gray</span>**: translation is missing.
-
-At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
 When a string is selected in the sidebar, a small icon with 4 arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
 
+At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
+
 ![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
 
-### Translation workspace
+## Main editing space
 
 The translation workspace is where the translation takes place.
 
@@ -85,13 +83,13 @@ In the screenshot above, the first item is the approved translation (green check
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
-#### Read-only projects
+### Read-only projects
 
 A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
 
 ![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
 
-#### Fluent - FTL files
+### Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look slightly different.
 
@@ -109,17 +107,17 @@ In the bottom left corner, the FTL button (highlighted in yellow) allows to swit
 
 Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
-### Translation tools and comments
+## Translation tools and comments
 
 Built-in translation tools are located in the rightmost column. For more information about `MACHINERY`, and `LOCALES`, see the page dedicated to [Pontoon’s translation resources](resources.md).
 
-#### Terminogy
+### Terminogy
 
 The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
 ![Translation workspace for string with match in terminology](../../assets/images/pontoon/ui/workspace_terminology.png "Screenshot of the translation workspace for string with match in terminology")
 
-#### Source string comments
+### Source string comments
 
 The `COMMENTS` tab is used to display existing **source string comments**, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.
 
