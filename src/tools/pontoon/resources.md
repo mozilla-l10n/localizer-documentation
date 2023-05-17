@@ -36,9 +36,9 @@ The Machinery tab in the translation view shows possible translations from a var
 * [Pontoon’s internal translation memory](translate.md#downloading-and-uploading-translations).
 * [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
-* [SYSTRAN](https://www.systran.net/)
-* [Caighdean](https://github.com/kscanne/caighdean)
-* [Bing Translator](https://www.bing.com/translator) (not currently enabled on pontoon.mozilla.org)
+* [SYSTRAN](https://www.systran.net/).
+* [Caighdean](https://github.com/kscanne/caighdean).
+* [Bing Translator](https://www.bing.com/translator) (not currently enabled on pontoon.mozilla.org).
 
 In addition, the user has the ability to search for translations containing words via [`Concordance search`](#concordance-search).
 
@@ -60,7 +60,7 @@ Concordance search allows users to search across all projects in Pontoon. Users 
 
 ### Stand-alone machinery
 
-Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). To access the page, use the `Machinery` link available in the Profile menu, or the `Machinery` tab in the upper navigation displayed in some pages (e.g. *Teams page* or *Projects page*).
+Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). Use the `Machinery` link in the main navigation to access the page (this is not accessible from the translation workspace).
 
 To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press Enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
 
@@ -70,7 +70,7 @@ The locales tab shows approved translations from Pontoon projects in other [loca
 
 ![Locales tab](../../assets/images/pontoon/resources/locales.png)
 
-Next to the `LOCALES` title, the number of available entries is visible. The number of preferred locales are in green, all other locales are listed in gray. 
+Next to the `LOCALES` title, the number of available entries is visible. The number for preferred locales is green, while the number for all other locales is in gray.
 
 Users can select locales to appear at the top of their Locales tab as a preferred locale. To add a locale to the preferred locale list, access the [user settings](users.md#locale-settings) page.
 
