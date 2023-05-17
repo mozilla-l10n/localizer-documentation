@@ -14,6 +14,12 @@ Pontoon supports two types of user comments:
 
 User comments should not be confused with *Resource comments*, which developers can add directly to the resource file. This type of comment is displayed in the editing area, along with other information like the [resource path and context](#resource).
 
+## Locale
+
+A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as en-US, where en stands for the language (English), and US for the region (United States). In some cases, the region is ommitted, because the language is mostly spoken in one region.
+
+In Pontoon, each locale maps to a team.
+
 ## Permission
 
 Users in Pontoon can have different permissions depending on their role:
