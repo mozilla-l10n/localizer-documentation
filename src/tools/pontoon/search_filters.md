@@ -8,27 +8,27 @@ It’s possible to search within a project using the search field. Searches incl
 
 ![Search field](../../assets/images/pontoon/search_filters/search_field.png)
 
-Note that searches take active [filters](#filters) into account, for example a search would be performed only on missing strings if that filter is selected.
+Note that searches take active [filters](#filters) into account, for example a search would be performed only on missing strings if that filter was previously selected.
 
 Like in search engines, by default Pontoon will display matches that contain all the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
 
-To search for a perfect match, wrap the search terms in double quotes, e.g. `"new tab"`. In the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
+To search for a perfect match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
 ## Filters
 
 ### Translation status
 
-Strings in Pontoon can be filtered by their status. A string can be in one of the following status:
+Strings in Pontoon can be filtered by their status. A string can be in one of the following statuses:
 * *Translated*: string has an approved translation. The translation is saved to the localized file when using a [version control system](glossary.md#version-control-system) (VCS).
 * *Pretranslated*: string has been pretranslated but has not been reviewed. Unreviewed pretranslation are saved to the localized file when using a VCS.
 * *Warnings*: string contains issues classified as [warnings](translate.md#warnings).
 * *Errors*: string contains [critical issues](translate.md#errors).
-* *Missing*: string doesn’t have any approved translations. String is not available in the localized file when using a VCS.
-* *Unreviewed*: string has unreviewed suggested translations – either to a string with an existing approved translation, or to a missing string – but not reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, in both cases, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
+* *Missing*: string doesn’t have any approved translations.
+* *Unreviewed*: string has suggested translations that have not been reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
 
-### Extra Filters
+### Extra filters
 
-Intro  
+In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:
 * *Unchanged*: string is identical to the reference language (normally en-US).
 * *Empty*: string has a translation, but translation contains no content.
 * *Fuzzy*: string is marked as [fuzzy](glossary.md#fuzzy) in the localized file.
@@ -54,4 +54,4 @@ For specific projects it’s also possible to filter strings based on *tags*. Ta
 
 ![Tags in filters](../../assets/images/pontoon/search_filters/filters_tags.png)
 
-In this case, there are 3 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
+In this case, there are 10 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
