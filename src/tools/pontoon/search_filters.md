@@ -1,10 +1,8 @@
 # Search and filters
 
-<!-- toc -->
-
 ## Search
 
-It’s possible to search within a project using the search field. Searches include strings, string IDs and comments.
+It’s possible to search within the currently selected project using the search field. Searches include strings, string IDs and comments.
 
 ![Search field](../../assets/images/pontoon/search_filters/search_field.png)
 
@@ -55,3 +53,5 @@ For specific projects it’s also possible to filter strings based on *tags*. Ta
 ![Tags in filters](../../assets/images/pontoon/search_filters/filters_tags.png)
 
 In this case, there are 10 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
+
+Note: translation time, translation authors, and tags are not available when `All Projects` is selected as a [resource](glossary.md#resource).
