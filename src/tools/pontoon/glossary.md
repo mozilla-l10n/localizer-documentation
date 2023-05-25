@@ -14,6 +14,15 @@ Pontoon supports two types of user comments:
 
 User comments should not be confused with *Resource comments*, which developers can add directly to the resource file. This type of comment is displayed in the editing area, along with other information like the [resource path and context](#resource).
 
+## Fuzzy
+
+`fuzzy` is an internal state available only if the source file is a [gettext](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) (.po) file. A string can be marked as such in a few cases:
+* The reference text changed after the string was already translated.
+* The string has been manually marked by translators because it needs review.
+* New strings were merged in the localized files, enabling the option to match existing translations (also called “fuzzy matching”).
+
+In all these cases a translation exists in the file, but is marked as fuzzy (equivalent to “need review”) and not used by the website or application. For more information, read the documentation about [Fuzzy Entries](https://www.gnu.org/software/gettext/manual/html_node/Fuzzy-Entries.html#Fuzzy-Entries) in gettext.
+
 ## Locale
 
 A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as en-US, where en stands for the language (English), and US for the region (United States). In some cases, the region is ommitted, because the language is mostly spoken in one region.
