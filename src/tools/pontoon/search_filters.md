@@ -10,7 +10,7 @@ Note that searches take active [filters](#filters) into account, for example a s
 
 Like in search engines, by default Pontoon will display matches that contain all the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
 
-To search for a perfect match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
+To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
 ## Filters
 
