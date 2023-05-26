@@ -2,13 +2,13 @@
 
 <!-- toc -->
 
-The [Teams page](https://pontoon.mozilla.org/teams/) lists all locales that are enabled in Pontoon. From here you can access a specific [Team page](#team-page), where you’ll get a list of all projects enabled for the requested locale. Selecting a project from the *Team page* will take you to what is called the [Localization page](#localization-page).
+The Teams page lists all locales that are enabled in Pontoon and can be reached by clicking `Teams` from the navbar or by using the `/teams` URL (e.g. [pontoon.mozilla.org/teams](https://pontoon.mozilla.org/teams/)). Selecting a specific [Team page](#team-page) shows a list of all projects enabled for the requested locale. Choosing one of these projects leads to the [Localization page](#localization-page).
 
-From each locale’s *Team page* it’s also possible to [request a project](#requesting-a-project), that is asking to add that locale to a project already available in Pontoon, not asking to support localization for a brand new project.
+From each locale’s *Team page* it’s possible to [request a project](#requesting-a-project). Note that this is a request to add the locale to a project already available in Pontoon, not for requesting a brand new project.
 
-The [Projects page](https://pontoon.mozilla.org/teams/) lists all projects that are available in Pontoon. From here you can access the list of locales that are enabled for the requested project. This is called a [Project page](#project-page) in Pontoon. By selecting a locale in the *Project page* you access the [Localization page](#localization-page).
+The Projects page lists all projects that are available in Pontoon and can be reached by clicking `Projects` from the navbar or by using the `/projects` URL (e.g. [pontoon.mozilla.org/projects](https://pontoon.mozilla.org/teams/)). Selecting a specific [Project page](#project-page) from this list shows a list of locales that are enabled for the project. Choosing one of the locales in the *Project page* leads to the [Localization page](#localization-page).
 
-There is also a special Localization page that allows to access all resources for all projects enabled for a specific locale: `/locale/all-projects/all-resources`.
+In addition to the *Localization page* for each locale/project pair, there is also a special Localization page that allows access to all resources for all projects enabled for a specific locale. This can be accessed from the `/{LOCALE}/all-projects/all-resources` URL (e.g. [pontoon.mozilla.org/it/all-projects/all-resources](https://pontoon.mozilla.org/it/all-projects/all-resources) for Italian).
 
 The following diagram shows how these pages are organized and connected to each other:
 
@@ -16,27 +16,26 @@ The following diagram shows how these pages are organized and connected to each 
 
 ## Team page
 
-You can access a team’s page by selecting it from the [Teams page](https://pontoon.mozilla.org/teams/) or by appending `/YOUR_LOCALE_CODE` to the URL, e.g. `https://pontoon.mozilla.org/it` for Italian.
+You can access a specific team’s page by selecting it from the *Teams page* (e.g. [pontoon.mozilla.org/teams](https://pontoon.mozilla.org/teams/)) or by appending a locale code to the end of the base URL with `/{LOCALE}` (e.g [pontoon.mozilla.org/it](https://pontoon.mozilla.org/it) for Italian).
 
-This is a screenshot of the [Italian team page](https://pontoon.mozilla.org/it):
-
-![Team page for Italian](../../assets/images/pontoon/teams_projects/team_page.png)
-
-The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects, for example to reach all missing strings across projects available for Italian in Pontoon.
+The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects. For example, select `MISSING` to see all missing strings across projects enabled for that locale in Pontoon.
 
 ![Header of team page for Italian](../../assets/images/pontoon/teams_projects/team_page_header.png)
 
-There are 4 tabs available (highlighted in red), 5 if you’re an *admin* or *manager*:
+There are 5 tabs available (highlighted in red) to all roles, or 6 for those with *admin* or *manager* roles:
 
 * **Projects**: a list of all projects enabled in Pontoon for this locale.
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, 1/3/6/12 months).
+* **Insights**: contains data and trends presented in a graphical format about active users, time to review suggstions, review activity, and translation activity.
 * **Bugs**: a list of open bugs for this locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/).
 * **Info**: information about the team. Team managers can edit it by clicking on the Edit button.
 * **Permissions**: manage user permissions (see [this document](users.md#managing-permissions) for details).
 
-Hovering a project in the list will replace the progress bar with a set of detailed statistics (untranslated strings, missing strings, etc.). Note that all these numbers are links, so you can use them to open the project with a filter already enabled, for example to display only missing strings. You can click on the number of total strings to access *All Resources* (i.e. all strings in all files) for this project.
+The labels and icon in the table header can be used to sort the list of projects. For example, clicking on `Priority` will sort based on project priority.
 
-The rightmost column in the table will display a blue lightbulb icon if there are unreviewed strings. The icon in the table header can be used to sort rows based on the number of unreviewed strings.
+Hovering a project in the *Projects* list will replace the progress bar with a set of detailed statistics (untranslated strings, missing strings, etc.). Note that all these numbers are links, so you can use them to open the project with a filter already enabled, for example to display only missing strings. You can also click `ALL` to access *All Resources* (i.e. all strings in all files) for this project.
+
+The rightmost column in the table will display a blue lightbulb icon if there are unreviewed strings. Note: clicking the lightbulb icon in the table header can be used to sort projects based on the number of unreviewed strings.
 
 ![Project hover](../../assets/images/pontoon/teams_projects/project_hover.png)
 
@@ -51,20 +50,16 @@ Click on *REQUEST MORE PROJECTS* (highlighted in red), select the project you wa
 ![Request a project](../../assets/images/pontoon/teams_projects/request_project_selected.png)
 
 An email will be sent to Pontoon’s administrators, and the localization driver in charge of the project will act on the request. Please note that:
-* Some projects have a closed list of supported locales, meaning that you can’t request the project on Pontoon.
-* Some projects can be requested but eventually not enabled, because of practical restrictions related to the project itself (e.g. lack of support for the locale in iOS).
+* Some projects have a closed list of supported locales, meaning that these projects can't be requested on Pontoon.
+* Some projects can be requested but may not enabled for practical restrictions related to the project itself (e.g. lack of support for the locale in iOS).
 
 ## Project page
 
-You can access a project’s page by selecting it from the [Projects page](https://pontoon.mozilla.org/projects/).
-
-This is a screenshot of the [Mozilla.org project page](https://pontoon.mozilla.org/projects/mozillaorg/):
-
-![Project page for Mozilla.org](../../assets/images/pontoon/teams_projects/project_page.png)
+You can access a project’s page by selecting it from the *Projects page* (e.g. [pontoon.mozilla.org/projects](https://pontoon.mozilla.org/projects/)).
 
 The page header contains useful information about the current project:
 * **Priority**: it goes from 5 stars (highest priority) to 1 star (lowest priority).
-* **Deadline**: set only for some projects, it indicates when the translation is due.
+* **Target Date**: set only for some projects, it indicates when the translation is due.
 * **Repository**: link to the repository storing translations for this project.
 * **Resources**: links to useful external resources. Custom links can be defined for each project.
 * **Contact person**: localization driver in charge of this project.
@@ -73,12 +68,15 @@ It also includes an indication of the overall status of completion and statistic
 
 ![Header of project page for Mozilla.org](../../assets/images/pontoon/teams_projects/project_page_header.png)
 
-There can be up to 4 tabs available (highlighted in red):
+There are up to 5 tabs available (highlighted in red) to all roles, or 6 for those with *admin* roles:
 
 * **Teams**: a list of all locales enabled in Pontoon for this project.
 * **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, 1/3/6/12 months).
+* **Insights**: contains data and trends presented in a graphical format about review activity and translation activity.
 * **Info**: information about this project.
+* **Notifications**: contains functionality to notify those who have contributed to this project for deifned locales.
+
 
 ### Requesting a language
 
@@ -86,7 +84,7 @@ It’s possible to request an additional language for a project from its *Projec
 
 ![Request a project](../../assets/images/pontoon/teams_projects/request_locale.png)
 
-Click on *REQUEST NEW LANGUAGE* (highlighted in red), select the language you want to add and then click *REQUEST NEW LANGUAGE*.
+Click on *REQUEST NEW LANGUAGE* (highlighted in red), select the language to add and then click *REQUEST NEW LANGUAGE*.
 
 An email will be sent to Pontoon’s administrators, and the localization driver in charge of the project will act on the request. The same restrictions described in the [Requesting a project](#requesting-a-project) section apply here.
 
@@ -100,7 +98,7 @@ The page header contains useful information about the current project (same as t
 
 ![Header of localization page](../../assets/images/pontoon/teams_projects/localization_page_header.png)
 
-There are 4 tabs available (highlighted in red):
+There are 5 tabs available (highlighted in red):
 * **Resources**: files available in the project.
 * **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time. Unlike the tab available in the *Team page*, this only includes contributions to localization of the project for the current locale.
