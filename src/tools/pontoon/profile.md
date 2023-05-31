@@ -1,6 +1,6 @@
 # Profile page
 
-The goal of the profile page in Pontoon is to provide a tool to showcase contributions, display useful contact information about the user, and help locale managers to organize and grow their communities. The profile page can be reached by clicking the avatar icon in the top right corner, and then clicking the profile picture in the dropdown menu, or by using the `/profile` URL (e.g. [pontoon.mozilla.org/profile](https://pontoon.mozilla.org/profile)).
+The goal of the profile page in Pontoon is to provide a tool to showcase contributions, display useful contact information about the user, and help locale managers to organize and grow their communities. A user's personal profile page can be reached by clicking the avatar icon in the top right corner, and then clicking the profile picture in the dropdown menu, or by using the `/profile` URL (e.g. [pontoon.mozilla.org/profile](https://pontoon.mozilla.org/profile)). Users can also view others' personal profiles by clicking a user's profile picture wherever it appears, such as in the list of contributors for a team or project.
 
 The left column includes information about the user:
 * Profile picture and name.
