@@ -5,8 +5,8 @@ The goal of the profile page in Pontoon is to provide a tool to showcase contrib
 The left column includes information about the user:
 * Profile picture and name.
 * Contact details.
-* Roles in Pontoon (a user can have multiple roles across different locales).
 * Information on last known activity (when the user has submitted or reviewed a translation), last login in Pontoon, and the account’s creation date.
+* Roles in Pontoon (a user can have multiple roles across different locales).
 
 Users can customize their information and the visibility of specific fields in the [settings page](users.md#user-settings) (reachable using the `CHANGE SETTINGS` button).
 
