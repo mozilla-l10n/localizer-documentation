@@ -41,7 +41,7 @@ Users can determine the visibility of fields containing personal information —
 * `Public`: this includes all users and not logged-in visitors.
 
 These are the available data fields:
-* `Email address`: by default, this field is only visible to translators. Visibility can be expanded to all logged-in users, but it's always hidden to visitors to reduce the risk of spam. This setting is ignored for team and project managers, as their email address is always visible to logged-in users.
+* `Email address`: by default, this field is only visible to translators. Visibility can be expanded to all logged-in users, but it’s always hidden to visitors to reduce the risk of spam. This setting is ignored for team and project managers, as their email address is always visible to logged-in users.
 * `External accounts`: by default, this data is only visible to translators, but it can be made public.
 * `Approval rate` and `Self-approval rate`: by default, these fields are set as public, but can be limited to translators.
 
