@@ -25,7 +25,7 @@ In all these cases a translation exists in the file, but is marked as fuzzy (equ
 
 ## Locale
 
-A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as en-US, where en stands for the language (English), and US for the region (United States). In some cases, the region is ommitted, because the language is mostly spoken in one region.
+A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as en-US, where en stands for the language (English), and US for the region (United States). In some cases, the region is omitted, because the language is mostly spoken in one region.
 
 In Pontoon, each locale maps to a team.
 
