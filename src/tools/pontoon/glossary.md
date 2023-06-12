@@ -39,18 +39,18 @@ Users in Pontoon can have different permissions depending on their role:
 
 Resources are localization files within a repository (see [version control system](#version-control-system)) used to store source content and translations. They can be in different file formats but generally follow the same key-value structure, where the key (displayed as *Context* in the Source string panel) is a unique identifier and the value is a text snippet that needs to be translated.
 
+## Terminology
+
+Terminology — sometimes also referred to as a *Glossary* — is a list of terms and their definitions. Pontoon will highlight any terms in the source string and show their definitions as well as translations into the target language.
+
+TBX, or TermBase eXchange, is a standard file format used in the translation industry to represent and exchange terminological information. Pontoon Terminology can be downloaded in the TBX format.
+
 ## Translation
 
 A translation is any submission of the target content. There are several types of translations:
 * *Approved translations*: translations submitted directly or approved by users with translator permissions.
 * *Suggestions*: translations that have not been reviewed yet (pending).
 * *Pretranslations*: translations that have been authored by the pretranslation feature.
-
-## Terminology
-
-Terminology — sometimes also referred to as a *Glossary* — is a list of terms and their definitions. Pontoon will highlight any terms in the source string and show their definitions as well as translations into the target language.
-
-TBX, or TermBase eXchange, is a standard file format used in the translation industry to represent and exchange terminological information. Pontoon Terminology can be downloaded in the TBX format.
 
 ## Translation memory
 
