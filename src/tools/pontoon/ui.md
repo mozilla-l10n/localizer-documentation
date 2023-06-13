@@ -35,7 +35,7 @@ Note that some profile menu items are only available to users with specific [per
 
 ## String list and filters
 
-The sidebar in the left column displays the list of strings in the current project resource. Each string is represented by:
+The left column displays the list of strings in the current project resource. Each string is represented by:
 * A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
 * The source string.
 * The approved translation or the most recent suggestion if available.
@@ -81,9 +81,15 @@ In the lower-left side:
 * Clicking the keyboard icon displays a list of available shortcuts.
 * The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the target and source string.
 
+#### Read-only projects
+
+A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
+
+![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
+
 ### Translation list
 
-The space below the editor displays the list of suggestions or translations for the current string.
+The space below the editor displays the list of [translations](glossary.md#translation) for the current string.
 
 Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
@@ -97,7 +103,7 @@ Icons to the right indicate the status of each translation:
 * The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
 * If both icons are gray, translation has been suggested but not yet reviewed.
 * The red cross indicates that the translation has been rejected. The entire element will look opaque.
-* The trashcan, available only for rejected translations, can be used to completely delete a translation.
+* The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator, team manager, or administrator role can delete anyone's.
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
@@ -111,13 +117,7 @@ The `DIFF` option appears if there are multiple translations for one string. Tog
 
 ![Diff for suggestions](../../assets/images/pontoon/ui/suggestions_diff.png)
 
-### Read-only projects
-
-A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
-
-![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
-
-### Fluent - FTL files
+## Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look slightly different.
 
@@ -153,7 +153,7 @@ They’re designed for team members to have a conversation about the source stri
 
 ### Machinery
 
-Machinery available from the translation view shows possible translations from a variety of sources. These sources include:
+Machinery shows possible translations from a variety of sources. These sources include:
 * [Pontoon’s internal translation memory](translate.md#downloading-and-uploading-translations).
 * [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
@@ -169,7 +169,9 @@ In the tab, the number of entries is visible alongside the `MACHINERY` title in 
 
 At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.
 
-To the right of the entry, the number in green shows the percent match between the machinery string and the source string. The higher the percentage, the more likely the machinery is to be useful and a 100% match indicates that the source and machinery string are the same. The machinery source is listed in gray. Upon clicking the gray text, the machinery source will be opened in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory source.
+To the right of the entry, the number in green shows the percent match between the machinery source string and the current source string. The higher the percentage, the more likely machinery is to be useful; a 100% match indicates that the sources for the current string and for the machinery string are identical.
+
+The origin of the machinery entry is listed in gray above the source string. Clicking the gray text will open the origin in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory.
 
 Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
 
@@ -195,10 +197,10 @@ Next to the `LOCALES` title, the number of available entries is visible. The num
 
 Users can select locales to appear at the top of their Locales tab as a preferred locale. To add a locale to the preferred locale list, access the [user settings](users.md#locale-settings) page.
 
-Entries in the `LOCALES` tab above the green line are preferred locales. Entries below the green line are not preferred locales.
+Entries in the `LOCALES` tab above the green line are preferred locales. Non-preferred locales are displayed below the green line, sorted alphabetically by language name.
 
-At the left of the entry, the translation for the source string in the selected locale is visible. At the right of the entry, the language name is visible in gray, while the locale code is displayed in green.
+Each row displays the translation for the source string in the selected locale. Above each entry, the language name is visible in gray, while the locale code is displayed in green.
 
-The `LOCALES` tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can reference the methods that have been used by other languages in making a stylistic decision.
+The `LOCALES` tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can use other locales as a source of inspiration.
 
-Note that when using the `LOCALES` tab the translator should always opt for fluency in the working locale. Languages vary linguistically on many levels. The locales tab can be extremely useful, but should be used carefully, and rarely as the sole translation resource for translation.
+Note that, when using the `LOCALES` tab, the translator should always opt for fluency in their own locale. Languages vary linguistically on many levels. The locales tab can be extremely useful, but should be used carefully, and rarely as the sole translation resource for translation.
