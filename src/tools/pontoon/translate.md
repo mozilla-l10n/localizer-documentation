@@ -1,6 +1,6 @@
 # How to translate
 
-This document describes briefly how to translate and review strings in Pontoon. The documentation includes dedicated pages for learning more about Pontoon’s [interface](ui.md) and [translation resources](resources.md).
+This document describes briefly how to translate and review strings in Pontoon. The documentation includes dedicated pages for learning more about Pontoon’s [interface](ui.md) and [translation tools](ui.md/#translation-tools-and-comments).
 
 ## Translating strings
 

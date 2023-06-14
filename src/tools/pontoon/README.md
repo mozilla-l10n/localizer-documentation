@@ -9,6 +9,5 @@ This document covers how to work with [Pontoon](https://pontoon.mozilla.org/) fr
 * [Search and filters](search_filters.md).
 * [Translation user interface](ui.md).
 * [How to translate](translate.md).
-* [Translation resources](resources.md).
 * [Example workflow](workflow.md).
 * [Glossary](glossary.md).

@@ -67,7 +67,7 @@ It’s possible to set the default homepage displayed when visiting Pontoon as a
 
 `Preferred locales` can be used to display a specific group of locales before others in the `LOCALES` tab when translating strings. In the image below, the user chose to display `fr` and `es-ES` before other translations — ordered alphabetically based on the locale name. Since they’re both available the tab displays 2+118, meaning 2 preferred locales plus all others.
 
-![LOCALES tab in translation resources](../../assets/images/pontoon/users/translation_locales.png "LOCALES tab in translation resources")
+![LOCALES tab in translation tools](../../assets/images/pontoon/users/translation_locales.png "LOCALES tab in translation tools")
 
 ## User roles
 

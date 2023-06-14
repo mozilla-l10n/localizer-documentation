@@ -31,7 +31,6 @@
         * [Search and filters](tools/pontoon/search_filters.md)
         * [Translation user interface](tools/pontoon/ui.md)
         * [How to translate](tools/pontoon/translate.md)
-        * [Translation resources](tools/pontoon/resources.md)
         * [Example workflow](tools/pontoon/workflow.md)
         * [Glossary](tools/pontoon/glossary.md)
     * [Fluent](tools/fluent/README.md)

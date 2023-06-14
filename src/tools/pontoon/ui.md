@@ -11,7 +11,7 @@ Pontoon’s translation workspace consists of the main toolbar and 3 columns:
 
 ## Main toolbar
 
-The main toolbar allows users to navigate to the dashboards or to change the current resource.
+The main toolbar at the top of the page allows users to navigate to the dashboards or to change the current resource.
 
 ![Navigating in the main toolbar](../../assets/images/pontoon/ui/main_nav.png "Screenshot of the main toolbar, with the resource dropdown expanded")
 
@@ -35,7 +35,7 @@ Note that some profile menu items are only available to users with specific [per
 
 ## String list and filters
 
-The sidebar displays the list of strings in the current project resource. Each string is represented by:
+The left column displays the list of strings in the current project resource. Each string is represented by:
 * A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
 * The source string.
 * The approved translation or the most recent suggestion if available.
@@ -57,14 +57,20 @@ At the top of the sidebar, the user can access Pontoon’s [search and string fi
 
 ## Main editing space
 
-The main editing space is where the translation takes place.
+The main editing space in the middle column is where translation takes place.
 
 ![Editing space](../../assets/images/pontoon/ui/editing_space_standard.png "Screenshot of the standard editor in the editing space")
 
-It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the editing space, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
+### String navigation
 
-Above the editor, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
+The top of this space contains a string navigation interface. It’s possible to navigate sequentially through the strings by clicking the `PREVIOUS` or `NEXT` buttons located at the top of the editing space, or by using keyboard shortcuts (`ALT` + arrow down or up). A link to the current string can be copied to the clipboard using the `COPY LINK` button.
+
+### Source string
+
+Below the navigation interface, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
+
+### Editor
 
 The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
 
@@ -75,7 +81,29 @@ In the lower-left side:
 * Clicking the keyboard icon displays a list of available shortcuts.
 * The numbers displayed to the right of the keyboard icon (e.g. `50|59`) are the number of characters in the target and source string.
 
-The space below the editor displays the list of suggestions or translations for the current string.
+#### Read-only projects
+
+A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
+
+![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
+
+### Translation list
+
+The space below the editor displays the list of [translations](glossary.md#translation) for the current string.
+
+Each entry contains:
+* The name of the translator and their profile picture (linking to their profile).
+* How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
+* The translation.
+* Icons indicating translation status (see below).
+* [Translation comments](glossary.md#comment).
+
+Icons to the right indicate the status of each translation:
+* The solid green circle with checkmark indicates that the translation has been approved.
+* The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
+* If both icons are gray, translation has been suggested but not yet reviewed.
+* The red cross indicates that the translation has been rejected. The entire element will look opaque.
+* The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator, team manager, or administrator role can delete anyone's.
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
@@ -83,13 +111,13 @@ In the screenshot above, the first item is the approved translation (green check
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
-### Read-only projects
+#### Viewing translation differences
 
-A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
+The `DIFF` option appears if there are multiple translations for one string. Toggling `DIFF` compares the text to the current approved translation, or the most recent suggestion if no translation has been approved yet. Text highlighted in green indicates content that has been added, while strikethrough text in red indicates removed content. Toggling `DIFF` again will display the original string.
 
-![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
+![Diff for suggestions](../../assets/images/pontoon/ui/suggestions_diff.png)
 
-### Fluent - FTL files
+## Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look slightly different.
 
@@ -109,9 +137,9 @@ Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
 ## Translation tools and comments
 
-Built-in translation tools are located in the rightmost column. For more information about `MACHINERY`, and `LOCALES`, see the page dedicated to [Pontoon’s translation resources](resources.md).
+Built-in translation tools are located in the rightmost column.
 
-### Terminogy
+### Terminology
 
 The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
@@ -122,3 +150,57 @@ The `TERMS` tab shows the definition and translation of a term, in case the sour
 The `COMMENTS` tab is used to display existing **source string comments**, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.
 
 They’re designed for team members to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.
+
+### Machinery
+
+Machinery shows possible translations from a variety of sources. These sources include:
+* [Pontoon’s internal translation memory](translate.md#downloading-and-uploading-translations).
+* [Microsoft Terminology](https://www.microsoft.com/Language/).
+* [Google Translate](https://translate.google.com).
+* [SYSTRAN](https://www.systran.net/).
+* [Caighdean](https://github.com/kscanne/caighdean).
+* [Bing Translator](https://www.bing.com/translator) (not currently enabled on pontoon.mozilla.org).
+
+In addition, the user has the ability to search for translations containing words via [`Concordance search`](#concordance-search).
+
+In the tab, the number of entries is visible alongside the `MACHINERY` title in white. If any of the machinery matches are from translation memory, the number of matches will appear separately in green. For example, the screenshot below shows `2+1`, where the green `2` represents the two matches from translation memory and the `1` represents a machinery entry from Google Translate.
+
+![Machinery tab](../../assets/images/pontoon/ui/machinery.png)
+
+At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.
+
+To the right of the entry, the number in green shows the percent match between the machinery source string and the current source string. The higher the percentage, the more likely machinery is to be useful; a 100% match indicates that the sources for the current string and for the machinery string are identical.
+
+The origin of the machinery entry is listed in gray above the source string. Clicking the gray text will open the origin in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory.
+
+Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
+
+#### Concordance search
+
+Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name; clicking a result will automatically fill the translation into the editor. Note that the search does not need to be related to the current string or project.
+
+![Concordance search](../../assets/images/pontoon/ui/concordance_search.png)
+
+#### Stand-alone machinery
+
+Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). Use the `Machinery` link in the main navigation to access the page (this is not accessible from the translation workspace).
+
+To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press Enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
+
+### Locales
+
+The locales tab shows approved translations from Pontoon projects in other [locales](glossary.md#locale).
+
+![Locales tab](../../assets/images/pontoon/ui/locales.png)
+
+Next to the `LOCALES` title, the number of available entries is visible. The number for preferred locales is green, while the number for all other locales is in gray.
+
+Users can select locales to appear at the top of their Locales tab as a preferred locale. To add a locale to the preferred locale list, access the [user settings](users.md#locale-settings) page.
+
+Entries in the `LOCALES` tab above the green line are preferred locales. Non-preferred locales are displayed below the green line, sorted alphabetically by language name.
+
+Each row displays the translation for the source string in the selected locale. Above each entry, the language name is visible in gray, while the locale code is displayed in green.
+
+The `LOCALES` tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can use other locales as a source of inspiration.
+
+Note that, when using the `LOCALES` tab, the translator should always opt for fluency in their own locale. Languages vary linguistically on many levels. The locales tab can be extremely useful, but should be used carefully, and rarely as the sole translation resource for translation.
