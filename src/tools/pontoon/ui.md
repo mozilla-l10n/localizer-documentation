@@ -23,8 +23,6 @@ A progress chart showing the translation status of the current resource is locat
 
 ![Expanded status overview](../../assets/images/pontoon/ui/status_overview.png "Screenshot of the status graph expanded")
 
-When clicked, the information icon located to the right of the progress chart provides more information about the project.
-
 The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
 The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), etc.
@@ -51,9 +49,9 @@ Color legend:
 
 When a string is selected in the sidebar, a small icon with 4 arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
 
-At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
-
 ![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
+
+At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
 
 ## Main editing space
 
@@ -103,7 +101,7 @@ Icons to the right indicate the status of each translation:
 * The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
 * If both icons are gray, translation has been suggested but not yet reviewed.
 * The red cross indicates that the translation has been rejected. The entire element will look opaque.
-* The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator, team manager, or administrator role can delete anyone's.
+* The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator permissions can delete anyone’s.
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
@@ -150,6 +148,12 @@ The `TERMS` tab shows the definition and translation of a term, in case the sour
 The `COMMENTS` tab is used to display existing **source string comments**, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.
 
 They’re designed for team members to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.
+
+Administrators can pin or unpin a source string comment: this pinned comment will be displayed along existing comments in the editing area as `PINNED COMMENT`, and users will [receive a notification](notifications.md#comments).
+
+![Pinned comment](../../assets/images/pontoon/ui/pinned_comment.png "Screenshot of a pinned comment")
+
+The screenshot above shows a pinned comment, and the command to unpin it.
 
 ### Machinery
 

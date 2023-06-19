@@ -8,7 +8,7 @@ It’s possible to search within the currently selected project using the search
 
 Note that searches take active [filters](#filters) into account, for example a search would be performed only on missing strings if that filter was previously selected.
 
-Like in search engines, by default Pontoon will display matches that contain all the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
+Like in search engines, by default Pontoon will display matches that contain any of the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
 
 To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
@@ -27,7 +27,7 @@ Strings in Pontoon can be filtered by their status. A string can be in one of th
 ### Extra filters
 
 In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:
-* *Unchanged*: string is identical to the reference language (normally en-US).
+* *Unchanged*: string is identical to the reference language (normally `en-US`).
 * *Empty*: string has a translation, but translation contains no content.
 * *Fuzzy*: string is marked as [fuzzy](glossary.md#fuzzy) in the localized file.
 * *Rejected*: string has rejected translations.

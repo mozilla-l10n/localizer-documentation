@@ -10,7 +10,7 @@ Comments can be used, for example, to discuss possible translations with other t
 
 Pontoon supports two types of user comments:
 * *Source string comments* are associated with the source string and displayed in the `COMMENTS` tab in the right column.
-* *Translation comments* are associated with a specific translation and displayed under the corresponding translation in the History panel.
+* *Translation comments* are associated with a specific translation and displayed under the editor in the [translation list](ui.md#translation-list).
 
 User comments should not be confused with *Resource comments*, which developers can add directly to the resource file. This type of comment is displayed in the editing area, along with other information like the [resource path and context](#resource).
 
@@ -25,7 +25,7 @@ In all these cases a translation exists in the file, but is marked as fuzzy (equ
 
 ## Locale
 
-A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as en-US, where en stands for the language (English), and US for the region (United States). In some cases, the region is omitted, because the language is mostly spoken in one region.
+A locale is the combination of a language and a region, represented in Pontoon by a locale code. For example, American English is referred to as `en-US`, where `en` stands for the language (English), and `US` for the region (United States). In some cases, the region is omitted, because the language is mostly spoken in one region.
 
 In Pontoon, each locale maps to a team.
 
@@ -43,7 +43,7 @@ Resources are localization files within a repository (see [version control syste
 
 Terminology — sometimes also referred to as a *Glossary* — is a list of terms and their definitions. Pontoon will highlight any terms in the source string and show their definitions as well as translations into the target language.
 
-TBX, or TermBase eXchange, is a standard file format used in the translation industry to represent and exchange terminological information. Pontoon Terminology can be downloaded in the TBX format.
+`TBX`, or *TermBase eXchange*, is a standard file format used in the translation industry to represent and exchange terminological information. Pontoon Terminology can be downloaded in the `TBX` format.
 
 ## Translation
 
@@ -56,7 +56,7 @@ A translation is any submission of the target content. There are several types o
 
 Translation memory is a list of all approved translations for any string. It can be leveraged to provide suggestions when translating new content.
 
-TMX, or Translation Memory eXchange, is a standard file format used in the translation industry to represent and exchange translation memories. Pontoon Translation memory can be downloaded in the TMX format.
+`TMX`, or *Translation Memory eXchange*, is a standard file format used in the translation industry to represent and exchange translation memories. Pontoon Translation memory can be downloaded in the `TMX` format.
 
 ## Translation mode
 

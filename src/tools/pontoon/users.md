@@ -75,7 +75,7 @@ There are five user roles in Pontoon:
 * **Contributors** can only submit suggestions. This is the default role for new users.
 * **Translators** can submit translations directly in a specific locale, and review other contributors’ suggestions.
 * **Team Managers** can perform the same actions as translators, but also manage other users and update their permissions.
-* **Project Managers** don’t have specific translator permissions, but they act as the point of contact for a specific project. Their name is displayed in the header of Project and Localization pages, and using the `REQUEST CONTEXT or REPORT ISSUE` function will tag them in a comment.
+* **Project Managers** don’t have translator permissions, but they act as the point of contact for a specific project. Their name is displayed in the header of Project and Localization pages, and using the `REQUEST CONTEXT or REPORT ISSUE` function will tag them in a comment.
 * **Administrators** can manage Pontoon, e.g. adding or removing projects, and act as Team Managers for all locales.
 
 ## Managing permissions
@@ -86,7 +86,7 @@ By default there’s only a `General` section: permissions defined here will app
 
 ![General locale permissions](../../assets/images/pontoon/users/permissions_general.png)
 
-To move a user to a different column, hover the email address: arrows will appear to move the element to the left or right. Note that a user needs to log in at least once in Pontoon in order to upgrade their permission – simply having a Firefox account is not sufficient.
+To move a user to a different column, hover the email address: arrows will appear to move the element to the left or right. Note that a user needs to log in at least once in Pontoon in order to upgrade their permission – simply having an account is not sufficient.
 
 Use the `SAVE` button to store the configuration before leaving this window.
 
@@ -96,4 +96,6 @@ By clicking `ADD CUSTOM PERMISSIONS PER PROJECT` (highlighted in orange), it’s
 
 ![Project permissions](../../assets/images/pontoon/users/permissions_project.png)
 
-Note that it’s not possible to override Team Managers, as they will always be able to submit translations in any of the projects available for their locale.
+Note that:
+* The list of translators defined for a specific project overrides the list defined in the *General* section. If a user needs to be able to translate all projects, they need to be listed in all custom permissions on top of the *General* section.
+* It’s not possible to override Team Managers, as they will always be able to submit translations in any of the projects available for their locale.
