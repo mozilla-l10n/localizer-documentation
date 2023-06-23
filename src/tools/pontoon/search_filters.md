@@ -38,9 +38,9 @@ Filters can be accessed by clicking the icon on the left of the search field.
 ![Filters](../../assets/images/pontoon/search_filters/filters.png)
 
 At this point it’s possible to:
-* Click directly on the name of one of the filters. This will select and activate only this filter, and the search field placeholder will change accordingly. For example, clicking on *Missing* will show only missing strings, and the placeholder will read *Search in Missing*.
-* Click on one or more filter icons or user avatars (multiple filters can be applied at once). Hovering over the icons transforms the icon into check marks. Clicking an icon will select that filter and a new button *APPLY X FILTERS* will appear at the bottom of the panel, where `X` is the number of active filters.
-* Click *EDIT RANGE* on `TRANSLATION TIME` to select a **time range**. Pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on *SAVE RANGE* to store the range as a filter. A new button *APPLY X FILTERS* will appear at the bottom of the panel, where `X` is the number of active filters.
+* Click directly on the name of one of the filters. This will select and activate only this filter, and the search field placeholder will change accordingly. For example, clicking on `Missing` will show only missing strings, and the placeholder will read `Search in Missing`.
+* Click on one or more filter icons or user avatars (multiple filters can be applied at once). Hovering over the icons transforms the icon into check marks. Clicking an icon will select that filter and a new button `APPLY X FILTERS` will appear at the bottom of the panel, where `X` is the number of active filters.
+* Click `EDIT RANGE` on `TRANSLATION TIME` to select a time range. Pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on `SAVE RANGE` to store the range as a filter. A new button `APPLY X FILTERS` will appear at the bottom of the panel, where `X` is the number of active filters.
 
 ![Multiple filters](../../assets/images/pontoon/search_filters/filters_multiple.png)
 

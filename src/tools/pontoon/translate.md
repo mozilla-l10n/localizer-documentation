@@ -6,7 +6,7 @@ This document describes briefly how to translate and review strings in Pontoon. 
 
 When a string is selected in the sidebar, users can input a translation using the editor available in the middle of the page. Note that, if the string already has a [translation](glossary.md#translation), the editor will be pre-populated with text that the user can modify.
 
-Depending on the current translation mode, the UI will look slightly different.
+Depending on the current [translation mode](glossary.md#translation-mode), the UI will look slightly different.
 
 When the user is in *Suggestion Mode* — [manually selected](#manually-switch-to-suggestion-mode), or because the user doesn’t have permissions to submit translations directly — a blue `SUGGEST` button will be displayed in the lower-right side of the editing space.
 

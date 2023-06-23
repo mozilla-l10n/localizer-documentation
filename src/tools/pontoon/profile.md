@@ -28,4 +28,4 @@ By default, the chart will show data for **all contributions** over the last yea
 * Reviews received.
 * Submissions and reviews.
 
-The *activity log* below this chart will display the user’s activity in more detail for the last month. Clicking on a specific square (day) in the chart will only show the activity for that day. Each line item in the activity log is a link that allows to jump to those specific strings in the translation editor.
+The activity log below this chart will display the user’s activity in more detail for the last month. Clicking on a specific square (day) in the chart will only show the activity for that day. Each line item in the activity log is a link that allows to jump to those specific strings in the translation editor.

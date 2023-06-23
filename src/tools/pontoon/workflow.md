@@ -42,6 +42,6 @@ General notes:
     * If in agreement, confirm the reviewer’s version by clicking the green `SAVE` button or the checkmark icon near the string in the list below the editor (it turns green when hovered).
     * If suggesting an alternative, type it into the editor, then hit the blue `SUGGEST` button. Then resubmit it to the reviewer from Phase 2.
     * Reject suggestions not considered suitable by clicking on the cross icon near the string (it turns red when hovered).
-    * If Translator A does not have the *Translator* or *Team manager* role, they will be unable to confirm or reject a suggestion. In that case, use [translation comments](glossary.md#comment) to discuss the translation with the reviewer.
+    * If Translator A does not have the Translator or Team manager role, they will be unable to confirm or reject a suggestion. In that case, use [translation comments](glossary.md#comment) to discuss the translation with the reviewer.
 
 Repeat, switching translators, until a consensus is reached.
