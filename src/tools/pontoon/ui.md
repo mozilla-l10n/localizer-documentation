@@ -3,9 +3,9 @@
 <!-- toc -->
 
 Pontoon’s translation workspace consists of the main toolbar and 3 columns:
-* The left column includes a list of strings with a search field at the top.
-* The main editing space is located in the middle column.
-* The right column includes information about terminology, source string comments, suggestions from translation memory, machine translation, and other locales.
+* The left column contains the string list for the current resource with a search field at the top.
+* The middle column contains the main editing space.
+* The right column contains terminology, source string comments, suggestions from translation memory, machine translation, and translations from other locales.
 
 ![Translation Workspace](../../assets/images/pontoon/ui/translation_workspace.png "Screenshot of the translation workspace in Pontoon")
 
@@ -34,7 +34,7 @@ Note that some profile menu items are only available to users with specific [per
 ## String list and filters
 
 The left column displays the list of strings in the current project resource. Each string is represented by:
-* A colored square that identifies the string status (i.e. *Missing*, *Translated*, etc.).
+* A colored square that identifies the string [status](search_filters.md#translation-status) (i.e. *Missing*, *Translated*, etc.).
 * The source string.
 * The approved translation or the most recent suggestion if available.
 
@@ -47,7 +47,7 @@ Color legend:
 * **<span style="color: #ffa10f;">orange</span>**: translation has warnings.
 * **<span style="color: #f36;">red</span>**: translation has errors.
 
-When a string is selected in the sidebar, a small icon with 4 arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
+When a string is selected in the sidebar, a small icon with four arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
 
 ![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
 
@@ -81,7 +81,7 @@ In the lower-left side:
 
 #### Read-only projects
 
-A project could be enabled in *read-only* mode for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
+A project could be enabled in *read-only mode* for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
 
 ![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
 
@@ -96,7 +96,7 @@ Each entry contains:
 * Icons indicating translation status (see below).
 * [Translation comments](glossary.md#comment).
 
-Icons to the right indicate the status of each translation:
+Icons to the right indicate the [status](search_filters.md#translation-status) of each translation:
 * The solid green circle with checkmark indicates that the translation has been approved.
 * The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
 * If both icons are gray, translation has been suggested but not yet reviewed.
@@ -105,7 +105,7 @@ Icons to the right indicate the status of each translation:
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
-In the screenshot above, the first item is the approved translation (green checkmark), while the other 2 are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
+In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
@@ -123,7 +123,7 @@ When working on FTL (Fluent) files, the editing space will look slightly differe
 
 In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).
 
-The following image is an example of a string with plurals: while English only has 2 forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has 3 forms (highlighted in orange).
+The following image is an example of a string with plurals: while English only has two forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has three forms (highlighted in orange).
 
 ![Translation editing space for Fluent string with plurals](../../assets/images/pontoon/ui/editing_space_ftl_plurals.png "Screenshot of the translation editing space for Fluent string with plurals")
 

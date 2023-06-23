@@ -37,7 +37,7 @@ Users in Pontoon can have different permissions depending on their role:
 
 ## Resource
 
-Resources are localization files within a repository (see [version control system](#version-control-system)) used to store source content and translations. They can be in different file formats but generally follow the same key-value structure, where the key (displayed as *Context* in the Source string panel) is a unique identifier and the value is a text snippet that needs to be translated.
+Resources are localization files within a repository (see [version control system](#version-control-system)) used to store source content and translations. They can be in different file formats but generally follow the same key-value structure, where the key (displayed as `Context` in the Source string panel) is a unique identifier and the value is a text snippet that needs to be translated.
 
 ## Terminology
 

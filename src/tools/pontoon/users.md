@@ -80,7 +80,7 @@ There are five user roles in Pontoon:
 
 ## Managing permissions
 
-A **Team Manager** can upgrade other users’ permissions within a locale. To manage users, open the team page and select the `PERMISSIONS` tab (it will only be visible to **Team Managers** and **Administrators**).
+A Team Manager can upgrade other users’ permissions within a locale. To manage users, open the team page and select the `PERMISSIONS` tab (it will only be visible to Team Managers and Administrators).
 
 By default there’s only a `General` section: permissions defined here will apply to all projects, but can be overridden by custom project permissions.
 
@@ -97,5 +97,5 @@ By clicking `ADD CUSTOM PERMISSIONS PER PROJECT` (highlighted in orange), it’s
 ![Project permissions](../../assets/images/pontoon/users/permissions_project.png)
 
 Note that:
-* The list of translators defined for a specific project overrides the list defined in the *General* section. If a user needs to be able to translate all projects, they need to be listed in all custom permissions on top of the *General* section.
+* The list of translators defined for a specific project overrides the list defined in the `General` section. If a user needs to be able to translate all projects, they need to be listed in all custom permissions on top of the `General` section.
 * It’s not possible to override Team Managers, as they will always be able to submit translations in any of the projects available for their locale.
