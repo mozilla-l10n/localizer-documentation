@@ -17,21 +17,21 @@ To search for an exact match, wrap the search terms in double quotes, e.g. `"new
 ### Translation status
 
 Strings in Pontoon can be filtered by their status. A string can be in one of the following statuses:
-* *Translated*: string has an approved translation. The translation is saved to the localized file when using a [version control system](glossary.md#version-control-system) (VCS).
-* *Pretranslated*: string has been pretranslated but has not been reviewed. Unreviewed pretranslation are saved to the localized file when using a VCS.
-* *Warnings*: string contains issues classified as [warnings](translate.md#warnings).
-* *Errors*: string contains [critical issues](translate.md#errors).
-* *Missing*: string doesn’t have any approved translations.
-* *Unreviewed*: string has suggested translations that have not been reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
+* **Translated**: string has an approved translation. The translation is saved to the localized file when using a [version control system](glossary.md#version-control-system) (VCS).
+* **Pretranslated**: string has been pretranslated but has not been reviewed. Unreviewed pretranslation are saved to the localized file when using a VCS.
+* **Warnings**: string contains issues classified as [warnings](translate.md#warnings).
+* **Errors**: string contains [critical issues](translate.md#errors).
+* **Missing**: string doesn’t have any approved translations.
+* **Unreviewed**: string has suggested translations that have not been reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
 
 ### Extra filters
 
 In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:
-* *Unchanged*: string is identical to the reference language (normally `en-US`).
-* *Empty*: string has a translation, but translation contains no content.
-* *Fuzzy*: string is marked as [fuzzy](glossary.md#fuzzy) in the localized file.
-* *Rejected*: string has rejected translations.
-* *Missing without Unreviewed*: string has `Missing` translation status and does not have `Unreviewed` translations.
+* **Unchanged**: string is identical to the reference language (normally `en-US`).
+* **Empty**: string has a translation, but translation contains no content.
+* **Fuzzy**: string is marked as [fuzzy](glossary.md#fuzzy) in the localized file.
+* **Rejected**: string has rejected translations.
+* **Missing without Unreviewed**: string has `Missing` translation status and does not have `Unreviewed` translations.
 
 Filters can be accessed by clicking the icon on the left of the search field.
 
