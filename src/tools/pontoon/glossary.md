@@ -35,6 +35,15 @@ Users in Pontoon can have different permissions depending on their role:
 * Translators can either submit approved translations directly or review suggestions from other users. Unlike in some other Translation Management Systems, this is a single permission in Pontoon, and it’s referred to as *Translator permission*.
 * Team managers have translator permissions, but can also change permissions assigned to other users (i.e., ”promote” or ”demote” them).
 
+## Pretranslation
+
+Pretranslation is a feature in Pontoon that relies on machine translation ([Google AutoML Translation](https://cloud.google.com/translate/automl/docs)) and [translation memory](#translation-memory) to automatically translate strings and save them in localized files.
+
+If pretranslation is enabled for a combination of locale and project, when a new string is added in Pontoon:
+* It will be translated (pretranslated) using a 100% match from translation memory or, should that not be available, using the Google AutoML Translation engine with a custom model.
+* The string will be stored in Pontoon with the *pretranslated* status.
+* For projects using [version control systems](#version-control-system), the translation will be stored in localized files outside of Pontoon.
+
 ## Resource
 
 Resources are localization files within a repository (see [version control system](#version-control-system)) used to store source content and translations. They can be in different file formats but generally follow the same key-value structure, where the key (displayed as `Context` in the Source string panel) is a unique identifier and the value is a text snippet that needs to be translated.
