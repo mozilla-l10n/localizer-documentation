@@ -39,7 +39,7 @@ Users in Pontoon can have different permissions depending on their role:
 
 Pretranslation is a feature in Pontoon that relies on machine translation ([Google AutoML Translation](https://cloud.google.com/translate/automl/docs)) and [translation memory](#translation-memory) to automatically translate strings and save them in localized files.
 
-If pretranslation is enabled for a combination of locale and project, when a new string is added in Pontoon:
+If pretranslation is enabled for a combination of a locale and a project, when a new string is added in Pontoon:
 * It will be translated (pretranslated) using a 100% match from translation memory or, should that not be available, using the Google AutoML Translation engine with a custom model.
 * The string will be stored in Pontoon with the *pretranslated* status.
 * For projects using [version control systems](#version-control-system), the translation will be stored in localized files outside of Pontoon.
