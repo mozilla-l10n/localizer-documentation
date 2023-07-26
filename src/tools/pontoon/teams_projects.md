@@ -1,4 +1,4 @@
-# Teams and projects
+# Team and project pages
 
 <!-- toc -->
 
