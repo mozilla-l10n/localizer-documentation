@@ -4,7 +4,7 @@
 
 The Teams page, accessible using the `/teams` URL (e.g. [pontoon.mozilla.org/teams](https://pontoon.mozilla.org/teams/)), lists all locales that are enabled in Pontoon. From here it’s possible to access a specific [Team page](#team-page), which contains a list of all projects enabled for the requested locale. Selecting a project from the Team page leads to the so-called the [Localization page](#localization-page).
 
-From each locale’s Team page it’s also possible to [Request a project](#requesting-a-project). Note that this is a request to add the locale to a project already available in Pontoon, it can’t be used for requesting a brand new project.
+From each locale’s Team page it’s also possible to [Request a project](#requesting-a-project) or [Request pretranslation](#requesting-pretranslation). Note that this is a request to add the locale to a project already available in Pontoon, it can’t be used for requesting a brand new project.
 
 The Projects page, accessible using the `/projects` URL (e.g. [pontoon.mozilla.org/projects](https://pontoon.mozilla.org/projects/)), lists all projects that are available in Pontoon. From here it’s possible to access a [Project page](#project-page), which shows all locales that are enabled for the requested project. Selecting a locale in the Project page leads to the [Localization page](#localization-page).
 
@@ -51,11 +51,27 @@ It’s possible to request a project from a Team page. Note that this is a reque
 
 ![Request a project](../../assets/images/pontoon/teams_projects/request_project.png)
 
-Click on `REQUEST MORE PROJECTS`, select the project to add and then click `REQUEST NEW PROJECT` (at least one project needs to be selected for the button to be displayed).
+The button is hidden if all available projects are already enabled for the locale.
+
+Click on `REQUEST MORE PROJECTS`, select the projects to add and then click `REQUEST NEW PROJECT` (at least one project needs to be selected for the button to be displayed).
 
 An email will be sent to Pontoon’s administrators, and the Project manager in charge of the project will act on the request. Please note that:
 * Some projects have a closed list of supported locales, meaning that these projects can’t be requested on Pontoon.
 * Some projects can be requested but may not be enabled for practical restrictions related to the project itself (e.g. lack of support for the locale in iOS).
+
+### Requesting pretranslation
+
+For [locales supported by Google AutoML Translation](https://cloud.google.com/translate/automl/docs/languages), it’s possible to request to enable [pretranslation](glossary.md#pretranslation) for specific projects from a Team page.
+
+![Request pretranslation](../../assets/images/pontoon/teams_projects/request_pretranslation.png)
+
+The button is only displayed to translators and team managers for the locale.
+
+Click on `REQUEST PRETRANSLATION`, select the projects to add and then click `REQUEST PRETRANSLATION` (at least one project needs to be selected for the button to be displayed).
+
+An email will be sent to Pontoon’s administrators, and they will act on the request. Please note that:
+* If a locale doesn’t have pretranslation enabled for any projects yet, it’s necessary to set up and train a new custom model, and this operation requires several hours.
+* For `pontoon.mozilla.org`, each request will be evaluated against specific opt-in guidelines.
 
 ## Projects
 
