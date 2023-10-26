@@ -31,18 +31,13 @@ In this section it’s possible to update the display name and other personal in
 
 ### Appearance
 
-There are three theme options for you to choose from:
+The user can chose between a light and dark combination of colors for Pontoon. There are three theme options available:
 
 * Light.
 * Dark.
-* Match system.
+* Match system (aligns with the theme used by the operating system).
 
-The “Match system” theme aligns with the theme of your operating system.
-
-To change the theme:
-
-1. Press the button corresponding to your preferred theme.
-2. Once you've made your selection, it will be saved as your preference.
+To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
 
 ### External accounts
 

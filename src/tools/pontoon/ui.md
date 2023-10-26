@@ -33,29 +33,15 @@ Note that some profile menu items are only available to users with specific [per
 
 ## Theme toggle
 
-### Location
+A toggle to switch the current them is available in the profile menu and in the [settings page](users.md#appearance).
 
-You can find the theme toggle in the following locations:
-
-* In the profile menu.
-* On the [settings page](users.md#appearance).
-
-### Options
-
-There are three theme options for you to choose from:
+There are three theme options available:
 
 * Light.
 * Dark.
-* Match system.
+* Match system (aligns with the theme used by the operating system).
 
-The “Match system” theme aligns with the theme of your operating system.
-
-### Selection
-
-To change the theme:
-
-1. Press the button corresponding to your preferred theme.
-2. Once you've made your selection, it will be saved as your preference.
+To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
 
 ## String list and filters
 
