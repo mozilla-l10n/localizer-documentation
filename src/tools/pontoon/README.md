@@ -13,3 +13,5 @@ If you’re interested in administrating Pontoon, please read [these documents](
 * [How to translate](translate.md).
 * [Example workflow](workflow.md).
 * [Glossary](glossary.md).
+
+**Note:** The screenshots in this documentation use the dark theme, but a light theme is also available.
