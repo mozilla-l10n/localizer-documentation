@@ -29,6 +29,21 @@ In this section it’s possible to update the display name and other personal in
 * `Contact email address`: if provided, this will be displayed in the Profile page instead of the login email address.
 * `Bio`: a short text that will be displayed in the Profile page.
 
+### Appearance
+
+There are three theme options for you to choose from:
+
+* Light.
+* Dark.
+* Match system.
+
+The “Match system” theme aligns with the theme of your operating system.
+
+To change the theme:
+
+1. Press the button corresponding to your preferred theme.
+2. Once you've made your selection, it will be saved as your preference.
+
 ### External accounts
 
 In this section it’s possible to specify the username used in external accounts, like GitHub or Bugzilla. If provided, this information will be displayed in the Profile page.
