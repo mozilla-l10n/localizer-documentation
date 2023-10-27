@@ -29,6 +29,16 @@ In this section it’s possible to update the display name and other personal in
 * `Contact email address`: if provided, this will be displayed in the Profile page instead of the login email address.
 * `Bio`: a short text that will be displayed in the Profile page.
 
+### Appearance
+
+The user can chose between a light and dark combination of colors for Pontoon. There are three theme options available:
+
+* Light.
+* Dark.
+* Match system (aligns with the theme used by the operating system).
+
+To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
+
 ### External accounts
 
 In this section it’s possible to specify the username used in external accounts, like GitHub or Bugzilla. If provided, this information will be displayed in the Profile page.
