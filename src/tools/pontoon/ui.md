@@ -25,17 +25,13 @@ A progress chart showing the translation status of the current resource is locat
 
 The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
-The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), [change their theme](ui.md#theme-toggle), etc.
+The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), change their theme, etc.
 
 ![Profile menu](../../assets/images/pontoon/ui/profile_menu.png "Screenshot of the profile menu")
 
 Note that some profile menu items are only available to users with specific [permissions](users.md#user-roles).
 
-## Theme toggle
-
-A toggle to switch the current them is available in the profile menu and in the [settings page](users.md#appearance).
-
-There are three theme options available:
+A selector to change the current theme is available in the profile menu and in the [settings page](users.md#appearance). There are three theme options available:
 
 * Light.
 * Dark.
