@@ -113,7 +113,7 @@ Icons to the right indicate the [status](search_filters.md#translation-status) o
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
-In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions. 
+In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
 
 #### Translation comments
 
