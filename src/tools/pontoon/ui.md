@@ -219,6 +219,6 @@ Note that, when using the `LOCALES` tab, the translator should always opt for fl
 
 ## Smaller screens
 
-Translation workspace is responsive, which means the layout will adapt to smaller screens. Everything you do on your desktop computer or laptop, you can also do on your phone or tablet. Review strings, fix typos or even translate a few strings on the go.
+The translation workspace is responsive, which means the layout will adapt to smaller screens. Everything you do on your desktop computer or laptop, you can also do on your phone or tablet: review strings, fix typos or even translate a few strings on the go.
 
 ![Mobile UI](../../assets/images/pontoon/ui/mobile_ui.png "Screenshot of the mobile UI")
