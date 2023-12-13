@@ -113,7 +113,11 @@ Icons to the right indicate the [status](search_filters.md#translation-status) o
 
 ![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
-In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions. By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
+In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
+
+#### Translation comments
+
+By clicking the `COMMENT` button it’s possible to add a **translation comment** to this specific translation. To mention another user in the comment, start typing `@` followed by their name.
 
 If there is already a comment associated with a string, the button will display the number of comments (e.g. `1 COMMENT` for the first rejected suggestion).
 
