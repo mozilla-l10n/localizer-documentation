@@ -220,3 +220,9 @@ Each row displays the translation for the source string in the selected locale. 
 The `LOCALES` tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can use other locales as a source of inspiration.
 
 Note that, when using the `LOCALES` tab, the translator should always opt for fluency in their own locale. Languages vary linguistically on many levels. The locales tab can be extremely useful, but should be used carefully, and rarely as the sole translation resource for translation.
+
+## Smaller screens
+
+The translation workspace is responsive, which means the layout will adapt to smaller screens. Everything you do on your desktop computer or laptop, you can also do on your phone or tablet: review strings, fix typos or even translate a few strings on the go.
+
+![Mobile UI](../../assets/images/pontoon/ui/mobile_ui.png "Screenshot of the mobile UI")
