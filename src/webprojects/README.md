@@ -6,4 +6,5 @@ This set of documentation contains basic information on localizing and testing w
 * [Addons.mozilla.org (AMO)](amo.md).
 * [Developer.mozilla.org (MDN)](mdn.md).
 * [Mozilla Donate website](fundraising.md).
+* [Firefox Relay Website & Firefox Relay add-on](webprojects/relay.md)
 * [Support.mozilla.org (SUMO)](sumo.md).

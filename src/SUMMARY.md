@@ -46,6 +46,7 @@
     * [Addons.mozilla.org](webprojects/amo.md)
     * [Developer.mozilla.org (MDN)](webprojects/mdn.md)
     * [Mozilla Donate website](webprojects/fundraising.md)
+    * [Firefox Relay Website & Firefox Relay add-on](webprojects/relay.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
 [l10n resources](misc/l10n_resources.md)
