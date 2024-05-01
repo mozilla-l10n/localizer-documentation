@@ -193,7 +193,7 @@ Be careful when using the machinery tab as suggestions may not match the source 
 
 #### Large language model (LLM) integration
 
-For all locales that use Google Translate as a translation source, a dropdown labeled `AI` becomes available. This feature refines the Google Translate output using a LLM. Collapsing this dropdown will reveal three options:
+For all locales that use Google Translate as a translation source, a dropdown labeled `AI` becomes available. This feature refines the Google Translate output using an LLM. Collapsing this dropdown will reveal three options:
 * `REPHRASE`: Generate an alternative to this translation.
 * `MAKE FORMAL`: Generate a more formal version of this translation.
 * `MAKE INFORMAL`: Generate a more informal version of this translation.
