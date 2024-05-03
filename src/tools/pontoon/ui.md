@@ -193,20 +193,16 @@ Be careful when using the machinery tab as suggestions may not match the source 
 
 #### Large language model (LLM) integration
 
-For all locales that use Google Translate as a translation source, a dropdown labeled `AI` becomes available. This feature refines the Google Translate output using an LLM. Collapsing this dropdown will reveal three options:
+Pontoon will show a dropdown labeled `AI` for all locales that have Google Translate available as a translation source. This feature refines the Google Translate output using an LLM. Opening this dropdown will reveal three options:
 * `REPHRASE`: Generate an alternative to this translation.
 * `MAKE FORMAL`: Generate a more formal version of this translation.
 * `MAKE INFORMAL`: Generate a more informal version of this translation.
 
-After selecting an option, the revised translation will replace the original suggestion. Once a new translation is generated, another option `SHOW ORIGINAL` will be seen in the dropdown menu. You can revert to the original translation by selecting the `SHOW ORIGINAL` option from the dropdown menu.
-
 ![Dropdown to use the LLM feature](../../assets/images/pontoon/ui/llm_dropdown.png "Screenshot of the dropdown to use the LLM feature")
 
-The screenshot above displays the dropdown to use the LLM feature.
+After selecting an option, the revised translation will replace the original suggestion. Once a new translation is generated, another option `SHOW ORIGINAL` will be available in the dropdown menu. Selecting it will revert to the original suggestion.
 
 ![Enhanced translation output from the LLM rephrasing the initial Google Translate result.](../../assets/images/pontoon/ui/llm_dropdown_rephrased.png "Screenshot of enhanced translation output from the LLM rephrasing the initial Google Translate result.")
-
-The screenshot above displays the enhanced translation output from the LLM rephrasing the initial Google Translate result.
 
 #### Concordance search
 
