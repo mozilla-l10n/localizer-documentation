@@ -191,6 +191,19 @@ The origin of the machinery entry is listed in gray above the source string. Cli
 
 Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.
 
+#### Large language model (LLM) integration
+
+Pontoon will show a dropdown labeled `AI` for all locales that have Google Translate available as a translation source. This feature refines the Google Translate output using an LLM. Opening this dropdown will reveal three options:
+* `REPHRASE`: Generate an alternative to this translation.
+* `MAKE FORMAL`: Generate a more formal version of this translation.
+* `MAKE INFORMAL`: Generate a more informal version of this translation.
+
+![Dropdown to use the LLM feature](../../assets/images/pontoon/ui/llm_dropdown.png "Screenshot of the dropdown to use the LLM feature")
+
+After selecting an option, the revised translation will replace the original suggestion. Once a new translation is generated, another option `SHOW ORIGINAL` will be available in the dropdown menu. Selecting it will revert to the original suggestion.
+
+![Enhanced translation output from the LLM rephrasing the initial Google Translate result.](../../assets/images/pontoon/ui/llm_dropdown_rephrased.png "Screenshot of enhanced translation output from the LLM rephrasing the initial Google Translate result.")
+
 #### Concordance search
 
 Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name; clicking a result will automatically fill the translation into the editor. Note that the search does not need to be related to the current string or project.
