@@ -2,7 +2,7 @@
 
 ## Search
 
-It’s possible to search within the currently selected project using the search field. Searches include strings, string IDs and comments.
+It’s possible to search within the currently selected project using the search field. Searches include strings and string IDs.
 
 ![Search field](../../assets/images/pontoon/search_filters/search_field.png)
 
