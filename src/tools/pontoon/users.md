@@ -26,8 +26,13 @@ The profile picture can be set or updated on [Gravatar](http://gravatar.com/) by
 In this section it’s possible to update the display name and other personal information:
 * `Display name`: it’s the name displayed in Pontoon, for example when submitting a translation or suggestion. It’s also used as the author name when committing translations to version control system (i.e. git or hg repositories).
 * `Username`: this is currently used to generate the URL for the [Profile page](profile.md) (e.g. `https://pontoon.mozilla.org/contributors/USERNAME/`). If not provided, a hash will be used instead of the username.
-* `Contact email address`: if provided, this will be displayed in the Profile page instead of the login email address.
 * `Bio`: a short text that will be displayed in the Profile page.
+
+### Email
+
+In this section it’s possible to update the display name and other personal information:
+* `Contact email address`: if provided, this email address will be used for email communications and displayed in the Profile page instead of the login email address.
+* `Email communications`: if enabled, you will get the latest updates about localization at Mozilla, announcements about new Pontoon features, invitations to contributor events and more.
 
 ### Appearance
 
@@ -61,7 +66,7 @@ Pontoon can send internal notifications to users for specific events. All notifi
 
 For more information about this topic, refer to the page dedicated to [notifications](notifications.md).
 
-### Editor settings
+### Editor
 
 `Translation Toolkit Checks` (checks for number of sentences, placeholders, HTML tags, punctuation, etc.) are performed when saving a translation. For more information about quality checks, see [this document](translate.md#quality-checks).
 
