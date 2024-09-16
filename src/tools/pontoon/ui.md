@@ -76,6 +76,12 @@ The top of this space contains a string navigation interface. It’s possible to
 Below the navigation interface, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
 In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to request more information about the current string: it will focus the [COMMENTS section](##source-string-comments), and mention the project manager for the project.
 
+#### Context
+
+Sometimes you may want to investigate more context about a particular string through an external resource such as a [Version Control System](glossary.md#version-control-system). The `CONTEXT` information provided underneath the source string shows the identifier, file, and project for the string - allowing you to find the string within the codebase of the project. For example, for some Mozilla projects these can be used to [track strings to bugs](../mercurial/tracking_back_string_to_bug.md).
+
+![Context](../../assets/images/pontoon/ui/context.png)
+
 ### Editor
 
 The editor is located in the middle section of the column, and it’s where users can input or edit their translations.
