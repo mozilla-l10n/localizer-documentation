@@ -1,33 +1,49 @@
-# How to identify the bug that introduced a string
+# How to identify Bugzilla bugs that introduced a string
 
-Sometimes it’s helpful to identify which bug introduced a specific string, for example to check if an issue was already reported, or find out more information on a feature.
+Sometimes it’s helpful to identify which bug on [Bugzilla](https://bugzilla.mozilla.org) introduced a specific string, for example to check if an issue was already reported, or find out more information on a feature.
+
+Note: These instructions apply only to projects that make use of Bugzilla, which currenly are Firefox projects for desktop and Android.
 
 ## Find the string
 
-The first step is to identify where the string is within the Mercurial repository, and the fastest way is to use [Transvision](https://transvision.mozfr.org).
+The first step is to identify where the string is within the Mercurial repository by using [Searchfox](https://searchfox.org/).
 
-For example, if you want to know which bug introduced the string `Would you like to let this site start a server accessible to nearby devices and people?`, you can search for the [string](https://transvision.mozfr.org/?recherche=Would+you+like+to+let+this+site+start+a+server+accessible+to+nearby+devices+and+people%3F&repo=gecko_strings&sourcelocale=en-US&locale=it&search_type=strings_entities&perfect_match=perfect_match) or the identifier (if you already know it).
+For example, if you want to know which bug introduced the string `Password quality meter`, you can search for the [string](https://searchfox.org/mozilla-central/search?q=Password+quality+meter&path=&case=false&regexp=false). This may return multiples strings with the same text, so to find the exact string you can use the the [identifier](https://searchfox.org/mozilla-central/search?q=password-quality-meter&path=&case=false&regexp=false) (which can be found from [CONTEXT](../pontoon/ui.md#context) in Pontoon).
 
-In the results, you can use the `<source>` link in the en-US column to [open the file](https://hg.mozilla.org/l10n/gecko-strings/file/default/mobile/android/chrome/browser.properties) in Mercurial.
+The results may look something like this:
 
-Note that Transvision will open the `gecko-strings` repository, not the source code repository. Starting from Firefox 57, all versions of Firefox desktop and Firefox for Android ship from a single localization repository ([l10n-central](https://hg.mozilla.org/l10n-central/)). The repository containing the reference English strings, called [gecko-strings](https://hg.mozilla.org/l10n/gecko-strings), is generated from strings landing in the code repository for each branch (e.g. mozilla-central and comm-central for Nightly, mozilla-beta and comm-beta for Beta, etc.), and it’s exposed to localization tools like Pontoon and Transvision.
+![Searchfox](../../assets/images/mercurial/searchfox.png)
+
+You can further refine results to only localization files by using specific localization file extensions in the `Path filter` field in the top right:
+* For Firefox: limit the search to `.ftl` or `.properties` files. You can find information on the file from its [CONTEXT](../pontoon/ui.md#context). Or you can use `{.ftl,.properties}` to only show files with those extensions.
+* For Android: limit the search to `.xml` files.
+
+![Searchfox](../../assets/images/mercurial/searchfox-path.png)
+
+Clicking on the string will open the file in Searchfox and highlight the string.
 
 ## Find the bug
 
-At the top of the page there’s an **annotate** link that will display the changeset associated to each line.
+Searchfox shows details on the revision in which each line of code was introduced to the file, represented on the left hand sign as a bar with alternating shades of gray. Hovering over the bar next to the highlighted line containing your string will show you the revision details. The first line of the revision details contains a bug reference, a number represented as a link. Clicking the link will take you to Bugzilla where you can then check things like dependencies and comments.
 
-Now you only need to search in the page for the string, hover the link on the leftmost column, and open the [bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1292639) (if an active link is available in the commit message), or select the [changeset link](https://hg.mozilla.org/l10n/gecko-strings/rev/1ed110e5b9cf) in the popup. The commit message will always have a bug reference, and you can then check dependencies and comments.
+![Searchfox](../../assets/images/mercurial/searchfox-revision.png)
 
-![Changeset info](../../assets/images/mercurial/to_changeset.png)
+### Examining the changeset in Mercurial
+
+You can also access the changeset in Mercurial. To view that, click `full diff` on the third line that says `Show annotated diff or full diff`.
+
+This will show the full commit message and all the changes made as part of the bug.
+
+![Changeset info](../../assets/images/mercurial/mercurial-changeset.png)
 
 ## Looking at older revisions
 
-This method doesn’t always work: sometimes a changeset only moves strings around, so you would need to repeat the process for an older revision of the file.
+The above method doesn’t always work: sometimes a changeset only moves strings around, so you would need to repeat the process for an older revision of the file.
 
-At the top of the changeset, there’s a list of the modified files. Near each file there’s a **revisions** link.
+If a string was moved, the changeset for the earliest version will show the bug that moved it. In Searchfox, from the bar on the lefthand side next to your string, you can click `Show earliest version with this line`. From the page that follows, hover over the left bar next to the string and click `full diff` to show the changeset for that revision in Mercurial.
 
-![Changeset info](../../assets/images/mercurial/revisions.png)
+Near the top of the changeset, there’s a list of the modified files. Near each file there’s a **revisions** link.
 
-At this point you can pick an older revision of the file by opening the **diff** link for the changeset you’re interested in, and repeat the process by selecting **annotate** near the file you’re analyzing.
+![Changeset info](../../assets/images/mercurial/mercurial-changeset-revision.png)
 
-If you want to look at the code using that string, you can also reach the [original landing](https://hg.mozilla.org/mozilla-central/rev/89a168219747b20bb0effe9abe49bcd403f27266) in the source code repository by using the link provided in the header `X-Channel-Converted-Revision`.
+After clicking **revisions**, you can pick an older changeset of a file by clicking the **diff** link next to the changeset you’re interested in, or repeat the process by selecting **annotate**. This will display the revision associated to each line of that changeset.
