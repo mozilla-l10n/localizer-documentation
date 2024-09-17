@@ -78,7 +78,7 @@ In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to re
 
 #### Context
 
-Sometimes you may want to investigate more context about a particular string through an external resource such as a [Version Control System](glossary.md#version-control-system). The `CONTEXT` information provided underneath the source string shows the identifier, file, and project for the string - allowing you to find the string within the codebase of the project. For example, for some Mozilla projects these can be used to [track strings to bugs](../mercurial/tracking_back_string_to_bug.md).
+Sometimes you may want to investigate more context about a particular string through an external resource such as a [Version Control System](glossary.md#version-control-system). The `CONTEXT` information provided underneath the source string shows the identifier, file, and project for the string — allowing you to find the string within the codebase of the project. For example, for some Mozilla projects these can be used to [track strings to bugs](../mercurial/tracking_back_string_to_bug.md).
 
 ![Context](../../assets/images/pontoon/ui/context.png)
 

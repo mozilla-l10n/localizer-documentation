@@ -14,7 +14,9 @@ The results may look something like this:
 
 ![Searchfox](../../assets/images/mercurial/searchfox.png)
 
-We can further refine results to only localization files by using `locales/en-US` in the `Path filter` field in the top right to limit search results to localization files.
+You can further refine results to only localization files by using specific localization file extensions in the `Path filter` field in the top right:
+* For Firefox: limit the search to `.ftl` or `.properties` files. You can find information on the file from its [CONTEXT](../pontoon/ui.md#context). Or you can use `{.ftl,.properties}` to only show files with those extensions.
+* For Android: limit the search to `.xml` files.
 
 ![Searchfox](../../assets/images/mercurial/searchfox-path.png)
 
@@ -22,13 +24,13 @@ Clicking on the string will open the file in Searchfox and highlight the string.
 
 ## Find the bug
 
-Searchfox shows details on the revision that each line of code was introduced to the file, represented on the left hand sign as a bar with alternating shades of gray. Hovering over the bar next to the highlighted line containing your string will show you the revision details. The first line of the revision details contains a bug reference, a number represented as a link. Clicking the link will take you to Bugzilla where you can then check things like dependencies and comments.
+Searchfox shows details on the revision in which each line of code was introduced to the file, represented on the left hand sign as a bar with alternating shades of gray. Hovering over the bar next to the highlighted line containing your string will show you the revision details. The first line of the revision details contains a bug reference, a number represented as a link. Clicking the link will take you to Bugzilla where you can then check things like dependencies and comments.
 
 ![Searchfox](../../assets/images/mercurial/searchfox-revision.png)
 
 ### Examining the changeset in Mercurial
 
-You can also access the changeset in Mercurial. To view that, click `full diff` on the third line that says `Show annoated diff or full diff`.
+You can also access the changeset in Mercurial. To view that, click `full diff` on the third line that says `Show annotated diff or full diff`.
 
 This will show the full commit message and all the changes made as part of the bug.
 
