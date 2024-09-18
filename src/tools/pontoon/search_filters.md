@@ -12,6 +12,23 @@ Like in search engines, by default Pontoon will display matches that contain any
 
 To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
+## Options
+
+In addition to the search filters listed below, Pontoon provides additional **search options**, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.
+
+![Options](../../assets/images/pontoon/search_filters/options.png)
+
+Search options include:
+* **Match case**: Exactly match the capitalization of the search term.
+* **Match whole word**: Provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.
+* **Include string identifiers**: Expand the search to include string identifiers (keys).
+* **Include rejected translations**: Expand the search to include translations that have been rejected.
+* **Exclude source strings**: Avoid searching for matches in source strings.
+
+All search options are disabled by default. Clicking anywhere on the name or checkbox will toggle only the specific search option. Once ready, clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will apply the selected search options.
+
+![Multiple options](../../assets/images/pontoon/search_filters/options_multiple.png)
+
 ## Filters
 
 ### Translation status
@@ -55,20 +72,3 @@ For specific projects it’s also possible to filter strings based on *tags*. Ta
 In this case, there are 10 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
 
 Note: translation time, translation authors, and tags are not available when `All Projects` is selected as a [resource](glossary.md#resource).
-
-## Options
-
-In addition to all of the search filters listed above, Pontoon also provides **search options**, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.
-
-![Options](../../assets/images/pontoon/search_filters/options.png)
-
-Search options include:
-* **Match case**: Exactly match the casing of the search term.
-* **Match whole word**: Similar to surrounding with double quotes, exactly match the search term (case insensitive).
-* **Include string identifiers**: Expand the search to include string identifiers (keys).
-* **Include rejected translations**: Expand the search to include translations that have been rejected.
-* **Exclude source strings**: Exclude any matches that appear within source strings.
-
-All search options are off by default. Clicking anywhere on the name or checkbox will toggle only this search option. Once ready, clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will apply the respective search options.
-
-![Multiple options](../../assets/images/pontoon/search_filters/options_multiple.png)
