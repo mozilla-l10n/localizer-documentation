@@ -29,9 +29,9 @@ All search options are disabled by default. Clicking anywhere on the name or che
 
 ![Multiple options](../../assets/images/pontoon/search_filters/options_multiple.png)
 
-### Filters
+## Filters
 
-#### Translation status
+### Translation status
 
 Strings in Pontoon can be filtered by their status. A string can be in one of the following statuses:
 * **Translated**: string has an approved translation. The translation is saved to the localized file when using a [version control system](glossary.md#version-control-system) (VCS).
@@ -41,7 +41,7 @@ Strings in Pontoon can be filtered by their status. A string can be in one of th
 * **Missing**: string doesn’t have any approved translations.
 * **Unreviewed**: string has suggested translations that have not been reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
 
-#### Extra filters
+### Extra filters
 
 In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:
 * **Unchanged**: string is identical to the reference language (normally `en-US`).
@@ -63,7 +63,7 @@ At this point it’s possible to:
 
 In this case 3 filters are selected.
 
-#### Tags
+### Tags
 
 For specific projects it’s also possible to filter strings based on *tags*. Tags are used to logically group resources based on their priority, allowing localizers to focus their work on important strings first, and project managers to better assess the overall localization status of the project.
 
