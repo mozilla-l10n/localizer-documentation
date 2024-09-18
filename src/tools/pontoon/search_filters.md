@@ -12,6 +12,23 @@ Like in search engines, by default Pontoon will display matches that contain any
 
 To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
+### Options
+
+In addition to the search filters listed below, Pontoon provides additional **search options**, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.
+
+![Options](../../assets/images/pontoon/search_filters/options.png)
+
+Search options include:
+* **Match case**: Exactly match the capitalization of the search term.
+* **Match whole word**: Provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.
+* **Include string identifiers**: Expand the search to include string identifiers (keys).
+* **Include rejected translations**: Expand the search to include translations that have been rejected.
+* **Exclude source strings**: Avoid searching for matches in source strings.
+
+All search options are disabled by default. Clicking anywhere on the name or checkbox will toggle only the specific search option. Once ready, clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will apply the selected search options.
+
+![Multiple options](../../assets/images/pontoon/search_filters/options_multiple.png)
+
 ## Filters
 
 ### Translation status
