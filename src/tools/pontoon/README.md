@@ -4,13 +4,13 @@ This document covers how to work with [Pontoon](https://pontoon.mozilla.org/) fr
 
 If you’re interested in administrating Pontoon, please read [these documents](https://mozilla-l10n.github.io/documentation/tools/pontoon/index.html).
 
-* [User accounts and settings](users.md).
-* [Profile page](profile.md).
-* [Notifications](notifications.md).
-* [Team and project pages](teams_projects.md).
-* [Search and filters](search_filters.md).
-* [Translation workspace](ui.md).
 * [How to translate](translate.md).
+* [Translation workspace](ui.md).
+* [Search and filters](search_filters.md).
+* [Team and project pages](teams_projects.md).
+* [User accounts and settings](users.md).
+* [Notifications](notifications.md).
+* [Profile page](profile.md).
 * [Example workflow](workflow.md).
 * [Glossary](glossary.md).
 
