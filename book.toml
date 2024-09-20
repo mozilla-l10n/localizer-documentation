@@ -14,6 +14,6 @@ no-section-label = true
 
 [output.html.redirect]
 # These redirects are only going to work on https://mozilla-l10n.github.io/localizer-documentation
-"tools/pontoon/search_filters.html" = "/localizer-documentation/tools/pontoon/translation_workspace.html#search"
-"tools/pontoon/ui.html" = "/localizer-documentation/tools/pontoon/translation_workspace.html"
-"tools/pontoon/workflow.html" = "/localizer-documentation/tools/pontoon/translate.html#workflow-example"
+"/localizer-documentation/tools/pontoon/search_filters.html" = "/localizer-documentation/tools/pontoon/translation_workspace.html#search"
+"/localizer-documentation/tools/pontoon/ui.html" = "/localizer-documentation/tools/pontoon/translation_workspace.html"
+"/localizer-documentation/tools/pontoon/workflow.html" = "/localizer-documentation/tools/pontoon/translate.html#workflow-example"
