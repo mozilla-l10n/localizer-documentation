@@ -125,7 +125,7 @@ This workflow utilizes the full power of Pontoon’s online translation features
 3. Using [filters](search_filters.md) select `Missing` to display only the strings currently missing a translation, marked as [fuzzy](glossary.md#fuzzy) or containing errors.
 4. Access personal settings by clicking on the gear icon below the editing field and turn on `Make suggestions`.<br>Note that new contributors who have not yet been granted [Translator permissions](users.md#user-roles) will only have the ability to `Make suggestions`, which will be enabled by default.
 5. For each string, type a translation and save it with the blue `SUGGEST` button. The string will be stored and displayed under the editor. Each translation submitted shows the name of the author and when it was saved.
-    * If something is unclear or there is a question about the source string, use the [REQUEST CONTEXT or REPORT ISSUE](ui.html#source-string) feature to ask the [Project manager](users.md#user-roles).
+    * If something is unclear or there is a question about the source string, use the [REQUEST CONTEXT or REPORT ISSUE](translation_workspace.md#source-string) feature to ask the [Project manager](users.md#user-roles).
 
 General notes:
 * Rely on Pontoon’s [translation tools](ui.md/#translation-tools-and-comments) to ensure consistency and make the translation process faster.
