@@ -25,7 +25,7 @@
 * [Tools](README.md)
     * [Pontoon](tools/pontoon/README.md)
         * [How to translate](tools/pontoon/translate.md)
-        * [Translation workspace](tools/pontoon/workspace.md)
+        * [Translation workspace](tools/pontoon/translation_workspace.md)
         * [Team and project pages](tools/pontoon/teams_projects.md)
         * [User accounts and settings](tools/pontoon/users.md)
         * [Notifications](tools/pontoon/notifications.md)

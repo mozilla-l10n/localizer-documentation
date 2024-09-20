@@ -1,6 +1,6 @@
 # How to translate
 
-This document describes briefly how to translate and review strings in Pontoon and provides an [example of translation workflow within a team](#workflow-example). The documentation also includes a dedicated page about Pontoon’s [translation workspace](workspace.md), including [translation tools](workspace.md#translation-tools-and-comments).
+This document describes briefly how to translate and review strings in Pontoon and provides an [example of translation workflow within a team](#workflow-example). The documentation also includes a dedicated page about Pontoon’s [translation workspace](translation_workspace.md), including [translation tools](translation_workspace.md#translation-tools-and-comments).
 
 ## Translating strings
 
@@ -31,7 +31,7 @@ To switch back to *Translation Mode*, click the settings icon again and turn off
 
 ## Reviewing strings
 
-To review a suggestion or pretranslation, [search](workspace.md#search) for unreviewed or pretranslated strings in the sidebar.
+To review a suggestion or pretranslation, [search](translation_workspace.md#search) for unreviewed or pretranslated strings in the sidebar.
 
 If the current translation is acceptable, either click on the `APPROVE` button in the lower-right side of the editing space, or click on the approve icon to the right of the text. This will transform the suggestion or pretranslation into an approved translation. In the case of suggestions, the approved translation will also be stored in the version control system (where applicable).
 

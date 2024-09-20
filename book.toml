@@ -13,6 +13,6 @@ edit-url-template = "https://github.com/mozilla-l10n/localizer-documentation/edi
 no-section-label = true
 
 [output.html.redirect]
-"/tools/pontoon/workflow.html" = "/tools/pontoon/translate.html#workflow-example"
-"/tools/pontoon/ui.html" = "/tools/pontoon/workspace.html"
 "/tools/pontoon/search_filters.html" = "/tools/pontoon/workspace.html#search"
+"/tools/pontoon/ui.html" = "/tools/pontoon/workspace.html"
+"/tools/pontoon/workflow.html" = "/tools/pontoon/translate.html#workflow-example"

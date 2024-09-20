@@ -5,7 +5,7 @@ This document covers how to work with [Pontoon](https://pontoon.mozilla.org/) fr
 If you’re interested in administrating Pontoon, please read [these documents](https://mozilla-l10n.github.io/documentation/tools/pontoon/index.html).
 
 * [How to translate](translate.md).
-* [Translation workspace](workspace.md).
+* [Translation workspace](translation_workspace.md).
 * [Team and project pages](teams_projects.md).
 * [User accounts and settings](users.md).
 * [Notifications](notifications.md).
