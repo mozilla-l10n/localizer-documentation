@@ -97,7 +97,7 @@ It also includes an indication of the overall status of completion and statistic
 There are up to 5 tabs available to all [roles](users.md#user-roles), and 1 additional tab for those with Administrator roles:
 
 * **Teams**: a list of all locales enabled in Pontoon for this project.
-* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
+* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page]workspace.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, last 12/6/3/1 months).
 * [**Insights**](#insights-graphs): contains data and trends presented in a graphical format about review activity and translation activity.
 * **Info**: information about this project.
@@ -125,7 +125,7 @@ The page header contains useful information about the current project (same as t
 
 There are 6 tabs available:
 * **Resources**: files available in the project.
-* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](search_filters.md#tags).
+* **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](workspace.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time. Unlike the tab available in the Team page, this only includes contributions to localization of the project for the current locale.
 * [**Insights**](#insights-graphs): contains data and trends presented in a graphical format about review activity and translation activity.
 * **Project info**: information about the project.

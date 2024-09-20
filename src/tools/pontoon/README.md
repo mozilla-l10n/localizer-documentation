@@ -6,7 +6,6 @@ If you’re interested in administrating Pontoon, please read [these documents](
 
 * [How to translate](translate.md).
 * [Translation workspace](workspace.md).
-* [Search and filters](search_filters.md).
 * [Team and project pages](teams_projects.md).
 * [User accounts and settings](users.md).
 * [Notifications](notifications.md).
