@@ -14,3 +14,4 @@ no-section-label = true
 
 [output.html.redirect]
 "/tools/pontoon/workflow.html" = "/tools/pontoon/translate.html#workflow-example"
+"/tools/pontoon/ui.html" = "/tools/pontoon/workspace.html"

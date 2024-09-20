@@ -8,14 +8,14 @@ Note: These instructions apply only to projects that make use of Bugzilla, which
 
 The first step is to identify where the string is within the Mercurial repository by using [Searchfox](https://searchfox.org/).
 
-For example, if you want to know which bug introduced the string `Password quality meter`, you can search for the [string](https://searchfox.org/mozilla-central/search?q=Password+quality+meter&path=&case=false&regexp=false). This may return multiples strings with the same text, so to find the exact string you can use the the [identifier](https://searchfox.org/mozilla-central/search?q=password-quality-meter&path=&case=false&regexp=false) (which can be found from [CONTEXT](../pontoon/ui.md#context) in Pontoon).
+For example, if you want to know which bug introduced the string `Password quality meter`, you can search for the [string](https://searchfox.org/mozilla-central/search?q=Password+quality+meter&path=&case=false&regexp=false). This may return multiples strings with the same text, so to find the exact string you can use the the [identifier](https://searchfox.org/mozilla-central/search?q=password-quality-meter&path=&case=false&regexp=false) (which can be found from [CONTEXT](../pontoon/workspace.md#context) in Pontoon).
 
 The results may look something like this:
 
 ![Searchfox](../../assets/images/mercurial/searchfox.png)
 
 You can further refine results to only localization files by using specific localization file extensions in the `Path filter` field in the top right:
-* For Firefox: limit the search to `.ftl` or `.properties` files. You can find information on the file from its [CONTEXT](../pontoon/ui.md#context). Or you can use `{.ftl,.properties}` to only show files with those extensions.
+* For Firefox: limit the search to `.ftl` or `.properties` files. You can find information on the file from its [CONTEXT](../pontoon/workspace.md#context). Or you can use `{.ftl,.properties}` to only show files with those extensions.
 * For Android: limit the search to `.xml` files.
 
 ![Searchfox](../../assets/images/mercurial/searchfox-path.png)

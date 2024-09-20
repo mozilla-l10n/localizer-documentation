@@ -1,6 +1,6 @@
 # How to translate
 
-This document describes briefly how to translate and review strings in Pontoon and provides an [example of translation workflow within a team](#workflow-example). The documentation also includes a dedicated page about Pontoon’s [translation workspace](ui.md), including [translation tools](ui.md#translation-tools-and-comments).
+This document describes briefly how to translate and review strings in Pontoon and provides an [example of translation workflow within a team](#workflow-example). The documentation also includes a dedicated page about Pontoon’s [translation workspace](workspace.md), including [translation tools](workspace.md#translation-tools-and-comments).
 
 ## Translating strings
 
