@@ -31,7 +31,6 @@
         * [User accounts and settings](tools/pontoon/users.md)
         * [Notifications](tools/pontoon/notifications.md)
         * [Profile page](tools/pontoon/profile.md)
-        * [Example workflow](tools/pontoon/workflow.md)
         * [Glossary](tools/pontoon/glossary.md)
     * [Fluent](tools/fluent/README.md)
         * [Fluent syntax](tools/fluent/basic_syntax.md)

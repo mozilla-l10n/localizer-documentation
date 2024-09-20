@@ -11,7 +11,6 @@ If you’re interested in administrating Pontoon, please read [these documents](
 * [User accounts and settings](users.md).
 * [Notifications](notifications.md).
 * [Profile page](profile.md).
-* [Example workflow](workflow.md).
 * [Glossary](glossary.md).
 
 **Note:** The screenshots in this documentation use the dark theme, but a light theme is also available.
