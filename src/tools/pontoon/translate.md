@@ -128,7 +128,7 @@ This workflow utilizes the full power of Pontoon’s online translation features
     * If something is unclear or there is a question about the source string, use the [REQUEST CONTEXT or REPORT ISSUE](translation_workspace.md#source-string) feature to ask the [Project manager](users.md#user-roles).
 
 General notes:
-* Rely on Pontoon’s [translation tools](ui.md/#translation-tools-and-comments) to ensure consistency and make the translation process faster.
+* Rely on Pontoon’s [translation tools](translation_workspace.md#translation-tools-and-comments) to ensure consistency and make the translation process faster.
 * When using Firefox, make sure to have a [dictionary](https://addons.mozilla.org/firefox/dictionaries/) installed for the translation language, and that spell checking is enabled in the translation text area.
 
 ### Phase 2: review suggestions
