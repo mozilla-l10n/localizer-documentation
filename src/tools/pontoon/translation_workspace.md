@@ -7,13 +7,13 @@ Pontoon’s translation workspace consists of the main toolbar and 3 columns:
 * The middle column contains the main editing space.
 * The right column contains terminology, source string comments, suggestions from translation memory, machine translation, and translations from other locales.
 
-![Translation Workspace](../../assets/images/pontoon/ui/translation_workspace.png "Screenshot of the translation workspace in Pontoon")
+![Translation Workspace](../../assets/images/pontoon/translation_workspace/translation_workspace.png "Screenshot of the translation workspace in Pontoon")
 
 ## Main toolbar
 
 The main toolbar at the top of the page allows users to navigate to the dashboards or to change the current resource.
 
-![Navigating in the main toolbar](../../assets/images/pontoon/ui/main_nav.png "Screenshot of the main toolbar, with the resource dropdown expanded")
+![Navigating in the main toolbar](../../assets/images/pontoon/translation_workspace/main_nav.png "Screenshot of the main toolbar, with the resource dropdown expanded")
 
 Clicking the locale name will open the [Team page](teams_projects.md#team-page) for that locale, while clicking the project name will open the [Localization page](teams_projects.md#localization-page) for that project.
 
@@ -21,13 +21,13 @@ Clicking on the current resource (or `All Resources`) will display a list of all
 
 A progress chart showing the translation status of the current resource is located to the right of the resource name. A more detailed breakdown is displayed when clicking the chart.
 
-![Expanded status overview](../../assets/images/pontoon/ui/status_overview.png "Screenshot of the status graph expanded")
+![Expanded status overview](../../assets/images/pontoon/translation_workspace/status_overview.png "Screenshot of the status graph expanded")
 
 The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest [notifications](notifications.md) they received.
 
 The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their [profile page](profile.md), [download and upload translations](translate.md#downloading-and-uploading-translations), change their theme, etc.
 
-![Profile menu](../../assets/images/pontoon/ui/profile_menu.png "Screenshot of the profile menu")
+![Profile menu](../../assets/images/pontoon/translation_workspace/profile_menu.png "Screenshot of the profile menu")
 
 Note that some profile menu items are only available to users with specific [permissions](users.md#user-roles).
 
@@ -39,14 +39,14 @@ A selector to change the current theme is available in the profile menu and in t
 
 To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
 
-## String list and filters
+## String list and search
 
 The left column displays the list of strings in the current project resource. Each string is represented by:
-* A colored square that identifies the string [status](search_filters.md#translation-status) (i.e. *Missing*, *Translated*, etc.).
+* A colored square that identifies the string [status](#translation-status) (i.e. *Missing*, *Translated*, etc.).
 * The source string.
 * The approved translation or the most recent suggestion if available.
 
-![Sidebar](../../assets/images/pontoon/ui/sidebar.png "Screenshot of the sidebar, with a list of strings showing the different string statuses")
+![Sidebar](../../assets/images/pontoon/translation_workspace/sidebar.png "Screenshot of the sidebar, with a list of strings showing the different string statuses")
 
 Color legend:
 * **<span style="color: #4d5967;">gray</span>**: translation is missing.
@@ -57,15 +57,86 @@ Color legend:
 
 When a string is selected in the sidebar, a small icon with four arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the [resource](glossary.md#resource), bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.
 
-![Button to show sibling strings in sidebar](../../assets/images/pontoon/ui/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
+![Button to show sibling strings in sidebar](../../assets/images/pontoon/translation_workspace/sidebar_expand.png "Screenshot of the button to show sibling strings in sidebar")
 
-At the top of the sidebar, the user can access Pontoon’s [search and string filters](search_filters.md).
+### Search
+
+It’s possible to search within the currently selected project using the search field. Searches include strings and string IDs.
+
+![Search field](../../assets/images/pontoon/translation_workspace/search_field.png)
+
+Note that searches take active [filters](#filters) into account, for example a search would be performed only on missing strings if that filter was previously selected.
+
+Like in search engines, by default Pontoon will display matches that contain any of the search terms. For example, searching for `new tab` will match both `Open links in tabs instead of new windows` and `New Tab`.
+
+To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
+
+#### Search options
+
+In addition to the search filters listed below, Pontoon provides additional **search options**, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.
+
+![Options](../../assets/images/pontoon/translation_workspace/options.png)
+
+Search options include:
+* **Match case**: Exactly match the capitalization of the search term.
+* **Match whole word**: Provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.
+* **Include string identifiers**: Expand the search to include string identifiers (keys).
+* **Include rejected translations**: Expand the search to include translations that have been rejected.
+* **Exclude source strings**: Avoid searching for matches in source strings.
+
+All search options are disabled by default. Clicking anywhere on the name or checkbox will toggle only the specific search option. Once ready, clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will apply the selected search options.
+
+![Multiple options](../../assets/images/pontoon/translation_workspace/options_multiple.png)
+
+### Filters
+
+#### Translation status
+
+Strings in Pontoon can be filtered by their status. A string can be in one of the following statuses:
+* **Translated**: string has an approved translation. The translation is saved to the localized file when using a [version control system](glossary.md#version-control-system) (VCS).
+* **Pretranslated**: string has been pretranslated but has not been reviewed. Unreviewed pretranslation are saved to the localized file when using a VCS.
+* **Warnings**: string contains issues classified as [warnings](translate.md#warnings).
+* **Errors**: string contains [critical issues](translate.md#errors).
+* **Missing**: string doesn’t have any approved translations.
+* **Unreviewed**: string has suggested translations that have not been reviewed yet by someone with the appropriate [permissions](glossary.md#permission). Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.
+
+#### Extra filters
+
+In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:
+* **Unchanged**: string is identical to the reference language (normally `en-US`).
+* **Empty**: string has a translation, but translation contains no content.
+* **Fuzzy**: string is marked as [fuzzy](glossary.md#fuzzy) in the localized file.
+* **Rejected**: string has rejected translations.
+* **Missing without Unreviewed**: string has `Missing` translation status and does not have `Unreviewed` translations.
+
+Filters can be accessed by clicking the icon on the left of the search field.
+
+![Filters](../../assets/images/pontoon/translation_workspace/filters.png)
+
+At this point it’s possible to:
+* Click directly on the name of one of the filters. This will select and activate only this filter, and the search field placeholder will change accordingly. For example, clicking on `Missing` will show only missing strings, and the placeholder will read `Search in Missing`.
+* Click on one or more filter icons or user avatars (multiple filters can be applied at once). Hovering over the icons transforms the icon into check marks. Clicking an icon will select that filter and a new button `APPLY X FILTERS` will appear at the bottom of the panel, where `X` is the number of active filters.
+* Click `EDIT RANGE` on `TRANSLATION TIME` to select a time range. Pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on `SAVE RANGE` to store the range as a filter. A new button `APPLY X FILTERS` will appear at the bottom of the panel, where `X` is the number of active filters.
+
+![Multiple filters](../../assets/images/pontoon/translation_workspace/filters_multiple.png)
+
+In this case 3 filters are selected.
+
+#### Tags
+
+For specific projects it’s also possible to filter strings based on *tags*. Tags are used to logically group resources based on their priority, allowing localizers to focus their work on important strings first, and project managers to better assess the overall localization status of the project.
+
+![Tags in filters](../../assets/images/pontoon/translation_workspace/filters_tags.png)
+
+In this case, there are 10 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).
+
+Note: translation time, translation authors, and tags are not available when `All Projects` is selected as a [resource](glossary.md#resource).
 
 ## Main editing space
 
 The main editing space in the middle column is where translation takes place.
 
-![Editing space](../../assets/images/pontoon/ui/editing_space_standard.png "Screenshot of the standard editor in the editing space")
+![Editing space](../../assets/images/pontoon/translation_workspace/editing_space_standard.png "Screenshot of the standard editor in the editing space")
 
 ### String navigation
 
@@ -80,7 +151,7 @@ In the same area, the `REQUEST CONTEXT or REPORT ISSUE` button can be used to re
 
 Sometimes you may want to investigate more context about a particular string through an external resource such as a [Version Control System](glossary.md#version-control-system). The `CONTEXT` information provided underneath the source string shows the identifier, file, and project for the string — allowing you to find the string within the codebase of the project. For example, for some Mozilla projects these can be used to [track strings to bugs](../mercurial/tracking_back_string_to_bug.md).
 
-![Context](../../assets/images/pontoon/ui/context.png)
+![Context](../../assets/images/pontoon/translation_workspace/context.png)
 
 ### Editor
 
@@ -97,7 +168,7 @@ In the lower-left side:
 
 A project could be enabled in *read-only mode* for some locales: their translations will be available to other languages in the `LOCALES` tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.
 
-![Translation editor in read-only project](../../assets/images/pontoon/ui/translation_readonly.png "Screenshot of translation editor in read-only project")
+![Translation editor in read-only project](../../assets/images/pontoon/translation_workspace/translation_readonly.png "Screenshot of translation editor in read-only project")
 
 ### Translation list
 
@@ -110,14 +181,14 @@ Each entry contains:
 * Icons indicating translation status (see below).
 * [Translation comments](glossary.md#comment).
 
-Icons to the right indicate the [status](search_filters.md#translation-status) of each translation:
+Icons to the right indicate the [status](d#translation-status) of each translation:
 * The solid green circle with checkmark indicates that the translation has been approved.
 * The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
 * If both icons are gray, translation has been suggested but not yet reviewed.
 * The red cross indicates that the translation has been rejected. The entire element will look opaque.
 * The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator permissions can delete anyone’s.
 
-![List of suggestions and translations for a string](../../assets/images/pontoon/ui/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
+![List of suggestions and translations for a string](../../assets/images/pontoon/translation_workspace/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
 In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
 
@@ -131,23 +202,23 @@ If there is already a comment associated with a string, the button will display 
 
 The `DIFF` option appears if there are multiple translations for one string. Toggling `DIFF` compares the text to the current approved translation, or the most recent suggestion if no translation has been approved yet. Text highlighted in green indicates content that has been added, while strikethrough text in red indicates removed content. Toggling `DIFF` again will display the original string.
 
-![Diff for suggestions](../../assets/images/pontoon/ui/suggestions_diff.png)
+![Diff for suggestions](../../assets/images/pontoon/translation_workspace/suggestions_diff.png)
 
 ## Fluent - FTL files
 
 When working on FTL (Fluent) files, the editing space will look slightly different.
 
-![Translation editing space for Fluent string](../../assets/images/pontoon/ui/editing_space_ftl.png "Screenshot of the translation editing space for Fluent string")
+![Translation editing space for Fluent string](../../assets/images/pontoon/translation_workspace/editing_space_ftl.png "Screenshot of the translation editing space for Fluent string")
 
 In the example above, the string has a `value` and an attribute `title`. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).
 
 The following image is an example of a string with plurals: while English only has two forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has three forms (highlighted in orange).
 
-![Translation editing space for Fluent string with plurals](../../assets/images/pontoon/ui/editing_space_ftl_plurals.png "Screenshot of the translation editing space for Fluent string with plurals")
+![Translation editing space for Fluent string with plurals](../../assets/images/pontoon/translation_workspace/editing_space_ftl_plurals.png "Screenshot of the translation editing space for Fluent string with plurals")
 
 In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (*Simple FTL mode*) and the *Advanced FTL mode*, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see [Fluent for localizers](../fluent/).
 
-![Translation editing space for Fluent string in source view](../../assets/images/pontoon/ui/editing_space_ftl_sourceview.png "Screenshot of the translation editing space for Fluent string in source view")
+![Translation editing space for Fluent string in source view](../../assets/images/pontoon/translation_workspace/editing_space_ftl_sourceview.png "Screenshot of the translation editing space for Fluent string in source view")
 
 Note that the FTL button’s text is green when in *Advanced FTL mode*.
 
@@ -159,7 +230,7 @@ Built-in translation tools are located in the rightmost column.
 
 The `TERMS` tab shows the definition and translation of a term, in case the source string includes matches with the built-in [terminology](glossary.md#terminology). The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.
 
-![Translation editing space for string with match in terminology](../../assets/images/pontoon/ui/editing_space_terminology.png "Screenshot of the translation editing space for string with match in terminology")
+![Translation editing space for string with match in terminology](../../assets/images/pontoon/translation_workspace/editing_space_terminology.png "Screenshot of the translation editing space for string with match in terminology")
 
 ### Source string comments
 
@@ -169,7 +240,7 @@ They’re designed for team members to have a conversation about the source stri
 
 Administrators can pin or unpin a source string comment: this pinned comment will be displayed along existing comments in the editing area as `PINNED COMMENT`, and users will [receive a notification](notifications.md#comments).
 
-![Pinned comment](../../assets/images/pontoon/ui/pinned_comment.png "Screenshot of a pinned comment")
+![Pinned comment](../../assets/images/pontoon/translation_workspace/pinned_comment.png "Screenshot of a pinned comment")
 
 The screenshot above shows a pinned comment, and the command to unpin it.
 
@@ -187,7 +258,7 @@ In addition, the user has the ability to search for translations containing word
 
 In the tab, the number of entries is visible alongside the `MACHINERY` title in white. If any of the machinery matches are from translation memory, the number of matches will appear separately in green. For example, the screenshot below shows `2+1`, where the green `2` represents the two matches from translation memory and the `1` represents a machinery entry from Google Translate.
 
-![Machinery tab](../../assets/images/pontoon/ui/machinery.png)
+![Machinery tab](../../assets/images/pontoon/translation_workspace/machinery.png)
 
 At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.
 
@@ -204,17 +275,17 @@ Pontoon will show a dropdown labeled `AI` for all locales that have Google Trans
 * `MAKE FORMAL`: Generate a more formal version of this translation.
 * `MAKE INFORMAL`: Generate a more informal version of this translation.
 
-![Dropdown to use the LLM feature](../../assets/images/pontoon/ui/llm_dropdown.png "Screenshot of the dropdown to use the LLM feature")
+![Dropdown to use the LLM feature](../../assets/images/pontoon/translation_workspace/llm_dropdown.png "Screenshot of the dropdown to use the LLM feature")
 
 After selecting an option, the revised translation will replace the original suggestion. Once a new translation is generated, another option `SHOW ORIGINAL` will be available in the dropdown menu. Selecting it will revert to the original suggestion.
 
-![Enhanced translation output from the LLM rephrasing the initial Google Translate result.](../../assets/images/pontoon/ui/llm_dropdown_rephrased.png "Screenshot of enhanced translation output from the LLM rephrasing the initial Google Translate result.")
+![Enhanced translation output from the LLM rephrasing the initial Google Translate result.](../../assets/images/pontoon/translation_workspace/llm_dropdown_rephrased.png "Screenshot of enhanced translation output from the LLM rephrasing the initial Google Translate result.")
 
 #### Concordance search
 
 Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name; clicking a result will automatically fill the translation into the editor. Note that the search does not need to be related to the current string or project.
 
-![Concordance search](../../assets/images/pontoon/ui/concordance_search.png)
+![Concordance search](../../assets/images/pontoon/translation_workspace/concordance_search.png)
 
 #### Stand-alone machinery
 
@@ -226,7 +297,7 @@ To use the machinery, select the target locale from the dropdown menu to the rig
 
 The locales tab shows approved translations from Pontoon projects in other [locales](glossary.md#locale).
 
-![Locales tab](../../assets/images/pontoon/ui/locales.png)
+![Locales tab](../../assets/images/pontoon/translation_workspace/locales.png)
 
 Next to the `LOCALES` title, the number of available entries is visible. The number for preferred locales is green, while the number for all other locales is in gray.
 
@@ -244,4 +315,4 @@ Note that, when using the `LOCALES` tab, the translator should always opt for fl
 
 The translation workspace is responsive, which means the layout will adapt to smaller screens. Everything you do on your desktop computer or laptop, you can also do on your phone or tablet: review strings, fix typos or even translate a few strings on the go.
 
-![Mobile UI](../../assets/images/pontoon/ui/mobile_ui.png "Screenshot of the mobile UI")
+![Mobile UI](../../assets/images/pontoon/translation_workspace/mobile_ui.png "Screenshot of the mobile UI")
