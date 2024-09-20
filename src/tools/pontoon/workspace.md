@@ -39,7 +39,7 @@ A selector to change the current theme is available in the profile menu and in t
 
 To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
 
-## String list and filters
+## String list and search
 
 The left column displays the list of strings in the current project resource. Each string is represented by:
 * A colored square that identifies the string [status](#translation-status) (i.e. *Missing*, *Translated*, etc.).
@@ -71,7 +71,7 @@ Like in search engines, by default Pontoon will display matches that contain any
 
 To search for an exact match, wrap the search terms in double quotes, e.g. `"new tab"`. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. `\"`.
 
-#### Options
+#### Search options
 
 In addition to the search filters listed below, Pontoon provides additional **search options**, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.
 
