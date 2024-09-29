@@ -181,7 +181,7 @@ Each entry contains:
 * Icons indicating translation status (see below).
 * [Translation comments](glossary.md#comment).
 
-Icons to the right indicate the [status](d#translation-status) of each translation:
+Icons to the right indicate the [status](#translation-status) of each translation:
 * The solid green circle with checkmark indicates that the translation has been approved.
 * The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.
 * If both icons are gray, translation has been suggested but not yet reviewed.
