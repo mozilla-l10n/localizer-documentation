@@ -40,6 +40,7 @@ L10n-driver responsibilities and expectations are multifaceted, being that in ad
 ### Managers
 
 #### Responsibilities
+
 On top of the responsibilities associated with the Translator role:
 
 * Establish mentorship practices for new localizers that foster growth and lead to impactful participation.
