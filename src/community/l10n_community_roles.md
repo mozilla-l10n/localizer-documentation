@@ -161,7 +161,7 @@ If a localizer has attempted to reach out to Managers or Translators but has not
 
 ## Common issues & quick references
 
-### How can I contact the localization staff?
+### How can I contact the localization staff?
 
 If you have contacted members of your team and received no responses, have questions about these guidelines or want to suggest improvements, don’t hesitate to get in touch with the localization staff:
 
@@ -172,7 +172,7 @@ If you have contacted members of your team and received no responses, have quest
 
 Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your [team page](https://www.google.com/url?q=https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/teams_projects.html%23teams-page&sa=D&source=editors&ust=1727922613572868&usg=AOvVaw1yvThhddMWNZwZX-tOYzjn) on Pontoon). Check also the [Promotions](#promotions) section. You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
 
-### No one is reviewing my suggestions, what do I do?
+### No one is reviewing my suggestions, what do I do?
 
 Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your team page on Pontoon). You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
 
@@ -180,6 +180,6 @@ Try to get in touch with the current Managers and Translators from your locale, 
 
 Get in touch with the locale Managers first, to ask them to appoint you to only one project. If there is no response within a few weeks, [reach out to the localization team](#how-can-i-contact-the-localization-staff).
 
-### How can I delete my Pontoon account?
+### How can I delete my Pontoon account?
 
 Currently users cannot remove their account directly from Pontoon. [Reach out to the localization team](#how-can-i-contact-the-localization-staff).
