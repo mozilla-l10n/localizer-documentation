@@ -1,4 +1,4 @@
-# Introduction to localization roles and community guidelines
+# Roles and guidelines in the localization community
 
 Volunteer communities are the backbone of the localization (l10n) efforts at Mozilla. They are designed to be self-regulating and self-managing with minimal intervention from staff. For example, the responsibility of reviewing suggestions falls on the Translators and Managers within the community; they not only ensure quality and consistency but also keep an eye out for potential new volunteers to promote. And when Managers plan to step down, it’s crucial they develop succession plans to maintain continuity.
 
