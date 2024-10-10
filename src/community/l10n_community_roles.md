@@ -124,7 +124,7 @@ How does the localization team know someone is gatekeeping? This can happen thro
 
 If a localizer has attempted to reach out to Managers or Translators but has not received a satisfactory response (or any response) within 2 weeks, it’s advisable to contact the localization staff for assistance.
 
-## Common issues & quick references
+## Common issues and references
 
 ### How can I contact the localization staff?
 
