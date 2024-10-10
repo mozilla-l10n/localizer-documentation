@@ -86,7 +86,7 @@ In the case there is no existing community, a localizer requesting a new locale 
 
 A localizer who consistently provides high-quality translations that meet the community’s standards should be considered for promotion. This includes accuracy, adherence to style guides, and timely contributions and reviews​. Contribution data on Pontoon can be used to help guide these decisions.
 
-#### Demotions
+### Demotions
 
 Demotions should come as a last resort when a localizer’s actions significantly impact the project’s quality, collaboration, or community. In practice demotions are extremely rare and historically have occurred when a Manager or Translator voluntarily expresses a desire to step back from their roles and expectations.
 
