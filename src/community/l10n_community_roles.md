@@ -1,4 +1,4 @@
-# Introduction to roles and community guidelines
+# Introduction to localization roles and community guidelines
 
 Volunteer communities are the backbone of the localization (l10n) efforts at Mozilla. They are designed to be self-regulating and self-managing with minimal intervention from staff. For example, the responsibility of reviewing suggestions falls on the Translators and Managers within the community; they not only ensure quality and consistency but also keep an eye out for potential new volunteers to promote. And when Managers plan to step down, it’s crucial they develop succession plans to maintain continuity.
 
@@ -8,11 +8,11 @@ The localization team can occasionally take a more hands-on approach, proactivel
 
 In the following sections, we’ll review the current roles and expectations and suggest guidelines for when role criteria are not met — and how the localization staff can get involved and help in these different scenarios.
 
-# Roles: responsibilities and expectations
+## Roles: responsibilities and expectations
 
-## Managers
+### Managers
 
-### Responsibilities
+#### Responsibilities
 
 On top of the responsibilities associated with the Translator role:
 
@@ -23,16 +23,16 @@ On top of the responsibilities associated with the Translator role:
 * Coordinate and facilitate internal community discussions.
 * Create and maintain language resources for the community (e.g., terminology, style guides, etc.).
 
-### Expectations
+#### Expectations
 
 * Open and frequent communication (liaison between l10n-drivers and l10n community) concerning new projects, new deadlines, and community issues.
 * Create and secure a safe space for people to participate in l10n in an impactful way.
 * Recruit and mentor new localizers.
 * Give timely feedback to community mentors and translators.
 
-## Translators
+### Translators
 
-### Responsibilities
+#### Responsibilities
 
 * Submit translations for new content.
 * Review pending translation suggestions from contributors and provide them with timely feedback that focuses on developing skills.
@@ -40,7 +40,7 @@ On top of the responsibilities associated with the Translator role:
 * Work with Managers to create and maintain language resources for the community.
 * Report issues concerning source language content issues.
 
-### Expectations
+#### Expectations
 
 * Ensure consistent quality of the project they’re localizing.
 * Give detailed feedback to contributors in a timely manner.
@@ -49,32 +49,32 @@ On top of the responsibilities associated with the Translator role:
 * Keep pending translation suggestion queue to a low number.
 * Gracefully accept feedback on their translations from other Translators and Managers.
 
-## Contributors
+### Contributors
 
-### Responsibilities
+#### Responsibilities
 
 * Submit translation suggestions to Pontoon projects for the target language.
 * Request and accept feedback from Translators and Managers in the community.
 * In-context review (l10n testing) of translation suggestions that have been approved by Translators and Managers.
 
-### Expectations
+#### Expectations
 
 * Gracefully accept feedback on their translations from Translators and Managers.
 * Avoid relying exclusively on machine translation, especially when unsure about the source string or the language.
 * Proactively request feedback from Translators and Managers.
 * Network and form relationships with others in the community.
 
-# Guidelines
+## Guidelines
 
-## Promotions
+### Promotions
 
 Promotions apply to Translators and Contributors. Managers and localization staff can directly [promote/demote users](../tools/pontoon/users.md#managing-permissions) to Translator or Manager roles.
 
-### Efforts to revive an inactive community
+#### Efforts to revive an inactive community
 
 A community is considered inactive when there are no other active Translators or Managers, which can make it difficult for Contributors to participate effectively. If a Contributor has attempted to reach out to the Managers or Translators but has not received a satisfactory response (or any response) within a few weeks, it’s advisable to [contact the localization staff](#how-can-i-contact-the-localization-staff) for assistance. Each situation is unique, and staff can help investigate further, for example reviewing a localizer’s contribution history across external localization projects outside of Mozilla. The localization team will also reach out to former Managers and Translators for their input. If there is still no response, the localization team will consider promoting active localizers who have expressed interest in taking on an active role.
 
-### Community engagement
+#### Community engagement
 
 Localizers who actively participate in community discussions, provide feedback and reviews, mentor new members, and engage in localization events and workshops should be recognized and promoted for their dedication and leadership within the community​. They often transition from direct translation work to more managerial roles, focusing on building and enabling the locale community.
 
@@ -82,35 +82,35 @@ How do you recognize and promote them? Existing locale Managers are typically in
 
 In the case there is no existing community, a localizer requesting a new locale will be appointed to the Manager role.
 
-### High-quality contributions
+#### High-quality contributions
 
 A localizer who consistently provides high-quality translations that meet the community’s standards should be considered for promotion. This includes accuracy, adherence to style guides, and timely contributions and reviews​. Contribution data on Pontoon can be used to help guide these decisions.
 
-### Demotions
+#### Demotions
 
 Demotions should come as a last resort when a localizer’s actions significantly impact the project’s quality, collaboration, or community. In practice demotions are extremely rare and historically have occurred when a Manager or Translator voluntarily expresses a desire to step back from their roles and expectations.
 
 Here are some examples of reasons for demotion.
 
-### A localizer wants to take a step back
+#### A localizer wants to take a step back
 
 As explained, a request for demotion can come from localizers themselves, when they want to delegate certain responsibilities. This is a straightforward scenario, in which a localizer typically will reach out to the manager — or localization staff — to express their desire to step down. Managers have the permissions to do so themselves, but localization staff can also assist.
 
-### A localizer is failing to meet role expectations
+#### A localizer is failing to meet role expectations
 
 A localizer might notice that a Manager or Translator is abusing their role, especially in ways that may be considered [gatekeeping](#gatekeeping). After the community has tried to get in touch with the Managers or Translators, but has not received a satisfactory response (or any response) after a few weeks, [reaching out to the localization staff](#how-can-i-contact-the-localization-staff) is a good first step for the team to help investigate and find solutions, as each situation is unique. Note that the localization team rarely demotes anyone unless it’s a grave situation, but they can help promote or unblock users.
 
-### Prolonged inactivity
+#### Prolonged inactivity
 
 Typically there isn’t a need to demote a Manager or Translator due to inactivity, unless [gatekeeping](#gatekeeping) or retaliation disrupt the work of others.
 
-## Community guidelines enforcement
+### Community guidelines enforcement
 
-### CPG violation
+#### CPG violation
 
 A CPG violation is taken very seriously and will be addressed immediately. The process for reporting a violation is detailed under the “Reporting” section of the [CPG](https://www.mozilla.org/about/governance/policies/participation/).
 
-### Gatekeeping
+#### Gatekeeping
 
 Gatekeeping can show up in different ways in localization communities/localizers:
 
@@ -124,27 +124,27 @@ How does the localization team know someone is gatekeeping? This can happen thro
 
 If a localizer has attempted to reach out to Managers or Translators but has not received a satisfactory response (or any response) within 2 weeks, it’s advisable to contact the localization staff for assistance.
 
-# Common issues & quick references
+## Common issues & quick references
 
-## How can I contact the localization staff?
+### How can I contact the localization staff?
 
 If you have contacted members of your team and received no responses, have questions about these guidelines or want to suggest improvements, don’t hesitate to get in touch with the localization staff:
 
 1. You can use [email](mailto:pontoon-team@mozilla.com) and [Matrix](https://matrix.to/#/#l10n-community:mozilla.org) to reach out to the entire team.
 2. You can also find the member of staff in charge of each project [directly in Pontoon](../tools/pontoon/teams_projects.md#project-page).
 
-## I am a Translator and want to become a Manager, what do I do?
+### I am a Translator and want to become a Manager, what do I do?
 
 Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your [team page](../tools/pontoon/teams_projects.md#teams-page) on Pontoon). Check also the [Promotions](#promotions) section. You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
 
-## No one is reviewing my suggestions, what do I do?
+### No one is reviewing my suggestions, what do I do?
 
 Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your team page on Pontoon). You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
 
-## I’m a new Contributor and am interested in becoming a Translator for only one project.
+### I’m a new Contributor and am interested in becoming a Translator for only one project.
 
 Get in touch with the locale Managers first, to ask them to appoint you to only one project. If there is no response within a few weeks, [reach out to the localization team](#how-can-i-contact-the-localization-staff).
 
-## How can I delete my Pontoon account?
+### How can I delete my Pontoon account?
 
 Currently users cannot remove their account directly from Pontoon. [Reach out to the localization team](#how-can-i-contact-the-localization-staff).
