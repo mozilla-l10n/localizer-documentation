@@ -165,7 +165,7 @@ If a localizer has attempted to reach out to Managers or Translators but has not
 
 If you have contacted members of your team and received no responses, have questions about these guidelines or want to suggest improvements, don’t hesitate to get in touch with the localization staff:
 
-1. You can use [email](pontoon-team@mozilla.com) and [Matrix](https://matrix.to/#/#l10n-community:mozilla.org) to reach out to the entire team.
+1. You can use [email](mailto:pontoon-team@mozilla.com) and [Matrix](https://matrix.to/#/#l10n-community:mozilla.org) to reach out to the entire team.
 2. You can also find the member of staff in charge of each project [directly in Pontoon](https://www.google.com/url?q=https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/teams_projects.html%23project-page&sa=D&source=editors&ust=1727922613572178&usg=AOvVaw1OILveFC-KMISo0no5zV5l).
 
 ### I am a Translator and want to become a Manager, what do I do?
