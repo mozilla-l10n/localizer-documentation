@@ -1,3 +1,5 @@
+# Introduction to roles and community guidelines
+
 Volunteer communities are the backbone of the localization (l10n) efforts at Mozilla. They are designed to be self-regulating and self-managing with minimal intervention from staff. For example, the responsibility of reviewing suggestions falls on the Translators and Managers within the community; they not only ensure quality and consistency but also keep an eye out for potential new volunteers to promote. And when Managers plan to step down, it’s crucial they develop succession plans to maintain continuity.
 
 The role of staff is to intervene only when necessary. The main reasons for staff to be involved is when self-regulation fails or there are violations of the [Community Participation Guidelines](https://www.mozilla.org/about/governance/policies/participation/) (CPG). The goal is to empower the communities to thrive independently while maintaining the high standards that Mozilla is known for.
