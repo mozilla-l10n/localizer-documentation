@@ -3,7 +3,7 @@
 [Introduction](README.md)
 
 * [Community](community/README.md)
-    * [Roles](community/l10n_community_roles.md)
+    * [Roles and guidelines](community/l10n_community_roles.md)
     * [Giving good feedback](community/l10n_feedback.md)
 
 * [Products](products/README.md)
