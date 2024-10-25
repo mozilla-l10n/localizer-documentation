@@ -176,6 +176,7 @@ The space below the editor displays the list of [translations](glossary.md#trans
 
 Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
+* The role of the translator within the locale and project
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
@@ -191,6 +192,14 @@ Icons to the right indicate the [status](#translation-status) of each translatio
 ![List of suggestions and translations for a string](../../assets/images/pontoon/translation_workspace/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
 In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
+
+#### Status banners
+
+Status banners reflect the permissions of the user within the respective locale and project. Each translator’s banner is displayed at the bottom of their profile picture.
+
+![List of three possible status banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot of list of suggestions displaying 3/5 possible banners for users")
+
+Namely, team managers will get the `MNGR` tag, project managers get the `PM` tag, translators get the `TRNSL` tag, and those with site-wide admin permissions receive the `ADMIN` tag. Users who have joined within the last three months will get the `NEW USER` tag for their banner. Status banners also appear in translation comments (see below).
 
 #### Translation comments
 
