@@ -47,4 +47,3 @@
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
 [l10n resources](misc/l10n_resources.md)
-[Community marketing kit](misc/community-marketing-kit.md)
