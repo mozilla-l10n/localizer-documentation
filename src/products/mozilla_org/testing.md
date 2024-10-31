@@ -30,11 +30,11 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Header line break wraps at proper place.
 * Text not overlapping graphic.
 * Terminology consistent with product, and among web pages.
-* Brand names remain in English.
+* Brand names remain in English, with a few exceptions due to declension.
 * Product names comply to Mozilla guideline and adhere to what the community has agreed to.
 * No corrupted characters.
-* Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not..
-* Nav bar terms consistent with the page titles they are linked to (except when Nav bar term is shortened due to space limitation).
+* Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not.
+* Navigation terms consistent with the page titles they are linked to (except when the navigation term is shortened due to space limitation).
 * Footer links don’t overlap with one another.
 
 You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.org/projects/mozillaorg/).
@@ -44,7 +44,7 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 * Click the download link, you should be able to download the product in your language, if it is localized, such as Firefox.
 * Font support and readability.
 * Footer: verify that the translation of the link is coherent and the link is functional.
-* Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/en-US to confirm.
+* Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/firefox/all/ to confirm. See [detailed steps below](https://github.com/mozilla-l10n/localizer-documentation/blob/main/src/products/mozilla_org/testing.md#firefoxallftl) to get to the language list.
 * Error page: deliberately type a broken link, such as https://www.mozilla.org/firefox/neu/, check whether [404 page](https://www-dev.allizom.org/404/) is localized.
 * If your language is RTL, make sure that the page layout and text flow in the correct directions.
 
@@ -60,7 +60,7 @@ Updated translations are pushed to the production server regularly throughout th
 
 * New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.
 * Activated page with new string update (no tags): The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.
-* Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server.
+* Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server. The obsolete string will be removed three months after the introduction of the new string update.
 * Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
 * Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
 
@@ -73,17 +73,15 @@ Updated translations are pushed to the production server regularly throughout th
 
 It is safe to say that it will take less than an hour to see your changes reflected on the production server.
 
-When a project has a firm deadline to meet, it will be communicated through the [dev-l10n-web mailing list](https://lists.mozilla.org/listinfo/dev-l10n-web). Be sure to sign up so you receive important community wide information on web related projects. You can also check out the deadline at page level in Pontoon.
+When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through [the l10n-community room on Matrix]https://chat.mozilla.org/#/room/#l10n-community:mozilla.org). 
 
-## Testing content migrated to Fluent
-
-This section focuses on review and test after a page is migrated to Fluent.
+## Testing content in Fluent
 
 ### Reviewing and updating [brands.ftl](https://github.com/mozilla-l10n/www-l10n/blob/master/en/brands.ftl)
 
-This new file captures all the brand and product names that appear in all the pages on mozilla.org as of now. As a general rule, brands and product names remain unchanged. The exceptions are:
+This file captures all the brand and product names that appear in all the pages on mozilla.org. As a general rule, brands and product names remain unchanged. The exceptions are:
 
-* Account/Accounts in Firefox Account/Accounts
+* Account/Accounts in Mozilla Account/Accounts
 * Sync in Firefox Sync
 * Browser in Firefox Browser
 
@@ -123,36 +121,39 @@ This section focuses on instructions for testing pages with dynamically generate
 
 * Click the **Sign In to Monitor** button, you will be taken to the sign-in page in order to get to the [Firefox Monitor](https://monitor.firefox.com) site.
 * Click on the links under each of the following products:
-   * Firefox browser
-   * Firefox Lockwise
+   * Firefox Browser
    * Firefox Monitor
+   * Firefox Relay	
+   * Mozilla VPN
+   * Pocket
 
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 
 ### [firefox/all.ftl](https://www.mozilla.org/firefox/all/)
 
-On the lower left side of the page:
-* These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
-* Click on the **Source code** link, you will be directed to the topic on [MDN](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Source_Code) site in your language if it is localized.
+On the right side of the page, there is a four-step process to go through in order to download a Firefox browser. 
+* Browsers: choose one of the options either for desktop or mobile. Click on the `?` next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.
+* Platforms: Click on the `?`, a popup window shows the descriptions of different versions of installers available for download.
+* Languages: A list of currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
+* Download: The **Download Now** button appears if the three categories are all available. 
+
+On the lower left side of the above four pages, you will see these links:
+ * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
+* Click on the **Source code** link, you will be directed to the [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) page which is not localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
 
-On the right side of the page:
-* Click on the `?` at the end of **Which browser would you like to download?**, a popup window shows the descriptions of different versions of Firefox available for download.
-* Click on the `?` at the end of **Select your preferred installer**, a popup window shows the descriptions of different versions of installers available for download.
-* Under the section of **Select your preferred language**, check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
 
 ### [firefox/new/download.ftl](https://www.mozilla.org/firefox/new/)
 
-* Click the **Download Now** button to check the [thank you](https://www.mozilla.org/en-US/firefox/download/thanks) page that triggers an automatic download.
-* Click on the **Advanced install options & other platforms** link, a pop-up window displays options in various platforms.
-* Click on the **Download in another language** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page.
-* Click on the **Fix a problem** link, you will be directed to this [SUMO](https://support.mozilla.org/kb/refresh-firefox-reset-add-ons-and-settings) article in your language if it is localized.
+* Click the **Download Firefox** button to check the [thank you](https://www.mozilla.org/firefox/download/thanks) page that triggers an automatic download.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
+* Click on the **Download options and other languages** link, you will be directed to the [firefox/all](https://www.mozilla.org/firefox/all/) page.
+* Click on the **Firefox Browser support** link, you will be directed to the [SUMO](https://support.mozilla.org/products/firefox) site featuring various topics on Firefox.
 
-### [navigation.ftl](https://www.mozilla.org/)
+### [navigation_v2.ftl](https://www.mozilla.org/)
 
-This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox**, **Projects**, **Developers** or **About**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
+This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox Browsers**, **Products**, **Who We Are** or **Innovation**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
 * Not all links take you to a site that’s localizable for all locales.
 * Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
