@@ -30,7 +30,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Header line break wraps at proper place.
 * Text not overlapping graphic.
 * Terminology consistent with product, and among web pages.
-* Brand names remain in English, with a few exceptions due to [declension](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions). Check out [these detailed guidelines](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when working with brands and trademarks.
+* Brand names remain in English, with a few exceptions due to [declension](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions). Check out [these detailed guidelines](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when working with brands and trademarks. 
 * Product names comply to Mozilla guideline and adhere to what the community has agreed to.
 * No corrupted characters.
 * Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not.
@@ -73,7 +73,7 @@ Updated translations are pushed to the production server regularly throughout th
 
 It is safe to say that it will take less than an hour to see your changes reflected on the production server.
 
-When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through [the l10n-community room on Matrix](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org).
+When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through [the l10n-community room on Matrix](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org). 
 
 ## Testing content in Fluent
 
@@ -102,7 +102,7 @@ Report issues that can’t be resolved in Pontoon by:
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
-* If additional tag must be added in your language for a particular string in order to make it make sense, this will generate a linter error. You can request the l10n PM to make an exception.
+* If additional tag is needed for your language for a particular string to 
 
 ### Reporting vendor translation errors
 
@@ -121,7 +121,7 @@ This section focuses on instructions for testing pages with dynamically generate
 On the landing page of the Mozilla account page, click on the links under each of the following products which take you to product specific pages:
    * Firefox Browser
    * Firefox Monitor
-   * Firefox Relay
+   * Firefox Relay	
    * Mozilla VPN
    * Pocket
 
@@ -131,17 +131,18 @@ Note: You may see different languages between mozilla.org, the login window, and
 
 ### [firefox/all.ftl](https://www.mozilla.org/firefox/all/)
 
-On the right side of the page, there is a four-step process to go through in order to download a Firefox browser.
+On the right side of the page, there is a four-step process to go through in order to download Firefox. 
 * Browsers: choose one of the options either for desktop or mobile. Click on the `?` next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.
 * Platforms: Click on the `?`, a popup window shows the descriptions of different versions of installers available for download.
-* Languages: A list of currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
+* Languages: A list of languages currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
 * Download: The **Download Now** button appears.
 
 On the lower left side of each page, you will see these links:
- * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
+* These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) page which is not localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
+
 
 ### [firefox/new/download.ftl](https://www.mozilla.org/firefox/new/)
 
@@ -152,7 +153,7 @@ On the lower left side of each page, you will see these links:
 
 ### [navigation_v2.ftl](https://www.mozilla.org/)
 
-This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox Browsers**, **Products**, **Who We Are** or **Innovation**, you will see a drop-down window with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
+This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox Browsers**, **Products**, **Who We Are** or **Innovation**, you will see a drop-down panel with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
 * Not all links take you to a site that’s localizable for all locales.
 * Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
