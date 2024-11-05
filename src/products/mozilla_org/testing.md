@@ -138,7 +138,7 @@ On the right side of the page, there is a four-step process to go through in ord
 * Download: The **Download Now** button appears.
 
 On the lower left side of each page, you will see these links:
- * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
+* These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) page which is not localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
