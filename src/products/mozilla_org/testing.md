@@ -30,7 +30,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Header line break wraps at proper place.
 * Text not overlapping graphic.
 * Terminology consistent with product, and among web pages.
-* Brand names remain in English, with a few exceptions due to declension.
+* Brand names remain in English, with a few exceptions due to [declension](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions). Check out [these detailed guidelines](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when working with brands and trademarks. 
 * Product names comply to Mozilla guideline and adhere to what the community has agreed to.
 * No corrupted characters.
 * Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not.
@@ -44,7 +44,7 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 * Click the download link, you should be able to download the product in your language, if it is localized, such as Firefox.
 * Font support and readability.
 * Footer: verify that the translation of the link is coherent and the link is functional.
-* Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/firefox/all/ to confirm. See [detailed steps below](https://github.com/mozilla-l10n/localizer-documentation/blob/main/src/products/mozilla_org/testing.md#firefoxallftl) to get to the language list.
+* Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/firefox/all/ to confirm. See [detailed steps below](#firefoxallftl) to get to the language list.
 * Error page: deliberately type a broken link, such as https://www.mozilla.org/firefox/neu/, check whether [404 page](https://www-dev.allizom.org/404/) is localized.
 * If your language is RTL, make sure that the page layout and text flow in the correct directions.
 
@@ -73,7 +73,7 @@ Updated translations are pushed to the production server regularly throughout th
 
 It is safe to say that it will take less than an hour to see your changes reflected on the production server.
 
-When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through [the l10n-community room on Matrix]https://chat.mozilla.org/#/room/#l10n-community:mozilla.org). 
+When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through [the l10n-community room on Matrix](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org). 
 
 ## Testing content in Fluent
 
@@ -81,9 +81,8 @@ When a project has a firm deadline to meet, it will be indicated at the top left
 
 This file captures all the brand and product names that appear in all the pages on mozilla.org. As a general rule, brands and product names remain unchanged. The exceptions are:
 
-* Account/Accounts in Mozilla Account/Accounts
-* Sync in Firefox Sync
-* Browser in Firefox Browser
+* Account/accounts in Mozilla account/accounts: Mozilla should be treated as a brand, but `account` and `accounts` should be translated. Both the singular and plural forms are used in lower cases. Uppercase is reserved for special use cases where headline case is necessary, for example legal document names and references.
+* Browser/Browsers in Firefox Browser/Browsers
 
 If your community decides to translate any of these products or feature names, translate it once and translate it in this file. Be sure to have a consensus among active contributors what the translation should be before updating this file. This practice will ensure term use consistency across all pages.  
 
@@ -91,7 +90,7 @@ Please refer to the [guidelines for brands and trademarks](https://mozilla-l10n.
 
 ### Reviewing and updating migrated files
 
-The project dashboard contains fewer files than before. This list will grow over time as the mozilla.org team continues migrating from .lang to Fluent. Keep track of what is reviewed and what is pending for a review. Here are a few things to check:
+If you have finished reviewing migrated files for your locale, you can skip this section and move to the next one. If you still have files pending reviews, here are a few things to check:
 * On the project dashboard, if there is orange color in the status progress bar, click on the orange number of warnings. If the localized string is missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
 * Do not translate words in placeables, like term references.
 * If there is enough bandwidth within a team, work in pairs, one updates the string as a suggestion, another reviews and approves it.
@@ -100,14 +99,14 @@ The project dashboard contains fewer files than before. This list will grow ove
 ### Reporting technical issues
 
 Report issues that can’t be resolved in Pontoon by:
-
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
+* If additional tag is needed for your language for a particular string to 
 
 ### Reporting vendor translation errors
 
-If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by Mozilla staff or a translation vendor. Report any translation errors from Mozilla staff or a translation vendor by:
+If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a Mozilla staff or a translation vendor. Report any translation errors that can't be fixed in Pontoon by:
 
 * Filing a bug using one of these templates and selecting your locale in the component list:
   * This [template is to report a single error](https://mzl.la/2P9PABx).
@@ -119,13 +118,14 @@ This section focuses on instructions for testing pages with dynamically generate
 
 ### [firefox/accounts.ftl](https://www.mozilla.org/firefox/accounts/)
 
-* Click the **Sign In to Monitor** button, you will be taken to the sign-in page in order to get to the [Firefox Monitor](https://monitor.firefox.com) site.
-* Click on the links under each of the following products:
+On the landing page of the Mozilla account page, click on the links under each of the following products which take you to product specific pages:
    * Firefox Browser
    * Firefox Monitor
    * Firefox Relay	
    * Mozilla VPN
    * Pocket
+
+If you already have an account, click on the `Manage your account` link on the right side of the landing page, which will take you to the subscription page.  If you do not have an account, you will be invited to create an account by providing an email address in the `Sign In` box.
 
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 
@@ -135,9 +135,9 @@ On the right side of the page, there is a four-step process to go through in ord
 * Browsers: choose one of the options either for desktop or mobile. Click on the `?` next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.
 * Platforms: Click on the `?`, a popup window shows the descriptions of different versions of installers available for download.
 * Languages: A list of currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
-* Download: The **Download Now** button appears if the three categories are all available. 
+* Download: The **Download Now** button appears.
 
-On the lower left side of the above four pages, you will see these links:
+On the lower left side of each page, you will see these links:
  * These two sites are in English only: [Check the system requirements](https://www.mozilla.org/firefox/system-requirements/) and [Release notes](https://www.mozilla.org/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) page which is not localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) document is localized in limited number of languages.
