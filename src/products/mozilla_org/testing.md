@@ -134,7 +134,7 @@ Note: You may see different languages between mozilla.org, the login window, and
 On the right side of the page, there is a four-step process to go through in order to download a Firefox browser. 
 * Browsers: choose one of the options either for desktop or mobile. Click on the `?` next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.
 * Platforms: Click on the `?`, a popup window shows the descriptions of different versions of installers available for download.
-* Languages: A list of currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
+* Languages: A list of languages currently available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the **Download Now** button corresponds to your new selection.
 * Download: The **Download Now** button appears.
 
 On the lower left side of each page, you will see these links:
