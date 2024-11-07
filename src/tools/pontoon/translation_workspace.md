@@ -176,7 +176,7 @@ The space below the editor displays the list of [translations](glossary.md#trans
 
 Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
-* The role of the translator within the locale and project
+* The status of the user (see [Status banners](http://localhost:3000/tools/pontoon/translation_workspace.html#status-banners)).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
@@ -195,11 +195,18 @@ In the screenshot above, the first item is the approved translation (green check
 
 #### Status banners
 
-Status banners reflect the permissions of the user within the respective locale and project. Each translator’s banner is displayed at the bottom of their profile picture.
+Status banners provide immediate context about a user to other community members. Banners indicate either the role of the user within the current project and locale, or if they are new to Pontoon. Banners are displayed at the bottom of a user's profile picture.
 
-![List of three possible status banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot of list of suggestions displaying 3/5 possible banners for users")
+![Collage of all 5 possible status banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot displaying a collage of all 5 possible status banners that can be displayed")
 
-Namely, team managers will get the `MNGR` tag, project managers get the `PM` tag, translators get the `TRNSL` tag, and those with site-wide admin permissions receive the `ADMIN` tag. Users who have joined within the last three months will get the `NEW USER` tag for their banner. Status banners also appear in translation comments (see below).
+The available status banners are:
+* `MNGR` for team managers.
+* `TRNSL` for translators.
+* `PM` for project managers.
+* `ADMIN` for users with site-wide admin permissions.
+* `NEW` for users who have joined within the last 3 months.
+
+Status banners will also appear in translation comments (see below).
 
 #### Translation comments
 
