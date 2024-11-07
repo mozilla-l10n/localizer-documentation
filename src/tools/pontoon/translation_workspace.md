@@ -176,7 +176,7 @@ The space below the editor displays the list of [translations](glossary.md#trans
 
 Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
-* The status of the user (see [Status banners](#status-banners)).
+* The status of the user (see [User banners](#user-banners)).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
@@ -193,20 +193,20 @@ Icons to the right indicate the [status](#translation-status) of each translatio
 
 In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
 
-#### Status banners
+#### User banners
 
-Status banners provide immediate context about a user to other community members. Banners indicate either the role of the user within the current project and locale, if they are administrators, or if they are new to Pontoon. Banners are displayed at the bottom of a user's profile picture.
+User banners provide immediate context about a user to other community members. They indicate either the role of the user, or that the user is new to Pontoon. Banners are displayed at the bottom of the user's avatar.
 
-![Collage of all 5 possible status banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot displaying a collage of all 5 possible status banners that can be displayed")
+![Collage of all 5 possible user banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot displaying a collage of all 5 possible user banners that can be displayed")
 
-The available status banners are:
-* `MNGR` for team managers.
-* `TRNSL` for translators.
-* `PM` for [project managers](teams_projects.md#project-page).
-* `ADMIN` for users with site-wide admin permissions.
+The available user banners are:
+* `MNGR` for [team managers](users.md#user-roles).
+* `TRNSL` for [translators](users.md#user-roles).
+* `PM` for [project managers](users.md#user-roles).
+* `ADMIN` for [administrators](users.md#user-roles).
 * `NEW` for users who have joined within the last 3 months.
 
-Status banners will also appear in translation comments (see below).
+User banners will also appear in translation comments (see below).
 
 #### Translation comments
 
