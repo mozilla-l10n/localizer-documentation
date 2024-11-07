@@ -175,8 +175,7 @@ A project could be enabled in *read-only mode* for some locales: their translati
 The space below the editor displays the list of [translations](glossary.md#translation) for the current string.
 
 Each entry contains:
-* The name of the translator and their profile picture (linking to their profile).
-* The status of the user (see [User banners](#user-banners)).
+* The name of the translator, their profile picture (linking to their profile page) and their banner (see [User banners](#user-banners)).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
