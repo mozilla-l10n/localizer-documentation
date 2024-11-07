@@ -176,7 +176,7 @@ The space below the editor displays the list of [translations](glossary.md#trans
 
 Each entry contains:
 * The name of the translator and their profile picture (linking to their profile).
-* The status of the user (see [Status banners](http://localhost:3000/tools/pontoon/translation_workspace.html#status-banners)).
+* The status of the user (see [Status banners](#status-banners)).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
@@ -195,14 +195,14 @@ In the screenshot above, the first item is the approved translation (green check
 
 #### Status banners
 
-Status banners provide immediate context about a user to other community members. Banners indicate either the role of the user within the current project and locale, or if they are new to Pontoon. Banners are displayed at the bottom of a user's profile picture.
+Status banners provide immediate context about a user to other community members. Banners indicate either the role of the user within the current project and locale, if they are administrators, or if they are new to Pontoon. Banners are displayed at the bottom of a user's profile picture.
 
 ![Collage of all 5 possible status banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot displaying a collage of all 5 possible status banners that can be displayed")
 
 The available status banners are:
 * `MNGR` for team managers.
 * `TRNSL` for translators.
-* `PM` for project managers.
+* `PM` for [project managers](teams_projects.md#project-page).
 * `ADMIN` for users with site-wide admin permissions.
 * `NEW` for users who have joined within the last 3 months.
 
