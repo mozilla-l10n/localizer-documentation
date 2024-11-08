@@ -175,7 +175,7 @@ A project could be enabled in *read-only mode* for some locales: their translati
 The space below the editor displays the list of [translations](glossary.md#translation) for the current string.
 
 Each entry contains:
-* The name of the translator and their profile picture (linking to their profile).
+* The name of the translator, their profile picture (linking to their profile page) and their banner (see [User banners](#user-banners)).
 * How long ago the entry was submitted (hover over to see the full date and time as a tooltip).
 * The translation.
 * Icons indicating translation status (see below).
@@ -191,6 +191,21 @@ Icons to the right indicate the [status](#translation-status) of each translatio
 ![List of suggestions and translations for a string](../../assets/images/pontoon/translation_workspace/translation_comments.png "Screenshot of list of suggestions and translations for a string with comment editing open")
 
 In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.
+
+#### User banners
+
+User banners provide immediate context about a user to other community members. They indicate either the role of the user, or that the user is new to Pontoon. Banners are displayed at the bottom of the user's avatar.
+
+![Collage of all 5 possible user banners](../../assets/images/pontoon/translation_workspace/status_banners.png "Screenshot displaying a collage of all 5 possible user banners that can be displayed")
+
+The available user banners are:
+* `MNGR` for [team managers](users.md#user-roles).
+* `TRNSL` for [translators](users.md#user-roles).
+* `PM` for [project managers](users.md#user-roles).
+* `ADMIN` for [administrators](users.md#user-roles).
+* `NEW` for users who have joined within the last 3 months.
+
+User banners will also appear in translation comments (see below).
 
 #### Translation comments
 
