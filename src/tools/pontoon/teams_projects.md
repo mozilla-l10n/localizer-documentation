@@ -36,7 +36,7 @@ Underneath the header, the following tabs are available to navigate between vari
 * **Bugs**: a list of open bugs for the locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/) (available in Mozilla's deployment).
 * **Info**: information about the team. Team managers can edit this by clicking on the `EDIT` button.
 * **Permissions**: [permissions management panel](users.md#managing-permissions) (available to [Team Managers](users.md#user-roles)).
-* **TM**: translation memory management panel (available to [Translators](users.md#user-roles)).
+* **TM**: [translation memory management](#translation-memory-management) panel (available to [Translators](users.md#user-roles)).
 
 By default, the Projects tab opens, showing a list of all projects enabled for the locale. Clicking on one of these projects leads to the [Localization page](#localization-page). Column headers can be used to sort the list of projects. For example, clicking on `Priority` will sort projects by their priority.
 
@@ -73,6 +73,15 @@ Click on `REQUEST PRETRANSLATION`, select the projects to add and then click `RE
 An email will be sent to Pontoon’s administrators, and they will act on the request. Please note that:
 * If a locale doesn’t have pretranslation enabled for any projects yet, it’s necessary to set up and train a new custom model, and this operation requires several hours.
 * For `pontoon.mozilla.org`, each request will be evaluated against specific [opt-in guidelines](https://mozilla-l10n.github.io/documentation/tools/pontoon/managing_pretranslation.html#opt-in-guidelines-to-enable-new-locales).
+
+### Translation memory management
+
+The TM ([translation memory](glossary.md#translation-memory)) tab lists all TM entries for the team. For each entry, source string and translation are provided, clicking on which leads to the translation workspace for the corresponding strings. Entries are only shown once for each unique combination of source string and translation. TM entries can be searched by the source string and translation using the Search field.
+
+The following actions are available:
+* **Edit**: after clicking the Edit button in the Actions column, the translation of the TM entry transforms into a textarea element and becomes editable. Next to it, Save and Cancel buttons appear. Clicking Save saves any changes to all corresponding TM entries and clicking Cancel cancels the editing action.
+* **Delete**: after clicking the Delete button in the Actions column, the button changes into the Delete N TM entries? confirmation button (with N representing the number of corresponding TM entries). Clicking that button deletes all corresponding TM entries and clicking Cancel cancels the editing action.
+* **Upload .TMX**: after clicking the Upload .TMX button above the TM entry list, an Open file dialog pops up. The user then selects the [TMX file](glossary.md#translation-memory) to upload, the TM entries from the file start to import into the team's TM, and eventually a success or error message appears.
 
 ## Projects
 
