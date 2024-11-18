@@ -22,22 +22,23 @@ The Teams page lists all locales that are enabled in Pontoon. It can be reached 
 
 ### Team page
 
-Access a specific team’s page by selecting it from the Teams page or by appending a locale code to the end of the Pontoon base URL with `/{LOCALE}` (e.g [pontoon.mozilla.org/it](https://pontoon.mozilla.org/it) for Italian). This page shows a list of all projects enabled for the locale. Clicking on one of these projects leads to the [Localization page](#localization-page).
+Access a specific team’s page by selecting it from the Teams page or by appending a locale code to the end of the Pontoon base URL with `/{LOCALE}` (e.g [pontoon.mozilla.org/it](https://pontoon.mozilla.org/it) for Italian).
 
 The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects. For example, select `MISSING` to see all missing strings across projects enabled for that locale in Pontoon.
 
 ![Header of team page for Italian](../../assets/images/pontoon/teams_projects/team_page_header.png)
 
-There are up to 5 tabs available to all [roles](users.md#user-roles), and 1 additional tab for those with Administrator or Team manager roles:
+Underneath the header, the following tabs are available to navigate between various Team page panels:
 
 * **Projects**: a list of all projects enabled in Pontoon for this locale.
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, last 12/6/3/1 months).
-* [**Insights**](#insights-graphs): contains data and trends presented in a graphical format about active users, time to review suggestions, review activity, and translation activity.
-* **Bugs**: a list of open bugs for this locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/). Note this is specific to Mozilla’s deployment of Pontoon.
+* [**Insights**](#insights-graphs): data and trends on contributor and localization activity.
+* **Bugs**: a list of open bugs for the locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/) (available in Mozilla's deployment).
 * **Info**: information about the team. Team managers can edit this by clicking on the `EDIT` button.
-* **Permissions**: [manage user permissions](users.md#managing-permissions).
+* **Permissions**: [permissions management panel](users.md#managing-permissions) (available to [Team Managers](users.md#user-roles)).
+* **TM**: translation memory management panel (available to [Translators](users.md#user-roles)).
 
-The labels and icon in the table header can be used to sort the list of projects. For example, clicking on `Priority` will sort based on project priority.
+By default, the Projects tab opens, showing a list of all projects enabled for the locale. Clicking on one of these projects leads to the [Localization page](#localization-page). Column headers can be used to sort the list of projects. For example, clicking on `Priority` will sort projects by their priority.
 
 Hovering a project in the Projects list will replace the progress bar with a set of detailed statistics (untranslated strings, missing strings, etc.). Note that all these numbers are links, use them to open the project with a filter already enabled, for example to display only missing strings. Clicking `ALL` accesses All Resources (i.e. all strings in all files) for this project.
 
@@ -81,7 +82,7 @@ The Projects page lists all projects that are available in Pontoon. It can be re
 
 ### Project page
 
-Access a project’s page by selecting it from the Projects page (e.g. [pontoon.mozilla.org/projects](https://pontoon.mozilla.org/projects/)). This page shows a list of all locales enabled for the project. Clicking on one of these locales leads to the [Localization page](#localization-page).
+Access a project’s page by selecting it from the Projects page (e.g. [pontoon.mozilla.org/projects](https://pontoon.mozilla.org/projects/)).
 
 The page header contains useful information about the current project:
 * **Priority**: priority from 5 stars (highest) to 1 star (lowest).
@@ -94,14 +95,16 @@ It also includes an indication of the overall status of completion and statistic
 
 ![Header of project page for Mozilla.org](../../assets/images/pontoon/teams_projects/project_page_header.png)
 
-There are up to 5 tabs available to all [roles](users.md#user-roles), and 1 additional tab for those with Administrator roles:
+Underneath the header, the following tabs are available to navigate between various Team page panels:
 
 * **Teams**: a list of all locales enabled in Pontoon for this project.
 * **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page]translation_workspace.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, last 12/6/3/1 months).
-* [**Insights**](#insights-graphs): contains data and trends presented in a graphical format about review activity and translation activity.
-* **Info**: information about this project.
+* [**Insights**](#insights-graphs): data and trends on contributor and localization activity.
+* **Info**: information about the project.
 * **Notifications**: contains functionality to notify those who have contributed to this project for defined locales.
+
+By default, the Teams tab opens, showing a list of all locales enabled for the project. Clicking on one of these locales leads to the [Localization page](#localization-page).
 
 ### Requesting a locale
 
@@ -123,15 +126,14 @@ The page header contains useful information about the current project (same as t
 
 ![Header of localization page](../../assets/images/pontoon/teams_projects/localization_page_header.png)
 
-There are 6 tabs available:
+Underneath the header, the following tabs are available to navigate between various Team page panels:
+
 * **Resources**: files available in the project.
 * **Tags**: a list of tags defined for this project. This tab will be visible only in projects where tags are enabled. For more information about tags, see [this page](translation_workspace.md#tags).
 * **Contributors**: a list of active contributors with their statistics, filterable by time. Unlike the tab available in the Team page, this only includes contributions to localization of the project for the current locale.
-* [**Insights**](#insights-graphs): contains data and trends presented in a graphical format about review activity and translation activity.
-* **Project info**: information about the project.
+* [**Insights**](#insights-graphs): data and trends on contributor and localization activity.
+* **Project info**: same content as the Info tab in the Project page.
 * **Team info**: same content as the Info tab in the Team page.
-
-In addition to the Localization page for each locale/project pair, there is also a special Localization page that allows access to all resources for all projects enabled for a specific locale. This can be accessed from the `/{LOCALE}/all-projects/all-resources` URL (e.g. [pontoon.mozilla.org/it/all-projects/all-resources](https://pontoon.mozilla.org/it/all-projects/all-resources) for Italian).
 
 ## Insights graphs
 
