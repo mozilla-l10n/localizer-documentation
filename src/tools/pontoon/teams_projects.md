@@ -36,7 +36,7 @@ Underneath the header, the following tabs are available to navigate between vari
 * **Bugs**: a list of open bugs for the locale, retrieved from [Bugzilla](https://bugzilla.mozilla.org/) (available in Mozilla's deployment).
 * **Info**: information about the team. Team managers can edit this by clicking on the `EDIT` button.
 * **Permissions**: [permissions management panel](users.md#managing-permissions) (available to [Team Managers](users.md#user-roles)).
-* **TM**: [translation memory management](#translation-memory-management) panel (available to [Translators](users.md#user-roles)).
+* **TM**: [translation memory management](#translation-memory-management) panel (available to [Translators](users.md#user-roles) and [Team Managers](users.md#user-roles)).
 
 By default, the Projects tab opens, showing a list of all projects enabled for the locale. Clicking on one of these projects leads to the [Localization page](#localization-page). Column headers can be used to sort the list of projects. For example, clicking on `Priority` will sort projects by their priority.
 
