@@ -24,7 +24,7 @@ The Teams page lists all locales that are enabled in Pontoon. It can be reached 
 
 Access a specific team’s page by selecting it from the Teams page or by appending a locale code to the end of the Pontoon base URL with `/{LOCALE}` (e.g [pontoon.mozilla.org/it](https://pontoon.mozilla.org/it) for Italian).
 
-The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the Localization page for all projects. For example, select `MISSING` to see all missing strings across projects enabled for that locale in Pontoon.
+The page header contains linguistic information about the current locale (plural form, writing direction, etc.), plus an indication of the overall status of completion and statistics. The statistics displayed in the rightmost column are active links to access the [translation workspace](translation_workspace.md) for all projects. For example, select `ALL STRINGS` to show all the strings for all projects enabled for a specific locale in Pontoon, or select `MISSING` to filter for all strings missing translations.
 
 ![Header of team page for Italian](../../assets/images/pontoon/teams_projects/team_page_header.png)
 
