@@ -78,6 +78,8 @@ An email will be sent to Pontoon’s administrators, and they will act on the re
 
 The TM ([translation memory](glossary.md#translation-memory)) tab lists all TM entries for the team. A source string and translation are provided for each entry, which upon clicking leads to the [translation workspace](translation_workspace.md) for the corresponding strings. Entries are only shown once for each unique combination of source string and translation. TM entries can be searched by source string or translation using the `Search` field.
 
+![TM Tab](../../assets/images/pontoon/teams_projects/tm_tab.png)
+
 The following actions are available:
 * **Edit**: after clicking the `Edit` button in the Actions column, the translation of the TM entry transforms into a textarea element and becomes editable. Next to it, `Save` and `Cancel` buttons appear. Clicking `Save` saves any changes to all corresponding TM entries and clicking `Cancel` cancels the editing action.
 * **Delete**: after clicking the `Delete` button in the Actions column, the button changes into the `Delete N TM entries?` confirmation button (with N representing the number of corresponding TM entries). Clicking that button deletes all corresponding TM entries and clicking `Cancel` cancels the editing action.
