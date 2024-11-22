@@ -4,14 +4,14 @@
 
 Mozilla.org is highly visible because the site houses the basic info of all Mozilla products, conveys Mozilla’s mission, vision, and values it stands for. Additionally, it promotes initiatives and campaigns in time of these events. The localized versions reach 60% of the Mozilla users globally. It is very important that, not only the main pages are localized, they are thoroughly tested before they are launched on production.
 
+It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
+
 ## Key links
 
 * Production: https://www.mozilla.org/{locale_code}/
 * Staging: https://www-dev.allizom.org/{locale_code}/
 * Repository: https://github.com/mozilla-l10n/www-l10n
 * Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/
-
-It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.
 
 ## What to test
 
@@ -29,7 +29,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Truncation: button text should remain inside the button.
 * Header line break wraps at proper place.
 * Text not overlapping graphic.
-* Terminology consistent with product, and among web pages.
+* Terminology consistent with product across web pages.
 * Brand names remain in English, with a few exceptions due to [declension](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions). Check out [these detailed guidelines](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when working with brands and trademarks.
 * Product names comply to Mozilla guideline and adhere to what the community has agreed to.
 * No corrupted characters.
@@ -82,7 +82,7 @@ When a project has a firm deadline to meet, it will be indicated at the top left
 This file captures all the brand and product names that appear in all the pages on mozilla.org. As a general rule, brands and product names remain unchanged. The exceptions are:
 
 * Account/accounts in Mozilla account/accounts: Mozilla should be treated as a brand, but `account` and `accounts` should be translated. Both the singular and plural forms are used in lower cases. Uppercase is reserved for special use cases where headline case is necessary, for example legal document names and references.
-* Browser/Browsers in Firefox Browser/Browsers
+* Browser/Browsers in Firefox Browser/Browsers.
 
 If your community decides to translate any of these products or feature names, translate it once and translate it in this file. Be sure to have a consensus among active contributors what the translation should be before updating this file. This practice will ensure term use consistency across all pages.  
 
@@ -94,11 +94,11 @@ Report issues that can’t be resolved in Pontoon by:
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
-* If an extra tag is added to a string in order for it make sense in your language, the string will generate a linter error. The l10n PM for the project will consult you whether to make this an exception so it will not generate a linter error in the future. 
+* If an extra tag is added to a string in order for it make sense in your language, the string will generate a linter error. The l10n PM for the project will consult you whether to make this an exception so it will not generate a linter error in the future.
 
 ### Reporting vendor translation errors
 
-If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a Mozilla staff or a translation vendor. Report any translation errors that can't be fixed in Pontoon by:
+If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a translation vendor. Report any translation errors that can't be fixed in Pontoon by:
 
 * Filing a bug using one of these templates and selecting your locale in the component list:
   * This [template is to report a single error](https://mzl.la/2P9PABx).
@@ -111,13 +111,13 @@ This section focuses on instructions for testing pages with dynamically generate
 ### [firefox/accounts.ftl](https://www.mozilla.org/firefox/accounts/)
 
 On the landing page of the Mozilla account page, click on the links under each of the following products which take you to product specific pages:
-   * Firefox Browser
-   * Firefox Monitor
-   * Firefox Relay
-   * Mozilla VPN
-   * Pocket
+* Firefox Browser
+* Firefox Monitor
+* Firefox Relay
+* Mozilla VPN
+* Pocket
 
-If you already have an account, click on the `Manage your account` link on the right side of the landing page, which will take you to the subscription page.  If you do not have an account, you will be invited to create an account by providing an email address in the `Sign In` box.
+If you already have an account, click on the `Manage your account` link on the right side of the landing page, which will take you to the subscription page. If you do not have an account, you will be invited to create an account by providing an email address in the `Sign In` box.
 
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 
