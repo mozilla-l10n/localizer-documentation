@@ -33,7 +33,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 * Brand names remain in English, with a few exceptions due to [declension](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions). Check out [these detailed guidelines](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when working with brands and trademarks.
 * Product names comply to Mozilla guideline and adhere to what the community has agreed to.
 * No corrupted characters.
-* Click on the links on the page, which should take you to the pages of the same language if they are localized, or they will be redirected to en-US if the pages are not.
+* Click the links on the page to navigate to localized pages in the same language. If a page is not localized, you will be redirected based on your language preference settings (e.g., Fulah > French > English). If no preferences are set, the default is en-US.
 * Navigation terms consistent with the page titles they are linked to (except when the navigation term is shortened due to space limitation).
 * Footer links don’t overlap with one another.
 
@@ -59,10 +59,10 @@ You can make linguistic changes directly in [Pontoon](https://pontoon.mozilla.or
 Updated translations are pushed to the production server regularly throughout the day.
 
 * New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.
-* Activated page with new string update (no tags): The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.
-* Activated page with tagged new string update: The switch to the updated content happens when tagged strings are fully localized. In some cases, there is a defined period of time frame to allow tagged strings to be fully localized. Test the updates on staging server. The obsolete string will be removed three months after the introduction of the new string update.
-* Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready.
-* Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. We might decide to disable it manually.
+* Activated page with added strings: The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.
+* Activated page with string updates: The switch to the updated content happens when the replacements of obsolete strings are fully localized. In some cases, there is a defined period of time frame to show the new strings on production so test the updates on staging server. The obsolete string will be removed three months after the introduction of the replacement strings.
+* Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready, or other user preferred localized versions are not available either.
+* Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. They may be subjected to removal.
 
 ### Sync and update frequencies
 
@@ -88,21 +88,13 @@ If your community decides to translate any of these products or feature names, t
 
 Please refer to the [guidelines for brands and trademarks](https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark) when reviewing and updating this file.
 
-### Reviewing and updating migrated files
-
-If you have finished reviewing migrated files for your locale, you can skip this section and move to the next one. If you still have files pending reviews, here are a few things to check:
-* On the project dashboard, if there is orange color in the status progress bar, click on the orange number of warnings. If the localized string is missing a term reference, chances are, the product or brand name is translated, transliterated or declensed. Insert the variable to replace the translated/transliterated/declensed term.
-* Do not translate words in placeables, like term references.
-* If there is enough bandwidth within a team, work in pairs, one updates the string as a suggestion, another reviews and approves it.
-* Review your changes on production, especially those with brand and product names.
-
 ### Reporting technical issues
 
 Report issues that can’t be resolved in Pontoon by:
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
-* If additional tag must be added in your language for a particular string in order to make it make sense, this will generate a linter error. You can request the l10n PM to make an exception.
+* If an extra tag is added to a string in order for it make sense in your language, the string will generate a linter error. The l10n PM for the project will consult you whether to make this an exception so it will not generate a linter error in the future. 
 
 ### Reporting vendor translation errors
 
@@ -152,7 +144,7 @@ On the lower left side of each page, you will see these links:
 
 ### [navigation_v2.ftl](https://www.mozilla.org/)
 
-This page is activated on production whether it is localized or not. It is not an independent page but a file of shared content. When clicking on any of these topics on the navigation bar, **Firefox Browsers**, **Products**, **Who We Are** or **Innovation**, you will see a drop-down panel with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
+The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, **Firefox Browsers**, **Products**, **Who We Are** or **Innovation**, you will see a drop-down panel with subcategory topics. Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
 * Not all links take you to a site that’s localizable for all locales.
 * Not all products are offered in your locale.
 * Brand and product names must remain unchanged.
