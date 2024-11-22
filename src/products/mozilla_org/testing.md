@@ -60,9 +60,9 @@ Updated translations are pushed to the production server regularly throughout th
 
 * New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.
 * Activated page with added strings: The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.
-* Activated page with string updates: The switch to the updated content happens when the replacements of obsolete strings are fully localized. In some cases, there is a defined period of time frame to show the new strings on production so test the updates on staging server. The obsolete string will be removed three months after the introduction of the replacement strings.
+* Activated page with string updates: The switch to the updated content happens when the replacements of obsolete strings are fully localized. In some cases, there is a defined time frame to show the new strings on production, so test the updates on staging server. The obsolete string will be removed three months after the introduction of the replacement strings.
 * Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready, or other user preferred localized versions are not available either.
-* Activated page missing too many updates: An activated page falling far behind with multiple updates will create bad user experience. They may be subjected to removal.
+* Activated page missing too many updates: An activated page falling far behind with multiple updates will create poor user experience. They may be subjected to removal.
 
 ### Sync and update frequencies
 
@@ -94,11 +94,11 @@ Report issues that can’t be resolved in Pontoon by:
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
 * Adding the l10n PM in charge for NI. The l10n PM information appears at the top left corner on the [project page](https://pontoon.mozilla.org/projects/mozillaorg/).
 * Including the file name plus a screenshot and/or URL.
-* If an extra tag is added to a string in order for it make sense in your language, the string will generate a linter error. The l10n PM for the project will consult you whether to make this an exception so it will not generate a linter error in the future.
+* If an extra tag is added to a string in order for it make sense in your language, the string will generate an error report. The l10n PM for the project will consult you whether to make this an exception so it will not generate an error report in the future.
 
 ### Reporting vendor translation errors
 
-If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a translation vendor. Report any translation errors that can't be fixed in Pontoon by:
+If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a translation vendor. Report any translation errors by:
 
 * Filing a bug using one of these templates and selecting your locale in the component list:
   * This [template is to report a single error](https://mzl.la/2P9PABx).
