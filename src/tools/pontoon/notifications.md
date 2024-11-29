@@ -58,6 +58,10 @@ This notification is sent once a day to authors of suggestions, to inform them t
 
 This notification is sent to team managers, as soon as a new user makes the first contribution to their team.
 
+### Badge level gained
+
+This notification is sent to a user upon gaining a new [badge level](profile.md#achievement-badges) from reviewing a translation, submitting a translation, or promoting a user.
+
 ### Manual notifications
 
 Administrators can send manual notifications to a project, including all locales or a subset of them. Unlike other types of notifications, this can’t be disabled.
