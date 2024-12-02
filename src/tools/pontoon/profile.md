@@ -14,13 +14,13 @@ Users can customize their information and the visibility of specific fields in t
 ## Achievement badges
 
 Achievement badges awarded to a user are displayed beneath their contact information. The available badge types, from left to right in the image below, include:
-* **Review Master**, awarded for reviewing translations.
 * **Translation Champion**, awarded for submitting translations.
+* **Review Master**, awarded for reviewing translations.
 * **Community Builder**, awarded for promoting users to higher roles.
 
 ![Achievement badges](../../assets/images/pontoon/profile/badges.png "Screenshot of all possible achievement badges")
 
-Each badge has three levels. If a user holds a badge at level two or higher, the level is shown at the bottom left of the badge icon.
+Each badge has multiple levels. If a user holds a badge at level two or higher, the level is shown at the bottom left of the badge icon.
 
 ## Activity graphs
 

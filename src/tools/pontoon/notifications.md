@@ -58,9 +58,9 @@ This notification is sent once a day to authors of suggestions, to inform them t
 
 This notification is sent to team managers, as soon as a new user makes the first contribution to their team.
 
-### Badge level gained
+### Badge awarded
 
-This notification is sent to a user upon gaining a new [badge level](profile.md#achievement-badges) from reviewing a translation, submitting a translation, or promoting a user.
+This notification is sent to a user upon being awarded with a [badge or badge level](profile.md#achievement-badges) from reviewing and submitting translations, or promoting users.
 
 ### Manual notifications
 
