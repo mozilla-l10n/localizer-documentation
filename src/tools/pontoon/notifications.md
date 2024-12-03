@@ -60,7 +60,7 @@ This notification is sent to team managers, as soon as a new user makes the firs
 
 ### Badge awarded
 
-This notification is sent to a user upon being awarded with a [badge or badge level](profile.md#achievement-badges) from reviewing and submitting translations, or promoting users.
+This notification is sent to a user upon being awarded with a [badge or new badge level](profile.md#achievement-badges) from reviewing and submitting translations, or promoting users.
 
 ### Manual notifications
 
