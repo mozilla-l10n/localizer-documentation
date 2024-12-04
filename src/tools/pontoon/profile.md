@@ -22,7 +22,7 @@ Achievement badges awarded to a user are displayed beneath their contact informa
 
 Each badge has multiple levels. If a user holds a badge at level two or higher, the level is shown at the bottom left of the badge icon.
 
-Once a new badge or badge level is achieved, users will be notified with a pop-up tooltip on their screen.
+Whenever they earn a new badge or level up an existing badge, users will be notified with a pop-up and a notification.
 
 ## Activity graphs
 
