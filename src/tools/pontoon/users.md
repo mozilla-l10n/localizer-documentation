@@ -33,6 +33,7 @@ In this section it’s possible to update the display name and other personal in
 In this section it’s possible to update the display name and other personal information:
 * `Contact email address`: if provided, this email address will be used for email communications and displayed in the Profile page instead of the login email address.
 * `News and updates`: if enabled, you will get the latest updates about localization at Mozilla, announcements about new Pontoon features, invitations to contributor events and more.
+* `Monthly activity summary`: if enabled, you will get an email summary of your personal activity and the activity within your teams in the last month.
 
 ### Notification subscriptions
 
