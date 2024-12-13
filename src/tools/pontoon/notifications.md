@@ -10,7 +10,7 @@ Clicking `See all Notifications` at the bottom will take the user to the complet
 
 ## Receiving notifications in the browser
 
-It’s possible to receive Pontoon’s notifications directly in the browser by installing the Pontoon Add-on. This add-on is available for both [Firefox](https://addons.mozilla.org/firefox/addon/pontoon-tools/) and [Chrome](https://chrome.google.com/webstore/detail/pontoon-add-on/gnbfbnpjncpghhjmmhklfhcglbopagbb).
+Pontoon notifications can be delivered directly to your browser through the Pontoon Add-on, which is compatible with both [Firefox](https://addons.mozilla.org/firefox/addon/pontoon-tools/) and [Chrome](https://chrome.google.com/webstore/detail/pontoon-add-on/gnbfbnpjncpghhjmmhklfhcglbopagbb).
 
 ## Disabling notifications
 
