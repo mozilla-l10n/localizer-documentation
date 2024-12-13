@@ -39,7 +39,7 @@ In this section it’s possible to update the display name and other personal in
 
 Pontoon can send internal notifications to users for specific events. All notifications are enabled by default, but can be disabled by using the corresponding checkbox.
 
-Additionally, for each notification category, users have the option to receive updates via email in the form of a digest. Email digests can be scheduled to arrive either daily or weekly, based on the user’s selection.
+Additionally, for each notification type, users have the option to receive updates via email in the form of a digest. Email digests can be scheduled to arrive either daily or weekly, based on the user’s selection.
 
 For more information about this topic, refer to the page dedicated to [notifications](notifications.md).
 
