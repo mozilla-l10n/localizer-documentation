@@ -8,6 +8,10 @@ When the user receives a notification, the bell icon near the user avatar in the
 
 Clicking `See all Notifications` at the bottom will take the user to the complete list of notifications. The same list can also be accessed by opening the `/notifications` URL directly (e.g. [pontoon.mozilla.org/notifications](https://pontoon.mozilla.org/notifications/)).
 
+## Receiving notifications via email
+
+Pontoon also offers the option to receive notifications via email, allowing you to stay informed about important events even when you're not actively using the platform. You can [choose to receive email notifications](users.md#user-settings) as a daily or weekly digest summary and customize your preferences by subscribing to specific notification types individually.
+
 ## Receiving notifications in the browser
 
 Pontoon notifications can be delivered directly to your browser through the Pontoon Add-on, which is compatible with both [Firefox](https://addons.mozilla.org/firefox/addon/pontoon-tools/) and [Chrome](https://chrome.google.com/webstore/detail/pontoon-add-on/gnbfbnpjncpghhjmmhklfhcglbopagbb).
