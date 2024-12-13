@@ -34,15 +34,11 @@ In this section it’s possible to update the display name and other personal in
 * `Contact email address`: if provided, this email address will be used for email communications and displayed in the Profile page instead of the login email address.
 * `Email communications`: if enabled, you will get the latest updates about localization at Mozilla, announcements about new Pontoon features, invitations to contributor events and more.
 
-### Appearance
+### Notification subscriptions
 
-The user can chose between a light and dark combination of colors for Pontoon. There are three theme options available:
+Pontoon can send internal notifications to users for specific events. All notifications are enabled by default, but can be disabled by using the corresponding checkbox.
 
-* Light.
-* Dark.
-* Match system (aligns with the theme used by the operating system).
-
-To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
+For more information about this topic, refer to the page dedicated to [notifications](notifications.md).
 
 ### External accounts
 
@@ -60,11 +56,15 @@ These are the available data fields:
 * `External accounts`: by default, this data is only visible to translators, but it can be made public.
 * `Approval rate` and `Self-approval rate`: by default, these fields are set as public, but can be limited to translators.
 
-### Notification subscriptions
+### Appearance
 
-Pontoon can send internal notifications to users for specific events. All notifications are enabled by default, but can be disabled by using the corresponding checkbox.
+The user can chose between a light and dark combination of colors for Pontoon. There are three theme options available:
 
-For more information about this topic, refer to the page dedicated to [notifications](notifications.md).
+* Light.
+* Dark.
+* Match system (aligns with the theme used by the operating system).
+
+To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.
 
 ### Editor
 
