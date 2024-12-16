@@ -10,7 +10,7 @@ Clicking `See all Notifications` at the bottom will take the user to the complet
 
 ## Receiving notifications via email
 
-Pontoon also offers the option to receive notifications via email, allowing you to stay informed about important events even when you're not actively using the platform. You can [choose to receive email notifications](users.md#user-settings) as a daily or weekly digest summary and customize your preferences by subscribing to specific notification types individually.
+Pontoon also offers the option to receive notifications via email, allowing users to stay informed about important events even when they're not actively using the platform. They can [choose to receive email notifications](users.md#user-settings) as a daily or weekly digest and customize their preferences by subscribing to specific notification types.
 
 ## Receiving notifications in the browser
 

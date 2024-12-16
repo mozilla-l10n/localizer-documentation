@@ -33,13 +33,13 @@ In this section it’s possible to update the display name and other personal in
 In this section it’s possible to update the display name and other personal information:
 * `Contact email address`: if provided, this email address will be used for email communications and displayed in the Profile page instead of the login email address.
 * `News and updates`: if enabled, you will get the latest updates about localization at Mozilla, announcements about new Pontoon features, invitations to contributor events and more.
-* `Monthly activity summary`: if enabled, you will get an email summary of your personal activity and the activity within your teams in the last month.
+* `Monthly activity summary`: if enabled, you will get an email summary of your personal activity and the activity within your teams from the previous month.
 
 ### Notification subscriptions
 
 Pontoon can send internal notifications to users for specific events. All notifications are enabled by default, but can be disabled by using the corresponding checkbox.
 
-Additionally, for each notification type, users have the option to receive updates via email in the form of a digest. Email digests can be scheduled to arrive either daily or weekly, based on the user’s selection.
+Additionally, for each notification type, users can choose to receive email updates in a digest format. These email digests can be scheduled to arrive either daily or weekly, depending on the user’s selection.
 
 For more information about this topic, refer to the page dedicated to [notifications](notifications.md).
 
