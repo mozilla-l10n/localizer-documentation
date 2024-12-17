@@ -113,7 +113,6 @@ Underneath the header, the following tabs are available to navigate between vari
 * **Contributors**: a list of active contributors with their statistics, filterable by time (all time, last 12/6/3/1 months).
 * [**Insights**](#insights-graphs): data and trends on contributor and localization activity.
 * **Info**: information about the project.
-* **Notifications**: contains functionality to notify those who have contributed to this project for defined locales.
 
 By default, the Teams tab opens, showing a list of all locales enabled for the project. Clicking on one of these locales leads to the [Localization page](#localization-page).
 
