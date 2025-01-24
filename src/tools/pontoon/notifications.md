@@ -39,6 +39,7 @@ Pontoon distinguishes between two types of comments:
 For either type of comment, a notification is sent as soon as a comment is added.
 
 For translation comments, the recipients are:
+* Users with the ability to review translations for the string.
 * Authors of other translation comments associated with the same translation.
 * Translation author.
 * Translation reviewer.
