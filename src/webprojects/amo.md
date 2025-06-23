@@ -8,7 +8,7 @@ AMO refers to https://addons.mozilla.org/. It is one of Mozilla’s biggest web 
 * [AMO frontend](https://pontoon.mozilla.org/projects/amo-frontend/) covers the top page of `about:addons` and the user-facing pages of addons.mozilla.org on Firefox for Android.
 * [Discovery Pane](https://pontoon.mozilla.org/projects/amo-frontend/) is home of curated add-ons available on `about:addons`.
 
-Product updates are deployed every Thursday to production. Localizable strings can be extracted on Tuesdays, strings localized by 5pm UTC each Tuesday go live on Thursday. To report a problem, you can use [GitHub issues](https://github.com/mozilla/addons-server/issues/new).
+Product updates are deployed every Thursday to production. Localizable strings can be extracted on Tuesdays, strings localized by 5pm UTC each Tuesday go live on Thursday. To report a problem, you can use [GitHub issues](https://github.com/mozilla/addons/issues).
 
 Now let’s take a look of these components in greater details.
 

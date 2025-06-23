@@ -129,7 +129,7 @@ This workflow utilizes the full power of Pontoon’s online translation features
 
 General notes:
 * Rely on Pontoon’s [translation tools](translation_workspace.md#translation-tools-and-comments) to ensure consistency and make the translation process faster.
-* When using Firefox, make sure to have a [dictionary](https://addons.mozilla.org/firefox/dictionaries/) installed for the translation language, and that spell checking is enabled in the translation text area.
+* When using Firefox, make sure to have a [dictionary](https://addons.mozilla.org/firefox/language-tools/) installed for the translation language, and that spell checking is enabled in the translation text area.
 
 ### Phase 2: review suggestions
 
