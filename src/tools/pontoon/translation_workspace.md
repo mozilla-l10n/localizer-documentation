@@ -263,7 +263,6 @@ The screenshot above shows a pinned comment, and the command to unpin it.
 
 Machinery shows possible translations from a variety of sources. These sources include:
 * [Pontoon’s internal translation memory](translate.md#downloading-and-uploading-translations).
-* [Microsoft Terminology](https://www.microsoft.com/Language/).
 * [Google Translate](https://translate.google.com).
 * [SYSTRAN](https://www.systran.net/).
 * [Caighdean](https://github.com/kscanne/caighdean).
