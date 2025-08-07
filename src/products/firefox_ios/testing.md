@@ -27,4 +27,4 @@ Concerning untranslated content: please note that we currently have two tiers of
 
 Please note this section about [prerequisites](https://mozilla-l10n.github.io/documentation/products/iOS_products/updating_locales.html#prerequisites-to-adding-a-locale) for adding a new locale to Firefox for iOS, as we are limited by the system settings.
 
-As soon as you begin working on Firefox for iOS in Pontoon, we automatically ship whatever translations are available and the work will appear in the next Nightly build.
+As soon as you begin working on Firefox for iOS in Pontoon, we automatically ship whatever translations are available and the work will appear in the next Beta build.
