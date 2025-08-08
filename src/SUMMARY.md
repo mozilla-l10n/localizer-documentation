@@ -13,7 +13,6 @@
         * [How to localize](products/firefox_android/how_to_localize.md)
         * [How to test](products/firefox_android/testing.md)
     * [Firefox for iOS](products/firefox_ios/README.md)
-        * [Adding a new locale](products/firefox_ios/adding_new_ios_locale.md)
         * [How to test](products/firefox_ios/testing.md)
     * [Focus](products/focus/README.md)
         * [How to localize](products/focus/how_to_localize.md)
