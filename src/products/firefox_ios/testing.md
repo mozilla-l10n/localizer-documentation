@@ -4,7 +4,7 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 ## Testing with screenshots
 
-Screenshots are currently provided by the iOS team, and the latest iterations can be found [right here](https://firefox-ci-tc.services.mozilla.com/tasks/index/mobile.v2.firefox-ios.l10n-screenshots.latest). Once you find your locale in the list, you should choose and download the .zip file that contains your locale code. You can always find the link to screenshots in Pontoon under the Firefox for iOS `RESOURCES` section, located in the top-left corner of the page.
+Screenshots are currently provided by the iOS team, and the latest iterations can be found [here](https://firefox-ci-tc.services.mozilla.com/tasks/index/mobile.v2.firefox-ios.l10n-screenshots.latest). Once you find your locale in the list, you should choose and download the .zip file that contains your locale code. You can always find the link to screenshots in Pontoon within the Firefox for iOS `RESOURCES` section, located in the top-left corner of the page.
 
 For every release, updated screenshots are provided twice: the first round will be delivered one week after string freeze, and the second round will include the latest localizations one week before Release Candidate. Both rounds follow the same [release calendar](https://whattrainisitnow.com/) used for Firefox and Firefox for Android. Make sure to check the latest Nightly channel for the exact dates. When in doubt, reach out to the localization mobile PM (currently **delphine** at **mozilla** dot **com**).
 
