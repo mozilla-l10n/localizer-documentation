@@ -23,7 +23,7 @@ Here is a list of issues you should try to identify when testing the build:
 * Font support.
 * Untranslated content.
 
-Concerning untranslated content: please note that there are two tiers of language support in iOS. If your locale is only in the Tier 2 support list, then it sometimes happens that menu items, which are part of the OS itself, may not be localizable — and will therefore unfortunately appear in the OS language in the final UI. To check if a locale is supported on iOS, look directly on a device under Language Settings. Tier 1 locales are listed under `iPhone Languages`, while Tier 2 locales appear under `Other Languages`. If a locale isn’t available in either list, it’s currently not supported by iOS.
+Concerning untranslated content: iOS provides two tiers of language support. Tier 1 locales are fully supported, while Tier 2 locales have more limited support. For Tier 2 locales, some UI elements supplied by the operating system may not be localizable and will appear in the UI in the OS language. To check whether a locale is supported, open Language Settings on an iOS device: Tier 1 locales are listed under `iPhone Languages`, while Tier 2 locales appear under `Other Languages`. If a locale does not appear in either list, it is currently not supported by iOS.
 
 ## Shipping a brand new locale
 
