@@ -1,6 +1,6 @@
 # Testing on iOS for a new release
 
-Localizers currently mostly rely on screenshots for testing. Latest information and updates about Firefox for iOS are generally announced on the [Discourse Localization category](https://discourse.mozilla.org/c/l10n/), which you should follow if you are working on localization for any of the existing Mozilla products.
+Localizers currently mostly rely on screenshots for testing. Latest information and updates about Firefox for iOS are generally announced in the [Localization Reports](https://blog.mozilla.org/l10n/category/l10n-reports/), which you should follow if you are working on localization for any of the existing Mozilla products.
 
 ## Testing with screenshots
 
@@ -11,7 +11,7 @@ For every release, updated screenshots are provided twice: one week after string
 ## Test builds
 
 The beta version used for testing can be found [here](https://www.firefox.com/en-US/channel/ios/testflight). In case the registration does not work from there, localizers can also reach out to the localization mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
-Please note you will need an iOS device running v13.6 or above.
+Please note you will need an iOS device running v15 or above.
 
 ## Aspects to review
 
