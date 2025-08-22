@@ -6,11 +6,11 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 Screenshots are currently provided by the iOS team, and the latest iterations can be found [here](https://firefox-ci-tc.services.mozilla.com/tasks/index/mobile.v2.firefox-ios.l10n-screenshots.latest). Once you find your locale in the list, you should choose and download the .zip file that contains your locale code. You can always find the link to screenshots in Pontoon within the Firefox for iOS `RESOURCES` section, located in the top-left corner of the page.
 
-For every release, updated screenshots are provided twice: the first round will be delivered one week after string freeze, and the second round will include the latest localizations one week before Release Candidate. Both rounds follow the same [release calendar](https://whattrainisitnow.com/) used for Firefox and Firefox for Android. Make sure to check the latest Nightly channel for the exact dates. When in doubt, reach out to the localization mobile PM (currently **delphine** at **mozilla** dot **com**).
+For every release, updated screenshots are provided twice: one week after string freeze (date shown on the current Nightly page) and one week before the Release Candidate (RC) (date shown on the Beta page). Both dates are part of the same [release calendar](https://whattrainisitnow.com/) used for Firefox and Firefox for Android. When in doubt, reach out to the localization mobile PM (currently **delphine** at **mozilla** dot **com**).
 
 ## Test builds
 
-The beta version used for testing can be found [here](https://www.mozilla.org/firefox/ios/testflight/). In case the registration does not work from there, localizers can also reach out to the localization mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
+The beta version used for testing can be found [here](https://www.firefox.com/en-US/channel/ios/testflight). In case the registration does not work from there, localizers can also reach out to the localization mobile PM in order to be added to these builds (currently **delphine** at **mozilla** dot **com**).
 Please note you will need an iOS device running v13.6 or above.
 
 ## Aspects to review
