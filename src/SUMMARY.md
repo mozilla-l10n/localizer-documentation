@@ -21,7 +21,7 @@
         * [How to test](products/mozilla_org/testing.md)
     * [Testing localization of Mozilla projects](products/l10n_testing.md)
 
-* [Tools](README.md)
+* [Tools](tools/README.md)
     * [Pontoon](tools/pontoon/README.md)
         * [How to translate](tools/pontoon/translate.md)
         * [Translation workspace](tools/pontoon/translation_workspace.md)
