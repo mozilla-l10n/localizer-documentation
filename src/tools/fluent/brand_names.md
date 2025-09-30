@@ -2,10 +2,9 @@
 
 Brand names, like Firefox or Sync, are stored as *Terms* in dedicated files, and shared across the application.
 
-Unless indicated otherwise in comments, the [current policy](https://www.mozilla.org/styleguide/communications/translation/) is that brand names can’t be:
-* Declined to adapt to grammatical case.
-* Transliterated.
+Unless indicated otherwise in comments, [the policy](https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark) is that brand names can’t be:
 * Translated.
+* Transliterated.
 
 **They need to be kept in English**, and sentences adapted as needed to fit the undeclined name.
 
