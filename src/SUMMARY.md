@@ -20,6 +20,7 @@
     * [Mozilla.org](products/mozilla_org/README.md)
         * [How to test](products/mozilla_org/testing.md)
     * [Testing localization of Mozilla projects](products/l10n_testing.md)
+    * [Current localization team ePMs](products/l10n_epms.md).
 
 * [Tools](tools/README.md)
     * [Pontoon](tools/pontoon/README.md)
