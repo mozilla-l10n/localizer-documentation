@@ -2,28 +2,28 @@
 
 ## Bryan
 
-* [Email](bolsson@mozilla.com)
+* Email: bolsson at mozilla dot com
 * GitHub [handle](https://github.com/bcolsson)
-* Bugzilla [email](bolsson@mozilla.com)
+* Bugzilla [profile](https://bugzilla.mozilla.org/user_profile?login=bolsson)
 * Product: Firefox for Desktop
 
 ## Delphine
 
-* [Email](delphine@mozilla.com)
+* Email: delphine at mozilla dot com
 * GitHub [handle](https://github.com/Delphine)
-* Bugzilla [account](lebedel.delphine@gmail.com)
+* Bugzilla [profile](https://bugzilla.mozilla.org/user_profile?login=lebedel.delphine)
 * Product: Firefox for Android, Firefox for iOS, Focus for Android, Focus for iOS
 
 ## Francesco (flod)
 
-* [Email](flodolo@mozilla.com)
+* Email: flodolo at mozilla dot com
 * GitHub [handle](https://github.com/flodolo)
-* Bugzilla [account](francesco.lodolo@gmail.com)
+* Bugzilla [profile](https://bugzilla.mozilla.org/user_profile?login=francesco.lodolo)
 * Localization team manager
 
 ## Peiying
 
-* [Email](pmo@mozilla.com)
+* Email: pmo at mozilla dot com
 * GitHub [handle](https://github.com/peiying2)
-* Bugzilla [account](pmo@mozilla.com)
+* Bugzilla [profile](https://bugzilla.mozilla.org/user_profile?login=cocomo)
 * Product: mozilla.org
