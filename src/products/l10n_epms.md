@@ -3,7 +3,7 @@
 ## Bryan
 
 * Email: bolsson(at)mozilla.com
-* GitHub [handle](https://github.com/bcolsson)
+* [GitHub profile](https://github.com/bcolsson)
 * Bugzilla [profile](https://bugzilla.mozilla.org/user_profile?login=bolsson)
 * Product: Firefox for Desktop
 
