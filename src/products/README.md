@@ -7,5 +7,5 @@ Documentation regarding testing and localization of the following products:
 * [Focus](focus/)
 * [Mozilla.org](mozilla_org/)
 
-Documentation about [testing localization of Mozilla projects](l10n_testing.md) in general.
+Documentation about [testing localization of Mozilla projects](l10n_testing.md) in general.<br>
 Localization team [project managers](l10n_epms.md).
