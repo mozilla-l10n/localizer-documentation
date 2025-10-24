@@ -8,4 +8,4 @@ Documentation regarding testing and localization of the following products:
 * [Mozilla.org](mozilla_org/)
 
 Documentation about [testing localization of Mozilla projects](l10n_testing.md) in general.
-Localization team [ePMs](l10n_epms.md).
+Localization team [project managers](l10n_epms.md).
