@@ -1,4 +1,4 @@
-# Localization team ePMs
+# Localization team project managers
 
 ## Bryan
 
