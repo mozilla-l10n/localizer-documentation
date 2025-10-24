@@ -30,7 +30,7 @@ How to localize and test Mozilla products:
 ### Other topics
 
 * [Testing localization of Mozilla projects](products/l10n_testing.md).
-* [Current localization team ePMs](products/l10n_epms.md).
+* [Localization team project managers](products/l10n_epms.md).
 
 ## How to contribute to documentation
 
