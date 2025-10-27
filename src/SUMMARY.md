@@ -7,6 +7,7 @@
     * [Giving good feedback](community/l10n_feedback.md)
 
 * [Products](products/README.md)
+    * [Project managers](products/l10n_project_managers.md)
     * [Firefox for desktop](products/firefox_desktop/README.md)
         * [How to test](products/firefox_desktop/testing.md)
     * [Firefox for Android](products/firefox_android/README.md)
