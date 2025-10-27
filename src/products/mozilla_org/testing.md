@@ -17,7 +17,7 @@ It’s highly advised you to ask other community members to conduct peer review 
 
 ### Pre-l10n test
 
-* Have your [glossary](https://transvision.mozfr.org/) available as a reference, select mozilla.org as Repository, your language as your Target Locale.
+* Have your [glossary](https://transvision.flod.org/) available as a reference, select mozilla.org as Repository, your language as your Target Locale.
 * For terminology consistency, reference the product or site that the page is for, assuming the product or site is localized (e.g.: Firefox, Monitor).
 * Have the matching US page up as reference, though some strings may not be identical due to A/B testing.
 * Have the project you just localized available for editing in Pontoon.

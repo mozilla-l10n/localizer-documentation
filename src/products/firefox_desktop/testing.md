@@ -74,7 +74,7 @@ If your locale uses a non Latin alphabet and opted to keep the English accesskey
 
 For shortcuts, you should test at least the [most common ones](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly). You should never change a shortcut, unless that combination of keys is not available in the keyboard layout commonly used for your locale. For example, in the Italian keyboard the character `[` is available pressing `Alt` and `è`. A shortcut based on `Shift + [` would never work, because it would be read as `Alt + Shift + è`.
 
-Transvision has a QA view to check both [accesskeys](https://transvision.mozfr.org/accesskeys/) and [keyboard shortcuts](https://transvision.mozfr.org/commandkeys/) for each locale.
+Transvision has a QA view to check both [accesskeys](https://transvision.flod.org/accesskeys/) and [keyboard shortcuts](https://transvision.flod.org/commandkeys/) for each locale.
 
 ### Test certificate error pages
 

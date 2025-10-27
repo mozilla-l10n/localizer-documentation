@@ -102,7 +102,7 @@ Variables and placeholders become exposed in the user interface when the transla
 
 Access keys are less effective when the same key is assigned to multiple functions within the same scope (menu, preference panel, etc.). Additionally, if the access key uses a letter not available in the label, it’s displayed near the label between parentheses. Multiple identical access keys in the same context (preference menu, toolbar menu) will require the user to press the letter twice to use it. Ideally, repetitions should be avoided, but that’s not possible in some places, e.g. the reorganized preferences shipping with Firefox 56 and later.
 
-It’s possible to see a list of access keys using letters not available in the associated label in your Firefox localization by looking at [this page in Transvision](https://transvision.mozfr.org/accesskeys/) for your locale.
+It’s possible to see a list of access keys using letters not available in the associated label in your Firefox localization by looking at [this page in Transvision](https://transvision.flod.org/accesskeys/) for your locale.
 
 ![Access key bug](../assets/images/l10n_testing/access_keys.png)
 
