@@ -113,18 +113,18 @@ Note: Snackbars are in-app and temporary (e.g. *Tab closed* or *Bookmark added*)
 
 Pay attention to messages displayed when you perform the following actions:
 
-\- add/delete bookmarks
-\- delete items from history
-\- create/rename a *Collection*
-\- add items to a *Collection*
-\- download a file
-\- open a private tab
-\- close a tab
-\- choose to move tabs to “*inactive*” from the *Tabs* menu in *Settings*. Check back in two weeks as the “inactive tabs” tray will appear (accessed via the tab icon beside the address bar)
-\- long-press an image to download it
-\- tap the *Share* button beneath an image
-\- sign in to an account, such as Google
-\- tap *Save* under an image, once you are logged into a Google account
-\- long-press a link within a webpage
-\- disable Wi-Fi and try using the app
-\- crash the browser: type `about:crashcontent` in the address bar
+* add/delete bookmarks
+* delete items from history
+* create/rename a *Collection*
+* add items to a *Collection*
+* download a file
+* open a private tab
+* close a tab
+* choose to move tabs to “*inactive*” from the *Tabs* menu in *Settings*. Check back in two weeks as the “inactive tabs” tray will appear (accessed via the tab icon beside the address bar)
+* long-press an image to download it
+* tap the *Share* button beneath an image
+* sign in to an account, such as Google
+* tap *Save* under an image, once you are logged into a Google account
+* long-press a link within a webpage
+* disable Wi-Fi and try using the app
+* crash the browser: type `about:crashcontent` in the address bar
