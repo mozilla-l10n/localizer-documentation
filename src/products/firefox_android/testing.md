@@ -16,7 +16,7 @@ Note that while users with Translator or Manager permissions can edit strings di
 
 If an issue cannot be fixed in Pontoon, you will have to open a bug in Bugzilla in Firefox for Android [here](https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox%20for%20Android&component=L10N) (under the L10N under *Component)*. Note that you will need to log in or create a [Bugzilla](https://bugzilla.mozilla.org/home) account to file a bug.
 
-Whenever in doubt, contact the current localization mobile ePM (link to ePM page).
+Whenever in doubt, contact the current localization mobile ePM ([list](l10n_project_managers.md) of localization project managers).
 
 ## Pre-requisites for testing
 
@@ -48,18 +48,18 @@ Overlap occurs when text expands and pushes parts of the user interface, causing
 
 There are two ways that this can be fixed:
 
-* The localizer can try shortening the translation in Pontoon, but this doesn’t always solve the issue. If that’s the case, the best solution is to file a bug as explained in the point above (link to section).
-* A developer can expand the UI to accommodate longer translations or enable text wrapping. Here again, a bug needs to be filed as explained above (link to section).
+* The localizer can try shortening the translation in Pontoon, but this doesn’t always solve the issue. If that’s the case, the best solution is to file a bug as explained in the [point above](#fixes-in-bugzilla).
+* A developer can expand the UI to accommodate longer translations or enable text wrapping. Here again, a bug needs to be filed as [explained above](#fixes-in-bugzilla).
 
 ### Language quality
 
 Language quality issues happen when a translation sounds unnatural or includes grammatical errors, incorrect terminology, awkward phrasing, or inconsistent tone.
 
-These issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/) directly (link to section).
+These issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/) directly ([see this section](#fixes-in-pontoon) for more info).
 
 ### Untranslated content
 
-If anything appears untranslated, but you know the string has been translated in Pontoon, file a bug (link to bugzilla section above). This may be due to strings being hardcoded, or an issue with importing translations back into the Firefox for Android repository.
+If anything appears untranslated, but you know the string has been translated in Pontoon, [file a bug](#fixes-in-bugzilla). This may be due to strings being hardcoded, or an issue with importing translations back into the Firefox for Android repository.
 
 However, untranslated content can also appear because of the delay between when strings land in Nightly and when translations are imported back into the app. Before filing a bug, wait until the next day as the following Nightly build should include the updated translations.
 
@@ -67,7 +67,7 @@ However, untranslated content can also appear because of the delay between when 
 
 Font support issues happen when a font used in the app doesn’t display certain characters or glyphs correctly. This can include missing letters, broken accents, or symbols that appear as boxes or question marks.
 
-This will need an engineering fix. Follow the steps to file a bug as described in the section above (link to bugzilla section above).
+This will need an engineering fix. Follow the steps to file a bug as described in the [section above](#fixes-in-bugzilla).
 
 ## Testing key UI elements
 
@@ -75,7 +75,7 @@ This will need an engineering fix. Follow the steps to file a bug as described i
 
 The onboarding flow is displayed only with a fresh profile. It can be triggered either by clearing the app’s data/storage through *Settings → Apps → Firefox → Storage & cache*, or more quickly by long-pressing the Firefox icon and selecting *App info → Storage & cache*. It’s important to note that this action will **remove all your existing data**.
 
-Localization can be tested by changing the device language and then launching Firefox with a fresh profile. If you do not want to lose your data on Nightly, you can use Android Studio Code as described in the instructions above (link to section). Note that it’s currently not possible to test the onboarding screens in a language not supported by Android.
+Localization can be tested by changing the device language and then launching Firefox with a fresh profile. If you do not want to lose your data on Nightly, you can use Android Studio Code as described in the [instructions above](#install-android-studio-code). Note that it’s currently not possible to test the onboarding screens in a language not supported by Android.
 
 ### Home screen
 
