@@ -8,9 +8,9 @@ This document provides an overview of frequent localization issues, recommended 
 
 ## Fixes in Pontoon
 
-When issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/), open the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) project and pick your locale to find the specific string in Pontoon. Click on the top right of the page, where it says *All Strings*. Type the string into the search bar and press Enter, and click the magnifying glass icon to open filters and refine your search. Read more about search [here](../../tools/pontoon/translation_workspace.html#string-list-and-search).
+When issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/), open the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) project and pick your locale to find the specific string in Pontoon. Click on the top right of the page, where it says *All Strings*. Type the string into the search bar and press Enter, and click the magnifying glass icon to open filters and refine your search. Read more about search [here](../../tools/pontoon/translation_workspace.md#string-list-and-search).
 
-Note that while users with Translator or Manager permissions can edit strings directly, contributors can only submit a suggestion. For more information, see [this section](../../tools/pontoon/translate.html) on translating in Pontoon.
+Note that while users with Translator or Manager permissions can edit strings directly, contributors can only submit a suggestion. For more information, see [this section](../../tools/pontoon/translate.md) on translating in Pontoon.
 
 ## Fixes in Bugzilla
 
