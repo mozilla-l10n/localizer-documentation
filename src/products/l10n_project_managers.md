@@ -1,5 +1,7 @@
 # Localization team project managers
 
+You can find the project manager for any project hosted in Pontoon directly in the [header of the project page](../tools/pontoon/teams_projects.md#project-page).
+
 ## Bryan
 
 * Email: bolsson(at)mozilla.com
