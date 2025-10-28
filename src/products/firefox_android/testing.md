@@ -1,3 +1,5 @@
+# Testing Firefox for Android
+
 Note: UI elements change over time. As a result some terms or element locations might differ from what’s described here. If you notice that something is significantly out of date, please [open an issue](https://github.com/mozilla-l10n/localizer-documentation/issues/new) so we can update this page.
 
 This document provides an overview of frequent localization issues, recommended fixes, and specific Firefox for Android testing scenarios to help identify them. Depending on the issue, either a direct correction in Pontoon can be made, or you will need to file a bug as described below.
