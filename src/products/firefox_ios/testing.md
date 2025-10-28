@@ -6,11 +6,11 @@ Localizers currently mostly rely on screenshots for testing. Latest information 
 
 Screenshots are currently provided by the iOS team, and the latest iterations can be found [here](https://firefox-ci-tc.services.mozilla.com/tasks/index/mobile.v2.firefox-ios.l10n-screenshots.latest). Once you find your locale in the list, you should choose and download the .zip file that contains your locale code. You can always find the link to screenshots in Pontoon within the Firefox for iOS `RESOURCES` section, located in the top-left corner of the page.
 
-For every release, updated screenshots are provided twice: one week after string freeze (date shown on the current Nightly page) and one week before the Release Candidate (RC) (date shown on the Beta page). Both dates are part of the same [release calendar](https://whattrainisitnow.com/) used for Firefox and Firefox for Android. When in doubt, reach out to the localization mobile ePM ([consult the list](https://mozilla-l10n.github.io/localizer-documentation/products/l10n_project_managers.html) of localization project managers).
+For every release, updated screenshots are provided twice: one week after string freeze (date shown on the current Nightly page) and one week before the Release Candidate (RC) (date shown on the Beta page). Both dates are part of the same [release calendar](https://whattrainisitnow.com/) used for Firefox and Firefox for Android. When in doubt, reach out to the [project manager for Firefox for iOS](../l10n_project_managers.md).
 
 ## Test builds
 
-The beta version used for testing can be found [here](https://www.firefox.com/en-US/channel/ios/testflight). In case the registration does not work from there, localizers can also reach out to the localization mobile ePM in order to be added to these builds ([consult the list](https://mozilla-l10n.github.io/localizer-documentation/products/l10n_project_managers.html) of localization project managers).
+The beta version used for testing can be found [here](https://www.firefox.com/en-US/channel/ios/testflight). In case the registration does not work from there, localizers can also reach out to the [project manager for Firefox for iOS](../l10n_project_managers.md) in order to be added to these builds.
 Please note you will need an iOS device running v15 or above.
 
 ## Aspects to review

@@ -22,7 +22,7 @@ For Nightly releases:
 After you have joined the group opt-in, to receive Nightly builds, (again with the same Google account) [here](https://play.google.com/apps/testing/org.mozilla.focus.nightly).
 Then, download Firefox Focus (Nightly) from Google Play [here](https://play.google.com/store/apps/details?id=org.mozilla.focus.nightly).
 
-* For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the mobile ePM ([consult the list](https://mozilla-l10n.github.io/localizer-documentation/products/l10n_project_managers.html) of localization project managers)) to be added to the TestFlight system.
+* For Focus for iOS Nightly builds, check as well under the Resources section [in Pontoon](https://pontoon.mozilla.org/projects/focus-for-ios/), at the top of the project page - or reach out directly to the [project manager for Focus for iOS](../l10n_project_managers.md) of localization project managers) to be added to the TestFlight system.
 
 For Focus for iOS, please note an iOS device running v13.6 or above is needed. For Focus for Android, an Android device running v5.0 or above is needed.
 
