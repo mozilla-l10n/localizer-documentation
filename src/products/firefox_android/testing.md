@@ -8,28 +8,28 @@ This document provides an overview of frequent localization issues, recommended 
 
 ## Fixes in Pontoon
 
-When issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/), open the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) project and pick your locale to find the specific string in Pontoon. Click on the top right of the page, where it says *All Strings*. Type the string into the search bar and press Enter, and click the magnifying glass icon to open filters and refine your search. Read more about search [here](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#string-list-and-search).
+When issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/), open the [Firefox for Android](https://pontoon.mozilla.org/projects/firefox-for-android/) project and pick your locale to find the specific string in Pontoon. Click on the top right of the page, where it says *All Strings*. Type the string into the search bar and press Enter, and click the magnifying glass icon to open filters and refine your search. Read more about search [here](../../tools/pontoon/translation_workspace.html#string-list-and-search).
 
-Note that while users with Translator or Manager permissions can edit strings directly, contributors can only submit a suggestion. For more information, see [this section](https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translate.html) on translating in Pontoon.
+Note that while users with Translator or Manager permissions can edit strings directly, contributors can only submit a suggestion. For more information, see [this section](../../tools/pontoon/translate.html) on translating in Pontoon.
 
 ## Fixes in Bugzilla
 
-If an issue cannot be fixed in Pontoon, you will have to open a bug in Bugzilla in Firefox for Android [here](https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox%20for%20Android&component=L10N) (under the L10N *Component)*. Note that you will need to log in or create a [Bugzilla](https://bugzilla.mozilla.org/home) account to file a bug.
+If an issue cannot be fixed in Pontoon, you will have to open a bug in Bugzilla in Firefox for Android [here](https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox%20for%20Android&component=L10N) (under the L10N Component) Note that you will need to log in or create a [Bugzilla](https://bugzilla.mozilla.org/home) account to file a bug.
 
-Whenever in doubt, contact the current localization mobile ePM ([consult the list](../l10n_project_managers.md) of localization project managers).
+Whenever in doubt, contact the [project manager for Firefox for Android](../l10n_project_managers.md).
 
 ## Pre-requisites for testing
 
 ### Download Nightly
 
-If you have an Android device, it’s best to test Firefox with Nightly builds ([download](https://play.google.com/store/apps/details?id=org.mozilla.fenix)), as they are updated each day with the latest translations. Change the device’s system language in Android settings, or switch the in-app language from Firefox Nightly’s *Settings* (three dot menu \-\> *Settings* \-\> *Language*).
+If you have an Android device, it’s best to test Firefox with Nightly builds ([download](https://play.google.com/store/apps/details?id=org.mozilla.fenix)), as they are updated each day with the latest translations. Change the device’s system language in Android settings, or switch the in-app language from Firefox Nightly’s *Settings* (three dot menu → *Settings* → *Language*).
 
 ### Install Android Studio Code
 
 If you do not have an Android device, or if your Nightly build contains data you do not want to lose, you can use Android Studio Code on your PC to test the browser, including localized onboarding screens. Here are the instructions to set it up:
 
 1. [Download](https://developer.android.com/studio) Android Studio Code (it's free).
-2. Install and run. Create an empty project (*File \-\> New \-\> New Project \-\> Empty activity)*.
+2. Install and run. Create an empty project (*File → New → New Project → Empty activity)*.
 3. On the right-hand side of the Android Studio interface, look for the *Device Manager* icon (hover over icons to find it). If you don’t see it, open it from the top menu: *View* \-\> *Tool Windows* \-\> *Device Manager*.
 4. Then, you can add a virtual device (such as Pixel 9a) by clicking on the “+” icon to the top-right corner of where the code shows. Then choose *Create Virtual Device*.
 5. Now you can run a new virtual device: click the play icon next to your virtual device name. After a few moments, an Android phone window should appear.
@@ -81,7 +81,7 @@ Localization can be tested by changing the device language and then launching Fi
 
 This is the page you see right after completing the onboarding flow, when opening a new tab, or when no tabs are open. It usually shows *Shortcuts*, *Jump back in* (tabs), *Recently visited* (websites), *Collections* and *Stories* (note that *Stories* are enabled only for a subset of locales). Some sections only appear after you’ve visited a few websites — the more you browse, the more content you’ll see here. Please note that certain parts of the interface may appear in English because they display actual page titles from visited websites, and the language shown depends on the content source.
 
-Be sure to tap `Show all` wherever it appears. Try saving tabs to collections, and review each element displayed there. Note that the mask icon at the top of the screen can be tapped and will take you to Private Browsing mode.
+Be sure to tap *Show all* wherever it appears. Try saving tabs to collections, and review each element displayed there. Note that the mask icon at the top of the screen can be tapped and will take you to Private Browsing mode.
 
 Always verify every interactive element in the UI you’re viewing — and do this throughout the app.
 
