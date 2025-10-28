@@ -16,7 +16,7 @@ Note that while users with Translator or Manager permissions can edit strings di
 
 If an issue cannot be fixed in Pontoon, you will have to open a bug in Bugzilla in Firefox for Android [here](https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox%20for%20Android&component=L10N) (under the L10N under *Component)*. Note that you will need to log in or create a [Bugzilla](https://bugzilla.mozilla.org/home) account to file a bug.
 
-Whenever in doubt, contact the current localization mobile ePM ([list](l10n_project_managers.md) of localization project managers).
+Whenever in doubt, contact the current localization mobile ePM ([consult the list](../l10n_project_managers.md) of localization project managers).
 
 ## Pre-requisites for testing
 
