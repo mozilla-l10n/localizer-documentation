@@ -16,13 +16,13 @@ If an issue cannot be fixed in Pontoon, you will have to open a bug in Bugzilla 
 
 Whenever in doubt, contact the current localization mobile ePM (link to ePM page).
 
-# Pre-requisites for testing
+## Pre-requisites for testing
 
-## Download Nightly
+### Download Nightly
 
 If you have an Android device, it’s best to test Firefox with Nightly builds ([download](https://play.google.com/store/apps/details?id=org.mozilla.fenix)), as they are updated each day with the latest translations. Change the device’s system language in Android settings, or switch the in-app language from Firefox Nightly’s *Settings* (three dot menu \-\> *Settings* \-\> *Language*).
 
-## Install Android Studio Code
+### Install Android Studio Code
 
 If you do not have an Android device, or if your Nightly build contains data you do not want to lose, you can use Android Studio Code on your PC to test the browser, including localized onboarding screens. Here are the instructions to set it up:
 
@@ -34,11 +34,11 @@ If you do not have an Android device, or if your Nightly build contains data you
 6. Log into your Google account and install [Firefox Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fenix) from the Google Play Store.
 7. You can then change Firefox for Android languages just like you would in a regular device: either change the device’s system language in Android settings, or switch in-app language from Firefox Nightly’s settings.
 
-# Common localization issues
+## Common localization issues
 
 Here is a non-exhaustive list of common localization issues a localizer can encounter, along with ways to resolve them. Please keep these common issues in mind while performing localization testing.
 
-## Truncation/Overlap
+### Truncation/Overlap
 
 Truncation happens when text is cut off because it doesn’t fit within the space allowed in the user interface. This is common on mobile devices, where space is limited.
 
@@ -49,33 +49,33 @@ There are two ways that this can be fixed:
 * The localizer can try shortening the translation in Pontoon, but this doesn’t always solve the issue. If that’s the case, the best solution is to file a bug as explained in the point above (link to section).
 * A developer can expand the UI to accommodate longer translations or enable text wrapping. Here again, a bug needs to be filed as explained above (link to section).
 
-## Language quality
+### Language quality
 
 Language quality issues happen when a translation sounds unnatural or includes grammatical errors, incorrect terminology, awkward phrasing, or inconsistent tone.
 
 These issues can be fixed in [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/) directly (link to section).
 
-## Untranslated content
+### Untranslated content
 
 If anything appears untranslated, but you know the string has been translated in Pontoon, file a bug (link to bugzilla section above). This may be due to strings being hardcoded, or an issue with importing translations back into the Firefox for Android repository.
 
 However, untranslated content can also appear because of the delay between when strings land in Nightly and when translations are imported back into the app. Before filing a bug, wait until the next day as the following Nightly build should include the updated translations.
 
-## Font support
+### Font support
 
 Font support issues happen when a font used in the app doesn’t display certain characters or glyphs correctly. This can include missing letters, broken accents, or symbols that appear as boxes or question marks.
 
 This will need an engineering fix. Follow the steps to file a bug as described in the section above (link to bugzilla section above).
 
-# Testing key UI elements
+## Testing key UI elements
 
-## Onboarding flows
+### Onboarding flows
 
 The onboarding flow is displayed only with a fresh profile. It can be triggered either by clearing the app’s data/storage through *Settings → Apps → Firefox → Storage & cache*, or more quickly by long-pressing the Firefox icon and selecting *App info → Storage & cache*. It’s important to note that this action will **remove all your existing data**.
 
 Localization can be tested by changing the device language and then launching Firefox with a fresh profile. If you do not want to lose your data on Nightly, you can use Android Studio Code as described in the instructions above (link to section). Note that it’s currently not possible to test the onboarding screens in a language not supported by Android.
 
-## Home screen
+### Home screen
 
 This is the page you see right after completing the onboarding flow, when opening a new tab, or when no tabs are open. It usually shows *Shortcuts*, *Jump back in* (tabs), *Recently visited* (websites), *Collections* and *Stories* (note that *Stories* are enabled only for a subset of locales). Some sections only appear after you’ve visited a few websites — the more you browse, the more content you’ll see here. Please note that certain parts of the interface may appear in English because they display actual page titles from visited websites, and the language shown depends on the content source.
 
@@ -83,7 +83,7 @@ Be sure to tap `Show all` wherever it appears. Try saving tabs to collections, a
 
 Always verify every interactive element in the UI you’re viewing — and do this throughout the app.
 
-## Address bar
+### Address bar
 
 Tap the search plugin logo, and check that everything in the interface is localized. Note the names displayed near each icon in the list will reflect the name of the search engine, so they will be in English unless it’s a local search engine.
 
@@ -91,7 +91,7 @@ Check that the text inside the address bar is localized. When you have tabs open
 
 Navigate to a website, and tap everywhere you can within the address bar, including any submenus that appear.
 
-## Settings menu
+### Settings menu
 
 Tap the three dot menu located either on the top right of the UI, or the bottom right of the UI, depending on the preference selected (note that for Right-to-Left languages, elements appear to the left). Check the menu displayed.
 
@@ -99,13 +99,13 @@ Then tap on *Settings* and scroll through the menu all the way down, checking th
 
 Check all subsections within the *Settings* menu, including any areas you can open inside it. If you can change preferences or tap different options, do so — it may trigger notifications you’ll need to review.
 
-## Extensions
+### Extensions
 
 Tap the three dot menu → *Extensions*. Install an extension. Check the *Extension* menus and sub-menus. While extensions themselves are not necessarily translated, any other elements or text that appear there should be.
 
 Tap to install an extension, and observe the notification that briefly appears before leading you to a more permanent one. Everything except the extension name should be localized. After adding the extension, note the confirmation notification that appears, then return to the *Extensions* menu and check that the *Enabled* string for the new extension(s) is localized.
 
-## Snackbars, notifications, error messages
+### Snackbars, notifications, error messages
 
 For the purposes of this document, snackbars, notifications, and error messages are grouped together, as they often appear in similar ways. Note that this list is not exhaustive. If you come across other scenarios, [file an issue](https://github.com/mozilla-l10n/localizer-documentation/issues/new).
 
