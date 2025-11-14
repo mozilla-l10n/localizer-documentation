@@ -18,7 +18,7 @@
     * [Focus](products/focus/README.md)
         * [How to localize](products/focus/how_to_localize.md)
         * [How to test](products/focus/testing_focus.md)
-    * [Mozilla.org](products/mozilla_org/README.md)
+    * [Mozilla.org & Firefox.com](products/mozilla_org/README.md)
         * [How to test](products/mozilla_org/testing.md)
     * [Testing localization of Mozilla projects](products/l10n_testing.md)
 
