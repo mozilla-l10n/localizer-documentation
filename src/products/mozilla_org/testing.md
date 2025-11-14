@@ -138,16 +138,16 @@ To the right side of the page on firefox.com, there is a four-step process to go
 * Download: The **Download Now** button appears.
 
 On the lower left side of each page, you will see these links:
-* These two sites are in English only: [Check the system requirements](https://www.firefox.com/firefox/145.0/system-requirements/) and [Release notes](https://www.firefox.com/firefox/notes/).
+* These two sites are in English only: [Check the system requirements](https://www.firefox.com/firefox/system-requirements/) and [Release notes](https://www.firefox.com/firefox/notes/).
 * Click on the **Source code** link, you will be directed to the [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) page which is not localized.
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) (redirects to mozilla.org) document is localized in limited number of languages.
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
 
 ### [firefox/download/home.ftl](https://www.firefox.com/)
 
-This is a landing page on firefox.com:
+This is the landing page on firefox.com:
 * Click the **Download Firefox** button to check the [thank you](https://www.mozilla.org/firefox/download/thanks) page that triggers an automatic download.
-* The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) (redirects to mozilla.org)  document is localized in limited number of languages.
+* The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) (redirects to mozilla.org) document is localized in limited number of languages.
 * Click on the **Download options and other languages** link, you will be directed to the [firefox/all](https://www.firefox.com/download/all/) page.
 * Click on the **Firefox browser support** link, you will be directed to the [SUMO](https://support.mozilla.org/products/firefox) site featuring various topics on Firefox.
 
