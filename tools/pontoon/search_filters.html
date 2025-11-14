@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search">
+    <link rel="canonical" href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search">
+  </head>
+  <body>
+      <p>Redirecting to... <a href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search">https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search</a>.</p>
+
+<script>
+    // This handles redirects that involve fragments.
+    document.addEventListener('DOMContentLoaded', function() {
+        const fragmentMap =
+            {}
+        ;
+        const fragment = window.location.hash;
+        if (fragment) {
+            let redirectUrl = "https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search";
+            const target = fragmentMap[fragment];
+            if (target) {
+                let url = new URL(target, window.location.href);
+                redirectUrl = url.href;
+            } else {
+                let url = new URL(redirectUrl, window.location.href);
+                url.hash = window.location.hash;
+                redirectUrl = url.href;
+            }
+            window.location.replace(redirectUrl);
+        }
+        // else redirect handled by http-equiv
+    });
+</script>
+  </body>
+</html>
