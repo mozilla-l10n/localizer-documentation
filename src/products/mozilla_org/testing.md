@@ -153,8 +153,8 @@ This is the landing page on firefox.com:
 
 ### Navigation Bar
 
-* [navigation_v2.ftl](https://www.mozilla.org/) on mozilla.org: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, **Firefox browsers**, **Products**, and **About us**, you will see a drop-down panel with subcategory topics. 
-* [navigation-firefox.ftl](https://www.firefox.com/) on firefox.com: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, **Features** and **Resources**, you will see a drop-down panel with subcategory topics. 
+* [navigation_v2.ftl](https://www.mozilla.org/) on mozilla.org: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, **Firefox browsers**, **Products**, and **About us**, you will see a drop-down panel with subcategory topics.
+* [navigation-firefox.ftl](https://www.firefox.com/) on firefox.com: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, **Features** and **Resources**, you will see a drop-down panel with subcategory topics.
 
 Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:
 * Not all links take you to a site that’s localizable for all locales.
