@@ -101,9 +101,9 @@ Please refer to the [guidelines for brands and trademarks](https://mozilla-l10n.
 
 Report issues that can’t be resolved in Pontoon by:
 * Filing a bug in [Bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations) and selecting your locale.
-* Adding the l10n PM in charge for Need Info. The l10n PM information appears at the top left corner on the project page for [mozilla.org](https://pontoon.mozilla.org/projects/mozillaorg/) and [firefox.com](https://pontoon.mozilla.org/projects/firefoxcom/).
+* Adding the l10n project manager in charge for Need Info. You can find the [project manager](../l10n_project_managers.md) for any project hosted in Pontoon directly in the [header of the project page](../tools/pontoon/teams_projects.md#project-page).
 * Including the file name plus a screenshot and/or URL.
-* If an extra tag is added to a string in order for it make sense in your language, the string will generate an error report. The l10n PM for the project will consult you whether to make this an exception so it will not generate an error report in the future.
+* If an extra tag is added to a string in order for it make sense in your language, the string will generate an error report. The l10n project manager for the project will consult you whether to make this an exception so it will not generate an error report in the future.
 
 ### Reporting vendor translation errors
 

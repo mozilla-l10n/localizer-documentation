@@ -28,4 +28,4 @@ You can find the project manager for any project hosted in Pontoon directly in t
 * Email: pmo(at)mozilla.com
 * [GitHub profile](https://github.com/peiying2)
 * [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=cocomo)
-* Products: mozilla.org
+* Products: AMO, Mozilla.org, Firefox.com, Firefox Relay
