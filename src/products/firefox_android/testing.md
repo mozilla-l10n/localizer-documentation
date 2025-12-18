@@ -73,9 +73,15 @@ This will need an engineering fix. Follow the steps to file a bug as described i
 
 ### Onboarding flows
 
-The onboarding flow is displayed only with a fresh profile. It can be triggered either by clearing the app’s data/storage through *Settings → Apps → Firefox → Storage & cache*, or more quickly by long-pressing the Firefox icon and selecting *App info → Storage & cache*. It’s important to note that this action will **remove all your existing data**.
+The onboarding flow is typically displayed with a fresh profile, but it can be triggered from the [Debug settings hidden menu](https://firefox-source-docs.mozilla.org/mobile/android/fenix/Secret-settings-debug-menu-instructions.html). First, you need to enable this menu:
+* Tap on the three-dot button in the toolbar.
+* Tap on *Settings*.
+* Scroll down and select *About Firefox Nightly*.
+* Tap the Firefox logo multiple times (at least 4), until you see a message `Debug menu enabled` at the bottom of the screen. Before that, the message will show the number of taps remaining, e.g. `Debug menu: 3 click(s) left to enable`.
 
-Localization can be tested by changing the device language and then launching Firefox with a fresh profile. If you do not want to lose your data on Nightly, you can use Android Studio Code as described in the [instructions above](#install-android-studio-code). Note that it’s currently not possible to test the onboarding screens in a language not supported by Android.
+After this, go back into the main Settings menu, tap *Secret Settings*, then enable *Show onboarding on each app cold open*. At this point, closing and reopening the app will show the onboarding flow.
+
+Note that the hidden menu will be automatically disabled when restarting the app.
 
 ### Home screen
 
