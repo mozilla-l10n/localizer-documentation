@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
       - name: Clone repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Run markdown linter
         run: |
           npm install
