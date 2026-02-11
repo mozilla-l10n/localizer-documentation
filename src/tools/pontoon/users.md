@@ -90,7 +90,7 @@ It’s possible to set the default homepage displayed when visiting Pontoon as a
 ### Account removal
 
 Users can delete their account by scrolling to the `Account Management` section, where a button reading `Delete Account` is located. Once clicked, the user will need to
-confirm once again that they intend to delete their account. Upon confirming, the user is signed out and cannot access their account again. Their data will be removed
+confirm once again that they intend to delete their account. Upon confirming, the user is signed out and won’t be able to access the account again. Their data will be removed
 and any translations previously attributed to them will be attributed as **Imported**.
 
 ![Delete account](../../assets/images/pontoon/users/delete_account.png "Delete account in settings")
