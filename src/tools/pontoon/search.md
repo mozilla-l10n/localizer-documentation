@@ -9,6 +9,7 @@ The Translation Search page, accessible using the `/search` URL (e.g. [pontoon.m
 The Translation Search page provides a powerful interface for searching translations. It can be reached by using the `/search` URL (e.g. [pontoon.mozilla.org/search](https://pontoon.mozilla.org/search/)).
 
 ![Translation Search](../../assets/images/pontoon/search/translation_search.png "Screenshot of the translation search page")
+
 ### Search interface
 
 The main search interface consists of:
@@ -21,6 +22,7 @@ The main search interface consists of:
 Both the project and locale selectors include a search field to quickly filter through available options.
 
 ![Search Options](../../assets/images/pontoon/search/translation_search_search_options.png "Screenshot of the search options in the translation search page")
+
 #### Search options
 
 Three checkbox options allow users to refine their search:
@@ -103,4 +105,3 @@ Below the source string, a list shows all translations across available locales:
 If no translations are available, a message "No translations found." is displayed.
 
 ![Translation List](../../assets/images/pontoon/search/entity_translations_translation_list.png "Screenshot of the translation list in the entity translations page")
-
