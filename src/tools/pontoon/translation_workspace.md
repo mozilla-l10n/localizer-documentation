@@ -301,12 +301,6 @@ Concordance search allows users to search across all projects in Pontoon. Users 
 
 ![Concordance search](../../assets/images/pontoon/translation_workspace/concordance_search.png)
 
-#### Stand-alone machinery
-
-Pontoon machinery is also available as a [stand-alone web page](https://pontoon.mozilla.org/machinery/). Use the `Machinery` link in the main navigation to access the page (this is not accessible from the translation workspace).
-
-To use the machinery, select the target locale from the dropdown menu to the right of the searchbar. Then input the English source string into the searchbar and press Enter. This will display all matching machinery entries. Information is organized exactly as in the translation workspace.
-
 ### Locales
 
 The locales tab shows approved translations from Pontoon projects in other [locales](glossary.md#locale).
