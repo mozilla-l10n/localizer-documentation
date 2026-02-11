@@ -15,7 +15,7 @@ The Translation Search page provides a powerful interface for searching translat
 
 The main search interface consists of:
 
-* **Search field**: A text input where users type their search query. Press `Enter` to execute the search.
+* **Search field**: A text input where users type their search query. Press Enter or click the `SEARCH` button to execute the search.
 * **Project selector**: A dropdown menu to filter results by a specific project, or search across "All Projects" (default).
 * **Locale selector**: A dropdown menu to select the target locale for translations. Defaults to the user's preferred locale or "en-GB".
 * **Search options**: A group of checkboxes to further filter based on user preferences.
