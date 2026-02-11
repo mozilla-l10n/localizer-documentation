@@ -52,7 +52,7 @@ Each search result entry includes:
   * **Edit**: Opens the translation string in the [translate workspace](translation_workspace.md) for direct editing.
   * **Copy**: Copies the translation string to the clipboard.
 
-If no translations are available, a message "No results found." is displayed.
+If no translations are available, a message `No results found.` is displayed.
 
 #### Infinite scroll
 
