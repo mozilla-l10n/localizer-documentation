@@ -10,6 +10,7 @@ The Translation Search page provides a powerful interface for searching translat
 
 ![Translation Search](../../assets/images/pontoon/search/translation_search.png "Screenshot of the translation search page")
 
+
 ### Search interface
 
 The main search interface consists of:
