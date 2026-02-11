@@ -103,6 +103,6 @@ Below the source string, a list shows all translations across available locales:
   * **Edit**: Opens the string in the [translation workspace](translation_workspace.md) for editing in that specific locale.
   * **Copy**: Copies the translation text to the clipboard.
 
-If no translations are available, a message "No translations found." is displayed.
+If no translations are available, a message `No translations found.` is displayed.
 
 ![Translation List](../../assets/images/pontoon/search/entity_translations_translation_list.png "Screenshot of the translation list in the entity translations page")
