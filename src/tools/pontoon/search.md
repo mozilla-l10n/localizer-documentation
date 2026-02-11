@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-The Translation Search page, accessible using the `/search` URL (e.g. [pontoon.mozilla.org/search](https://pontoon.mozilla.org/search/)), allows users to search for translations across all projects and locales in Pontoon. From the search results, users can access the [Entity Translation page](#entity-translation-page), which displays all available translations for a specific source string across all available locales.
+The Translation Search page, accessible using the `/search` URL (e.g. [pontoon.mozilla.org/search](https://pontoon.mozilla.org/search/)), allows users to search for translations across all projects and locales in Pontoon. From the search results, users can access the [Entity Translation page](#entity-translation-page), which displays all available translations for a specific source string across all locales.
 
 ## Translation Search page
 
