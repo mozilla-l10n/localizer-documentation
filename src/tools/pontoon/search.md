@@ -86,7 +86,7 @@ An alternate URL format is also available: `/entities/{project_slug}/{resource_p
 
 At the top of the page, the source string is displayed in a highlighted container, including:
 
-* **Source string**: The original text to be translated.
+* **Source string**: The source text.
 * **Project name**: A link to the project page.
 * **String identifier**: The key or identifier for the string (displayed for non-gettext formats).
 * **Copy button**: Copies the source string to the clipboard.
