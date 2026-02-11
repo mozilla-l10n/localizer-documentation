@@ -27,6 +27,7 @@
         * [How to translate](tools/pontoon/translate.md)
         * [Translation workspace](tools/pontoon/translation_workspace.md)
         * [Team and project pages](tools/pontoon/teams_projects.md)
+        * [Translation Search](tools/pontoon/search.md)
         * [User accounts and settings](tools/pontoon/users.md)
         * [Notifications](tools/pontoon/notifications.md)
         * [Profile page](tools/pontoon/profile.md)
