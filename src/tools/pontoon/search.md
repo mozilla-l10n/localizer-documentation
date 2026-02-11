@@ -47,7 +47,7 @@ Each search result entry includes:
 * **Project name**: A link to the project page.
 * **String identifier**: The key or identifier for the string (displayed for non-gettext formats).
 * **Action buttons**:
-  * **All Locales**: Opens the [Entity Translation page](#entity-translation-page) to view translations in all available locales.
+  * **All Locales**: Opens the [Entity Translation page](#entity-translations-page) to view translations in all available locales.
   * **Edit**: Opens the translation string in the [translate workspace](translation_workspace.md) for direct editing.
   * **Copy**: Copies the translation string to the clipboard.
 
