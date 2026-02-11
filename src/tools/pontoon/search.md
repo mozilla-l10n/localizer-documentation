@@ -75,7 +75,7 @@ Example URL: `/search?search=Firefox&locale=de&project=firefox&search_match_case
 
 The Entity Translations page displays all translations for a specific string across all available locales. It can be accessed in two ways:
 
-1. By clicking the "All Locales" button on a search result in the Translation Search page.
+1. By clicking the `All Locales` button on a search result in the Translation Search page.
 2. By navigating directly to `/entities/{entity_id}/` (e.g. [pontoon.mozilla.org/entities/123](https://pontoon.mozilla.org/entities/123/)).
 An alternate URL format is also available: `/entities/{project_slug}/{resource_path}/{entity_key}/` (e.g. [pontoon.mozilla.org/entities/firefox/browser/branding/official/brand.ftl/-brand-shorter-name](https://pontoon.mozilla.org/entities/firefox/browser/branding/official/brand.ftl/-brand-shorter-name/)).
 
