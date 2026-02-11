@@ -29,7 +29,7 @@ Both the project and locale selectors include a search field to quickly filter t
 Three checkbox options allow users to refine their search:
 
 * **Search in string identifiers**: When enabled, the search also matches against string keys/identifiers (e.g., `community-exp`), not just the source and translation strings. This option is only relevant for non-gettext formats.
-* **Case sensitive**: When enabled, the search becomes case-sensitive. For example, searching for "Firefox" will not match "firefox".
+* **Case sensitive**: When enabled, the search becomes case-sensitive. For example, searching for `Firefox` will not match `firefox`.
 * **Entire words**: When enabled, the search matches only complete words. For example, searching for "fire" will not match "Firefox".
 
 ### Search results
