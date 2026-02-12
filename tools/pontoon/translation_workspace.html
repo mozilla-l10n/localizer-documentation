@@ -1,0 +1,516 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Translation workspace - Documentation for Mozilla localizers</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex-2865d4f2.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-cdecd29b.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Documentation for Mozilla localizers</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/mozilla-l10n/localizer-documentation/" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/mozilla-l10n/localizer-documentation/edit/main/src/tools/pontoon/translation_workspace.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="understanding-pontoons-translation-workspace"><a class="header" href="#understanding-pontoons-translation-workspace">Understanding Pontoon’s translation workspace</a></h1>
+<ul>
+<li><a href="#main-toolbar">Main toolbar</a></li>
+<li><a href="#string-list-and-search">String list and search</a>
+<ul>
+<li><a href="#search">Search</a>
+<ul>
+<li><a href="#search-options">Search options</a></li>
+</ul>
+</li>
+<li><a href="#filters">Filters</a>
+<ul>
+<li><a href="#translation-status">Translation status</a></li>
+<li><a href="#extra-filters">Extra filters</a></li>
+<li><a href="#tags">Tags</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#main-editing-space">Main editing space</a>
+<ul>
+<li><a href="#string-navigation">String navigation</a></li>
+<li><a href="#source-string">Source string</a>
+<ul>
+<li><a href="#context">Context</a></li>
+</ul>
+</li>
+<li><a href="#editor">Editor</a>
+<ul>
+<li><a href="#read-only-projects">Read-only projects</a></li>
+</ul>
+</li>
+<li><a href="#translation-list">Translation list</a>
+<ul>
+<li><a href="#user-banners">User banners</a></li>
+<li><a href="#translation-comments">Translation comments</a></li>
+<li><a href="#viewing-translation-differences">Viewing translation differences</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#fluent---ftl-files">Fluent - FTL files</a></li>
+<li><a href="#translation-tools-and-comments">Translation tools and comments</a>
+<ul>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#source-string-comments">Source string comments</a></li>
+<li><a href="#machinery">Machinery</a>
+<ul>
+<li><a href="#large-language-model-llm-integration">Large language model (LLM) integration</a></li>
+<li><a href="#concordance-search">Concordance search</a></li>
+</ul>
+</li>
+<li><a href="#locales">Locales</a></li>
+</ul>
+</li>
+<li><a href="#smaller-screens">Smaller screens</a></li>
+</ul>
+<p>Pontoon’s translation workspace consists of the main toolbar and 3 columns:</p>
+<ul>
+<li>The left column contains the string list for the current resource with a search field at the top.</li>
+<li>The middle column contains the main editing space.</li>
+<li>The right column contains terminology, source string comments, suggestions from translation memory, machine translation, and translations from other locales.</li>
+</ul>
+<p><img src="../../assets/images/pontoon/translation_workspace/translation_workspace.png" title="Screenshot of the translation workspace in Pontoon" alt="Translation Workspace"></p>
+<h2 id="main-toolbar"><a class="header" href="#main-toolbar">Main toolbar</a></h2>
+<p>The main toolbar at the top of the page allows users to navigate to the dashboards or to change the current resource.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/main_nav.png" title="Screenshot of the main toolbar, with the resource dropdown expanded" alt="Navigating in the main toolbar"></p>
+<p>Clicking the locale name will open the <a href="teams_projects.html#team-page">Team page</a> for that locale, while clicking the project name will open the <a href="teams_projects.html#localization-page">Localization page</a> for that project.</p>
+<p>Clicking on the current resource (or <code>All Resources</code>) will display a list of all resources available for that project. It’s possible to search for a resource, and click one to load only the entities included in it. Clicking <code>All Resources</code> at the bottom of the list will go back to display all resources, while <code>All Projects</code> will show entities for all projects under the selected locale.</p>
+<p>A progress chart showing the translation status of the current resource is located to the right of the resource name. A more detailed breakdown is displayed when clicking the chart.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/status_overview.png" title="Screenshot of the status graph expanded" alt="Expanded status overview"></p>
+<p>The notifications icon, represented by a bell, is located on the right side of the main toolbar. By clicking the bell icon, users can view a list of the latest <a href="notifications.html">notifications</a> they received.</p>
+<p>The profile menu is located at the far right of the main toolbar. Clicking the profile image will reveal a dropdown menu where users can perform several actions, like navigate to their <a href="profile.html">profile page</a>, <a href="translate.html#downloading-and-uploading-translations">download and upload translations</a>, change their theme, etc.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/profile_menu.png" title="Screenshot of the profile menu" alt="Profile menu"></p>
+<p>Note that some profile menu items are only available to users with specific <a href="users.html#user-roles">permissions</a>.</p>
+<p>A selector to change the current theme is available in the profile menu and in the <a href="users.html#appearance">settings page</a>. There are three theme options available:</p>
+<ul>
+<li>Light.</li>
+<li>Dark.</li>
+<li>Match system (aligns with the theme used by the operating system).</li>
+</ul>
+<p>To change the theme, select the button corresponding to your preferred theme. The change will take effect immediately.</p>
+<h2 id="string-list-and-search"><a class="header" href="#string-list-and-search">String list and search</a></h2>
+<p>The left column displays the list of strings in the current project resource. Each string is represented by:</p>
+<ul>
+<li>A colored square that identifies the string <a href="#translation-status">status</a> (i.e. <em>Missing</em>, <em>Translated</em>, etc.).</li>
+<li>The source string.</li>
+<li>The approved translation or the most recent suggestion if available.</li>
+</ul>
+<p><img src="../../assets/images/pontoon/translation_workspace/sidebar.png" title="Screenshot of the sidebar, with a list of strings showing the different string statuses" alt="Sidebar"></p>
+<p>Color legend:</p>
+<ul>
+<li><strong><span style="color: #4d5967;">gray</span></strong>: translation is missing.</li>
+<li><strong><span style="color: #7bc876;">green</span></strong>: string is translated.</li>
+<li><strong><span style="color: #c0ff00;">light-green</span></strong>: string is pretranslated.</li>
+<li><strong><span style="color: #ffa10f;">orange</span></strong>: translation has warnings.</li>
+<li><strong><span style="color: #f36;">red</span></strong>: translation has errors.</li>
+</ul>
+<p>When a string is selected in the sidebar, a small icon with four arrows is displayed near the checkbox: this can be used to show strings that surround the selected string in the <a href="glossary.html#resource">resource</a>, bypassing the current filter. This is often helpful to provide more context for the localization, especially when translating missing strings.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/sidebar_expand.png" title="Screenshot of the button to show sibling strings in sidebar" alt="Button to show sibling strings in sidebar"></p>
+<h3 id="search"><a class="header" href="#search">Search</a></h3>
+<p>It’s possible to search within the currently selected project using the search field. Searches include strings and string IDs.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/search_field.png" alt="Search field"></p>
+<p>Note that searches take active <a href="#filters">filters</a> into account, for example a search would be performed only on missing strings if that filter was previously selected.</p>
+<p>Like in search engines, by default Pontoon will display matches that contain any of the search terms. For example, searching for <code>new tab</code> will match both <code>Open links in tabs instead of new windows</code> and <code>New Tab</code>.</p>
+<p>To search for an exact match, wrap the search terms in double quotes, e.g. <code>"new tab"</code>. On the other hand, to search for strings that contain double quotes, escape them with a backslash, e.g. <code>\"</code>.</p>
+<h4 id="search-options"><a class="header" href="#search-options">Search options</a></h4>
+<p>In addition to the search filters listed below, Pontoon provides additional <strong>search options</strong>, allowing users to refine search results. Search options can be accessed by clicking the magnifying glass icon on the right side of the search box.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/options.png" alt="Options"></p>
+<p>Search options include:</p>
+<ul>
+<li><strong>Match case</strong>: Exactly match the capitalization of the search term.</li>
+<li><strong>Match whole word</strong>: Provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.</li>
+<li><strong>Include string identifiers</strong>: Expand the search to include string identifiers (keys).</li>
+<li><strong>Include rejected translations</strong>: Expand the search to include translations that have been rejected.</li>
+<li><strong>Exclude source strings</strong>: Avoid searching for matches in source strings.</li>
+</ul>
+<p>All search options are disabled by default. Clicking anywhere on the name or checkbox will toggle only the specific search option. Once ready, clicking the <code>APPLY SEARCH OPTIONS</code> at the bottom of the panel will apply the selected search options.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/options_multiple.png" alt="Multiple options"></p>
+<h3 id="filters"><a class="header" href="#filters">Filters</a></h3>
+<h4 id="translation-status"><a class="header" href="#translation-status">Translation status</a></h4>
+<p>Strings in Pontoon can be filtered by their status. A string can be in one of the following statuses:</p>
+<ul>
+<li><strong>Translated</strong>: string has an approved translation. The translation is saved to the localized file when using a <a href="glossary.html#version-control-system">version control system</a> (VCS).</li>
+<li><strong>Pretranslated</strong>: string has been pretranslated but has not been reviewed. Unreviewed pretranslation are saved to the localized file when using a VCS.</li>
+<li><strong>Warnings</strong>: string contains issues classified as <a href="translate.html#warnings">warnings</a>.</li>
+<li><strong>Errors</strong>: string contains <a href="translate.html#errors">critical issues</a>.</li>
+<li><strong>Missing</strong>: string doesn’t have any approved translations.</li>
+<li><strong>Unreviewed</strong>: string has suggested translations that have not been reviewed yet by someone with the appropriate <a href="glossary.html#permission">permissions</a>. Note that, for both translated and missing strings, the suggested translation only exists within the Pontoon database and is not saved to the localized file when using a VCS.</li>
+</ul>
+<h4 id="extra-filters"><a class="header" href="#extra-filters">Extra filters</a></h4>
+<p>In addition to statuses, additional filters can be used to further refine the list of strings. Extra filters include:</p>
+<ul>
+<li><strong>Unchanged</strong>: string is identical to the reference language (normally <code>en-US</code>).</li>
+<li><strong>Empty</strong>: string has a translation, but translation contains no content.</li>
+<li><strong>Fuzzy</strong>: string is marked as <a href="glossary.html#fuzzy">fuzzy</a> in the localized file.</li>
+<li><strong>Rejected</strong>: string has rejected translations.</li>
+<li><strong>Missing without Unreviewed</strong>: string has <code>Missing</code> translation status and does not have <code>Unreviewed</code> translations.</li>
+</ul>
+<p>Filters can be accessed by clicking the icon on the left of the search field.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/filters.png" alt="Filters"></p>
+<p>At this point it’s possible to:</p>
+<ul>
+<li>Click directly on the name of one of the filters. This will select and activate only this filter, and the search field placeholder will change accordingly. For example, clicking on <code>Missing</code> will show only missing strings, and the placeholder will read <code>Search in Missing</code>.</li>
+<li>Click on one or more filter icons or user avatars (multiple filters can be applied at once). Hovering over the icons transforms the icon into check marks. Clicking an icon will select that filter and a new button <code>APPLY X FILTERS</code> will appear at the bottom of the panel, where <code>X</code> is the number of active filters.</li>
+<li>Click <code>EDIT RANGE</code> on <code>TRANSLATION TIME</code> to select a time range. Pick one of the defaults (30 days, 7 days, 24 hours, 60 minutes), or use the date picker (or slider) to adapt the range. Click on <code>SAVE RANGE</code> to store the range as a filter. A new button <code>APPLY X FILTERS</code> will appear at the bottom of the panel, where <code>X</code> is the number of active filters.</li>
+</ul>
+<p><img src="../../assets/images/pontoon/translation_workspace/filters_multiple.png" alt="Multiple filters"></p>
+<p>In this case 3 filters are selected.</p>
+<h4 id="tags"><a class="header" href="#tags">Tags</a></h4>
+<p>For specific projects it’s also possible to filter strings based on <em>tags</em>. Tags are used to logically group resources based on their priority, allowing localizers to focus their work on important strings first, and project managers to better assess the overall localization status of the project.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/filters_tags.png" alt="Tags in filters"></p>
+<p>In this case, there are 10 tags defined for the project (highlighted in red). Near each tag there is a representation of the priority: like for projects, it goes from 5 stars (highest priority) to 1 star (lowest priority).</p>
+<p>Note: translation time, translation authors, and tags are not available when <code>All Projects</code> is selected as a <a href="glossary.html#resource">resource</a>.</p>
+<h2 id="main-editing-space"><a class="header" href="#main-editing-space">Main editing space</a></h2>
+<p>The main editing space in the middle column is where translation takes place.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/editing_space_standard.png" title="Screenshot of the standard editor in the editing space" alt="Editing space"></p>
+<h3 id="string-navigation"><a class="header" href="#string-navigation">String navigation</a></h3>
+<p>The top of this space contains a string navigation interface. It’s possible to navigate sequentially through the strings by clicking the <code>PREVIOUS</code> or <code>NEXT</code> buttons located at the top of the editing space, or by using keyboard shortcuts (<code>ALT</code> + arrow down or up). A link to the current string can be copied to the clipboard using the <code>COPY LINK</code> button.</p>
+<h3 id="source-string"><a class="header" href="#source-string">Source string</a></h3>
+<p>Below the navigation interface, the user can view the source string, any comments present in the resource regarding the string, and the resource path where the string is located.
+In the same area, the <code>REQUEST CONTEXT or REPORT ISSUE</code> button can be used to request more information about the current string: it will focus the <a href="##source-string-comments">COMMENTS section</a>, and mention the project manager for the project.</p>
+<h4 id="context"><a class="header" href="#context">Context</a></h4>
+<p>Sometimes you may want to investigate more context about a particular string through an external resource such as a <a href="glossary.html#version-control-system">Version Control System</a>. The <code>CONTEXT</code> information provided underneath the source string shows the identifier, file, and project for the string — allowing you to find the string within the codebase of the project. For example, for some Mozilla projects these can be used to <a href="../mercurial/tracking_back_string_to_bug.html">track strings to bugs</a>.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/context.png" alt="Context"></p>
+<h3 id="editor"><a class="header" href="#editor">Editor</a></h3>
+<p>The editor is located in the middle section of the column, and it’s where users can input or edit their translations.</p>
+<p>In the lower-right side of the editing space, it’s possible to <code>COPY</code> the source string to the editor, <code>CLEAR</code> the area where translations are typed, and <code>SUGGEST</code> or <code>SAVE</code> the translation by clicking the corresponding button. This area is also used to <a href="translate.html#quality-checks">display warnings and errors</a> when submitting a translation.</p>
+<p>In the lower-left side:</p>
+<ul>
+<li>Clicking the gear icon allows users to toggle <code>Translation Toolkit checks</code> or <code>Make suggestions</code>, and navigate to the user settings. Note that access to some settings is restricted by <a href="users.html#user-roles">user permissions</a>.</li>
+<li>Clicking the keyboard icon displays a list of available shortcuts.</li>
+<li>The numbers displayed to the right of the keyboard icon (e.g. <code>50|59</code>) are the number of characters in the target and source string.</li>
+</ul>
+<h4 id="read-only-projects"><a class="header" href="#read-only-projects">Read-only projects</a></h4>
+<p>A project could be enabled in <em>read-only mode</em> for some locales: their translations will be available to other languages in the <code>LOCALES</code> tab, but it won’t be possible to change or submit translations directly in Pontoon. In this case, a note is displayed in the bar below the editor, and all other controls are hidden.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/translation_readonly.png" title="Screenshot of translation editor in read-only project" alt="Translation editor in read-only project"></p>
+<h3 id="translation-list"><a class="header" href="#translation-list">Translation list</a></h3>
+<p>The space below the editor displays the list of <a href="glossary.html#translation">translations</a> for the current string.</p>
+<p>Each entry contains:</p>
+<ul>
+<li>The name of the translator, their profile picture (linking to their profile page) and their banner (see <a href="#user-banners">User banners</a>).</li>
+<li>How long ago the entry was submitted (hover over to see the full date and time as a tooltip).</li>
+<li>The translation.</li>
+<li>Icons indicating translation status (see below).</li>
+<li><a href="glossary.html#comment">Translation comments</a>.</li>
+</ul>
+<p>Icons to the right indicate the <a href="#translation-status">status</a> of each translation:</p>
+<ul>
+<li>The solid green circle with checkmark indicates that the translation has been approved.</li>
+<li>The outlined lime green circle with checkmark indicates a pretranslation that has not yet been reviewed.</li>
+<li>If both icons are gray, translation has been suggested but not yet reviewed.</li>
+<li>The red cross indicates that the translation has been rejected. The entire element will look opaque.</li>
+<li>The trashcan, available only for rejected translations, can be used to completely delete a translation. Those with the contributor role can only remove their own translations, while those with a translator permissions can delete anyone’s.</li>
+</ul>
+<p><img src="../../assets/images/pontoon/translation_workspace/translation_comments.png" title="Screenshot of list of suggestions and translations for a string with comment editing open" alt="List of suggestions and translations for a string"></p>
+<p>In the screenshot above, the first item is the approved translation (green checkmark), while the other two are rejected suggestions.</p>
+<h4 id="user-banners"><a class="header" href="#user-banners">User banners</a></h4>
+<p>User banners provide immediate context about a user to other community members. They indicate either the role of the user, or that the user is new to Pontoon. Banners are displayed at the bottom of the user’s avatar.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/status_banners.png" title="Screenshot displaying a collage of all 5 possible user banners that can be displayed" alt="Collage of all 5 possible user banners"></p>
+<p>The available user banners are:</p>
+<ul>
+<li><code>MNGR</code> for <a href="users.html#user-roles">team managers</a>.</li>
+<li><code>TRNSL</code> for <a href="users.html#user-roles">translators</a>.</li>
+<li><code>PM</code> for <a href="users.html#user-roles">project managers</a>.</li>
+<li><code>ADMIN</code> for <a href="users.html#user-roles">administrators</a>.</li>
+<li><code>NEW</code> for users who have joined within the last 3 months.</li>
+</ul>
+<p>User banners will also appear in translation comments (see below).</p>
+<h4 id="translation-comments"><a class="header" href="#translation-comments">Translation comments</a></h4>
+<p>By clicking the <code>COMMENT</code> button it’s possible to add a <strong>translation comment</strong> to this specific translation. To mention another user in the comment, start typing <code>@</code> followed by their name.</p>
+<p>If there is already a comment associated with a string, the button will display the number of comments (e.g. <code>1 COMMENT</code> for the first rejected suggestion).</p>
+<h4 id="viewing-translation-differences"><a class="header" href="#viewing-translation-differences">Viewing translation differences</a></h4>
+<p>The <code>DIFF</code> option appears if there are multiple translations for one string. Toggling <code>DIFF</code> compares the text to the current approved translation, or the most recent suggestion if no translation has been approved yet. Text highlighted in green indicates content that has been added, while strikethrough text in red indicates removed content. Toggling <code>DIFF</code> again will display the original string.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/suggestions_diff.png" alt="Diff for suggestions"></p>
+<h2 id="fluent---ftl-files"><a class="header" href="#fluent---ftl-files">Fluent - FTL files</a></h2>
+<p>When working on FTL (Fluent) files, the editing space will look slightly different.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/editing_space_ftl.png" title="Screenshot of the translation editing space for Fluent string" alt="Translation editing space for Fluent string"></p>
+<p>In the example above, the string has a <code>value</code> and an attribute <code>title</code>. Both are displayed in the source section (highlighted in red), and available as separate input fields in the editor (highlighted in orange).</p>
+<p>The following image is an example of a string with plurals: while English only has two forms, plural and singular, other locales can have a different number of plural forms. In this case, Russian has three forms (highlighted in orange).</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/editing_space_ftl_plurals.png" title="Screenshot of the translation editing space for Fluent string with plurals" alt="Translation editing space for Fluent string with plurals"></p>
+<p>In the bottom left corner, the FTL button (highlighted in yellow) allows to switch between the standard UI (<em>Simple FTL mode</em>) and the <em>Advanced FTL mode</em>, where it’s possible to edit the original syntax directly, as you would in a text editor. For details on the Fluent syntax, see <a href="../fluent/">Fluent for localizers</a>.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/editing_space_ftl_sourceview.png" title="Screenshot of the translation editing space for Fluent string in source view" alt="Translation editing space for Fluent string in source view"></p>
+<p>Note that the FTL button’s text is green when in <em>Advanced FTL mode</em>.</p>
+<h2 id="translation-tools-and-comments"><a class="header" href="#translation-tools-and-comments">Translation tools and comments</a></h2>
+<p>Built-in translation tools are located in the rightmost column.</p>
+<h3 id="terminology"><a class="header" href="#terminology">Terminology</a></h3>
+<p>The <code>TERMS</code> tab shows the definition and translation of a term, in case the source string includes matches with the built-in <a href="glossary.html#terminology">terminology</a>. The matching term is also highlighted in the source string. A popup appears on click showing the definition and translation for a term.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/editing_space_terminology.png" title="Screenshot of the translation editing space for string with match in terminology" alt="Translation editing space for string with match in terminology"></p>
+<h3 id="source-string-comments"><a class="header" href="#source-string-comments">Source string comments</a></h3>
+<p>The <code>COMMENTS</code> tab is used to display existing <strong>source string comments</strong>, or add new ones. Source string comments, unlike translation comments, are associated with the string: it’s possible to have a comment in this section even if the string doesn’t have any suggestion or translation yet.</p>
+<p>They’re designed for team members to have a conversation about the source string, for example to clarify its meaning, or to get more information from project managers.</p>
+<p>Administrators can pin or unpin a source string comment: this pinned comment will be displayed along existing comments in the editing area as <code>PINNED COMMENT</code>, and users will <a href="notifications.html#comments">receive a notification</a>.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/pinned_comment.png" title="Screenshot of a pinned comment" alt="Pinned comment"></p>
+<p>The screenshot above shows a pinned comment, and the command to unpin it.</p>
+<h3 id="machinery"><a class="header" href="#machinery">Machinery</a></h3>
+<p>Machinery shows possible translations from a variety of sources. These sources include:</p>
+<ul>
+<li><a href="translate.html#downloading-and-uploading-translations">Pontoon’s internal translation memory</a>.</li>
+<li><a href="https://translate.google.com">Google Translate</a>.</li>
+<li><a href="https://www.systran.net/">SYSTRAN</a>.</li>
+<li><a href="https://github.com/kscanne/caighdean">Caighdean</a>.</li>
+<li><a href="https://www.bing.com/translator">Bing Translator</a> (not currently enabled on pontoon.mozilla.org).</li>
+</ul>
+<p>In addition, the user has the ability to search for translations containing words via <a href="#concordance-search"><code>Concordance search</code></a>.</p>
+<p>In the tab, the number of entries is visible alongside the <code>MACHINERY</code> title in white. If any of the machinery matches are from translation memory, the number of matches will appear separately in green. For example, the screenshot below shows <code>2+1</code>, where the green <code>2</code> represents the two matches from translation memory and the <code>1</code> represents a machinery entry from Google Translate.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/machinery.png" alt="Machinery tab"></p>
+<p>At the top of each entry, a diff view compares the current source string and the source string from the machinery entry. Strikethrough text highlighted in red indicates text that is present in the source string but not in the machinery source string, while text highlighted in green indicates text available only in the machinery source string.</p>
+<p>To the right of the entry, the number in green shows the percent match between the machinery source string and the current source string. The higher the percentage, the more likely machinery is to be useful; a 100% match indicates that the sources for the current string and for the machinery string are identical.</p>
+<p>The origin of the machinery entry is listed in gray above the source string. Clicking the gray text will open the origin in a new window. The green superscript to the right indicates the number of matches for the entry in the translation memory.</p>
+<p>Be careful when using the machinery tab as suggestions may not match the source string for the project being translated. Even if the source strings match, the context in which strings are used may not be the same. This could lead to incorrect or unnatural translations. Always keep the meaning and purpose of the string being translated in mind when using the machinery tab.</p>
+<h4 id="large-language-model-llm-integration"><a class="header" href="#large-language-model-llm-integration">Large language model (LLM) integration</a></h4>
+<p>Pontoon will show a dropdown labeled <code>AI</code> for all locales that have Google Translate available as a translation source. This feature refines the Google Translate output using an LLM. Opening this dropdown will reveal three options:</p>
+<ul>
+<li><code>REPHRASE</code>: Generate an alternative to this translation.</li>
+<li><code>MAKE FORMAL</code>: Generate a more formal version of this translation.</li>
+<li><code>MAKE INFORMAL</code>: Generate a more informal version of this translation.</li>
+</ul>
+<p><img src="../../assets/images/pontoon/translation_workspace/llm_dropdown.png" title="Screenshot of the dropdown to use the LLM feature" alt="Dropdown to use the LLM feature"></p>
+<p>After selecting an option, the revised translation will replace the original suggestion. Once a new translation is generated, another option <code>SHOW ORIGINAL</code> will be available in the dropdown menu. Selecting it will revert to the original suggestion.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/llm_dropdown_rephrased.png" title="Screenshot of enhanced translation output from the LLM rephrasing the initial Google Translate result." alt="Enhanced translation output from the LLM rephrasing the initial Google Translate result."></p>
+<h4 id="concordance-search"><a class="header" href="#concordance-search">Concordance search</a></h4>
+<p>Concordance search allows users to search across all projects in Pontoon. Users can search for translations using strings in either source or target language. Matching results are displayed with the source string, translation, and project name; clicking a result will automatically fill the translation into the editor. Note that the search does not need to be related to the current string or project.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/concordance_search.png" alt="Concordance search"></p>
+<h3 id="locales"><a class="header" href="#locales">Locales</a></h3>
+<p>The locales tab shows approved translations from Pontoon projects in other <a href="glossary.html#locale">locales</a>.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/locales.png" alt="Locales tab"></p>
+<p>Next to the <code>LOCALES</code> title, the number of available entries is visible. The number for preferred locales is green, while the number for all other locales is in gray.</p>
+<p>Users can select locales to appear at the top of their Locales tab as a preferred locale. To add a locale to the preferred locale list, access the <a href="users.html#locale-settings">user settings</a> page.</p>
+<p>Entries in the <code>LOCALES</code> tab above the green line are preferred locales. Non-preferred locales are displayed below the green line, sorted alphabetically by language name.</p>
+<p>Each row displays the translation for the source string in the selected locale. Above each entry, the language name is visible in gray, while the locale code is displayed in green.</p>
+<p>The <code>LOCALES</code> tab is useful for seeing what general style choices are made by other localization communities. When encountering a difficult string, a translator can use other locales as a source of inspiration.</p>
+<p>Note that, when using the <code>LOCALES</code> tab, the translator should always opt for fluency in their own locale. Languages vary linguistically on many levels. The locales tab can be extremely useful, but should be used carefully, and rarely as the sole translation resource for translation.</p>
+<h2 id="smaller-screens"><a class="header" href="#smaller-screens">Smaller screens</a></h2>
+<p>The translation workspace is responsive, which means the layout will adapt to smaller screens. Everything you do on your desktop computer or laptop, you can also do on your phone or tablet: review strings, fix typos or even translate a few strings on the go.</p>
+<p><img src="../../assets/images/pontoon/translation_workspace/mobile_ui.png" title="Screenshot of the mobile UI" alt="Mobile UI"></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../tools/pontoon/translate.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../tools/pontoon/teams_projects.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../tools/pontoon/translate.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../tools/pontoon/teams_projects.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

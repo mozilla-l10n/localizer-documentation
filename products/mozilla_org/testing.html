@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>How to test - Documentation for Mozilla localizers</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex-2865d4f2.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-cdecd29b.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Documentation for Mozilla localizers</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/mozilla-l10n/localizer-documentation/" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/mozilla-l10n/localizer-documentation/edit/main/src/products/mozilla_org/testing.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="testing-mozillaorg--firefoxcom"><a class="header" href="#testing-mozillaorg--firefoxcom">Testing Mozilla.org &amp; Firefox.com</a></h1>
+<ul>
+<li><a href="#key-links">Key links</a></li>
+<li><a href="#what-to-test">What to test</a>
+<ul>
+<li><a href="#pre-l10n-test">Pre-l10n test</a></li>
+<li><a href="#linguistic-testing">Linguistic testing</a></li>
+<li><a href="#functionality-testing">Functionality testing</a></li>
+<li><a href="#compatibility-testing">Compatibility testing:</a></li>
+</ul>
+</li>
+<li><a href="#how-to-test-localized-pages-on-the-production-server">How to test localized pages on the production server</a>
+<ul>
+<li><a href="#sync-and-update-frequencies">Sync and update frequencies</a></li>
+</ul>
+</li>
+<li><a href="#testing-content-in-fluent">Testing content in Fluent</a>
+<ul>
+<li>[Reviewing and updating <a href="#reviewing-and-updating-brandsftl">brands.ftl</a></li>
+<li><a href="#reporting-technical-issues">Reporting technical issues</a></li>
+<li><a href="#reporting-vendor-translation-errors">Reporting vendor translation errors</a></li>
+</ul>
+</li>
+<li><a href="#testing-dynamic-pages">Testing dynamic pages</a>
+<ul>
+<li>[<a href="#firefoxaccountsftl">firefox/accounts.ftl</a></li>
+<li>[<a href="#firefoxallftl">firefox/all.ftl</a></li>
+<li>[<a href="#firefoxdownloadhomeftl">firefox/download/home.ftl</a></li>
+<li><a href="#navigation-bar">Navigation Bar</a></li>
+</ul>
+</li>
+</ul>
+<p>In mid-2025, firefox.com was spun off from mozilla.org. While mozilla.org continues to serve as the umbrella site for all Mozilla products — highlighting the organization’s mission, vision, and values, and promoting initiatives and campaigns, firefox.com is evolving into a product-centric site focused on the Firefox browsers, featuring download links, product highlights, and enterprise information. Both sites are highly visible, and their localized versions reach more than 60% of Mozilla users globally. It’s therefore critical that not only the main pages are localized, but that they are also thoroughly tested before going live in production. This document primarily focuses on mozilla.org. There will be a designated page for firefox.com once the site is fully transformed into its new design.</p>
+<p>It’s highly advised you to ask other community members to conduct peer review not only on Pontoon, but on staging and production. While not all the languages are required for certain projects, each community can opt in the projects at a later time.</p>
+<h2 id="key-links"><a class="header" href="#key-links">Key links</a></h2>
+<p>For Mozilla.org:</p>
+<ul>
+<li>Production: https://www.mozilla.org/{locale_code}/</li>
+<li>Staging: https://www-dev.allizom.org/{locale_code}/</li>
+<li>Repository: https://github.com/mozilla-l10n/www-l10n</li>
+<li>Pontoon: https://pontoon.mozilla.org/projects/mozillaorg/</li>
+</ul>
+<p>For Firefox.com:</p>
+<ul>
+<li>Production: https://www.firefox.com/{locale_code}/</li>
+<li>Staging: https://www-dev.springfield.moz.works/{locale_code}/</li>
+<li>Repository: https://github.com/mozilla-l10n/www-firefox-l10n</li>
+<li>Pontoon: https://pontoon.mozilla.org/projects/firefoxcom/</li>
+</ul>
+<h2 id="what-to-test"><a class="header" href="#what-to-test">What to test</a></h2>
+<h3 id="pre-l10n-test"><a class="header" href="#pre-l10n-test">Pre-l10n test</a></h3>
+<ul>
+<li>Have your <a href="https://transvision.flod.org/">glossary</a> available as a reference, select mozilla.org or firefox.com as Repository, your language as your Target Locale.</li>
+<li>For terminology consistency, reference the product or site that the page is for, assuming the product or site is localized (e.g.: Firefox, Monitor).</li>
+<li>Have the matching US page up as reference, though some strings may not be identical due to A/B testing.</li>
+<li>Have the project you just localized available for editing in Pontoon.</li>
+</ul>
+<h3 id="linguistic-testing"><a class="header" href="#linguistic-testing">Linguistic testing</a></h3>
+<ul>
+<li>Translation quality in context.</li>
+<li>Grammar correctness in context.</li>
+<li>Truncation: button text should remain inside the button.</li>
+<li>Header line break wraps at proper place.</li>
+<li>Text not overlapping graphic.</li>
+<li>Terminology consistent with product across web pages.</li>
+<li>Brand names remain in English, with a few exceptions due to <a href="https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#declensions">declension</a>. Check out <a href="https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark">these detailed guidelines</a> when working with brands and trademarks.</li>
+<li>Product names comply to Mozilla guideline and adhere to what the community has agreed to.</li>
+<li>No corrupted characters.</li>
+<li>Click the links on the page to navigate to localized pages in the same language. If a page is not localized, you will be redirected based on your language preference settings (e.g., Fulah &gt; French &gt; English). If no preferences are set, the default is en-US.</li>
+<li>Navigation terms consistent with the page titles they are linked to (except when the navigation term is shortened due to space limitation).</li>
+<li>Footer links don’t overlap with one another.</li>
+</ul>
+<p>You can make linguistic changes directly in both <a href="https://pontoon.mozilla.org/projects/mozillaorg/">mozilla.org</a> and <a href="https://pontoon.mozilla.org/projects/firefoxcom/">firefox.com</a> projects in Pontoon.</p>
+<h3 id="functionality-testing"><a class="header" href="#functionality-testing">Functionality testing</a></h3>
+<ul>
+<li>Click the download link, you should be able to download the product in your language, if it is localized, such as Firefox.</li>
+<li>Font support and readability.</li>
+<li>Footer: verify that the translation of the link is coherent and the link is functional.</li>
+<li>Language list: is your language listed as one of the options? Check https://www-dev.allizom.org/firefox/all/ (redirects to https://www.firefox.com/download/all/) to confirm. See <a href="#firefoxallftl">detailed steps below</a> to get to the language list.</li>
+<li>Error page: deliberately type a broken link, such as https://www-dev.allizom.org/firefox/neu/, check whether <a href="https://www-dev.allizom.org/404/">404 page</a> is localized.</li>
+<li>If your language is RTL, make sure that the page layout and text flow in the correct directions.</li>
+</ul>
+<h3 id="compatibility-testing"><a class="header" href="#compatibility-testing">Compatibility testing:</a></h3>
+<ul>
+<li>Test the page layout in other major browsers and on other platforms.</li>
+<li>Test the page layout on the leading locally developed browser if available.</li>
+<li>Test the page layout on mobile devices of major platforms.</li>
+</ul>
+<h2 id="how-to-test-localized-pages-on-the-production-server"><a class="header" href="#how-to-test-localized-pages-on-the-production-server">How to test localized pages on the production server</a></h2>
+<p>Updated translations are pushed to the production server regularly throughout the day.</p>
+<ul>
+<li>New page: When a brand new page is available for localization, it will be enabled on production when it’s 80% complete. At that point, if it doesn’t reach 100% completion level, the page will be available on production with English content mixed with translation. Before the page is activated in production, use the staging server for testing.</li>
+<li>Activated page with added strings: The strings will appear in English on production right away. Localized content will be pushed to production as soon as translations are available in the repository.</li>
+<li>Activated page with string updates: The switch to the updated content happens when the replacements of obsolete strings are fully localized. In some cases, there is a defined time frame to show the new strings on production, so test the updates on staging server. The obsolete string will be removed three months after the introduction of the replacement strings.</li>
+<li>Activated page with template change: In some cases, a page receives a major update that requires a complete rewrite of the template. If this happens, the old template is kept online only for a defined period of time. When removed, it will cause the URL to redirect users to the English version if the intended localized version is not ready, or other user preferred localized versions are not available either.</li>
+<li>Activated page missing too many updates: An activated page falling far behind with multiple updates will create poor user experience. They may be subjected to removal.</li>
+</ul>
+<h3 id="sync-and-update-frequencies"><a class="header" href="#sync-and-update-frequencies">Sync and update frequencies</a></h3>
+<p>Updated translations are pushed to the production server regularly throughout the day.</p>
+<ul>
+<li>Pontoon syncs every 10 minutes to the repository.</li>
+<li>GitHub update is pushed to production every 5 minutes.</li>
+</ul>
+<p>It is safe to say that it will take less than an hour to see your changes reflected on the production server.</p>
+<p>When a project has a firm deadline to meet, it will be indicated at the top left corner of the project page in Pontoon and at the page level. When necessary, it will be communicated through <a href="https://chat.mozilla.org/#/room/#l10n-community:mozilla.org">the l10n-community room on Matrix</a>.</p>
+<h2 id="testing-content-in-fluent"><a class="header" href="#testing-content-in-fluent">Testing content in Fluent</a></h2>
+<h3 id="reviewing-and-updating-brandsftl"><a class="header" href="#reviewing-and-updating-brandsftl">Reviewing and updating <a href="https://github.com/mozilla-l10n/www-l10n/blob/master/en/brands.ftl">brands.ftl</a></a></h3>
+<p>This file captures all the brand and product names that appear in all the pages on mozilla.org. As a general rule, brands and product names remain unchanged. The exceptions are:</p>
+<ul>
+<li>Account/accounts in Mozilla account/accounts: Mozilla should be treated as a brand, but <code>account</code> and <code>accounts</code> should be translated. Both the singular and plural forms are used in lower cases. Uppercase is reserved for special use cases where headline case is necessary, for example legal document names and references.</li>
+<li>Browser/Browsers in Firefox Browser/Browsers.</li>
+</ul>
+<p>If your community decides to translate any of these products or feature names, translate it once and translate it in this file. Be sure to have a consensus among active contributors what the translation should be before updating this file. This practice will ensure term use consistency across all pages.  </p>
+<p>Please refer to the <a href="https://mozilla-l10n.github.io/styleguides/mozilla_general/index.html#brands-copyright-and-trademark">guidelines for brands and trademarks</a> when reviewing and updating this file.</p>
+<h3 id="reporting-technical-issues"><a class="header" href="#reporting-technical-issues">Reporting technical issues</a></h3>
+<p>Report issues that can’t be resolved in Pontoon by:</p>
+<ul>
+<li>Filing a bug in <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations">Bugzilla</a> and selecting your locale.</li>
+<li>Adding the l10n project manager in charge for Need Info. You can find the <a href="../l10n_project_managers.html">project manager</a> for any project hosted in Pontoon directly in the <a href="../tools/pontoon/teams_projects.html#project-page">header of the project page</a>.</li>
+<li>Including the file name plus a screenshot and/or URL.</li>
+<li>If an extra tag is added to a string in order for it make sense in your language, the string will generate an error report. The l10n project manager for the project will consult you whether to make this an exception so it will not generate an error report in the future.</li>
+</ul>
+<h3 id="reporting-vendor-translation-errors"><a class="header" href="#reporting-vendor-translation-errors">Reporting vendor translation errors</a></h3>
+<p>If the mozilla.org project is not in your Pontoon dashboard, but the site is localized into your locale, it is likely being translated by a translation vendor. Report any translation errors by:</p>
+<ul>
+<li>Filing a bug using one of these templates and selecting your locale in the component list:
+<ul>
+<li>This <a href="https://mzl.la/2P9PABx">template is to report a single error</a>.</li>
+<li>This <a href="https://mzl.la/3u0mao2">template is to report a batch of errors</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="testing-dynamic-pages"><a class="header" href="#testing-dynamic-pages">Testing dynamic pages</a></h2>
+<p>This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.</p>
+<h3 id="firefoxaccountsftl"><a class="header" href="#firefoxaccountsftl"><a href="https://www.mozilla.org/firefox/accounts/">firefox/accounts.ftl</a></a></h3>
+<p>On the landing page of the Mozilla account page, click on the links under each of the following products which take you to product specific pages:</p>
+<ul>
+<li>Firefox Browser</li>
+<li>Firefox Monitor</li>
+<li>Firefox Relay</li>
+<li>Mozilla VPN</li>
+</ul>
+<p>If you already have an account, click on the <code>Manage your account</code> link on the right side of the landing page, which will take you to the subscription page. If you do not have an account, you will be invited to create an account by providing an email address in the <code>Sign In</code> box.</p>
+<p>Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.</p>
+<h3 id="firefoxallftl"><a class="header" href="#firefoxallftl"><a href="https://www.firefox.com/download/all/">firefox/all.ftl</a></a></h3>
+<p>To the right side of the page on firefox.com, there is a four-step process to go through in order to download Firefox.</p>
+<ul>
+<li>Browsers: choose one of the options either for desktop or mobile. Click on the <code>?</code> next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.</li>
+<li>Platforms: Click on the <code>?</code>, a popup window shows the descriptions of different versions of installers available for download.</li>
+<li>Languages: A list of languages available in the build depending on what is selected in the above two categories. Check whether your current preferred language is shown by default. Change to a different language, check whether the download summary above the <strong>Download Now</strong> button corresponds to your new selection.</li>
+<li>Download: The <strong>Download Now</strong> button appears.</li>
+</ul>
+<p>On the lower left side of each page, you will see these links:</p>
+<ul>
+<li>These two sites are in English only: <a href="https://www.firefox.com/firefox/system-requirements/">Check the system requirements</a> and <a href="https://www.firefox.com/firefox/notes/">Release notes</a>.</li>
+<li>Click on the <strong>Source code</strong> link, you will be directed to the <a href="https://firefox-source-docs.mozilla.org/">Firefox Source Docs</a> page which is not localized.</li>
+<li>The <a href="https://www.mozilla.org/privacy/firefox/">Firefox Privacy Notice</a> (redirects to mozilla.org) document is localized in limited number of languages.</li>
+<li>Click on the <strong>Need Help</strong> link, you will be directed to the <a href="https://support.mozilla.org/products?utm_source=mozilla.org&amp;utm_medium=referral&amp;utm_campaign=need-help-link">SUMO</a> home page.</li>
+</ul>
+<h3 id="firefoxdownloadhomeftl"><a class="header" href="#firefoxdownloadhomeftl"><a href="https://www.firefox.com/">firefox/download/home.ftl</a></a></h3>
+<p>This is the landing page on firefox.com:</p>
+<ul>
+<li>Click the <strong>Download Firefox</strong> button to check the <a href="https://www.mozilla.org/firefox/download/thanks">thank you</a> page that triggers an automatic download.</li>
+<li>The <a href="https://www.mozilla.org/privacy/firefox/">Firefox Privacy Notice</a> (redirects to mozilla.org) document is localized in limited number of languages.</li>
+<li>Click on the <strong>Download options and other languages</strong> link, you will be directed to the <a href="https://www.firefox.com/download/all/">firefox/all</a> page.</li>
+<li>Click on the <strong>Firefox browser support</strong> link, you will be directed to the <a href="https://support.mozilla.org/products/firefox">SUMO</a> site featuring various topics on Firefox.</li>
+</ul>
+<h3 id="navigation-bar"><a class="header" href="#navigation-bar">Navigation Bar</a></h3>
+<ul>
+<li><a href="https://www.mozilla.org/">navigation_v2.ftl</a> on mozilla.org: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, <strong>Firefox browsers</strong>, <strong>Products</strong>, and <strong>About us</strong>, you will see a drop-down panel with subcategory topics.</li>
+<li><a href="https://www.firefox.com/">navigation-firefox.ftl</a> on firefox.com: The strings in this file are shared content and are activated on production whether they are localized or not. When clicking on any of these topics on the navigation bar, <strong>Features</strong> and <strong>Resources</strong>, you will see a drop-down panel with subcategory topics.</li>
+</ul>
+<p>Within each of the topics, there is a description and a few links to help you dive deeper further into a topic which takes you to a different page. When reviewing the content, keep in mind the following:</p>
+<ul>
+<li>Not all links take you to a site that’s localizable for all locales.</li>
+<li>Not all products are offered in your locale.</li>
+<li>Brand and product names must remain unchanged.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../products/mozilla_org/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../products/l10n_testing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../products/mozilla_org/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../products/l10n_testing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
