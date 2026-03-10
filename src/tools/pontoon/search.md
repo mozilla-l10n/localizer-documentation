@@ -31,6 +31,8 @@ Three checkbox options allow users to refine their search:
 * **Case sensitive**: When enabled, the search becomes case-sensitive. For example, searching for `Firefox` will not match `firefox`.
 * **Entire words**: When enabled, the search matches only complete words. For example, searching for `fire` will not match `Firefox`.
 
+The default state of these options can be configured in the [user settings page](users.md#default-search-options).
+
 ### Search results
 
 Search results are displayed in a two-column layout:
