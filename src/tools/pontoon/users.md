@@ -75,6 +75,18 @@ To change the theme, select the button corresponding to your preferred theme. Th
 
 `Make suggestions` allows a translator or a team manager to submit suggestions instead of translations. This setting is also displayed to users with translator permissions.
 
+### Default search options
+
+Users can configure default search options to use when searching for strings in the translation workspace or the [Translation Search page](search.md). The following options can be enabled by default:
+
+* **Match case**: the search will be case-sensitive.
+* **Match whole word**: the search will match only complete words, avoiding partial matches.
+* **Search in string identifiers**: the search will also match against string keys/identifiers.
+* **Include rejected translations**: the search will also include translations that have been rejected.
+* **Exclude source strings**: the search will not look for matches in source strings.
+
+Note that the current search options can always be overridden directly in the search panel, which also provides a `Restore default options` link to reset back to these saved defaults.
+
 ### Locale settings
 
 It’s possible to set the default homepage displayed when visiting Pontoon as a logged-in user. Current options are:

@@ -78,15 +78,15 @@ In addition to the search filters listed below, Pontoon provides additional **se
 ![Options](../../assets/images/pontoon/translation_workspace/options.png)
 
 Search options include:
-* **Match case**: Exactly match the capitalization of the search term.
-* **Match whole word**: Provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.
-* **Include string identifiers**: Expand the search to include string identifiers (keys).
-* **Include rejected translations**: Expand the search to include translations that have been rejected.
-* **Exclude source strings**: Avoid searching for matches in source strings.
+* **Match case**: exactly match the capitalization of the search term.
+* **Match whole word**: provides the same result as surrounding a word with double quotes, exactly matching the search term (case insensitive), and avoiding partial matches.
+* **Include string identifiers**: expand the search to include string identifiers (keys).
+* **Include rejected translations**: expand the search to include translations that have been rejected.
+* **Exclude source strings**: avoid searching for matches in source strings.
 
-All search options are disabled by default. Clicking anywhere on the name or checkbox will toggle only the specific search option. Once ready, clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will apply the selected search options.
+When starting a search from the translation workspace, search options follow the user's [default search settings](users.md#default-search-options). If you clicked on a link performing a search, the menu will reflect the parameters used for that specific search — those might be different from your defaults.
 
-![Multiple options](../../assets/images/pontoon/translation_workspace/options_multiple.png)
+Clicking the `APPLY SEARCH OPTIONS` at the bottom of the panel will perform a new search with the selected options. To reset the current options back to the profile defaults, click `Restore default options`. To update the defaults, click `Change default search settings`, which opens the relevant section of the [settings page](users.md#default-search-options).
 
 ### Filters
 
