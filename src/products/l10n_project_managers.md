@@ -9,19 +9,13 @@ You can find the project manager for any project hosted in Pontoon directly in t
 * [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=bolsson)
 * Products: Firefox for Desktop
 
-## Delphine
-
-* Email: delphine(at)mozilla.com
-* [GitHub profile](https://github.com/Delphine)
-* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=lebedel.delphine)
-* Products: Firefox for Android, Firefox for iOS, Focus for Android, Focus for iOS
-
 ## Francesco (flod)
 
 * Email: flodolo(at)mozilla.com
 * [GitHub profile](https://github.com/flodolo)
 * [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=francesco.lodolo)
 * Localization team manager
+* Products: Android and iOS browsers (Focus, Firefox), Mozilla VPN projects
 
 ## Peiying
 
