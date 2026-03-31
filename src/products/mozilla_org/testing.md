@@ -86,7 +86,9 @@ When a project has a firm deadline to meet, it will be indicated at the top left
 
 ## Testing content in Fluent
 
-### Reviewing and updating [brands.ftl](https://github.com/mozilla-l10n/www-l10n/blob/master/en/brands.ftl)
+### Reviewing and updating brands.ftl
+
+File: [brands.ftl](https://github.com/mozilla-l10n/www-l10n/blob/master/en/brands.ftl)
 
 This file captures all the brand and product names that appear in all the pages on mozilla.org. As a general rule, brands and product names remain unchanged. The exceptions are:
 
@@ -117,7 +119,9 @@ If the mozilla.org project is not in your Pontoon dashboard, but the site is loc
 
 This section focuses on instructions for testing pages with dynamically generated content. Each page or topic is different in terms of steps or flow. These instructions could change over time to reflect product design updates. Linguistic testing is the main focus. The instructions below are detailed steps to get to the localized content so it can be reviewed in context.
 
-### [firefox/accounts.ftl](https://www.mozilla.org/firefox/accounts/)
+### Accounts
+
+File: [firefox/accounts.ftl](https://www.mozilla.org/firefox/accounts/)
 
 On the landing page of the Mozilla account page, click on the links under each of the following products which take you to product specific pages:
 * Firefox Browser
@@ -129,7 +133,9 @@ If you already have an account, click on the `Manage your account` link on the r
 
 Note: You may see different languages between mozilla.org, the login window, and the products above. If any of these products is not localized in your locale, it will fall back to other languages set as preferred for content language negotiation, assuming any of them is available for the project, or English.
 
-### [firefox/all.ftl](https://www.firefox.com/download/all/)
+### Download pages
+
+File: [firefox/all.ftl](https://www.firefox.com/download/all/)
 
 To the right side of the page on firefox.com, there is a four-step process to go through in order to download Firefox.
 * Browsers: choose one of the options either for desktop or mobile. Click on the `?` next to the Browsers category, a popup window shows the descriptions of different versions of Firefox browsers available for download. Select one browser to proceed to the next step.
@@ -143,7 +149,7 @@ On the lower left side of each page, you will see these links:
 * The [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/) (redirects to mozilla.org) document is localized in limited number of languages.
 * Click on the **Need Help** link, you will be directed to the [SUMO](https://support.mozilla.org/products?utm_source=mozilla.org&utm_medium=referral&utm_campaign=need-help-link) home page.
 
-### [firefox/download/home.ftl](https://www.firefox.com/)
+File: [firefox/download/home.ftl](https://www.firefox.com/)
 
 This is the landing page on firefox.com:
 * Click the **Download Firefox** button to check the [thank you](https://www.mozilla.org/firefox/download/thanks) page that triggers an automatic download.
