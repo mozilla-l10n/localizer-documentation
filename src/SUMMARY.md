@@ -32,6 +32,7 @@
         * [Notifications](tools/pontoon/notifications.md)
         * [Profile page](tools/pontoon/profile.md)
         * [Glossary](tools/pontoon/glossary.md)
+    * [Pretranslation](tools/pretranslation.md)
     * [Fluent](tools/fluent/README.md)
         * [Fluent syntax](tools/fluent/basic_syntax.md)
         * [Functions](tools/fluent/functions.md)
