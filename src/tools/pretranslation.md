@@ -8,7 +8,7 @@
 * The string will be stored in Pontoon with a special *pretranslated* status. The pretranslated status can be used in filters within the translation interface, allowing localizers to easily review pretranslated strings, and either approve or reject them.
 * The string will also be saved in the repository (e.g. GitHub), and eventually ship in the product.
 
-While this comes with a potential compromise on quality, pretranslation brings the turn-around time to get a first translation to normally below 30 minutes.
+While this comes with a potential compromise on quality, pretranslation brings the turn-around time to get a first translation to normally under 30 minutes.
 
 Pretranslation uses [Google AutoML Translation](https://cloud.google.com/translate/automl/docs) as its machine translation engine, selected based on reliability, quality of results, and range of supported locales. The engine is fine-tuned by training it on our own existing translation memories, which increases the chances of matching existing style and terminology.
 
@@ -26,12 +26,12 @@ It's important to note that **these are not strict criteria**: members of staff 
 ### Criteria for a new project
 
 * Less than 400 missing strings, except for projects or locales where existing pretranslation statistics provide high confidence.
-* Average review time for pretranslations in existing projects is faster than 3 weeks.
+* Average review time for pretranslations in existing projects is less than 3 weeks.
 
 ### Criteria for disabling pretranslation
 
 * Approval rate drops below 40%.
-* Average review time for pretranslations is slower than 6 weeks.
+* Average review time for pretranslations is longer than 6 weeks.
 
 Note that disabling a project would always involve a conversation with reviewers for the locale.
 
