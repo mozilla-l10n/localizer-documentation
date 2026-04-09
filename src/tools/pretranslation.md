@@ -14,7 +14,7 @@ Pretranslation uses [Google AutoML Translation](https://cloud.google.com/transla
 
 ## Opt-in guidelines
 
-To request pretranslation for your locale or a specific project, see [Requesting pretranslation](https://pontoon.mozilla.org/docs/localizer/teams-projects/).
+To request pretranslation for your locale or a specific project, see [Requesting pretranslation](https://pontoon.mozilla.org/docs/localizer/teams-projects/#requesting-pretranslation).
 
 It's important to note that **these are not strict criteria**: members of staff will evaluate each request to opt in individually, based on their knowledge of the project and direct experience with the locale.
 

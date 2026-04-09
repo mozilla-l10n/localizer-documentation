@@ -68,7 +68,7 @@ On top of the responsibilities associated with the Translator role:
 
 ### Promotions
 
-Promotions apply to Translators and Contributors. Managers and localization staff can directly [promote/demote users](https://pontoon.mozilla.org/docs/localizer/users/) to Translator or Manager roles.
+Promotions apply to Translators and Contributors. Managers and localization staff can directly [promote/demote users](https://pontoon.mozilla.org/docs/localizer/users/#managing-permissions) to Translator or Manager roles.
 
 #### Efforts to revive an inactive community
 

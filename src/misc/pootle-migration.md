@@ -7,7 +7,7 @@ There are a few things you can do to make the transition run smoothly:
 2. Check your permissions on your profile to make sure they match what you’d expect.
 3. Flag issues with Pontoon to the l10n-drivers so that we can triage them and address them in a timely manner. To do this, please [file a bug here](https://goo.gl/tRQzAJ), or reach out to the l10n-drivers if you’re not yet comfortable with Bugzilla.
 
-If you’re a locale manager on Pootle, check the [community permissions](https://pontoon.mozilla.org/docs/localizer/users/) on Pontoon and make any necessary changes to mirror your community’s permission settings.
+If you’re a locale manager on Pootle, check the [community permissions](https://pontoon.mozilla.org/docs/localizer/users/#managing-permissions) on Pontoon and make any necessary changes to mirror your community’s permission settings.
 
 ## Q: When is my locale going to be migrated to Pontoon?
 
@@ -17,7 +17,7 @@ If your locale is up to speed, doesn’t have any pending suggestions, and you p
 
 ## Q: Will there be a training session, doc or video on how to use Pontoon?
 
-We’ve created this [set of documents](https://pontoon.mozilla.org/docs/localizer/) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [localizer documentation GitHub repository](https://github.com/mozilla-l10n/localizer-documentation).
+We’ve created this [set of documents](https://pontoon.mozilla.org/docs/localizer/) to instruct on the basics of using Pontoon. We’ll add more and more to these docs as time goes by. You’re also welcome to add to that doc by submitting pull requests to the [Pontoon GitHub repository](https://github.com/mozilla/pontoon/).
 
 ## Q: What will happen to my user profiles translation stats on Pootle?
 
