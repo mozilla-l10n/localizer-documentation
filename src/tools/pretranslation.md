@@ -2,7 +2,7 @@
 
 ## What is pretranslation?
 
-**Pretranslation** is a feature in Pontoon that allows strings to be translated automatically using a combination of [machine translation](https://pontoon.mozilla.org/docs/localizer/glossary/) and [translation memory](https://pontoon.mozilla.org/docs/localizer/glossary/). If pretranslation is enabled for a locale and project, when a new string is added to a project managed through Pontoon:
+**Pretranslation** is a feature in Pontoon that allows strings to be translated automatically using a combination of [machine translation](../misc/glossary.md#machine-translation) and [translation memory](../misc/glossary.md#translation-memory). If pretranslation is enabled for a locale and project, when a new string is added to a project managed through Pontoon:
 
 * It will be translated (pretranslated) using a 100% match from translation memory or, should that not be available, using the [Google AutoML Translation](https://cloud.google.com/translate/automl/docs) engine with a custom model.
 * The string will be stored in Pontoon with a special *pretranslated* status. The pretranslated status can be used in filters within the translation interface, allowing localizers to easily review pretranslated strings, and either approve or reject them.

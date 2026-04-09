@@ -39,4 +39,7 @@
     * [Mozilla Donate website](webprojects/fundraising.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
-[l10n resources](misc/l10n_resources.md)
+# Other resources
+
+* [l10n resources](misc/l10n_resources.md)
+* [Glossary](misc/glossary.md)
