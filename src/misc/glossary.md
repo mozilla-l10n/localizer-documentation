@@ -21,9 +21,9 @@ User comments should not be confused with *Resource comments*, which developers 
 `fuzzy` is an internal state available only if the source file is a [gettext](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) (.po) file. A string can be marked as such in a few cases:
 * The reference text changed after the string was already translated.
 * The string has been manually marked by translators because it needs review.
-* New strings were merged in the localized files, enabling the option to match existing translations (also called "fuzzy matching").
+* New strings were merged in the localized files, enabling the option to match existing translations (also called “fuzzy matching”).
 
-In all these cases a translation exists in the file, but is marked as fuzzy (equivalent to "need review") and not used by the website or application. For more information, read the documentation about [Fuzzy Entries](https://www.gnu.org/software/gettext/manual/html_node/Fuzzy-Entries.html#Fuzzy-Entries) in gettext.
+In all these cases a translation exists in the file, but is marked as fuzzy (equivalent to “need review”) and not used by the website or application. For more information, read the documentation about [Fuzzy Entries](https://www.gnu.org/software/gettext/manual/html_node/Fuzzy-Entries.html#Fuzzy-Entries) in gettext.
 
 ## Locale
 
@@ -33,15 +33,15 @@ In Pontoon, each locale maps to a team.
 
 ## Machine Translation
 
-Machine Translation (MT) is the translation of text from one language to another, performed by software without human involvement. There are different types of machine translation solutions (or "engines"), but all modern systems are based on a neural network approach (vs statistical or rule-based).
+Machine Translation (MT) is the translation of text from one language to another, performed by software without human involvement. There are different types of machine translation solutions (or “engines”), but all modern systems are based on a neural network approach (vs statistical or rule-based).
 
 In Pontoon, machine translation is used as part of the [pretranslation](#pretranslation) feature, powered by [Google AutoML Translation](https://cloud.google.com/translate/automl/docs) with custom models trained on existing translation memories.
 
 ## Permission
 
 Users in Pontoon can have different permissions depending on their role:
-* Translators can either submit approved translations directly or review suggestions from other users. Unlike in some other Translation Management Systems, this is a single permission in Pontoon, and it's referred to as *Translator permission*.
-* Team managers have translator permissions, but can also change permissions assigned to other users (i.e., "promote" or "demote" them).
+* Translators can either submit approved translations directly or review suggestions from other users. Unlike in some other Translation Management Systems, this is a single permission in Pontoon, and it’s referred to as *Translator permission*.
+* Team managers have translator permissions, but can also change permissions assigned to other users (i.e., promote or demote them).
 
 ## Pretranslation
 
@@ -87,4 +87,4 @@ Most projects store source content and translations outside of Pontoon, in repos
 
 Pontoon periodically (usually every 10 minutes) imports source content and translations from these repositories and writes translations back. This process is referred to as *Sync*.
 
-Pontoon also supports the so-called `DB projects`, where source content and translations are stored in Pontoon's internal database (DB).
+Pontoon also supports the so-called `DB projects`, where source content and translations are stored in Pontoon’s internal database (DB).
