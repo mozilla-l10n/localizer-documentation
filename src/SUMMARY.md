@@ -23,15 +23,6 @@
     * [Testing localization of Mozilla projects](products/l10n_testing.md)
 
 * [Tools](tools/README.md)
-    * [Pontoon](tools/pontoon/README.md)
-        * [How to translate](tools/pontoon/translate.md)
-        * [Translation workspace](tools/pontoon/translation_workspace.md)
-        * [Team and project pages](tools/pontoon/teams_projects.md)
-        * [Translation Search](tools/pontoon/search.md)
-        * [User accounts and settings](tools/pontoon/users.md)
-        * [Notifications](tools/pontoon/notifications.md)
-        * [Profile page](tools/pontoon/profile.md)
-        * [Glossary](tools/pontoon/glossary.md)
     * [Pretranslation](tools/pretranslation.md)
     * [Fluent](tools/fluent/README.md)
         * [Fluent syntax](tools/fluent/basic_syntax.md)
@@ -48,4 +39,9 @@
     * [Mozilla Donate website](webprojects/fundraising.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
-[l10n resources](misc/l10n_resources.md)
+<!-- markdownlint-disable MD025 -->
+# Other resources
+<!-- markdownlint-enable MD025 -->
+
+* [Localization resources](misc/l10n_resources.md)
+* [Glossary](misc/glossary.md)

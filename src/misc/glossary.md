@@ -10,7 +10,7 @@ Comments can be used, for example, to discuss possible translations with other t
 
 Pontoon supports two types of user comments:
 * *Source string comments* are associated with the source string and displayed in the `COMMENTS` tab in the right column.
-* *Translation comments* are associated with a specific translation and displayed under the editor in the [translation list](translation_workspace.md#translation-list).
+* *Translation comments* are associated with a specific translation and displayed under the editor in the [translation list](https://pontoon.mozilla.org/docs/localizer/translation-workspace/#translation-list).
 
 Comment authors can edit or delete their own comments. Project managers can also delete any comment for moderation purposes.
 
@@ -33,7 +33,7 @@ In Pontoon, each locale maps to a team.
 
 ## Machine Translation
 
-Machine Translation (MT) is the translation of text from one language to another, performed by software without human involvement. There are different types of machine translation solutions (or "engines"), but all modern systems are based on a neural network approach (vs statistical or rule-based).
+Machine Translation (MT) is the translation of text from one language to another, performed by software without human involvement. There are different types of machine translation solutions (or “engines”), but all modern systems are based on a neural network approach (vs statistical or rule-based).
 
 In Pontoon, machine translation is used as part of the [pretranslation](#pretranslation) feature, powered by [Google AutoML Translation](https://cloud.google.com/translate/automl/docs) with custom models trained on existing translation memories.
 
@@ -41,7 +41,7 @@ In Pontoon, machine translation is used as part of the [pretranslation](#pretran
 
 Users in Pontoon can have different permissions depending on their role:
 * Translators can either submit approved translations directly or review suggestions from other users. Unlike in some other Translation Management Systems, this is a single permission in Pontoon, and it’s referred to as *Translator permission*.
-* Team managers have translator permissions, but can also change permissions assigned to other users (i.e., ”promote” or ”demote” them).
+* Team managers have translator permissions, but can also change permissions assigned to other users (i.e., promote or demote them).
 
 ## Pretranslation
 
