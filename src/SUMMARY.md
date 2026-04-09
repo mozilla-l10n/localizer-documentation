@@ -39,7 +39,9 @@
     * [Mozilla Donate website](webprojects/fundraising.md)
     * [Support.mozilla.org (SUMO)](webprojects/sumo.md)
 
+<!-- markdownlint-disable MD025 -->
 # Other resources
+<!-- markdownlint-enable MD025 -->
 
-* [l10n resources](misc/l10n_resources.md)
+* [Localization resources](misc/l10n_resources.md)
 * [Glossary](misc/glossary.md)
