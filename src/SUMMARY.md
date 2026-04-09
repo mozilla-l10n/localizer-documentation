@@ -43,5 +43,6 @@
 # Other resources
 <!-- markdownlint-enable MD025 -->
 
+* [Paid localization services for products](misc/lsp_products.md)
 * [Localization resources](misc/l10n_resources.md)
 * [Glossary](misc/glossary.md)
