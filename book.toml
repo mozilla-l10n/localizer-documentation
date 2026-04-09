@@ -12,7 +12,17 @@ edit-url-template = "https://github.com/mozilla-l10n/localizer-documentation/edi
 no-section-label = true
 
 [output.html.redirect]
-# These redirects are only going to work on https://mozilla-l10n.github.io/localizer-documentation
-"tools/pontoon/search_filters.html" = "https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html#search"
-"tools/pontoon/ui.html" = "https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translation_workspace.html"
-"tools/pontoon/workflow.html" = "https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/translate.html#workflow-example"
+# Pontoon documentation moved to https://pontoon.mozilla.org/docs/localizer/
+"tools/pontoon/index.html" = "https://pontoon.mozilla.org/docs/localizer/"
+"tools/pontoon/translate.html" = "https://pontoon.mozilla.org/docs/localizer/translate/"
+"tools/pontoon/translation_workspace.html" = "https://pontoon.mozilla.org/docs/localizer/translation-workspace/"
+"tools/pontoon/teams_projects.html" = "https://pontoon.mozilla.org/docs/localizer/teams-projects/"
+"tools/pontoon/search.html" = "https://pontoon.mozilla.org/docs/localizer/search/"
+"tools/pontoon/users.html" = "https://pontoon.mozilla.org/docs/localizer/users/"
+"tools/pontoon/notifications.html" = "https://pontoon.mozilla.org/docs/localizer/notifications/"
+"tools/pontoon/profile.html" = "https://pontoon.mozilla.org/docs/localizer/profile/"
+"tools/pontoon/glossary.html" = "https://pontoon.mozilla.org/docs/localizer/glossary/"
+# Old page names, redirected before the move to pontoon.mozilla.org
+"tools/pontoon/search_filters.html" = "https://pontoon.mozilla.org/docs/localizer/translation-workspace/"
+"tools/pontoon/ui.html" = "https://pontoon.mozilla.org/docs/localizer/translation-workspace/"
+"tools/pontoon/workflow.html" = "https://pontoon.mozilla.org/docs/localizer/translate/"

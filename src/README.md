@@ -18,7 +18,7 @@ How to localize and test Mozilla products:
 
 ### Tools
 
-* [How to use Pontoon](tools/pontoon/).
+* [How to use Pontoon](https://pontoon.mozilla.org/docs/localizer/).
 * [Fluent for localizers](tools/fluent/).
 * [Bugzilla for localizers](misc/bugzilla_l10n.md).
 * [Mercurial tips](tools/mercurial/).

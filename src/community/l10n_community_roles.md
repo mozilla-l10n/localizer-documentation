@@ -68,7 +68,7 @@ On top of the responsibilities associated with the Translator role:
 
 ### Promotions
 
-Promotions apply to Translators and Contributors. Managers and localization staff can directly [promote/demote users](../tools/pontoon/users.md#managing-permissions) to Translator or Manager roles.
+Promotions apply to Translators and Contributors. Managers and localization staff can directly [promote/demote users](https://pontoon.mozilla.org/docs/localizer/users/) to Translator or Manager roles.
 
 #### Efforts to revive an inactive community
 
@@ -131,11 +131,11 @@ If a localizer has attempted to reach out to Managers or Translators but has not
 If you have contacted members of your team and received no responses, have questions about these guidelines or want to suggest improvements, don’t hesitate to get in touch with the localization staff:
 
 1. You can use [email](mailto:pontoon-team@mozilla.com) and [Matrix](https://matrix.to/#/#l10n-community:mozilla.org) to reach out to the entire team.
-2. You can also find the member of staff in charge of each project [directly in Pontoon](../tools/pontoon/teams_projects.md#project-page).
+2. You can also find the member of staff in charge of each project [directly in Pontoon](https://pontoon.mozilla.org/docs/localizer/teams-projects/).
 
 ### I am a Translator and want to become a Manager, what do I do?
 
-Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your [team page](../tools/pontoon/teams_projects.md#teams-page) on Pontoon). Check also the [Promotions](#promotions) section. You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
+Try to get in touch with the current Managers and Translators from your locale, to surface your request (you can find them under the Contributor view in your [team page](https://pontoon.mozilla.org/docs/localizer/teams-projects/) on Pontoon). Check also the [Promotions](#promotions) section. You can also [reach out to the localization team](#how-can-i-contact-the-localization-staff) directly.
 
 ### No one is reviewing my suggestions, what do I do?
 
