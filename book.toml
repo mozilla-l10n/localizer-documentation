@@ -21,7 +21,7 @@ no-section-label = true
 "tools/pontoon/users.html" = "https://pontoon.mozilla.org/docs/localizer/users/"
 "tools/pontoon/notifications.html" = "https://pontoon.mozilla.org/docs/localizer/notifications/"
 "tools/pontoon/profile.html" = "https://pontoon.mozilla.org/docs/localizer/profile/"
-"tools/pontoon/glossary.html" = "misc/glossary.html"
+"tools/pontoon/glossary.html" = "https://mozilla-l10n.github.io/localizer-documentation/misc/glossary.html"
 # Old page names, redirected before the move to pontoon.mozilla.org
 "tools/pontoon/search_filters.html" = "https://pontoon.mozilla.org/docs/localizer/translation-workspace/"
 "tools/pontoon/ui.html" = "https://pontoon.mozilla.org/docs/localizer/translation-workspace/"
