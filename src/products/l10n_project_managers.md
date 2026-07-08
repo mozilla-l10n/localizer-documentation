@@ -6,20 +6,20 @@ You can find the project manager for any project hosted in Pontoon directly in t
 
 * Email: bolsson(at)mozilla.com
 * [GitHub profile](https://github.com/bcolsson)
-* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=bolsson)
+* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=:bolsson)
 * Products: Firefox for Desktop
+
+## Camila (parker)
+
+* Email: cpedraza(at)mozilla.com
+* [GitHub profile](https://github.com/camilapedraza)
+* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=:parker)
+* Products: Android and iOS browsers (Focus, Firefox)
 
 ## Francesco (flod)
 
 * Email: flodolo(at)mozilla.com
 * [GitHub profile](https://github.com/flodolo)
-* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=francesco.lodolo)
+* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=:flod)
 * Localization team manager
-* Products: Android and iOS browsers (Focus, Firefox), Mozilla VPN projects
-
-## Peiying
-
-* Email: pmo(at)mozilla.com
-* [GitHub profile](https://github.com/peiying2)
-* [Bugzilla profile](https://bugzilla.mozilla.org/user_profile?login=cocomo)
-* Products: AMO, Mozilla.org, Firefox.com, Firefox Relay
+* Products: AMO, Mozilla.org, Firefox.com, Firefox Relay, Mozilla VPN projects
