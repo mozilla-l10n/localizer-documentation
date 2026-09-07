@@ -7,7 +7,7 @@ SUMO consists of two parts:
 * User interface (or UI), such as navigation and buttons.
 * Support articles for Mozilla products, such as feature descriptions and troubleshooting guides.
 
-This document only covers localization of the UI elements in Pontoon. To learn about localizing support articles, please see [this page](https://support.mozilla.org/en-US/kb/how-contribute-article-localization/).
+This document only covers localization of the UI elements in Pontoon. To learn about localizing support articles, please see [this page](https://support.mozilla.org/kb/how-contribute-article-localization/).
 
 ## Localizing the strings
 
@@ -21,7 +21,7 @@ Context is key to minimize revisions and get the translation right the first tim
 * Check out **string comments**. In Pontoon, they’re displayed under the source string. They always include a reference to the section of code where the string is used (led by a hashtag, e.g. `#:kitsune/wiki/forms.py:34`). You can use that reference to search the [Kitsune GitHub repository](https://github.com/mozilla/kitsune) and get additional context.
 * Visit the [**SUMO l10n forum**](https://support.mozilla.org/forums/l10n-forum). Participating in the forum requires a Mozilla account: [create one](https://support.mozilla.org/users/auth) if you don't have it yet! Optionally, you can also [sign up as a contributor](https://support.mozilla.org/contribute) to easily access the forum from the SUMO top navigation bar.
 
-Localized strings in Pontoon are synced to [sumo-l10n on GitHub](https://github.com/mozilla-l10n/sumo-l10n) every 20 minutes, making that repository the source of truth.
+Localized strings in Pontoon are synced to [sumo-l10n on GitHub](https://github.com/mozilla-l10n/sumo-l10n) every 10 minutes, making that repository the source of truth.
 
 ## Testing
 
@@ -31,17 +31,17 @@ Translated strings from Pontoon are pushed automatically to staging and producti
 
 There are two places where SUMO localizations can be visualized and tested:
 
-* Staging server: https://support.allizom.org​
-* Production server: http://support.mozilla.org
+* Staging server: [https://support.allizom.org​](https://support.allizom.org​)
+* Production server: [http://support.mozilla.org](http://support.mozilla.org)
 
 The SUMO team relies on contributors to find issues and report bugs!
 
 ## Reporting issues
 
 There are several ways to report an issue:
-* File an [issue in the SUMO GitHub repo](https://github.com/mozilla/sumo/issues/new). This is the quickest way to have a problem resolved.
-* Report it in [the Matrix channel](https://chat.mozilla.org/#/room/#l10n-community:mozilla.org) by pinging the l10n PM responsible for the project.
-* Within Pontoon, click the REQUEST CONTEXT or REPORT ISSUE button next to the string and submit a comment. This will notify the l10n PM in charge.
+* File an [issue in the SUMO GitHub repository](https://github.com/mozilla/sumo/issues/new). This is the quickest way to have a problem resolved.
+* Report it in [the Matrix channel](https://matrix.to/#/#l10n-community:mozilla.org) by pinging the l10n project manager (PM) responsible for the project.
+* Within Pontoon, click the `REQUEST CONTEXT or REPORT ISSUE` button next to the string and submit a comment. This will notify the l10n PM in charge.
 * Send a direct email to the l10n PM responsible for the project. Their email address is displayed on their profile in Pontoon.
 
 ## Other questions
